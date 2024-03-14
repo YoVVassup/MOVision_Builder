@@ -5,8 +5,10 @@ esentutl /y "MOV\thememo_Original.ini" /d "thememo.ini" /o
 esentutl /y "MOV\expandmo98_Russian.mix" /d "expandmo98.mix" /o
 esentutl /y "MOV\expandmo99_Original.mix" /d "expandmo99.mix" /o
 if exist ".\mapselmo.ini" (del /f /q mapselmo.ini)
+if exist ".\missionmo.ini" (del /f /q missionmo.ini)
 if exist ".\fan_art.ini" (del /f /q fan_art.ini)
 if exist ".\fan_soundmo.ini" (del /f /q fan_soundmo.ini)
+if exist ".\ReShade.ini" (del /f /q ReShade.ini)
 if exist ".\expandmo01.mix" (del /f /q expandmo01.mix)
 if exist ".\expandmo02.mix" (del /f /q expandmo02.mix)
 if exist ".\expandmo03.mix" (del /f /q expandmo03.mix)
@@ -29,4 +31,7 @@ if exist ".\stringtable71.csf" (del /f /q stringtable71.csf)
 if exist ".\stringtable72.csf" (del /f /q stringtable72.csf)
 if exist ".\stringtable73.csf" (del /f /q stringtable73.csf)
 if exist ".\TEST.map" (del /f /q TEST.map)
+if exist ".\dxgi.dll" (del /f /q dxgi.dll)
+if exist ".\d3d9.dll" (del /f /q d3d9.dll)
+if exist ".\opengl32.dll" (del /f /q opengl32.dll)
 .\Resources\Tools\inifile RA2MO.ini [CustomSettings] /remove
