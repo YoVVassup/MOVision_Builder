@@ -50,5 +50,5 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 
 ## Документация
 
-[Дополнительные требования при создании\изменении игровых файлов](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/Requirements.md)
-[Общая информация по CLI-утилитам сборки](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/ReadmeUtil.md)
+[Дополнительные требования при создании\изменении игровых файлов](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/Requirements.md)  
+[Общая информация по CLI-утилитам сборки](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/ReadmeUtil.md)  
