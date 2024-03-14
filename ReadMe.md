@@ -22,7 +22,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 - Новые треки для музыкального плеера игры, в которые были добавлены все скрытые оригинальные треки, а также дополнительные треки из фан-компаний (`FIX`, для переключения используется список выбора который можно найти на вкладке `Настройки` → `Audio` → `Soundtrack` → `Vision (Extendet) Soundtrack` → Соглашаемся с изменениями и перезагрузкой).
 - Полный сброс на параметры по умолчанию, для обновления на новую версию и для случаев некорректного использования аддона с помощью файла `Reset[Использовать-только-при-ошибке-запуска].bat` `FIX`.
 - Набор инструментов для пост-пользовательской CLI доработки аддона (`Resources\Tools`).
-- Обновлены и добавлены версии стабильных рендеров [DDrawCompat](https://github.com/narzoul/DDrawCompat) (текущая стабильная версия 0.4.0, лучший выбор для встроенной графики от Intel), [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw) (текущая версия 6.3.0.0), [CnC-DDraw-Old](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/1.4.0.0) (старая версия CnC-DDraw 1.4.0.0 от FunkyFr3sh, оставлена для совместимости с шейдерами DX9), [DirectX](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v5.1.0.0) (специально перенастроенная версия CnC-DDraw 5.1.0.0 от FunkyFr3sh, лучший выбор для видеокарт от NVIDIA, см. [доп.настройки]()).
+- Обновлены и добавлены версии стабильных рендеров [DDrawCompat](https://github.com/narzoul/DDrawCompat) (текущая стабильная версия 0.4.0, лучший выбор для встроенной графики от Intel), [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw) (текущая версия 6.3.0.0), [CnC-DDraw-Old](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/1.4.0.0) (старая версия CnC-DDraw 1.4.0.0 от FunkyFr3sh, оставлена для совместимости с шейдерами DX9), [DirectX](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v5.1.0.0) (специально перенастроенная версия CnC-DDraw 5.1.0.0 от FunkyFr3sh, лучший выбор для видеокарт от NVIDIA, см. [доп.настройки](https://raw.githubusercontent.com/YoVVassup/MOVision_Builder/main/Doc/DirectX.txt)).
 - Обновлен файл `qres.dat`, отвечающий за разрешения экрана в игре (добавлены редкие разрешения).
 
 ## Сборка
@@ -50,4 +50,4 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 
 ## Документация
 
-[Дополнительные требования при создании\изменении игровых файлов]()
+[Дополнительные требования при создании\изменении игровых файлов](https://raw.githubusercontent.com/YoVVassup/MOVision_Builder/main/Doc/Requirements.txt)
