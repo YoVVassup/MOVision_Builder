@@ -1,5 +1,6 @@
 @echo off
 chcp 65001
+title MOVision_Builder
 echo Mental Omega Vision
 
 : Очистка папки Build 
@@ -14,7 +15,7 @@ xcopy /s ".\CustomFiles" ".\Build"
 echo.
 
 : Сборка основных файлов Mental Omega Vision
-echo Сборка mix-файла дополнительны аудиотреков MO Vision...
+echo Сборка mix-файла дополнительных аудиотреков MO Vision...
 Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\expandmo90" --mix ".\Build\expandmo90.mix"
 echo.
 echo Сборка mix-файла уникальных едениц, юнитов и др. дополнений не имеющих аналогов в оригинальной MO...
@@ -42,6 +43,10 @@ echo.
 echo Создание модифицированного mix-файла содержащего все внутренние ini-настройки игры (с rulesmo.ini)...
 copy ".\OriginalFilesMO\expandmo99.mix" ".\Build\MOV\expandmo99_Mod_Rules.mix"
 Tools\sfk replace ".\Build\MOV\expandmo99_Mod_Rules.mix" -bin /4D656E74616C204F6D65676120332E332E362041525420434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B3B3B3B0D0A3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B0D0A3B3B3B3B3B3B3B3B3B3B3B3B3B/4D656E74616C204F6D65676120332E332E362041525420434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B3B3B3B0D0A5B23696E636C7564655D3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B0D0A313D66616E5F6172742E696E69/ /3B3B3B3B3B3B3B3B3B3B4D656E74616C204F6D65676120332E332E3620534F554E4420434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B0A3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B/5B23696E636C7564655D3B4D656E74616C4F6D65676120332E332E3620534F554E4420434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B0A313D66616E5F736F756E646D6F2E696E69/ /3B3B3B3B3B3B3B3B3B3B4D656E74616C204F6D65676120332E332E3620414920434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B0D0A3B3B3B3B3B3B3B3B3B3B3B3B3B3B/5B23696E636C7564655D3B4D656E74616C4F6D65676120332E332E3620414920434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B0D0A313D66616E5F61696D6F2E696E69/ /4D656E74616C204F6D65676120332E332E362052554C455320434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B0D0A3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B0D0A3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B/4D656E74616C204F6D65676120332E332E362052554C455320434F4E54524F4C2046494C453B3B3B3B3B3B3B3B3B3B0D0A5B23696E636C7564655D3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B3B0D0A313D66616E5F72756C65736D6F2E696E69/ -yes
+echo.
+echo Сборка csf файла содержащего текст новых мультиплеерных карт...
+copy ".\Tools\stringtable00.csf" ".\Build\MOV\stringtable66.csf"
+Tools\CSFTool -t ".\CustomCompileFiles\MOV\stringtable66.txt" -o ".\Build\MOV\stringtable66.csf" -a
 echo.
 
 echo Сборка csf и mix-файлов для APRA Series...
@@ -76,9 +81,6 @@ copy ".\Tools\stringtable00.csf" ".\Build\MOV\P.M.O.S._Series\stringtable51.csf"
 Tools\CSFTool -t ".\CustomCompileFiles\MOV\P.M.O.S._Series\stringtable51.txt" -o ".\Build\MOV\P.M.O.S._Series\stringtable51.csf" -a
 echo.
 
-echo Сборка mix-файла оригинальных катсцен (видевставок) для RA2 and RA2YR Remake...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_480p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_480p.mix"
-echo.
 echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 768p...
 Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_768p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix"
 echo.
@@ -107,6 +109,12 @@ echo.
 echo Добавление набор инструментов для быстрой пользовательской отладки...
 mkdir ".\Build\Resources\Tools"
 xcopy /s ".\Tools" ".\Build\Resources\Tools"
+echo.
+
+: Заглушки для катсцен
+echo Проверка на отсутствие файлов катсцен и создание заглушек...
+where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_768p.mix && echo Заглушка катсцен для разрешений 768p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix" 1024
+where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1080p.mix && echo Заглушка катсцен для разрешений 1080p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix" 1024
 echo.
 
 echo Сборка проекта MO Vision завершена. 
