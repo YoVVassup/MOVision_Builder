@@ -117,6 +117,11 @@ where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_768p.mix && echo За�
 where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1080p.mix && echo Заглушка катсцен для разрешений 1080p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix" 1024
 echo.
 
+: Заглушка для аудиотреков
+echo Проверка на отсутствие файлов игровых аудиотреков и создание заглушек...
+where /Q /R ".\Build" expandmo90.mix && echo Заглушка для игровых аудиотреков не требуется. || fsutil file createnew ".\Build\expandmo90.mix" 1024
+echo.
+
 echo Сборка проекта MO Vision завершена. 
 echo Можно закртыть эту консоль.
 pause

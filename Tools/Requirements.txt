@@ -266,3 +266,10 @@ Tools\BinkMix .\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p\s13
 Tools\BinkMix .\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p\s13_f01e.bik .\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_480p\s13_f01e.bik .\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p\s13_f01e.bik /L0 /O
 
 На этом пока все, выходное качество не велико и по прежнему использует 15 кадров с секунду, нужна будет хорошая AI модель для апскейлинга и глобального повышения качества катсцен минимум до 2K в дальнейшем, здесь же, просто увеличен размер кадра.
+
+Файлы игровых аудиотреков:
+
+С ростом размера коллекции дополнительных аудиотреков приходит нужда в их проверке на уникальность чтобы не дублировать уже имеющийся контент, т.к. вручную проверить такой объем информации довольно затруднительно стоит воспользоваться специальными программами для поиска дубляжей "по звукам".  
+Для начала необходимо извлечь оригинальные и дополнительные аудиотреки Mental Omega (сам процесс описывать не буду, т.к. их mix файлы зашифрованы) из mix файлов expandmo94.mix и thememo.mix. Дополнительно сюда включаем аудиотреки из RA2 и RA2YR, которые объедены в файле `expandmo10.mix` после сборки или лежат в папке проекта в ```.\CustomCompileFiles\MOV\expandmo10```  
+А также фанатские треки MOV expandmo90.mix, папке проекта в .\CustomCompileFiles\expandmo90 (после скачивания см. Сборка (https://github.com/YoVVassup/MOVision_Builder/tree/main?tab=readme-ov-file#%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0)).  
+Я использую программу Similarity (https://www.similarityapp.com/), т.к. в ходе моих тестов она показала наилучшие результаты. (см. Текущее состояние аудиоколекции треков (https://raw.githubusercontent.com/YoVVassup/MOVision_Builder/main/Doc/Audiotest.jpg))  
