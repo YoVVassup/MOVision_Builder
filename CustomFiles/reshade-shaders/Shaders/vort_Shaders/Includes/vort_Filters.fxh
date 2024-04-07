@@ -90,17 +90,15 @@ static const float WEIGHTS_8_TAPS[8] = {
  *                0.03125
  */
 
-float3 Filter13Taps(float2 uv, sampler samp, int mip)
+float4 Filter13Taps(sampler samp, float2 uv, int mip)
 {
     float2 texelsize = BUFFER_PIXEL_SIZE * exp2(mip);
-    float3 color = 0;
-    float2 offset = 0;
-    float2 tap_uv = 0;
+    float4 color = 0;
 
     [loop]for(int j = 0; j < 13; j++)
     {
-        offset = COORDS_13_TAPS[j] * texelsize;
-        tap_uv = uv + offset;
+        float2 offset = COORDS_13_TAPS[j] * texelsize;
+        float2 tap_uv = uv + offset;
 
         // repeat
         /* tap_uv = saturate(tap_uv); */
@@ -108,7 +106,7 @@ float3 Filter13Taps(float2 uv, sampler samp, int mip)
         // mirror
         tap_uv = (tap_uv < 0 || tap_uv > 1) ? (uv - offset) : tap_uv;
 
-        color += WEIGHTS_13_TAPS[j] * Sample(samp, tap_uv).rgb;
+        color += WEIGHTS_13_TAPS[j] * Sample(samp, tap_uv);
     }
 
     return color;
@@ -125,17 +123,15 @@ float3 Filter13Taps(float2 uv, sampler samp, int mip)
  *            0.0625
  */
 
-float3 Filter9Taps(float2 uv, sampler samp, int mip)
+float4 Filter9Taps(sampler samp, float2 uv, int mip)
 {
     float2 texelsize = BUFFER_PIXEL_SIZE * exp2(mip);
-    float3 color = 0;
-    float2 offset = 0;
-    float2 tap_uv = 0;
+    float4 color = 0;
 
     [loop]for(int j = 0; j < 9; j++)
     {
-        offset = COORDS_9_TAPS[j] * texelsize;
-        tap_uv = uv + offset;
+        float2 offset = COORDS_9_TAPS[j] * texelsize;
+        float2 tap_uv = uv + offset;
 
         // repeat
         /* tap_uv = saturate(tap_uv); */
@@ -143,7 +139,7 @@ float3 Filter9Taps(float2 uv, sampler samp, int mip)
         // mirror
         tap_uv = (tap_uv < 0 || tap_uv > 1) ? (uv - offset) : tap_uv;
 
-        color += WEIGHTS_9_TAPS[j] * Sample(samp, tap_uv).rgb;
+        color += WEIGHTS_9_TAPS[j] * Sample(samp, tap_uv);
     }
 
     return color;
@@ -155,17 +151,15 @@ float3 Filter9Taps(float2 uv, sampler samp, int mip)
  * https://www.shadertoy.com/view/fsjBWm
  */
 
-float3 Filter8Taps(float2 uv, sampler samp, int mip)
+float4 Filter8Taps(sampler samp, float2 uv, int mip)
 {
     float2 texelsize = BUFFER_PIXEL_SIZE * exp2(mip);
-    float3 color = 0;
-    float2 offset = 0;
-    float2 tap_uv = 0;
+    float4 color = 0;
 
     [loop]for(int j = 0; j < 8; j++)
     {
-        offset = COORDS_8_TAPS[j] * texelsize;
-        tap_uv = uv + offset;
+        float2 offset = COORDS_8_TAPS[j] * texelsize;
+        float2 tap_uv = uv + offset;
 
         // repeat
         /* tap_uv = saturate(tap_uv); */
@@ -173,7 +167,7 @@ float3 Filter8Taps(float2 uv, sampler samp, int mip)
         // mirror
         tap_uv = (tap_uv < 0 || tap_uv > 1) ? (uv - offset) : tap_uv;
 
-        color += WEIGHTS_8_TAPS[j] * Sample(samp, tap_uv).rgb;
+        color += WEIGHTS_8_TAPS[j] * Sample(samp, tap_uv);
     }
 
     return color;

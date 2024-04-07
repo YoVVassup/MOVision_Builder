@@ -1,40 +1,34 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Droste Effect (Droste.fx) by SirCobra
-// Version 0.4.1
+// Version 0.4.3
 // You can find info and all my shaders here: https://github.com/LordKobra/CobraFX
 //
 // --------Description---------
 // The Droste effect warps the image-space to recursively appear within itself.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//                                            Defines & UI
-//
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include "Reshade.fxh"
 
 // Shader Start
-// Defines
-
-#define COBRA_DRO_VERSION "0.4.1"
-#define COBRA_DRO_UI_GENERAL "\n / General Options /\n"
-
-#ifndef M_PI
-    #define M_PI 3.1415927
-#endif
-
-#ifndef M_E
-    #define M_E 2.71828183
-#endif
-
-// Includes
-
-#include "Reshade.fxh"
 
 // Namespace Everything!
 
 namespace COBRA_DRO
 {
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //                                            Defines & UI
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    // Defines
+
+    #define COBRA_DRO_VERSION "0.4.3"
+
+    #define COBRA_UTL_MODE 0
+    #include ".\CobraUtility.fxh"
+
     // UI
 
     uniform int UI_EffectType <
@@ -43,14 +37,14 @@ namespace COBRA_DRO
         ui_spacing   = 2;
         ui_items     = "Circular\0Rectangular\0";
         ui_tooltip   = "Shape of the recursive appearance.";
-        ui_category  = COBRA_DRO_UI_GENERAL;
+        ui_category  = COBRA_UTL_UI_GENERAL;
     >                = 0;
 
     uniform bool UI_Spiral <
         ui_label     = " Spiral";
         ui_spacing   = 2;
         ui_tooltip   = "Warp space into a spiral.";
-        ui_category  = COBRA_DRO_UI_GENERAL;
+        ui_category  = COBRA_UTL_UI_GENERAL;
     >                = true;
 
     uniform float UI_OuterRing <
@@ -60,7 +54,7 @@ namespace COBRA_DRO
         ui_max       = 1.00;
         ui_step      = 0.01;
         ui_tooltip   = "The outer ring defines the texture border towards the edge of the screen.";
-        ui_category  = COBRA_DRO_UI_GENERAL;
+        ui_category  = COBRA_UTL_UI_GENERAL;
     >                = 1.00;
 
     uniform float UI_Zoom <
@@ -70,7 +64,7 @@ namespace COBRA_DRO
         ui_max       = 9.90;
         ui_step      = 0.01;
         ui_tooltip   = "Zoom into the output.";
-        ui_category  = COBRA_DRO_UI_GENERAL;
+        ui_category  = COBRA_UTL_UI_GENERAL;
     >                = 1.00;
 
     uniform float UI_Frequency <
@@ -80,7 +74,7 @@ namespace COBRA_DRO
         ui_max       = 5.00;
         ui_step      = 0.01;
         ui_tooltip   = "Defines the frequency of the recursion.";
-        ui_category  = COBRA_DRO_UI_GENERAL;
+        ui_category  = COBRA_UTL_UI_GENERAL;
     >                = 1.00;
 
     uniform float UI_X_Offset <
@@ -90,7 +84,7 @@ namespace COBRA_DRO
         ui_max       = 0.50;
         ui_step      = 0.01;
         ui_tooltip   = "Change the horizontal position of the center. Keep it at 0 to get the best results.";
-        ui_category  = COBRA_DRO_UI_GENERAL;
+        ui_category  = COBRA_UTL_UI_GENERAL;
     >                = 0.00;
 
     uniform float UI_Y_Offset <
@@ -100,7 +94,7 @@ namespace COBRA_DRO
         ui_max       = 0.50;
         ui_step      = 0.01;
         ui_tooltip   = "Change the Y position of the center. Keep it at 0 to get the best results.";
-        ui_category  = COBRA_DRO_UI_GENERAL;
+        ui_category  = COBRA_UTL_UI_GENERAL;
     >                = 0.00;
 
     uniform int UI_BufferEnd <
@@ -116,17 +110,8 @@ namespace COBRA_DRO
     //
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    // normal fmod
-    float mod(float x, float y)
-    {
-        return x - y * floor(x / y);
-    }
-
-    // return value -M_PI ~ M_PI
-    float atan2_approx(float y, float x)
-    {
-        return acos(x * rsqrt(y * y + x * x)) * (y < 0 ? -1 : 1);
-    }
+    #define COBRA_UTL_MODE 2
+    #include ".\CobraUtility.fxh"
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
     //
@@ -134,42 +119,52 @@ namespace COBRA_DRO
     //
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    void PS_Droste(float4 vpos : SV_Position, float2 texcoord : TEXCOORD, out float4 fragment : SV_Target)
+    vs2ps VS_Droste(uint id : SV_VertexID)
+    {
+        const float2 AR                 = UI_EffectType == 0 ? float2(float(BUFFER_WIDTH) / BUFFER_HEIGHT, 1.0) : float2(1.0, 1.0);
+        const float2 OFFSET             = float2(UI_X_Offset, UI_Y_Offset);
+        const float NEW_CENTER_ANGLE    = abs(OFFSET.x) + abs(OFFSET.y) < 0.01 ? 1 : (atan2_approx(-OFFSET.x * AR.x, -OFFSET.y) + M_PI) / (2 * M_PI);
+        const float INNER_RING          = 1 / exp(1 / (UI_Frequency));
+        return vs_basic(id, float2(NEW_CENTER_ANGLE, INNER_RING));
+    }
+
+    void PS_Droste(vs2ps o, out float4 fragment : SV_Target)
     {
         // transform coordinate system
-        const float2 AR     = UI_EffectType == 0 ? float2(float(BUFFER_WIDTH) / BUFFER_HEIGHT, 1.0) : float2(1.0, 1.0);
+        const float2 AR     = UI_EffectType == 0 ? float2(float(BUFFER_WIDTH) / BUFFER_HEIGHT, 1.0) : 1.0;
         const float2 OFFSET = float2(UI_X_Offset, UI_Y_Offset);
-        float2 new_pos      = (texcoord - 0.5 + OFFSET) * AR;
+        float2 new_pos      = (o.uv.xy - 0.5 + OFFSET) * AR;
 
         // calculate orientation of center and pixel
-        const float NEW_CENTER_DISTANCE = 2.0 * (0.5 - max(abs(OFFSET.x), abs(OFFSET.y)));
-        const float NEW_CENTER_ANGLE    = abs(OFFSET.x) + abs(OFFSET.y) < 0.01 ? 1 : (atan2_approx(-OFFSET.x * AR.x, -OFFSET.y) + M_PI) / (2 * M_PI);
+        const float NEW_CENTER_DISTANCE =  (1 - 2.0 * max(abs(OFFSET.x), abs(OFFSET.y)));
+        const float NEW_CENTER_ANGLE    = o.uv.z;
+
+        // calculate and normalize angle
         float angle                     = (atan2_approx(new_pos.x, new_pos.y) + M_PI) / (2 * M_PI);
-        angle                           = 1 - mod(abs(abs(angle - NEW_CENTER_ANGLE) - 0.5), 0.5) * 2;
+        float val                       = angle * UI_Spiral;
+        angle                           = 1 - fmod(abs(abs(angle - NEW_CENTER_ANGLE) - 0.5), 0.5) * 2;
 
         //smooth off-center projection
         float angle_smooth = (1 - cos(angle * angle * M_PI)) / 2;
-        float intensity    = angle_smooth + (1 - angle_smooth) * NEW_CENTER_DISTANCE;
-
-        // calculate and normalize angle
-        float val = atan2_approx(new_pos.x, new_pos.y) + M_PI;
-        val      /= 2 * M_PI;
-        val       = UI_Spiral ? val : 0;
+        float intensity    = lerp(NEW_CENTER_DISTANCE, 1, angle_smooth);
 
         // calculate distance from center
-        float cicle_dist = val + log(sqrt(new_pos.x * new_pos.x + new_pos.y * new_pos.y) / intensity * (10 - UI_Zoom)) * UI_Frequency;
-        float rect_dist  = val + log(max(abs(new_pos.x), abs(new_pos.y)) * (10 - UI_Zoom)) * UI_Frequency;
-        val              = UI_EffectType == 0 ? cicle_dist : rect_dist;
-        val              = (exp(mod(val, 1) / UI_Frequency) - 1) / (exp(1 / UI_Frequency) - 1);
+
+        float cicle_dist = sqrt(dot(new_pos,new_pos)) / intensity;
+        float rect_dist  = max(abs(new_pos.x), abs(new_pos.y));
+        float rcdist     = UI_EffectType == 0 ? cicle_dist : rect_dist;
+        rcdist           = log(rcdist * (10 - UI_Zoom)) * UI_Frequency;
+        val             += rcdist;
+        val              = (exp(fmod(val, 1) / UI_Frequency) - 1) / (rcp(o.uv.w) - 1);
 
         // normalized vector
-        float vector_length     = sqrt(new_pos.x * new_pos.x + new_pos.y * new_pos.y);
+        float vector_length     = sqrt(dot(new_pos,new_pos));
         float unit_circle_ratio = UI_EffectType == 0 ? 0.5 / vector_length : 0.5 / max(abs(new_pos.x), abs(new_pos.y));
         float2 normalized       = new_pos * unit_circle_ratio;
 
         // calculate relative position towards outer and inner ring and interpolate
-        const float INNER_RING = 1 / exp(1 / (UI_Frequency)) * UI_OuterRing;
-        float real_scale       = (1 - val) * INNER_RING + val * UI_OuterRing;
+        const float INNER_RING = o.uv.w * UI_OuterRing;
+        float real_scale       = lerp(INNER_RING, UI_OuterRing,val);
         real_scale            *= intensity;
         float2 adjusted        = normalized * real_scale / AR + 0.5 - OFFSET;
         fragment               = tex2D(ReShade::BackBuffer, adjusted);
@@ -191,7 +186,7 @@ namespace COBRA_DRO
     {
         pass Droste
         {
-            VertexShader = PostProcessVS;
+            VertexShader = VS_Droste;
             PixelShader  = PS_Droste;
         }
     }

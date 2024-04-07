@@ -13,11 +13,10 @@
 
 #pragma once
 #include "Includes/vort_Defs.fxh"
-#include "Includes/vort_Filters.fxh"
 #include "Includes/vort_Depth.fxh"
-#include "Includes/vort_DownTex.fxh"
-#include "Includes/vort_MotVectTex.fxh"
-#include "Includes/vort_LDRTex.fxh"
+#include "Includes/vort_ColorTex.fxh"
+#include "Includes/vort_BlueNoise.fxh"
+#include "Includes/vort_Motion_UI.fxh"
 
 namespace MotVect {
 
@@ -26,156 +25,167 @@ namespace MotVect {
 *******************************************************************************/
 
 #define MAX_MIP 6
-#define MIN_MIP 1
 
-#define CAT_MOT_VECT "Motion Vectors"
+#if V_MV_USE_HQ
+    #define MIN_MIP 0
+#else
+    #define MIN_MIP 1
+#endif
 
-UI_FLOAT(
-    CAT_MOT_VECT, UI_MV_WZMult, "Depth Weight",
-    "Enable Debug View and start rotating the camera\n"
-    "Increase this value if your character/weapon is being covered by color",
-    0.0, 1.0, 0.25
-)
-UI_INT(
-    CAT_MOT_VECT, UI_MV_WMMult, "Long Motion Weight",
-    "Enable Debug View and start rotating the camera\n"
-    "The more you increase this value, the less moving objects blend with surroundings.",
-    0, 20, 5
-)
+static const int block_samples = 9;
+static const float inv_block_samples = 1.0 / float(block_samples);
+static const float2 block_offs[block_samples] =
+{
+    float2(0, 0),
+    float2(0, -1), float2(0, 1), float2(-1, 0), float2(1, 0),
+    float2(-2, -2), float2(2, 2), float2(-2, 2), float2(2, -2)
+};
 
 /*******************************************************************************
     Textures, Samplers
 *******************************************************************************/
 
-texture2D CurrFeatureTexVort { TEX_SIZE(MIN_MIP) TEX_RG16 MipLevels = 1 + MAX_MIP - MIN_MIP; };
-texture2D PrevFeatureTexVort { TEX_SIZE(MIN_MIP) TEX_RG16 MipLevels = 1 + MAX_MIP - MIN_MIP; };
+// .x = curr feat .y = prev feat
+texture2D FeatureTexVort    { TEX_SIZE(MIN_MIP) TEX_RG8 MipLevels = 1 + MAX_MIP - MIN_MIP; };
+sampler2D sFeatureTexVort   { Texture = FeatureTexVort; };
 
-sampler2D sCurrFeatureTexVort { Texture = CurrFeatureTexVort; };
-sampler2D sPrevFeatureTexVort { Texture = PrevFeatureTexVort; };
+texture2D DownDepthTexVort  { TEX_SIZE(MIN_MIP) TEX_R16 MipLevels = 1 + MAX_MIP - MIN_MIP; };
+sampler2D sDownDepthTexVort { Texture = DownDepthTexVort; SAM_POINT };
+
+texture2D MotionTexVort1 { TEX_SIZE(1) TEX_RGBA16 };
+texture2D MotionTexVortA { TEX_SIZE(3) TEX_RGBA16 };
+texture2D MotionTexVortB { TEX_SIZE(3) TEX_RGBA16 };
+
+sampler2D sMotionTexVort1 { Texture = MotionTexVort1; SAM_POINT };
+sampler2D sMotionTexVortA { Texture = MotionTexVortA; SAM_POINT };
+sampler2D sMotionTexVortB { Texture = MotionTexVortB; SAM_POINT };
 
 /*******************************************************************************
     Functions
 *******************************************************************************/
 
-float2 Rotate2D(float2 v, float4 r)
-{
-    return float2(dot(v, r.xy), dot(v, r.zw));
-}
-
 float4 CalcLayer(VSOUT i, int mip, float2 total_motion)
 {
-    int feature_mip = max(0, mip - MIN_MIP);
-    float2 texelsize = BUFFER_PIXEL_SIZE * exp2(feature_mip);
-    float2 local_block[16]; // just use max size possible
-    int block_size = mip > 1 ? 4 : 2;
-    int block_area = block_size * block_size;
+    uint feature_mip = max(0, mip - MIN_MIP);
+    float2 texelsize = rcp(tex2Dsize(sFeatureTexVort, feature_mip));
 
     float2 moments_local = 0;
     float2 moments_search = 0;
-    float2 moments_cov = 0;
+    float moments_cov = 0;
 
-    //since we only use to sample the blocks now, offset by half a block so we can do it easier inline
-    i.uv -= texelsize * (block_size / 2);
-
-    [unroll]for(uint k = 0; k < block_area; k++)
+    [loop]for(uint j = 0; j < block_samples; j++)
     {
-        float2 tuv = i.uv + float2(k % block_size, k / block_size) * texelsize;
-        float2 t_local = Sample(sCurrFeatureTexVort, saturate(tuv), feature_mip).xy;
-        float2 t_search = Sample(sPrevFeatureTexVort, saturate(tuv + total_motion), feature_mip).xy;
+        float2 tuv = i.uv + block_offs[j] * texelsize;
+        float t_local = Sample(sFeatureTexVort, saturate(tuv), feature_mip).x;
+        float t_search = Sample(sFeatureTexVort, saturate(tuv + total_motion), feature_mip).y;
 
-        local_block[k] = t_local;
-
-        moments_local += t_local * t_local;
-        moments_search += t_search * t_search;
+        moments_local += float2(t_local, t_local * t_local);
+        moments_search += float2(t_search, t_search * t_search);
         moments_cov += t_local * t_search;
     }
 
-    float2 cossim = moments_cov * RSQRT(moments_local * moments_search);
-    float best_sim = saturate(min(cossim.x, cossim.y));
-    static const float max_sim = 1 - 1e-6;
+    moments_local *= inv_block_samples;
+    moments_search *= inv_block_samples;
+    moments_cov *= inv_block_samples;
 
-    float randseed = frac(GetNoise(i.uv) + INV_PHI) * DOUBLE_PI;
-    float2 randdir; sincos(randseed, randdir.x, randdir.y);
+    float best_sim = moments_cov * RSQRT(moments_local.y * moments_search.y);
+    static const float max_sim = 0.999999;
 
-    float2 local_motion = 0;
-    uint samples = 8;
+    // we use 4 samples so we will rotate by 90 degrees to make a full circle
+    // therefore we do sincos(rand * 90deg, r.x, r.y)
+    float qrand = GetR1(GetBlueNoise(i.vpos.xy).x, mip);
+    float2 randdir; sincos(qrand * HALF_PI, randdir.x, randdir.y);
+    int searches = mip > 3 ? 4 : 2;
 
-    while(samples-- > 0 && best_sim < max_sim)
+    while(searches-- > 0 && best_sim < max_sim)
     {
-        //rotate by larger golden angle
-        randdir = Rotate2D(randdir, float4(-0.7373688, 0.6754903, -0.6754903, -0.7373688));
+        float2 local_motion = 0;
+        int samples = 4;
 
-        float2 search_offset = randdir * texelsize;
-        float2 search_center = i.uv + total_motion + search_offset;
-
-        moments_search = 0;
-        moments_cov = 0;
-
-        [loop]for(uint k = 0; k < block_area; k++)
+        while(samples-- > 0 && best_sim < max_sim)
         {
-            float2 tuv = search_center + float2(k % block_size, k / block_size) * texelsize;
-            float2 t = Sample(sPrevFeatureTexVort, saturate(tuv), feature_mip).xy;
+            //rotate by 90 degrees
+            randdir = float2(randdir.y, -randdir.x);
 
-            moments_search += t * t;
-            moments_cov += t * local_block[k];
+            float2 search_offset = randdir * texelsize;
+
+            moments_search = 0;
+            moments_cov = 0;
+
+            [loop]for(uint j = 0; j < block_samples; j++)
+            {
+                float2 tuv = i.uv + block_offs[j] * texelsize;
+                float t_local = Sample(sFeatureTexVort, saturate(tuv), feature_mip).x;
+                float t_search = Sample(sFeatureTexVort, saturate(tuv + total_motion + search_offset), feature_mip).y;
+
+                moments_search += float2(t_search, t_search * t_search);
+                moments_cov += t_search * t_local;
+            }
+
+            moments_search *= inv_block_samples;
+            moments_cov *= inv_block_samples;
+
+            float sim = moments_cov * RSQRT(moments_local.y * moments_search.y);
+
+            if(sim > best_sim)
+            {
+                best_sim = sim;
+                local_motion = search_offset;
+            }
         }
 
-        cossim = moments_cov * RSQRT(moments_local * moments_search);
-        float sim = saturate(min(cossim.x, cossim.y));
-
-        if(sim < best_sim) continue;
-
-        best_sim = sim;
-        local_motion = search_offset;
+        total_motion += local_motion;
+        randdir *= 0.5;
     }
 
-    total_motion += local_motion;
-    moments_local /= block_area;
+    float similarity = 1.0 - sqrt(saturate(best_sim * 0.5 + 0.5));
 
-    float variance = dot(sqrt(abs(moments_local - (moments_local / block_area))), 1);
-
-    return float4(total_motion, variance, saturate(1.0 - acos(best_sim) / HALF_PI));
+    return float4(total_motion, similarity, 1.0);
 }
 
-float2 AtrousUpscale(VSOUT i, int mip, sampler mot_samp)
+float4 AtrousUpscale(VSOUT i, int mip, sampler mot_samp)
 {
-    float2 texelsize = rcp(tex2Dsize(mot_samp));
-    float rand = frac(GetNoise(i.uv) + (mip + MIN_MIP) * INV_PHI) * HALF_PI;
-    float2 rsc; sincos(rand, rsc.x, rsc.y);
-    float4 rotator = float4(rsc.y, rsc.x, -rsc.x, rsc.y) * 3.0;
-    float center_z = Sample(sCurrFeatureTexVort, saturate(i.uv), mip).y;
+    float2 scale = rcp(tex2Dsize(mot_samp)) * (mip >= MIN_MIP ? 5.0 : 0.75);
+    float2 rand = GetBlueNoise(i.vpos.xy + frame_count % 5).xy - 0.5;
+    float center_z = Sample(sDownDepthTexVort, i.uv, max(0, mip - MIN_MIP)).x;
+    int sample_mip = max(0, mip - MIN_MIP + 1);
 
-    float2 gbuffer_sum = 0;
-    float wsum = 1e-6;
-    int rad = floor((mip + 2) * 0.5);
+    if(mip < MIN_MIP) center_z = GetLinearizedDepth(i.uv);
 
-    [loop]for(int x = -rad; x <= rad; x++)
-    [loop]for(int y = -rad; y <= rad; y++)
+    float wsum = 0.001;
+    float4 gbuffer = 0;
+
+    // intentionally skip the center
+    [loop]for(int j = 1; j < block_samples; j++)
     {
-        float2 sample_uv = i.uv + Rotate2D(float2(x, y), rotator) * texelsize;
+        float2 sample_uv = i.uv + (block_offs[j] + rand) * scale;
         float4 sample_gbuf = Sample(mot_samp, sample_uv);
-        float sample_z = Sample(sCurrFeatureTexVort, saturate(sample_uv), mip).y;
+        float sample_z = Sample(sDownDepthTexVort, sample_uv, sample_mip).x;
 
-        // different depth
-        float wz = saturate(abs(sample_z - center_z)) * max(1.0, 200.0 * UI_MV_WZMult);
-
-        // long motion vectors
-        float wm = dot(sample_gbuf.xy, sample_gbuf.xy) * max(1.0, 200.0 * UI_MV_WMMult);
-
-        // blocks which had near 0 variance
-        float wf = saturate(1.0 - sample_gbuf.z * 128.0);
-
-        // bad block matching
-        float ws = saturate(1.0 - sample_gbuf.w);
-
-        float weight = exp2(-(wz + wm + wf + ws) * 8.0);
+        float wz = abs(center_z - sample_z) * RCP(max(center_z, sample_z)) * 4.0; // depth delta
+        float wm = length(sample_gbuf.xy) * 25.0; // long motion
+        float ws = sample_gbuf.z; // similarity
+        float weight = exp2(-(wz + wm + ws) * 4.0) + 0.001;
 
         weight *= all(saturate(sample_uv - sample_uv * sample_uv));
-        gbuffer_sum += sample_gbuf.xy * weight;
         wsum += weight;
+        gbuffer += sample_gbuf * weight;
     }
 
-    return gbuffer_sum / wsum;
+    return gbuffer / wsum;
+}
+
+float4 EstimateMotion(VSOUT i, int mip, sampler mot_samp)
+{
+    float4 motion = 0;
+
+    if(mip < MAX_MIP)
+        motion = AtrousUpscale(i, mip, mot_samp);
+
+    if(mip >= MIN_MIP)
+        motion = CalcLayer(i, mip, motion.xy);
+
+    return motion;
 }
 
 /*******************************************************************************
@@ -184,33 +194,52 @@ float2 AtrousUpscale(VSOUT i, int mip, sampler mot_samp)
 
 void PS_WriteFeature(PS_ARGS2)
 {
-    float3 color = Filter8Taps(i.uv, sLDRTexVort, MIN_MIP);
+    float3 c = SampleGammaColor(i.uv);
 
-    o.x = RGBToYCbCrLumi(color);
-    o.y = GetLinearizedDepth(i.uv);
+#if !IS_SRGB
+    float2 range = GetHDRRange();
+
+    c = clamp(c, 0.0, range.y) / range.y;
+#endif
+
+    o.xy = dot(c, float3(0.299, 0.587, 0.114)).xx;
 }
 
-void PS_Motion6(PS_ARGS4) { o = CalcLayer(i, 6, Sample(MOT_VECT_SAMP, i.uv) * 0.95); } // no upscaling for MAX_MIP
-void PS_Motion5(PS_ARGS4) { o = CalcLayer(i, 5, AtrousUpscale(i, 5, sDownTexVort6)); }
-void PS_Motion4(PS_ARGS4) { o = CalcLayer(i, 4, AtrousUpscale(i, 4, sDownTexVort5)); }
-void PS_Motion3(PS_ARGS4) { o = CalcLayer(i, 3, AtrousUpscale(i, 3, sDownTexVort4)); }
-void PS_Motion2(PS_ARGS4) { o = CalcLayer(i, 2, AtrousUpscale(i, 2, sDownTexVort3)); }
-void PS_Motion1(PS_ARGS4) { o = CalcLayer(i, 1, AtrousUpscale(i, 1, sDownTexVort2)); }
-void PS_Motion0(PS_ARGS2) { o = AtrousUpscale(i, 0, sDownTexVort1); } // only upscale for < MIN_MIP
+void PS_WriteDepth(PS_ARGS1) { o = GetLinearizedDepth(i.uv); }
+
+void PS_Motion6(PS_ARGS4) { o = EstimateMotion(i, 6, sMotionTexVortB); } // samp doesn't matter here
+void PS_Motion5(PS_ARGS4) { o = EstimateMotion(i, 5, sMotionTexVortB); }
+void PS_Motion4(PS_ARGS4) { o = EstimateMotion(i, 4, sMotionTexVortB); }
+void PS_Motion3(PS_ARGS4) { o = EstimateMotion(i, 3, sMotionTexVortB); }
+void PS_Motion2(PS_ARGS4) { o = EstimateMotion(i, 2, sMotionTexVortB); }
+void PS_Motion1(PS_ARGS4) { o = EstimateMotion(i, 1, sMotionTexVortB); }
+void PS_Motion0(PS_ARGS4) { o = EstimateMotion(i, 0, sMotionTexVort1); }
+
+void PS_Filter5(PS_ARGS4) { o = AtrousUpscale(i, 5, sMotionTexVortA); }
+void PS_Filter4(PS_ARGS4) { o = AtrousUpscale(i, 4, sMotionTexVortA); }
+void PS_Filter3(PS_ARGS4) { o = AtrousUpscale(i, 3, sMotionTexVortA); }
+void PS_Filter2(PS_ARGS4) { o = AtrousUpscale(i, 2, sMotionTexVortA); }
+void PS_Filter1(PS_ARGS4) { o = AtrousUpscale(i, 1, sMotionTexVortA); }
 
 /*******************************************************************************
     Passes
 *******************************************************************************/
 
-#define PASS_MOT_VECT \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_WriteFeature; RenderTarget = MotVect::CurrFeatureTexVort; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion6; RenderTarget = DownTexVort6; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion5; RenderTarget = DownTexVort5; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion4; RenderTarget = DownTexVort4; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion3; RenderTarget = DownTexVort3; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion2; RenderTarget = DownTexVort2; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion1; RenderTarget = DownTexVort1; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion0; RenderTarget = MOT_VECT_TEX; } \
-    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_WriteFeature; RenderTarget = MotVect::PrevFeatureTexVort; }
+#define PASS_MV \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_WriteFeature; RenderTarget = MotVect::FeatureTexVort; RenderTargetWriteMask = 1; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_WriteDepth;   RenderTarget = MotVect::DownDepthTexVort; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion6;      RenderTarget = MotVect::MotionTexVortA; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Filter5;      RenderTarget = MotVect::MotionTexVortB; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion5;      RenderTarget = MotVect::MotionTexVortA; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Filter4;      RenderTarget = MotVect::MotionTexVortB; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion4;      RenderTarget = MotVect::MotionTexVortA; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Filter3;      RenderTarget = MotVect::MotionTexVortB; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion3;      RenderTarget = MotVect::MotionTexVortA; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Filter2;      RenderTarget = MotVect::MotionTexVortB; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion2;      RenderTarget = MotVect::MotionTexVortA; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Filter1;      RenderTarget = MotVect::MotionTexVortB; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion1;      RenderTarget = MotVect::MotionTexVort1; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_Motion0;      RenderTarget = MV_TEX; } \
+    pass { VertexShader = PostProcessVS; PixelShader = MotVect::PS_WriteFeature; RenderTarget = MotVect::FeatureTexVort; RenderTargetWriteMask = 2; }
 
 } // namespace end

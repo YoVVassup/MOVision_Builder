@@ -32,10 +32,10 @@
 
 #define PHI (1.6180339887498)
 #define INV_PHI (0.6180339887498)
-#define EPSILON (1e-7)
-#define PI (3.1415927)
-#define HALF_PI (1.5707963)
-#define DOUBLE_PI (6.2831853)
+#define EPSILON (1e-5)
+#define PI (3.14159265359)
+#define HALF_PI (1.57079632679)
+#define DOUBLE_PI (6.28318530718)
 #define FLOAT_MAX (65504.0)
 #define FLOAT_MIN (-65504.0)
 #define IS_SRGB (BUFFER_COLOR_SPACE == 1 || BUFFER_COLOR_SPACE == 0)
@@ -44,23 +44,24 @@
 #define IS_HDR_HLG (BUFFER_COLOR_SPACE == 4)
 #define IS_8BIT (BUFFER_COLOR_BIT_DEPTH == 8)
 #define IS_DX9 (__RENDERER__ < 0xA000)
+#define CAN_COMPUTE (__RENDERER__ >= 0xB000)
 
-struct VSOUT { float4 vpos : SV_POSITION; float2 uv : TEXCOORD0; };
-struct PSOUT2 { float4 t0 : SV_Target0, t1 : SV_Target1; };
+static const float A_THIRD = 1.0 / 3.0;
 
 // safer versions of built-in functions
-float RCP(float x)   { x = rcp(x == 0 ? EPSILON : x); return x; }
-float2 RCP(float2 x) { x = rcp(x == 0 ? EPSILON : x); return x; }
-float3 RCP(float3 x) { x = rcp(x == 0 ? EPSILON : x); return x; }
-float4 RCP(float4 x) { x = rcp(x == 0 ? EPSILON : x); return x; }
-
+#define RCP(_x) (rcp(max(EPSILON, (_x))))
+#define CEIL_DIV(x, y) ((((x) - 1) / (y)) + 1)
 #define POW(_b, _e) (pow(max(EPSILON, (_b)), (_e)))
 #define RSQRT(_x) (RCP(sqrt(_x)))
-#define NORMALIZE(_x) ((_x) * RSQRT(_x))
+#define NORM(_x) ((_x) * RSQRT(dot((_x), (_x))))
 #define LOG(_x) (log(max(EPSILON, (_x))))
 #define LOG2(_x) (log2(max(EPSILON, (_x))))
 #define LOG10(_x) (log10(max(EPSILON, (_x))))
 #define exp10(_x) (exp2(3.3219281 * (_x)))
+
+// call TO_STR(ANOTHER_MACRO)
+#define _TO_STR(x) #x
+#define TO_STR(x) _TO_STR(x)
 
 #if !defined(__RESHADE__) || __RESHADE__ < 30000
     #error "ReShade 3.0+ is required to use this header file"
@@ -120,12 +121,20 @@ float4 RCP(float4 x) { x = rcp(x == 0 ? EPSILON : x); return x; }
     static const float2 ScreenSize = float2(BUFFER_WIDTH, BUFFER_HEIGHT);
 #endif
 
-uniform int FRAME_COUNT < source = "framecount"; >;
-uniform float FRAME_TIME < source = "frametime"; >;
+uniform uint frame_count < source = "framecount"; >;
+uniform float frame_time < source = "frametime"; >;
+uniform float timer < source = "timer"; >;
 
-// works since REST addon v1.2.1
 #ifndef V_USE_HW_LIN
     #define V_USE_HW_LIN 0
+#endif
+
+#ifndef V_HAS_DEPTH
+    #define V_HAS_DEPTH 1
+#endif
+
+#ifndef V_USE_ACES
+    #define V_USE_ACES 0
 #endif
 
 #if !IS_SRGB
@@ -137,6 +146,7 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_FLOAT(_category, _name, _label, _descr, _min, _max, _default) \
     uniform float _name < \
         ui_category = _category; \
+        ui_category_closed = true; \
         ui_label = _label; \
         ui_min = _min; \
         ui_max = _max; \
@@ -148,6 +158,31 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_FLOAT2(_category, _name, _label, _descr, _min, _max, _default) \
     uniform float2 _name < \
         ui_category = _category; \
+        ui_category_closed = true; \
+        ui_label = _label; \
+        ui_min = _min; \
+        ui_max = _max; \
+        ui_tooltip = _descr; \
+        ui_step = 0.001; \
+        ui_type = "slider"; \
+    > = _default;
+
+#define UI_FLOAT3(_category, _name, _label, _descr, _min, _max, _default) \
+    uniform float3 _name < \
+        ui_category = _category; \
+        ui_category_closed = true; \
+        ui_label = _label; \
+        ui_min = _min; \
+        ui_max = _max; \
+        ui_tooltip = _descr; \
+        ui_step = 0.001; \
+        ui_type = "slider"; \
+    > = _default;
+
+#define UI_FLOAT4(_category, _name, _label, _descr, _min, _max, _default) \
+    uniform float4 _name < \
+        ui_category = _category; \
+        ui_category_closed = true; \
         ui_label = _label; \
         ui_min = _min; \
         ui_max = _max; \
@@ -159,6 +194,7 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_INT(_category, _name, _label, _descr, _min, _max, _default) \
     uniform int _name < \
         ui_category = _category; \
+        ui_category_closed = true; \
         ui_label = _label; \
         ui_min = _min; \
         ui_max = _max; \
@@ -170,6 +206,7 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_INT2(_category, _name, _label, _descr, _min, _max, _default) \
     uniform int2 _name < \
         ui_category = _category; \
+        ui_category_closed = true; \
         ui_label = _label; \
         ui_min = _min; \
         ui_max = _max; \
@@ -181,6 +218,7 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_BOOL(_category, _name, _label, _descr, _default) \
     uniform bool _name < \
         ui_category = _category; \
+        ui_category_closed = true; \
         ui_label = _label; \
         ui_tooltip = _descr; \
         ui_type = "radio"; \
@@ -189,6 +227,7 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_LIST(_category, _name, _label, _descr, _items, _default) \
     uniform int _name < \
         ui_category = _category; \
+        ui_category_closed = true; \
         ui_label = _label; \
         ui_items = _items; \
         ui_tooltip = _descr; \
@@ -198,6 +237,7 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_COLOR(_category, _name, _label, _descr, _default) \
     uniform float3 _name < \
         ui_category = _category; \
+        ui_category_closed = true; \
         ui_label = _label; \
         ui_min = 0.0; \
         ui_max = 1.0; \
@@ -210,6 +250,7 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define UI_HELP(_name, _descr) \
     uniform int _name < \
         ui_category = "Preprocessor Help"; \
+        ui_category_closed = true; \
         ui_label = " "; \
         ui_text = _descr; \
         ui_type = "radio"; \
@@ -219,10 +260,13 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define TEX_RGBA8 Format = RGBA8;
 #define TEX_RGBA16 Format = RGBA16F;
 #define TEX_RGBA32 Format = RGBA32F;
-#define TEX_RG16 Format = RG16F;
-#define TEX_RG32 Format = RG32F;
+#define TEX_RGB10A2 Format = RGB10A2;
+#define TEX_R8 Format = R8;
+#define TEX_RG8 Format = RG8;
 #define TEX_R16 Format = R16F;
 #define TEX_R32 Format = R32F;
+#define TEX_RG16 Format = RG16F;
+#define TEX_RG32 Format = RG32F;
 
 #define SAM_POINT  MagFilter = POINT; MinFilter = POINT; MipFilter = POINT;
 #define SAM_MIRROR AddressU = MIRROR; AddressV = MIRROR;
@@ -230,9 +274,21 @@ uniform float FRAME_TIME < source = "frametime"; >;
 #define SAM_REPEAT AddressU = REPEAT; AddressV = REPEAT;
 #define SAM_BORDER AddressU = BORDER; AddressV = BORDER;
 
+struct VSOUT { float4 vpos : SV_POSITION; float2 uv : TEXCOORD0; };
+struct PSOUT2 { float4 t0 : SV_Target0, t1 : SV_Target1; };
+struct CSIN {
+    uint3 id : SV_DispatchThreadID; // range [0 .. groups * threads).xyz
+    uint3 gid : SV_GroupID;         // range [0 .. groups).xyz
+    uint3 tid : SV_GroupThreadID;   // range [0 .. threads).xyz
+    uint gidx : SV_GroupIndex;      // range [0 .. total_threads_amount)
+};
+
+#define PS_ARGS1 in VSOUT i, out float  o : SV_Target0
 #define PS_ARGS2 in VSOUT i, out float2 o : SV_Target0
 #define PS_ARGS3 in VSOUT i, out float3 o : SV_Target0
 #define PS_ARGS4 in VSOUT i, out float4 o : SV_Target0
+
+#define CS_ARGS in CSIN i
 
 #define VS_ARGS \
     in uint id : SV_VertexID, out float4 vpos : SV_Position, out float2 uv : TEXCOORD
@@ -241,12 +297,14 @@ uniform float FRAME_TIME < source = "frametime"; >;
     vpos = float4(uv * float2(2.0, -2.0) + float2(-1.0, 1.0), 0.0, 1.0);
 
 #define VS_SMALL_TRIANGLE(_num) \
-    float k = RCP(1 << _num); \
+    float k = rcp(1 << _num); \
     uv.x = (id == 2) ? k * 2.0 : 0.0; \
     uv.y = (id == 1) ? 1.0 : (1 - k); \
     VS_VPOS_FROM_UV
 
-#define SRGB_WRITE_ENABLE SRGBWriteEnable = IS_SRGB && IS_8BIT && V_USE_HW_LIN;
+#define HW_LIN_IS_USED IS_SRGB && IS_8BIT && V_USE_HW_LIN
+#define SRGB_READ_ENABLE SRGBTexture = HW_LIN_IS_USED;
+#define SRGB_WRITE_ENABLE SRGBWriteEnable = HW_LIN_IS_USED;
 
 /*******************************************************************************
     Functions
@@ -261,9 +319,14 @@ void PostProcessVS(in uint id : SV_VertexID, out float4 position : SV_Position, 
 }
 
 // to be used instead of tex2D and tex2Dlod
-float4 Sample(sampler samp, float2 uv) { return tex2Dlod(samp, float4(uv, 0, 0)); }
-float4 Sample(sampler samp, float2 uv, int mip) { return tex2Dlod(samp, float4(uv, 0, mip)); }
+float4 Sample(sampler samp, float2 uv)                     { return tex2Dlod(samp, float4(uv, 0, 0)); }
+float4 Sample(sampler samp, float2 uv, int mip)            { return tex2Dlod(samp, float4(uv, 0, mip)); }
+float4 Sample(sampler samp, float2 uv, int2 offs)          { return tex2Dlod(samp, float4(uv, 0, 0), offs); }
 float4 Sample(sampler samp, float2 uv, int mip, int2 offs) { return tex2Dlod(samp, float4(uv, 0, mip), offs); }
+
+// to be used instead of tex2Dfetch
+float4 Fetch(sampler samp, float2 pos)          { return tex2Dfetch(samp, pos); }
+float4 Fetch(sampler samp, float2 pos, int mip) { return tex2Dfetch(samp, pos, mip); }
 
 float3 SRGBToLin(float3 c)
 {
@@ -346,6 +409,17 @@ float3 ApplyGammaCurve(float3 c)
     c = LinToPQ(c, V_HDR_WHITE_LVL);
 #elif IS_HDR_HLG
     c = LinToHLG(c, V_HDR_WHITE_LVL);
+#endif
+
+    return c;
+}
+
+float3 ForceGammaCurve(float3 c)
+{
+#if IS_SRGB
+    c = LinToSRGB(c);
+#else
+    c = ApplyGammaCurve(c);
 #endif
 
     return c;
@@ -488,17 +562,142 @@ float3 LABToRGB(float3 c)
     return XYZToRGB(LABToXYZ(c));
 }
 
+float3 OverlayBlend(float3 a, float3 b)
+{
+    return a < 0.5 ? (2.0 * a * b) : (1.0 - 2.0 * (1.0 - a) * (1.0 - b));
+}
+
+float3 SoftLightBlend(float3 a, float3 b)
+{
+    // pegtop version
+    return (1.0 - 2.0 * b) * a * a + 2.0 * b * a;
+}
+
+float Max2(float2 f) { return max(f.x, f.y); }
+float Max3(float3 f) { return max(f.x, max(f.y, f.z)); }
 float Max3(float a, float b, float c) { return max(a, max(b, c)); }
 float2 Max3(float2 a, float2 b, float2 c) { return max(a, max(b, c)); }
 float3 Max3(float3 a, float3 b, float3 c) { return max(a, max(b, c)); }
 float4 Max3(float4 a, float4 b, float4 c) { return max(a, max(b, c)); }
 
+float Min2(float2 f) { return min(f.x, f.y); }
+float Min3(float3 f) { return min(f.x, min(f.y, f.z)); }
 float Min3(float a, float b, float c) { return min(a, min(b, c)); }
 float2 Min3(float2 a, float2 b, float2 c) { return min(a, min(b, c)); }
 float3 Min3(float3 a, float3 b, float3 c) { return min(a, min(b, c)); }
 float4 Min3(float4 a, float4 b, float4 c) { return min(a, min(b, c)); }
 
-float GetNoise(float2 co)
+// interleaved gradiant noise from:
+// http://www.iryoku.com/downloads/Next-Generation-Post-Processing-in-Call-of-Duty-Advanced-Warfare-v18.pptx
+float GetGradNoise(float2 pos)
 {
-    return frac(sin(dot(co, float2(12.9898, 78.233))) * 43758.5453);
+    return frac(52.9829189 * frac(dot(pos, float2(0.06711056, 0.00583715))));
+}
+
+float3 GetWhiteNoise(float2 vpos)
+{
+    float seed = timer * 0.001;
+    float n = frac(tan(length(vpos) * seed) * vpos.x);
+
+    // tan can produce NaNs at certain inputs
+    n = isnan(n) ? 0.0 : n;
+
+    return float3(n, frac(n + 0.1), frac(n + 0.3));
+}
+
+float Halton1(uint i, uint b)
+{
+    float f = 1.0;
+    float r = 0.0;
+
+    while(i > 0)
+    {
+        f /= float(b);
+        r += f * float(i % b);
+        i = uint(floor(float(i) / float(b)));
+    }
+
+    return r;
+}
+
+float2 Halton2(uint seed)
+{
+    return float2(Halton1(seed, 2), Halton1(seed, 3));
+}
+
+// quasirandom showcased in https://www.shadertoy.com/view/mts3zN
+// 0.38196601125 = 1 - (1 / PHI) = 2.0 - PHI
+float  GetR1(float seed,  float idx) { return frac(seed + float(idx) * 0.38196601125); }
+float2 GetR2(float2 seed, float idx) { return frac(seed + float(idx) * float2(0.245122333753, 0.430159709002)); }
+float3 GetR3(float3 seed, float idx) { return frac(seed + float(idx) * float3(0.180827486604, 0.328956393296, 0.450299522098)); }
+
+// bicubic sampling using fewer taps
+float4 SampleBicubic(sampler2D lin_samp, float2 uv)
+{
+    float2 tex_size = tex2Dsize(lin_samp);
+    float2 pix_size = rcp(tex_size);
+
+    float2 sample_pos = uv * tex_size;
+    float2 center_pos = floor(sample_pos - 0.5) + 0.5;
+    float2 f = sample_pos - center_pos;
+    float2 f2 = f * f;
+    float2 f3 = f2 * f;
+
+    float2 w0 = f2 - 0.5 * (f3 + f);
+    float2 w1 = 1.5 * f3 - 2.5 * f2 + 1.0;
+    float2 w3 = 0.5 * (f3 - f2);
+    float2 w2 = 1 - w0 - w1 - w3;
+    float2 w12 = w1 + w2;
+
+    float2 tc0 = (center_pos - 1.0) * pix_size;
+    float2 tc3 = (center_pos + 2.0) * pix_size;
+    float2 tc12 = (center_pos + w2 / w12) * pix_size;
+
+    float4 A = Sample(lin_samp, float2(tc12.x, tc0.y));
+    float4 B = Sample(lin_samp, float2(tc0.x, tc12.y));
+    float4 C = Sample(lin_samp, float2(tc12.x,  tc12.y));
+    float4 D = Sample(lin_samp, float2(tc3.x, tc12.y));
+    float4 E = Sample(lin_samp, float2(tc12.x, tc3.y));
+
+    float4 color = (0.5 * (A + B) * w0.x + A * w12.x + 0.5 * (A + B) * w3.x) * w0.y +
+                   (B * w0.x + C * w12.x + D * w3.x) * w12.y +
+                   (0.5 * (B + E) * w0.x + E * w12.x + 0.5 * (D + E) * w3.x) * w3.y;
+
+    return color;
+}
+
+float Dither(float2 vpos, float scale)
+{
+    float2 s = float2(uint2(vpos) % 2) * 2.0 - 1.0;
+
+    return scale * s.x * s.y;
+}
+
+float2 GetHDRRange()
+{
+#if IS_SRGB && V_USE_ACES
+    return float2(FLOAT_MIN, FLOAT_MAX);
+#elif IS_SRGB
+    return float2(0.0, FLOAT_MAX);
+#elif IS_SCRGB
+    return float2(-0.5, 10000.0 / V_HDR_WHITE_LVL);
+#elif IS_HDR_PQ
+    return float2(0.0, 10000.0 / V_HDR_WHITE_LVL);
+#elif IS_HDR_HLG
+    return float2(0.0, 1000.0 / V_HDR_WHITE_LVL);
+#else
+    return float2(0.0, 1.0);
+#endif
+}
+
+float4 GetRotator(float r)
+{
+    float2 sc; sincos(r, sc.x, sc.y);
+
+    return float4(sc.y, sc.x, -sc.x, sc.y);
+}
+
+float2 Rotate(float2 v, float4 rot)
+{
+    return float2(dot(v, rot.xy), dot(v, rot.zw));
 }

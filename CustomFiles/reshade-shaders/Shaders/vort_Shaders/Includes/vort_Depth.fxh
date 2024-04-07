@@ -2,10 +2,13 @@
 #include "Includes/vort_Defs.fxh"
 
 texture2D DepthTexVort : DEPTH;
-sampler2D sDepthTexVort { Texture = DepthTexVort; };
+sampler2D sDepthTexVort { Texture = DepthTexVort; SAM_POINT };
 
 float GetLinearizedDepth(float2 texcoord)
 {
+#if !V_HAS_DEPTH
+    return 0.5;
+#else
 #if RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN
     texcoord.y = 1.0 - texcoord.y;
 #endif
@@ -33,7 +36,8 @@ float GetLinearizedDepth(float2 texcoord)
     static const float N = 1.0;
     depth /= RESHADE_DEPTH_LINEARIZATION_FAR_PLANE - depth * (RESHADE_DEPTH_LINEARIZATION_FAR_PLANE - N);
 
-    return depth;
+    return saturate(depth);
+#endif
 }
 
 float3 GetScreenSpaceNormal(float2 uv)
@@ -47,5 +51,5 @@ float3 GetScreenSpaceNormal(float2 uv)
     float3 vertNorth = float3(posNorth - 0.5, 1) * GetLinearizedDepth(posNorth);
     float3 vertEast = float3(posEast - 0.5, 1) * GetLinearizedDepth(posEast);
 
-    return NORMALIZE(cross(vertCenter - vertNorth, vertCenter - vertEast)) * 0.5 + 0.5;
+    return NORM(cross(vertCenter - vertNorth, vertCenter - vertEast)) * 0.5 + 0.5;
 }

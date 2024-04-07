@@ -24,12 +24,13 @@
     DEALINGS IN THE SOFTWARE.
 *******************************************************************************/
 
-/* TODO:
+/*
+
+- MLUT .png and settings generated with: https://github.com/etra0/lutdinho
+
 - add more tonemappers:
     Agx -> https://github.com/MrLixm/AgXc/tree/main/reshade
     Tony McMapface -> https://github.com/h3r2tic/tony-mc-mapface/tree/main
-
-- Move the inverse tonemap, tonemap and color grading to a LUTs
 
 - Useful links for applying LUTs:
     https://www.lightillusion.com/what_are_luts.html
@@ -43,6 +44,7 @@
     https://opencolorio.readthedocs.io/en/latest/guides/using_ocio/using_ocio.html
     https://opencolorio.readthedocs.io/en/latest/tutorials/baking_luts.html
     https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Compositing+with+ACES.html
+
 */
 
 #pragma once
@@ -50,11 +52,15 @@
 #include "Includes/vort_HDR_UI.fxh"
 #include "Includes/vort_Depth.fxh"
 #include "Includes/vort_Filters.fxh"
-#include "Includes/vort_LDRTex.fxh"
+#include "Includes/vort_ColorTex.fxh"
 #include "Includes/vort_HDRTexA.fxh"
 #include "Includes/vort_HDRTexB.fxh"
-#include "Includes/vort_ExpTex.fxh"
-#include "Includes/vort_ACES.fxh"
+#include "Includes/vort_Tonemap.fxh"
+#include "Includes/vort_OKColors.fxh"
+
+#if IS_SRGB && V_USE_ACES
+    #include "Includes/vort_ACES.fxh"
+#endif
 
 namespace ColorChanges {
 
@@ -70,36 +76,10 @@ namespace ColorChanges {
     #define CC_IN_SAMP sHDRTexVortA
 #endif
 
-#define USE_ACES IS_SRGB && V_USE_TONEMAP == 1
-#define USE_LOTTES IS_SRGB && V_USE_TONEMAP == 2
-
-#if USE_ACES
-    #define LINEAR_MIN FLOAT_MIN
-    #define LINEAR_MAX FLOAT_MAX
-#elif USE_LOTTES
-    #define LINEAR_MIN 0.0
-    #define LINEAR_MAX FLOAT_MAX
-#elif IS_SRGB
-    #define LINEAR_MIN 0.0
-    #define LINEAR_MAX 1.0
-#elif IS_SCRGB
-    #define LINEAR_MIN -0.5
-    #define LINEAR_MAX (1e4 / V_HDR_WHITE_LVL)
-#elif IS_HDR_PQ
-    #define LINEAR_MIN 0.0
-    #define LINEAR_MAX (1e4 / V_HDR_WHITE_LVL)
-#elif IS_HDR_HLG
-    #define LINEAR_MIN 0.0
-    #define LINEAR_MAX (1e3 / V_HDR_WHITE_LVL)
-#else
-    #define LINEAR_MIN 0.0
-    #define LINEAR_MAX 1.0
-#endif
-
-#if USE_ACES
+#if IS_SRGB && V_USE_ACES
     #define TO_LOG_CS(_x) ACEScgToACEScct(_x)
     #define TO_LINEAR_CS(_x) ACEScctToACEScg(_x)
-    #define GET_LUMI(_x) RGBToACESLumi(_x)
+    #define GET_LUMI(_x) ACESToLumi(_x)
     #define LINEAR_MID_GRAY 0.18
     #define LOG_MID_GRAY ACES_LOG_MID_GRAY
 #else
@@ -110,10 +90,41 @@ namespace ColorChanges {
     #define LOG_MID_GRAY 0.18
 #endif
 
+#define MLUT_TileSizeXY 33
+#define MLUT_TileAmount 33
+#define MLUT_LutAmount 99
+
+/*******************************************************************************
+    Textures, Samplers
+*******************************************************************************/
+
+#if V_ENABLE_LUT
+    texture MLUTTexVort <source = "vort_MLUT.png";>
+    { Width = MLUT_TileSizeXY * MLUT_TileAmount; Height = MLUT_TileSizeXY * MLUT_LutAmount; TEX_RGBA8 };
+    sampler sMLUTTexVort { Texture = MLUTTexVort; };
+#endif
+
 /*******************************************************************************
     Functions
 *******************************************************************************/
 
+#if V_ENABLE_SHARPEN
+float3 ApplySharpen(float3 c, float2 uv)
+{
+    float3 blurred = Filter13Taps(CC_IN_SAMP, uv, 0).rgb;
+    float3 sharp = GET_LUMI(c - blurred);
+    float depth = GetLinearizedDepth(uv);
+    float limit = abs(dot(sharp, A_THIRD));
+
+    sharp = sharp * UI_CC_SharpenStrength * (1.0 - depth) * (limit < UI_CC_SharpenLimit);
+
+    if (UI_CC_ShowSharpening) return sharp;
+
+    return c + sharp;
+}
+#endif
+
+#if V_ENABLE_COLOR_GRADING
 float3 ChangeWhiteBalance(float3 col, float temp, float tint) {
     static const float3x3 LIN_2_LMS_MAT = float3x3(
         3.90405e-1, 5.49941e-1, 8.92632e-3,
@@ -135,61 +146,22 @@ float3 ChangeWhiteBalance(float3 col, float temp, float tint) {
     static const float3 w1 = float3(0.949237, 1.03542, 1.08728);
 
     float3 w2 = float3(
-        0.7328 * X + 0.4296 - 0.1624 * Z,
-       -0.7036 * X + 1.6975 + 0.0061 * Z,
-        0.0030 * X + 0.0136 + 0.9834 * Z
+         0.7328 * X + 0.4296 - 0.1624 * Z,
+        -0.7036 * X + 1.6975 + 0.0061 * Z,
+         0.0030 * X + 0.0136 + 0.9834 * Z
     );
 
     lms *= w1 / w2;
 
     static const float3x3 LMS_2_LIN_MAT = float3x3(
-        2.85847e+0, -1.62879e+0, -2.48910e-2,
-       -2.10182e-1,  1.15820e+0,  3.24281e-4,
-       -4.18120e-2, -1.18169e-1,  1.06867e+0
+         2.85847e+0, -1.62879e+0, -2.48910e-2,
+        -2.10182e-1,  1.15820e+0,  3.24281e-4,
+        -4.18120e-2, -1.18169e-1,  1.06867e+0
     );
 
     return mul(LMS_2_LIN_MAT, lms);
 }
 
-float3 ApplyLottes(float3 c)
-{
-    float k = max(1.001, UI_CC_LottesMod);
-    float3 v = Max3(c.r, c.g, c.b);
-
-    return k * c * RCP(1.0 + v);
-}
-
-float3 InverseLottes(float3 c)
-{
-    float k = max(1.001, UI_CC_LottesMod);
-    float3 v = Max3(c.r, c.g, c.b);
-
-    return c * RCP(k - v);
-}
-
-#if V_ENABLE_SHARPEN
-float3 ApplySharpen(float3 c, sampler samp, float2 uv)
-{
-    float3 blurred = Filter9Taps(uv, samp, 0);
-    float3 sharp = RGBToYCbCrLumi(c - blurred);
-    float depth = GetLinearizedDepth(uv);
-    float limit = abs(dot(sharp, 0.3333));
-
-    sharp = sharp * UI_CC_SharpenStrength * (1 - depth) * (limit < UI_CC_SharpenLimit);
-
-    if (UI_CC_ShowSharpening) return sharp;
-
-    // apply sharpening and unsharpening
-    if(depth < UI_CC_SharpenSwitchPoint)
-        c = c + sharp;
-    else
-        c = lerp(c, blurred, depth * UI_CC_UnsharpenStrength);
-
-    return c;
-}
-#endif
-
-#if V_ENABLE_COLOR_GRADING
 float3 ApplyColorGrading(float3 c)
 {
     // white balance
@@ -198,16 +170,16 @@ float3 ApplyColorGrading(float3 c)
     // color filter
     c *= UI_CC_ColorFilter;
 
-    // saturation
-    float lumi = GET_LUMI(c);
-    c = lerp(lumi.xxx, c, UI_CC_Saturation + 1.0);
-
     // RGB(channel) mixer
     c = float3(
         dot(c.rgb, UI_CC_RGBMixerRed.rgb * 4.0 - 2.0),
         dot(c.rgb, UI_CC_RGBMixerGreen.rgb * 4.0 - 2.0),
         dot(c.rgb, UI_CC_RGBMixerBlue.rgb * 4.0 - 2.0)
     );
+
+    // saturation
+    float lumi = GET_LUMI(c);
+    c = lerp(lumi.xxx, c, UI_CC_Saturation + 1.0);
 
     // Hue Shift
     float3 hsv = RGBToHSV(c);
@@ -221,7 +193,10 @@ float3 ApplyColorGrading(float3 c)
     float contrast = UI_CC_Contrast + 1.0;
     c = lerp(LOG_MID_GRAY.xxx, c, contrast.xxx);
 
-    // Shadows,Midtones,Highlights,Offset in log space
+    // end grading in log space
+    c = TO_LINEAR_CS(c);
+
+    // Shadows,Midtones,Highlights,Offset in linear space
     // My calculations were done in desmos: https://www.desmos.com/calculator/vvur0dzia9
 
     // affect the color and luminance seperately
@@ -247,103 +222,180 @@ float3 ApplyColorGrading(float3 c)
     c = c + offset;
     c = (c >= 0 && c <= 1.0) ? POW(c, midtones) : c;
 
-    // end grading in log space
-    c = TO_LINEAR_CS(c);
-
     return c;
 }
 #endif
 
-float3 ApplyStartProcessing(float3 c)
+#if V_ENABLE_LUT
+float3 ApplyLUT(float3 c)
 {
-    c = ApplyLinearCurve(c);
+    float3 orig_c = c;
 
-#if IS_SRGB
-    c = saturate(c);
+    c = LinToSRGB(c);
 
-    #if USE_ACES
-        // instead of inversing ACES,
-        // use simple Lottes inverse tonemap
-        // and convert to AP1(ACEScg)
-        c = InverseLottes(c);
-        c = RGBToACEScg(c);
-    #elif USE_LOTTES
-        c = InverseLottes(c);
-    #endif
-#endif
+    float2 lut_ps = rcp(float2(MLUT_TileSizeXY * MLUT_TileAmount, MLUT_TileSizeXY));
+    float3 lut_uv = c * (MLUT_TileSizeXY - 1.0);
+    float lerpfact = frac(lut_uv.z);
+
+    lut_uv.xy = (lut_uv.xy + 0.5) * lut_ps;
+    lut_uv.x = lut_uv.x + (lut_uv.z - lerpfact) * lut_ps.y;
+    lut_uv.y = (lut_uv.y / MLUT_LutAmount) + (float(UI_CC_LUTNum) / MLUT_LutAmount);
+
+    c = lerp(
+        Sample(sMLUTTexVort, lut_uv.xy).rgb,
+        Sample(sMLUTTexVort, float2(lut_uv.x + lut_ps.y, lut_uv.y)).rgb,
+        lerpfact
+    );
+
+    c = SRGBToLin(c);
+
+    float3 factor = float3(UI_CC_LUTLuma, UI_CC_LUTChroma, UI_CC_LUTChroma);
+
+    orig_c = OKColors::RGBToOKLAB(orig_c);
+    c = OKColors::RGBToOKLAB(c);
+
+    c = OKColors::OKLABToRGB(lerp(orig_c, c, factor));
 
     return c;
 }
+#endif
 
-float3 ApplyEndProcessing(float3 c)
+#if V_ENABLE_PALETTE
+float3 ApplyPalette(float3 c, float2 vpos)
 {
-#if V_SHOW_ONLY_HDR_COLORS
-    c = !all(saturate(c - c * c)) ? 1.0 : 0.0;
-#elif IS_SRGB
-    #if V_USE_AUTO_EXPOSURE
-        float avg_for_exp = Sample(sExpTexVort, float2(0.5, 0.5), 8).x;
+    // OKHSV color space info
+    // https://bottosson.github.io/posts/colorpicker
 
-        c = c >= 0 ? (c * LINEAR_MID_GRAY * RCP(avg_for_exp)) : c;
-    #else
-        c = c >= 0 ? c * exp2(UI_CC_ManualExp) : c;
-    #endif
+    float hue = UI_CPS_HSV.x;
+    float sat_base = lerp(0.6, 1.0, UI_CPS_HSV.y);
+    float val_base = lerp(0.2, 0.6, UI_CPS_HSV.z);
 
-    // clamp before tonemapping
-    c = clamp(c, LINEAR_MIN, LINEAR_MAX);
+    static const float contrast = 0.4;
+    static const int max_idx = 7;
+    static const int mid_idx = 4;
+    float3 colors[8];
 
-    #if USE_ACES
-        c = ApplyACESFitted(c);
-    #elif USE_LOTTES
-        c = ApplyLottes(c);
-    #endif
+    // default is analogous
+    int hue_switch = 99;
+    float hue_offset = 0.0;
 
-    c = saturate(c);
-#endif
+    // complementary
+    if(UI_CPS_Harmony == 1) { hue_switch = mid_idx; hue_offset = 0.5; }
 
-    c = ApplyGammaCurve(c);
+    // generate the palette
+    [unroll]for(int j = 0; j <= max_idx; j++)
+    {
+        float j_mult = float(j) / float(max_idx);
+
+        // rotate hue depending on harmony
+        if(j == hue_switch) hue += hue_offset;
+
+        float3 hsv = float3(
+            hue,
+            sat_base - contrast * j_mult,
+            val_base + contrast * j_mult
+        );
+
+        colors[j] = OKColors::OKHSVToRGB(hsv);
+    }
+
+    bool c_has_changed = false;
+
+    if(UI_CPS_ShowPalette)
+    {
+        static const int off = 20;
+        static const int2 f = int2(off + 5, off + 5);
+        static const int2 palette_area = int2(f.x + 5 + max_idx * (off + 5), f.y + 5);
+
+        bool is_border = all(int2(vpos <= palette_area));
+
+        // black border
+        if(is_border) c = 0.0;
+
+        bool is_square = false;
+
+        for(int j = 0; j <= max_idx; j++)
+        {
+            int2 fs = int2(f.x + j * (off + 5), f.y);
+            is_square = all(int2(vpos >= (fs - off) && vpos <= fs));
+
+            if(is_square) { c = colors[j]; break; }
+        }
+
+        c_has_changed = is_border || is_square;
+    }
+
+    if(!c_has_changed)
+    {
+        float lumi = RGBToYCbCrLumi(c);
+        int idx = lumi * float(max_idx);
+        int s_idx = idx < mid_idx ? idx : max_idx - idx;
+        float3 shadows_c = colors[s_idx];
+        float3 highlights_c = colors[max_idx - s_idx];
+        float3 new_c = c;
+
+        new_c = SoftLightBlend(new_c, lerp(shadows_c, (0.5).xxx, lumi));
+        new_c = SoftLightBlend(new_c, lerp((0.5).xxx, highlights_c, lumi));
+
+        float3 c_lab = OKColors::RGBToOKLAB(c);
+        float3 new_c_lab = OKColors::RGBToOKLAB(new_c);
+
+        c_lab.yz = lerp(c_lab.yz, new_c_lab.yz, UI_CPS_Blend);
+        c = OKColors::OKLABToRGB(c_lab);
+    }
 
     return c;
 }
+#endif
 
 /*******************************************************************************
     Shaders
 *******************************************************************************/
 
-#if V_USE_AUTO_EXPOSURE
-void PS_AutoExposure(PS_ARGS4)
-{
-    float3 c = Sample(CC_IN_SAMP, i.uv).rgb;
-    c = clamp(c, UI_CC_AutoExpMin, UI_CC_AutoExpMax);
+void PS_Start(PS_ARGS4) {
+    float3 c = SampleLinColor(i.uv);
 
-    // Min3 works better when there are both very bright
-    // and very dark screen areas at the same time
-    float avg = Min3(c.r, c.g, c.b);
-
-    o = float4(avg.xxx, UI_CC_AutoExpAdaptTime);
-}
+#if V_ENABLE_LUT
+    c = ApplyLUT(c);
 #endif
 
-void PS_Start(PS_ARGS4) {
-    float3 c = Sample(sLDRTexVort, i.uv).rgb;
+#if V_ENABLE_PALETTE
+    c = ApplyPalette(c, i.vpos.xy);
+#endif
 
-    c = ApplyStartProcessing(c);
+#if IS_SRGB && V_USE_ACES
+    c = InverseACESFull(c);
+#elif IS_SRGB
+    c = Tonemap::InverseReinhardMax(c, UI_Tonemap_Mod);
+#endif
+
     o = float4(c, 1);
 }
 
-void PS_End(PS_ARGS4)
+void PS_End(PS_ARGS3)
 {
     float3 c = Sample(CC_IN_SAMP, i.uv).rgb;
+    float2 range = GetHDRRange();
 
-#if V_ENABLE_SHARPEN
-    c = ApplySharpen(c, CC_IN_SAMP, i.uv);
+    c = clamp(c, range.x, range.y);
+
+#if V_ENABLE_SHARPEN && V_HAS_DEPTH
+    c = ApplySharpen(c, i.uv);
+    c = clamp(c, range.x, range.y);
 #endif
 
 #if V_ENABLE_COLOR_GRADING
     c = ApplyColorGrading(c);
+    c = clamp(c, range.x, range.y);
 #endif
 
-    c = ApplyEndProcessing(c);
-    o = float4(c, 1);
+#if IS_SRGB && V_USE_ACES
+    c = ApplyACESFull(c);
+#elif IS_SRGB
+    c = Tonemap::ApplyReinhardMax(c, UI_Tonemap_Mod);
+#endif
+
+    o = ApplyGammaCurve(c);
 }
 
 /*******************************************************************************
@@ -352,23 +404,7 @@ void PS_End(PS_ARGS4)
 #define PASS_START \
     pass { VertexShader = PostProcessVS; PixelShader = ColorChanges::PS_Start; RenderTarget = CC_OUT_TEX; }
 
-// Averaging for auto exposure is from author papadanku
-#if V_USE_AUTO_EXPOSURE
-    #define PASS_END \
-        pass { \
-            VertexShader = PostProcessVS; \
-            PixelShader = ColorChanges::PS_AutoExposure; \
-            ClearRenderTargets = false; \
-            BlendEnable = true; \
-            BlendOp = ADD; \
-            SrcBlend = INVSRCALPHA; \
-            DestBlend = SRCALPHA; \
-            RenderTarget = ExpTexVort; \
-        } \
-        pass { VertexShader = PostProcessVS; PixelShader = ColorChanges::PS_End; SRGB_WRITE_ENABLE }
-#else
-    #define PASS_END \
-        pass { VertexShader = PostProcessVS; PixelShader = ColorChanges::PS_End; SRGB_WRITE_ENABLE }
-#endif
+#define PASS_END \
+    pass { VertexShader = PostProcessVS; PixelShader = ColorChanges::PS_End; SRGB_WRITE_ENABLE }
 
 } // namespace end

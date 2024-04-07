@@ -1,21 +1,21 @@
 /* >> Description << */
 
-/* Perfect Perspective PS (version 5.8.6)
+/* Perfect Perspective PS (version 5.8.11)
 
 Copyright:
 This code © 2018-2023 Jakub Maksymilian Fober
 
 License:
-This work is licensed under the Creative Commons Attribution-NonCommercial-
-NoDerivs 3.0 Unported License + additional permissions. To view a copy of this
-license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
+Unported License + additional permissions. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/3.0/
 
 Additional permissions under Creative Commons Plus protocol (CC+):
 
 § 1. The copyright owner further downgrades the licensing terms to the CC-BY 3.0
-variant of the license, waiving the NonCommercial-NoDerivs terms, for the
-purpose of journalistic publications talking about this work, and/or for the use
-in gameplay videos/images specifically published by common gamers.
+variant of the license, waiving the ShareAlike terms, for the purpose of
+journalistic publications talking about this work, and/or for the use in
+gameplay videos/images specifically published by common gamers.
 Intents §: To facilitate the practical use of the shader and specifically its
            derivative images/videos by the journalists of the video-game
            industry, professional and amateur and by common gamers. At the same
@@ -24,13 +24,6 @@ Intents §: To facilitate the practical use of the shader and specifically its
 Outcome §: That it would be practically and legally acceptable for journalists
            and games to promote this work if they want to share their image/
            video material under their own terms.
-
-§ 2. Additionally, permission is granted for the translation of the front-end UI
-text within this shader.
-Intents §: To increase accessibility and understanding across different language
-           regions/groups.
-Outcome §: That usability across users from diverse linguistic backgrounds is
-           promoted, allowing them to fully engage with the shader.
 
 Contact:
 For inquiries regarding alternative licensing options, please contact me at:
@@ -52,7 +45,7 @@ and
 	arXiv:2010.04077 [cs.GR] (2020)
 	https://arxiv.org/abs/2010.04077
 and
-	Pantomorphic Perspective for Immersive Imagery
+	Aximorphic Perspective Projection Model for Immersive Imagery
 	arXiv:2102.12682 [cs.GR] (2021)
 	https://arxiv.org/abs/2102.12682
 by Fober, J. M.
@@ -63,8 +56,8 @@ by Fober, J. M.
 /* Alternative to anamorphic.
    1 gives separate distortion option for vertical axis.
    2 gives separate option for top and bottom half. */
-#ifndef AXIOMORPHIC_MODE
-	#define AXIOMORPHIC_MODE 1
+#ifndef AXIMORPHIC_MODE
+	#define AXIMORPHIC_MODE 1
 #endif
 
 /* >> Commons << */
@@ -107,7 +100,7 @@ uniform uint FovType
 		"	choose 'vertical' or '4:3'. For ultra-wide display\n"
 		"	you may want '16:9' instead.\n"
 		"\n"
-#if AXIOMORPHIC_MODE
+#if AXIMORPHIC_MODE
 		"	This method only works with all k = 0.5.";
 #else
 		"	This method only works with k = 0.5 and s = 1.0.";
@@ -122,7 +115,7 @@ uniform uint FovType
 
 // Perspective
 
-#if AXIOMORPHIC_MODE>=2 // vertical axis projection is driven by separate ky top and ky bottom parameter
+#if AXIMORPHIC_MODE>=2 // vertical axis projection is driven by separate ky top and ky bottom parameter
 uniform float Ky
 <	__UNIFORM_SLIDER_FLOAT1
 	ui_category = "Distortion";
@@ -151,11 +144,11 @@ uniform float Ky
 uniform float K
 <	__UNIFORM_SLIDER_FLOAT1
 	ui_category = "Distortion";
-#if AXIOMORPHIC_MODE==1
+#if AXIMORPHIC_MODE==1
 	ui_category_closed = true;
 	ui_text = "(brightness[-1], distances[-0.5], speed[0], shapes[0.5], straight-lines[1])";
 #endif
-#if AXIOMORPHIC_MODE // k indicates horizontal axis projection type
+#if AXIMORPHIC_MODE // k indicates horizontal axis projection type
 	ui_label = "Projection type 'k' horizontal";
 	ui_tooltip = "Projection coefficient 'k' horizontal, represents\n"
 #else // k represents whole picture projection type
@@ -179,7 +172,7 @@ uniform float K
 	ui_min = -1f; ui_max = 1f; ui_step = 0.01;
 > = 0.5;
 
-#if AXIOMORPHIC_MODE==1 // vertical axis projection is driven by separate k parameter
+#if AXIMORPHIC_MODE==1 // vertical axis projection is driven by separate k parameter
 uniform float Ky
 <	__UNIFORM_SLIDER_FLOAT1
 	ui_category = "Distortion";
@@ -201,7 +194,7 @@ uniform float Ky
 	ui_min = -1f; ui_max = 1f; ui_step = 0.01;
 > = 0.5;
 
-#elif AXIOMORPHIC_MODE>=2 // vertical axis projection is driven by separate ky top and ky bottom parameter
+#elif AXIMORPHIC_MODE>=2 // vertical axis projection is driven by separate ky top and ky bottom parameter
 uniform float KyA
 <	__UNIFORM_SLIDER_FLOAT1
 	ui_category = "Distortion";
@@ -488,8 +481,8 @@ float glength(uint G, float2 pos)
 	// Sharp corner
 	if (G==0u) return max(abs(pos.x), abs(pos.y)); // g0
 	// Higher-power length function
-	pos = pow(abs(pos), ++G); // power of G+1
-	return pow(pos.x+pos.y, rcp(G)); // power G+1 root
+	pos = exp(log(abs(pos))*(++G)); // to the power of G+1
+	return exp(log(pos.x+pos.y)*rcp(G)); // to the power of G+1 root
 }
 
 /* Linear pixel step function for anti-aliasing by Jakub Max Fober.
@@ -522,7 +515,7 @@ float get_theta(float radius, float rcp_f, float k) // get spherical θ angle
 }
 float get_vignette(float theta, float r, float rcp_f) // get vignetting mask in linear color space
 { return sin(theta)/(r*rcp_f); }
-float2 get_phi_weights(float2 viewCoord) // get pantomorphic interpolation weights
+float2 get_phi_weights(float2 viewCoord) // get aximorphic interpolation weights
 {
 	viewCoord *= viewCoord; // squared vector coordinates
 	return viewCoord/(viewCoord.x+viewCoord.y); // [cos²φ sin²φ] vector
@@ -546,8 +539,8 @@ float getRadiusOfOmega(float2 viewProportions)
 	}
 }
 
-#if AXIOMORPHIC_MODE==1
-// Search for corner point radius at diagonal Ω in Pantomorphic perspective
+#if AXIMORPHIC_MODE==1
+// Search for corner point radius at diagonal Ω in Aximorphic perspective
 float binarySearchCorner(float halfOmega, float radiusOfOmega, float rcp_focal)
 {
 	float croppingDigonal = 0.5;
@@ -573,8 +566,8 @@ float binarySearchCorner(float halfOmega, float radiusOfOmega, float rcp_focal)
 
 	return croppingDigonal;
 }
-#elif AXIOMORPHIC_MODE>=2
-// Search for corner point radius at diagonal Ω in Pantomorphic asymmetrical perspective
+#elif AXIMORPHIC_MODE>=2
+// Search for corner point radius at diagonal Ω in Aximorphic asymmetrical perspective
 float2 binarySearchCorner(float halfOmega, float radiusOfOmega, float rcp_focal)
 {
 	float2 croppingDigonal = 0.5;
@@ -819,7 +812,7 @@ void PerfectPerspectiveVS(
 	const static float croppingHorizontal = get_radius(
 			atan(tan(halfOmega)/radiusOfOmega*viewProportions.x),
 		rcp_focal, K)/viewProportions.x;
-#if AXIOMORPHIC_MODE==1
+#if AXIMORPHIC_MODE==1
 	// Vertical point radius
 	const static float croppingVertical = get_radius(
 			atan(tan(halfOmega)/radiusOfOmega*viewProportions.y),
@@ -833,7 +826,7 @@ void PerfectPerspectiveVS(
 	const static float croppedCircle = min(croppingHorizontal, croppingVertical);
 	// Full-frame
 	const static float fullFrame = croppingDigonal;
-#elif AXIOMORPHIC_MODE>=2
+#elif AXIMORPHIC_MODE>=2
 	// Vertical point radius
 	const static float2 croppingVertical = float2(
 		get_radius(
@@ -902,9 +895,9 @@ float3 PerfectPerspectivePS(
 //----------------------------------------------
 // begin distortion mapping bypass
 
-#if AXIOMORPHIC_MODE==1 // take vertical k factor into account
+#if AXIMORPHIC_MODE==1 // take vertical k factor into account
 	if (FovAngle==0u || (K==1f && Ky==1f && !UseVignette))
-#elif AXIOMORPHIC_MODE>=2 // take both vertical k factors into account
+#elif AXIMORPHIC_MODE>=2 // take both vertical k factors into account
 	if (FovAngle==0u || (K==1f && Ky==1f && KyA==1f && !UseVignette))
 #else // consider only global k
 	if (FovAngle==0u || (K==1f && !UseVignette))
@@ -964,7 +957,7 @@ float3 PerfectPerspectivePS(
 	const static float rcp_focal = get_rcp_focal(halfOmega, radiusOfOmega, K);
 
 	// Image radius
-#if AXIOMORPHIC_MODE // simple length function for radius
+#if AXIMORPHIC_MODE // simple length function for radius
 	float radius = length(viewCoord);
 #else // derive radius from anamorphic coordinates
 	float radius = S==1f
@@ -973,15 +966,15 @@ float3 PerfectPerspectivePS(
 	float rcp_radius = rsqrt(radius); radius = sqrt(radius);
 #endif
 
-#if AXIOMORPHIC_MODE // derive θ angle from two distinct projections
-	// Pantomorphic interpolation weights
+#if AXIMORPHIC_MODE // derive θ angle from two distinct projections
+	// Aximorphic interpolation weights
 	float2 phiMtx = get_phi_weights(viewCoord);
 	// Horizontal and vertical incident angle
 	float2 theta2 = float2(
 		get_theta(radius, rcp_focal, K),
-	#if AXIOMORPHIC_MODE==1
+	#if AXIMORPHIC_MODE==1
 		get_theta(radius, rcp_focal, Ky)
-	#elif AXIOMORPHIC_MODE>=2
+	#elif AXIMORPHIC_MODE>=2
 		get_theta(radius, rcp_focal, viewCoord.y>=0f ? KyA : Ky)
 	#endif
 	);
@@ -990,7 +983,7 @@ float3 PerfectPerspectivePS(
 			get_vignette(theta2.x, radius, rcp_focal),
 			get_vignette(theta2.y, radius, rcp_focal)))+VignetteOffset
 		: 1f;
-	float theta = dot(phiMtx, theta2); // pantomorphic incident
+	float theta = dot(phiMtx, theta2); // aximorphic incident
 #else // get θ from anamorphic radius
 	float theta = get_theta(radius, rcp_focal, K);
 	float vignette;
@@ -1011,7 +1004,7 @@ float3 PerfectPerspectivePS(
 #endif
 
 	// Rectilinear perspective transformation
-#if AXIOMORPHIC_MODE // simple rectilinear transformation
+#if AXIMORPHIC_MODE // simple rectilinear transformation
 	viewCoord = tan(theta)*normalize(viewCoord);
 #else // normalize by anamorphic radius
 	viewCoord *= tan(theta)*rcp_radius;
@@ -1030,9 +1023,9 @@ float3 PerfectPerspectivePS(
 	// Sample display image
 	float3 display =
 		K!=1f
-#if AXIOMORPHIC_MODE==1 // take vertical k factor into account
+#if AXIMORPHIC_MODE==1 // take vertical k factor into account
 		|| Ky!=1f
-#elif AXIOMORPHIC_MODE>=2 // take both vertical k factors into account
+#elif AXIMORPHIC_MODE>=2 // take both vertical k factors into account
 		|| Ky!=1f || KyA!=1f
 #endif // consider only global k
 		? tex2D(BackBuffer, texCoord).rgb // perspective projection lookup
@@ -1055,9 +1048,9 @@ float3 PerfectPerspectivePS(
 
 	// Display border
 	if (
-#if AXIOMORPHIC_MODE==1 // take vertical k factor into account
+#if AXIMORPHIC_MODE==1 // take vertical k factor into account
 		(K!=1f || Ky!=1f)
-#elif AXIOMORPHIC_MODE>=2 // take both vertical k factors into account
+#elif AXIMORPHIC_MODE>=2 // take both vertical k factors into account
 		(K!=1f || Ky!=1f || KyA!=1f)
 #else // consider only global k
 		K!=1f
@@ -1094,14 +1087,14 @@ float3 PerfectPerspectivePS(
 
 technique PerfectPerspective
 <
-	ui_label = "Perfect Perspective (fisheye, anamorphic, axiomorphic)";
+	ui_label = "Perfect Perspective (fisheye, bodycam, anamorphic, aximorphic)";
 	ui_tooltip =
 		"Adjust perspective for distortion-free picture:\n"
 		"\n"
 		"	· Fish-eye\n"
 		"	· Panini\n"
-		"	· Pantomorphic (*)\n"
-		"	· Pantomorphic asymmetrical (**)\n"
+		"	· Aximorphic (*)\n"
+		"	· Aximorphic asymmetrical (**)\n"
 		"	· Anamorphic\n"
 		"	· Vignetting (natural)\n"
 		"\n"
@@ -1110,7 +1103,7 @@ technique PerfectPerspective
 		"	1# select proper FoV angle and type. If FoV type is unknown,\n"
 		"	   find a round object within the game and look at it upfront,\n"
 		"	   then rotate the camera so that the object is in the corner.\n"
-#if AXIOMORPHIC_MODE
+#if AXIMORPHIC_MODE
 		"	   Make sure all 'k' parameters are equal 0.5 and adjust FoV type such that\n"
 #else
 		"	   Set 'k' to 0.5, change squeeze factor to 1x and adjust FoV type such that\n"
@@ -1118,7 +1111,7 @@ technique PerfectPerspective
 		"	   the object does not have an egg shape, but a perfect round shape.\n"
 		"\n"
 		"	2# adjust perspective type according to game-play style.\n"
-#if AXIOMORPHIC_MODE
+#if AXIMORPHIC_MODE
 		"	   If you look mostly at the horizon, 'k.y' can be increased.\n"
 #else
 		"	   If you look mostly at the horizon, anamorphic squeeze can be increased.\n"
@@ -1134,7 +1127,7 @@ technique PerfectPerspective
 		"	5# additionally for sharp image, use sharpening FX or run game at a\n"
 		"	   Super-Resolution. Debug options can help you find the proper value.\n"
 		"\n"
-		"	(*) for more available settings set AXIOMORPHIC_MODE value to 1 or 2.\n"
+		"	(*) for more available settings set AXIMORPHIC_MODE value to 0, 1 or 2.\n"
 		"\n"
 		"\n"
 		"The algorithm is part of a scientific article:\n"
@@ -1142,8 +1135,8 @@ technique PerfectPerspective
 		"	arXiv:2010.04077 [cs.GR] (2020)\n"
 		"	arXiv:2102.12682 [cs.GR] (2021)\n"
 		"\n"
-		"This effect © 2018-2023 Jakub Maksymilian Fober\n"
-		"Licensed under CC BY-NC-ND 3.0 +\n"
+		"This effect © 2018-2024 Jakub Maksymilian Fober\n"
+		"Licensed under CC+ BY-SA 3.0\n"
 		"for additional permissions see the source code.";
 >
 {

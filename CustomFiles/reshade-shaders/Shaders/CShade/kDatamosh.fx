@@ -194,7 +194,7 @@ namespace kDatamosh
 
     float2 GetMVBlocks(float2 MV, float2 Tex, out float3 Random)
     {
-        float2 TexSize = float2(ddx(Tex.x), ddy(Tex.y));
+        float2 TexSize = fwidth(Tex);
         float2 Time = float2(_Time, 0.0);
 
         // Random numbers
@@ -203,7 +203,7 @@ namespace kDatamosh
         Random.z = RandUV(Tex.yx - Time.xx);
 
         // Normalized screen space -> Pixel coordinates
-        MV = DecodeVectors(MV * _Scale, TexSize);
+        MV = UnnormalizeMotionVectors(MV * _Scale, TexSize);
 
         // Small random displacement (diffusion)
         MV += (Random.xy - 0.5)  * _Diffusion;
@@ -218,7 +218,7 @@ namespace kDatamosh
         float3 Random = 0.0;
 
         // Motion vectors
-        float2 MV = tex2Dlod(SampleFilteredFlowTex, float4(Input.Tex0, 0.0, _MipBias)).xy;
+        float2 MV = UnpackMotionVectors(tex2Dlod(SampleFilteredFlowTex, float4(Input.Tex0, 0.0, _MipBias)).xy);
 
         // Get motion blocks
         MV = GetMVBlocks(MV, Input.Tex0, Random);
@@ -251,13 +251,13 @@ namespace kDatamosh
 
     float4 PS_Datamosh(VS2PS_Quad Input) : SV_TARGET0
     {
-        float2 TexSize = float2(ddx(Input.Tex0.x), ddy(Input.Tex0.y));
+        float2 TexSize = fwidth(Input.Tex0);
         const float2 DisplacementTexel = BUFFER_SIZE_0;
         const float Quality = 1.0 - _Entropy;
         float3 Random = 0.0;
 
         // Motion vectors
-        float2 MV = tex2Dlod(SampleFilteredFlowTex, float4(Input.Tex0, 0.0, _MipBias)).xy;
+        float2 MV = UnpackMotionVectors(tex2Dlod(SampleFilteredFlowTex, float4(Input.Tex0, 0.0, _MipBias)).xy);
 
         // Get motion blocks
         MV = GetMVBlocks(MV, Input.Tex0, Random);
@@ -266,7 +266,7 @@ namespace kDatamosh
         float RandomMotion = RandUV(Input.Tex0 + length(MV));
 
         // Pixel coordinates -> Normalized screen space
-        MV = EncodeVectors(MV, TexSize);
+        MV = NormalizeMotionVectors(MV, TexSize);
 
         // Color from the original image
         float4 Source = tex2D(CShade_SampleColorTex, Input.Tex0);
