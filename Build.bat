@@ -29,9 +29,21 @@ Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expand
 copy ".\Build\MOV\expandmo98_Russian.mix" ".\Build\expandmo98.mix"
 echo.
 echo Сборка mix-файла отвечающего за руссификацию оригинальной MO (с переопределением едениц, юнитов и др. дополнений из MO)...
+move /y ".\CustomCompileFiles\MOV\expandmo98_Vision\COMA.hva" ".\CustomCompileFiles\MOV\expandmo98_Russian"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Vision\cryo.hva" ".\CustomCompileFiles\MOV\expandmo98_Russian"
 move /y ".\CustomCompileFiles\MOV\expandmo98_Vision\killer.shp" ".\CustomCompileFiles\MOV\expandmo98_Russian"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Vision\longbo.hva" ".\CustomCompileFiles\MOV\expandmo98_Russian"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Vision\schp.hva" ".\CustomCompileFiles\MOV\expandmo98_Russian"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Vision\shad.hva" ".\CustomCompileFiles\MOV\expandmo98_Russian"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Vision\WOLF.hva" ".\CustomCompileFiles\MOV\expandmo98_Russian"
 Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo98_Russian" --mix ".\Build\MOV\expandmo98_Vision.mix"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Russian\COMA.hva" ".\CustomCompileFiles\MOV\expandmo98_Vision"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Russian\cryo.hva" ".\CustomCompileFiles\MOV\expandmo98_Vision"
 move /y ".\CustomCompileFiles\MOV\expandmo98_Russian\killer.shp" ".\CustomCompileFiles\MOV\expandmo98_Vision"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Russian\longbo.hva" ".\CustomCompileFiles\MOV\expandmo98_Vision"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Russian\schp.hva" ".\CustomCompileFiles\MOV\expandmo98_Vision"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Russian\shad.hva" ".\CustomCompileFiles\MOV\expandmo98_Vision"
+move /y ".\CustomCompileFiles\MOV\expandmo98_Russian\WOLF.hva" ".\CustomCompileFiles\MOV\expandmo98_Vision"
 echo.
 echo Копирование оригинального mix-файла содержащего все внутренние ini-настройки игры...
 copy ".\OriginalFilesMO\expandmo99.mix" ".\Build\MOV\expandmo99_Original.mix"
