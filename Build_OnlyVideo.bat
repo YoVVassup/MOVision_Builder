@@ -5,7 +5,7 @@ echo Mental Omega Vision Video
 
 : Проверка существования \ создание папки Build
 echo Проверка существования предыдущей сборки...
-if exist ".\Build" ( echo Найдена предыдущая папка сборки. ) else ( mkdir ".\Build" && echo Папка для сборки создана. )
+if exist ".\Build\MOV\RA2_and_RA2YR_Remake" ( echo Найдена предыдущая папка сборки. ) else ( mkdir ".\Build\MOV\RA2_and_RA2YR_Remake" && echo Папка для сборки создана. )
 echo.
 
 : Сборка mix файлов катсцен Mental Omega Vision
