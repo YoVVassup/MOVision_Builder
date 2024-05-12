@@ -1,6 +1,8 @@
 esentutl /y "MOV\BattleClient_Original.ini" /d "INI\BattleClient.ini" /o
 esentutl /y "MOV\MentalOmegaMaps_Original.ini" /d "INI\MentalOmegaMaps.ini" /o
 esentutl /y "MOV\ClientDefinitions_Original.ini" /d "Resources\ClientDefinitions.ini" /o
+esentutl /y "MOV\GameOptions_Original.ini" /d "Resources\GameOptions.ini" /o
+esentutl /y "MOV\SkirmishLobby_Original.ini" /d "Resources\SkirmishLobby.ini" /o
 esentutl /y "MOV\thememo_Original.ini" /d "thememo.ini" /o
 esentutl /y "MOV\expandmo98_Russian.mix" /d "expandmo98.mix" /o
 esentutl /y "MOV\expandmo99_Original.mix" /d "expandmo99.mix" /o
@@ -36,3 +38,4 @@ if exist ".\dxgi.dll" (del /f /q dxgi.dll)
 if exist ".\d3d9.dll" (del /f /q d3d9.dll)
 if exist ".\opengl32.dll" (del /f /q opengl32.dll)
 .\Resources\Tools\inifile RA2MO.ini [CustomSettings] /remove
+.\Resources\Tools\inifile RA2MO.ini [Options] CheckforUpdates=False

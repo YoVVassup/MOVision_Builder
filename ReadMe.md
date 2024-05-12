@@ -14,7 +14,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 - WanNiang Series - 10 миссий (Оригинальное авторство за WanNiang, название 【WanNiang任務系列】殺時間的任務包, была создан для версии мода Mental Omega 3.3.4-3.3.5);
 - Foehn Mission Pack - 25 миссий различных авторов;
 - Режим COOP миссии в соло добовляет 3 новых режима в мультиплеере - SP Co-Op Easy, SP Co-Op Medium и SP Co-Op Hard, где управление заточено под одного игрока (`FIX`, теперь не требуются дополнительные действия для выбора);
-- Новые мультиплеерные режимы Armor Fist, Elite Force, Helpless, Monster Truck, Scavengers, Blinded, Clone, Lost Journey, Lucky (Оригинальное авторство за Morphunk и Hoa Tuyet);
+- Новые мультиплеерные режимы Armor Fist, Elite Force, Helpless, Monster Truck, Scavengers, Blinded, Clone, Lost Journey, Lucky, Tech Climb, Lost Colony, Shadow Raid (Оригинальное авторство за Morphunk, Hoa Tuyet и A Very Festive Scarecrow);
 - Последний русификатор от Damfoos для Mental Omega (3.3.6), он же администратор русскоязычной группы vk по [Mental Omega](https://vk.com/mental.omega).
 
 Дополнительно:
