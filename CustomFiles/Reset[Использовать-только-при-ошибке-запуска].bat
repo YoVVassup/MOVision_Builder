@@ -1,3 +1,8 @@
+@echo off
+chcp 65001
+: git config core.autocrlf false [fix]
+title Reset Mental Omega
+
 esentutl /y "MOV\BattleClient_Original.ini" /d "INI\BattleClient.ini" /o
 esentutl /y "MOV\MentalOmegaMaps_Original.ini" /d "INI\MentalOmegaMaps.ini" /o
 esentutl /y "MOV\ClientDefinitions_Original.ini" /d "Resources\ClientDefinitions.ini" /o

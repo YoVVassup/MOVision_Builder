@@ -94,11 +94,17 @@ copy ".\Tools\stringtable00.csf" ".\Build\MOV\P.M.O.S._Series\stringtable51.csf"
 Tools\CSFTool -t ".\CustomCompileFiles\MOV\P.M.O.S._Series\stringtable51.txt" -o ".\Build\MOV\P.M.O.S._Series\stringtable51.csf" -a
 echo.
 
+echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 720p...
+Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_720p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_720p.mix"
+echo.
 echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 768p...
 Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_768p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix"
 echo.
 echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1080p...
 Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix"
+echo.
+echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1440p...
+Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p.mix"
 echo.
 echo Сборка остальных csf и mix-файлов для RA2 and RA2YR Remake...
 Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo20" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo20.mix"
@@ -126,8 +132,10 @@ echo.
 
 : Заглушки для катсцен
 echo Проверка на отсутствие файлов катсцен и создание заглушек...
+where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_720p.mix && echo Заглушка катсцен для разрешений 720p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_720p.mix" 1024
 where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_768p.mix && echo Заглушка катсцен для разрешений 768p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix" 1024
 where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1080p.mix && echo Заглушка катсцен для разрешений 1080p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix" 1024
+where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1440p.mix && echo Заглушка катсцен для разрешений 1440p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p.mix" 1024
 echo.
 
 : Заглушка для аудиотреков
