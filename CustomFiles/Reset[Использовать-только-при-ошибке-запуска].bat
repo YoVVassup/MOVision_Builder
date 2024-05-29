@@ -13,7 +13,7 @@ esentutl /y "MOV\expandmo98_Russian.mix" /d "expandmo98.mix" /o
 esentutl /y "MOV\expandmo99_Original.mix" /d "expandmo99.mix" /o
 if exist ".\mapselmo.ini" (del /f /q mapselmo.ini)
 if exist ".\missionmo.ini" (del /f /q missionmo.ini)
-if exist ".\fan_art.ini" (del /f /q fan_art.ini)
+if exist ".\fan_artmo.ini" (del /f /q fan_artmo.ini)
 if exist ".\fan_soundmo.ini" (del /f /q fan_soundmo.ini)
 if exist ".\ReShade.ini" (del /f /q ReShade.ini)
 if exist ".\expandmo01.mix" (del /f /q expandmo01.mix)
