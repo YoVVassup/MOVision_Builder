@@ -3,6 +3,7 @@ chcp 65001
 : git config core.autocrlf false [fix]
 title MOVision_Builder_OnlyAudio
 echo Mental Omega Vision Audio
+echo.
 
 : Проверка существования \ создание папки Build
 echo Проверка существования предыдущей сборки...

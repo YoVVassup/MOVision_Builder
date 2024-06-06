@@ -1,0 +1,2997 @@
+THEME:INTRO|Intro
+THEME:MADRAP|Hell March
+THEME:DEFENSE|Defense
+THEME:HEROISM|Heroism
+THEME:LONETROOP|Lone Troop
+THEME:NODCRUSH|Crush
+THEME:PHAROTEK|Pharotek
+THEME:SCOUT|Scout
+THEME:SCORESCREEN|Score Screen
+THEME:MAPSELECTION|Map Selection
+THEME:IONSTORMAMBIENT|Ion Storm Ambient
+DESC:E31|Demo Map
+MSG:PINGINFO|Задержка = %dms
+MSG:CRITICAL|при смерти
+MSG:HEAVILYDAMAGED|тяжело поврежденный
+MSG:HEALTHY|здоровый
+MSG:MIXED|Смешанных
+MSG:ELITE|Элита
+MSG:VETERAN|Ветеран
+MSG:LITTLEEXPERIENCE|Новичок
+MSG:CANNOTCREATECHANNEL|Нельзя создать канал здесь
+MSG:UNABLEMAPSELECT|Невозможно выбрать карту! \n
+MSG:NODESCRIPTION|Нет Описания
+MSG:NOTHINGSELECTED|Ничего не выбрано
+MSG:SELACROSSMAP|Выбрано в пределах КАРТЫ
+MSG:SELACROSSSCREEN|Выбрано в пределах ЭКРАНА
+MSG:NAVEMPTY|Ничего не выбрано!
+MSG:NOUNITSSEL|Боевых единиц типа "%s" не выбрано
+MSG:UNITSWORTH|Выбрано %d шт. боевых единиц типа "%s" на сумму $%d
+MSG:BLACKOUTTIMER|Энергия отключена на:
+GUI:GAMEOPTIONS|Настройки Игры
+GUI:SAVEMISSIONMENU|Сохранить Игру
+GUI:SAVEMISSION|Сохранить Игру
+GUI:DELETEMISSIONMENU|Удалить Игру
+GUI:DELETEMISSION|Удалить Игру
+GUI:USEMAP|Использовать
+GUI:GENERATEMAP|Создать Карту
+GUI:TOOLTIP|Подсказки
+GUI:SINGLEPLAYER|Одиночная Игра
+GUI:WWONLINE|Интернет
+GUI:NETWORK|Локальная сеть
+GUI:OPTIONS|Настройки
+GUI:EXITGAME|Выход
+GUI:PREFERENCES|Свойства
+GUI:SNEAKPEEKS|Анонс
+GUI:PLAYMOVIES|Видеоролики
+GUI:VIEWCREDITS|Создатели
+GUI:NEWCAMPAIGN|Новая Кампания
+GUI:LOADSAVEDGAME|Загрузить Игру
+GUI:REPLAYSCENARIO|Переиграть
+GUI:SKIRMISH|Схватка
+GUI:BACK|Назад
+GUI:STARTGAME|Начать Игру
+GUI:SINGLEPLAYERMENU|Один Игрок
+GUI:OPTIONSMENU|Настройки
+GUI:SKIRMISHGAME|Схватка
+GUI:CHOOSEMAP|Выбор Карты
+GUI:MCVREPACKS|Переупаковка МСЦ
+GUI:SHORTGAME|Быстрая игра
+GUI:CRATESAPPEAR|Ящики
+GUI:COUNTRY|Страна
+GUI:COLOR|Цвет
+GUI:SLOWEST|Как черепаха
+GUI:SLOWER|Оч. медленно
+GUI:SLOW|Медленно
+GUI:NORMAL|Нормально
+GUI:FAST|Быстро
+GUI:FASTER|Оч. быстро
+GUI:FASTEST|Мгновенно
+GUI:LOW|Мало
+GUI:MEDIUM|Средне
+GUI:HIGH|Высоко
+GUI:NONE|Пусто
+GUI:AI|Компьютер
+GUI:RANDOM|Случайно
+GUI:CANCEL|Отмена
+GUI:OK|ОК
+GUI:ASKABORTMISSION|Что вы хотите сделать?
+GUI:DELETE|Удалить
+GUI:DESCRIPTION|Пояснение
+GUI:TIMESTAMP|Время
+GUI:LOAD|Загрузить
+GUI:DIFFICULTY|Сложность
+GUI:HARDER|Harder
+GUI:SELECTCAMPAIGN|Выбор кампании
+GUI:ALLIEDCAMPAIGN|Кампания союзников
+GUI:TUTORIALCAMPAIGN|Обучающий лагерь
+GUI:SOVIETCAMPAIGN|Советская кампания
+GUI:SELECTMISSION|Выбор миссии
+GUI:RESTART|Переиграть
+GUI:ABORT|Прервать
+GUI:PROGRESS|Прогресс
+GUI:CONFIRMMODECHANGE|Нажмите ОК, чтобы принять этот режим экрана или подождите пока восстановятся старые настройки.
+GUI:ASSIGN|Принять
+GUI:CUSTOMIZEKEYBOARD|Настройка Клавиш
+GUI:CUSTOM|Другое
+GUI:CATEGORY|Категория
+GUI:COMMANDS|Команды
+GUI:PRESSSHORTCUT|Новая клавиша
+GUI:CURASSIGNEDTO|Используется командой:
+GUI:CURRENTSHORTCUT|Горячая клавиша
+GUI:RESETALL|Восстановить
+GUI:DISPLAYOPTIONS|Настройки Экрана
+GUI:DISPLAY|Экран
+GUI:RESOLUTIONMODES|Разрешения
+GUI:STRETCHFIT|Растягивать видео
+GUI:PROCEED|Применить
+GUI:GAMESPEED|Скорость игры
+GUI:SCROLLRATE|Прокрутка
+GUI:VISUALDETAILS|Детализация
+GUI:HIGHERDETAIL|Высокие
+GUI:SIDEBARTEXT|Текст на панели
+GUI:TOOLTIPS|Подсказки
+GUI:TARGETLINES|Линии нацеливания
+GUI:SHOWHIDDEN|Скрытые объекты
+GUI:SCROLLCOASTING|Плавная прокрутка
+GUI:SOUND|Звук
+GUI:KEYBOARDOPTIONS|Настройки Клавиатуры
+GUI:KEYBOARD|Клавиатура
+GUI:CAMPAIGNMENU|Кампания
+GUI:LOADMISSIONMENU|Загрузить миссию
+GUI:CAMEOTEXT|Текст на панели
+GUI:MAINMENU|Главное Меню
+GUI:ALLIES|Союзники
+GUI:SOVIETS|Советские
+GUI:UNITS|Подразделения
+GUI:KILLED|Убито
+GUI:MADE|Сделано
+GUI:BUILDINGS|Здания
+GUI:ECONOMY|Экономия
+GUI:HARVESTED|Собрано
+GUI:SPENT|Затрачено
+GUI:GAMESETTINGS|Параметры игры
+GUI:ENVIRONMENT|Тип территории
+GUI:THEATER|Климат
+GUI:MAPSIZE|Размер карты
+GUI:RESOURCES|Ресурсы
+GUI:TIMEOFDAY|Время суток
+GUI:PLAYERS|Игроки
+GUI:CLIFFS|Скалы и горы
+GUI:ACCESSABILITY|Доступно
+GUI:HILLS|Холмы
+GUI:TIBERIUMAMOUNT|Кол-во руды
+GUI:TIBERIUMFIELDS|Поля руды
+GUI:WATER|Вода
+GUI:VEGETATION|Растительность
+GUI:CITIES|Города
+GUI:MAPWIDTH|Ширина карты
+GUI:MAPHEIGHT|Высота карты
+GUI:SURPRISEME|Случайно
+GUI:PREVIEWMAP|Создать карту
+GUI:PREVIEW|Предпросмотр
+GUI:SAVEMAP|Сохранить карту
+GUI:LOADMAP|Загрузить карту
+GUI:SAVE|Сохранить
+GUI:NAME|Имя
+GUI:SIDE|Сторона
+GUI:OPPONENT|Оппонент
+GUI:MAP|Карта
+GUI:TECHLEVEL|Тех уровень
+GUI:CREDITS|Наличные
+GUI:UNITCOUNT|Подразделения
+GUI:AIPLAYERS|Компьютер
+GUI:AILEVEL|Уровень умений ИИ
+GUI:MULTIENGINEER|Много инженеров
+GUI:ACCEPT|Применить
+GUI:MULTIPLAYERMAP|Сетевая карта
+GUI:SELECTMULTIPLAYERGAME|Выбор сетевой игры
+GUI:SELECTENGAGEMENT|Выбор Поля Боя
+GUI:GAMETYPE|Тип Битвы
+GUI:GAMEMAP|Поле Боя
+GUI:INTERNET|Интернет
+GUI:MODEMSERIAL|Модем / Порт
+GUI:IPXOPTIONS|Настройки IPX
+GUI:NETWORKCARD|Сетевая карта
+GUI:SOCKETNUMBER|Номер сокета
+GUI:DESTINATIONNETWORK|Расположение сети
+GUI:YOURSIDE|Ваша Сторона
+GUI:YOURCOLOR|Ваш Цвет
+GUI:KICKUSER|Выгнать пользователя из вашей игры
+GUI:YOURNAME|Ваше имя
+GUI:GAMES|Игры
+GUI:JOIN|Присоединиться
+GUI:NEW|Создать Игру
+GUI:GAMECONTROLS|Настройки Игры
+GUI:RESTATEBRIEFING|Повторить Задание
+GUI:LOADGAME|Загрузить Игру
+GUI:SAVEGAME|Сохранить Игру
+GUI:DELETEGAME|Удалить Игру
+GUI:DELETEMAP|Удалить Карту
+GUI:ABORTMISSION|Прервать Миссию
+GUI:RESUMEMISSION|Вернуться
+GUI:RESUME|Вернуться
+GUI:HOSTSCREEN|Меню Сервера
+GUI:JOINSCREEN|Меню Гостя
+GUI:LOBBY|Прихожая
+GUI:GAMENUMBER|Номер игры
+GUI:TIME|Время
+GUI:LOSSES|Потерь
+GUI:BUILT|Создано
+GUI:SCORE|Очки
+GUI:INTERNETGAMECONTROLS|Настройки Интернет игры
+GUI:CONNECTION|Соединение
+GUI:BETTER|Лучшее
+GUI:ADD|Добавить
+GUI:EDIT|Редактировать
+GUI:PHONENUMBER|Номер телефона
+GUI:DIAL|Звонить
+GUI:PHONELIST|Список телефонов
+GUI:PHONEBOOKENTRY|Телефонная книга пуста
+GUI:NUMBER|Номер
+GUI:DEFAULT|По умолчанию
+GUI:SETTINGS|Настройки
+GUI:WORKINGPLEASEWAIT|Создание... - пожалуйста, подождите
+GUI:PLAYER1|Игрок 1
+GUI:PLAYER2|Игрок 2
+GUI:PLAYER3|Игрок 3
+GUI:PLAYER4|Игрок 4
+GUI:PLAYER5|Игрок 5
+GUI:PLAYER6|Игрок 6
+GUI:PLAYER7|Игрок 7
+GUI:PLAYER8|Игрок 8
+GUI:BATTLE|Битва
+GUI:FREEFORALL|Каждый сам за себя
+GUI:UNHOLYALLIANCE|Неестественный союз
+GUI:MEGAWEALTH|Сверх богатство
+GUI:SIEGE|Осада
+GUI:TIMEREMAINING|Осталось времени:
+GUI:CREATERANDOMMAP|Создать карту
+GUI:IPXLAN|IPX (Сеть)
+GUI:UDPINTERNET|UDP (Интернет)
+GUI:ANSWER|Отвечать
+GUI:NULLMODEM|Нуль модем
+GUI:PORT|Порт
+GUI:BAUD|Бод
+GUI:SERIALSETTINGS|Параметры порта
+GUI:CALLWAITING|Ожидание звонка
+GUI:PULSEDIAL|Импульсный режим
+GUI:TONEDIAL|Тональный режим
+GUI:ERRORCORRECTION|Исправление ошибок
+GUI:DATACOMPRESSION|Сжатие данных
+GUI:INITSTRING|Строка инициализации
+GUI:MULTIPLAYMAP|Сетевая карта
+GUI:MUSICVOLUME|Громкость музыки
+GUI:SOUNDVOLUME|Громкость звука
+GUI:VOICEVOLUME|Громкость голоса
+GUI:PLAY|Играть
+GUI:STOP|Стоп
+GUI:SHUFFLE|Случайно
+GUI:REPEAT|Повторять
+GUI:GETWOLACCOUNT|Получить уч. запись Westwood Online
+GUI:BIRTHDATE|День рождения
+GUI:EMAILADDRESS|Эл. почта: (Пожалуйста, дважды щелкните здесь!)
+GUI:GETNEWSLETTER|Я хочу получать информационные письма от Westwood Online по эл. почте.
+GUI:VIEWPRIVACY|Полис секретности
+GUI:CONTINUE|Продолжить
+GUI:DOWNLOADINGPATCH|Скачивание заплатки
+GUI:MAXPLAYERS|Максимум игроков
+GUI:MIN|Минимум
+GUI:MAX|Максимум
+GUI:MAXPING|Максимальная задержка с сервером
+GUI:TOURNAMENT|Турнир
+GUI:BATTLECLAN|Боевой клан
+GUI:LADDERRANKHOST|Звание доски почета сервера
+GUI:OFFICIAL|Официально
+GUI:STANDARD|Стандартно
+GUI:SELECTEDGAMEDETAILS|Выбор детализации игры
+GUI:SHOWALL|Показать все
+GUI:REFRESHCHANNELLIST|Обновить список каналов
+GUI:PERSONTOFIND|Игрок для поиска или страничка:
+GUI:TEXTTOSEND|Текст для отправки
+GUI:FIND|Найти
+GUI:PAGE|Страничка друга
+GUI:PAGECLAN|Страничка клана
+GUI:LADDER|Доска почета
+GUI:FINDORPAGE|Найти/Страничка
+GUI:KICK|Выгнать
+GUI:CLOSE|Закрыть
+GUI:BAN|Запрет
+GUI:HELP|Помощь
+GUI:HOSTOPTIONS|Настройки Сервера
+GUI:SEARCH|Поиск
+GUI:RANK|Звание
+GUI:POINTS|Очки
+GUI:NUMBERWINS|Победы
+GUI:NUMBERLOSSES|Поражения
+GUI:NUMBERDISCONNECTS|Отключения
+GUI:PLAYERTOURWEB|Страничка игрока турнира
+GUI:BATTOURWEB|Страничка турнира среди кланов
+GUI:<BACK|< Назад
+GUI:NEXT>|Далее >
+GUI:NICKNAME|Имя
+GUI:PASSWORD|Пароль
+GUI:LOCATION|Местоположение
+GUI:UNKNOWN|Неизвестно
+GUI:SETLOCATION|Настроить местоположение
+GUI:STORELOGIN|Сохранить уч. запись
+GUI:NEWACCOUNT|Новая уч. запись
+GUI:USERS|Пользователи
+GUI:UP|Вверх
+GUI:DOWN|Вниз
+GUI:ACTIONMESSAGE|Активное сообщение
+GUI:REFRESHCHANNELS|Обновить каналы
+GUI:FINDAGAME|Найти игру
+GUI:VIEWTOURLADDER|Просмотр доски почета турнира
+GUI:GOBATWEB|Перейти на страничку боевого клана
+GUI:FINDORPAGEANOTHER|Найти/Страничка другого пользователя
+GUI:WOLOPTIONS|Настройки
+GUI:IGNOREUSER|Игнорировать пользователя
+GUI:KICKUSERFROMCHANNEL|Выгнать пользователя из Вашего канала
+GUI:BANUSERFROMCHANNEL|Запретить пользователю заходить в Ваш канал
+GUI:CREATENEWCHAN|Создать новый канал для чата:
+GUI:BATTLECLANTOURNAMENT|Турнир среди кланов
+GUI:YOURLOCATION|Ваше местоположение
+GUI:MINPASSWORDLEN|Ваш пароль должен быть больше 8 символов.
+GUI:RE-ENTERPASSWORD|Повторный ввод пароля:
+GUI:PARENTEMAIL|Элект. адрес родителей:
+GUI:SHAREINFO|Да, EA/Westwood могут информировать меня о новых продуктах и спец. предложениях.
+GUI:ALLOWPAGES|Разрешить входящие страницы
+GUI:FILTERBADLAN|Фильтр матов
+GUI:ALLOWFINDING|Разрешить находить меня
+GUI:PLAYMUSIC|Играть музыку
+GUI:SHOWALLINLOBBY|Показывать все игры в моей комнате ожидания
+GUI:SOUNDOPTIONS|Настройки Звука
+GUI:CHANNELPASSWORD|Пароль канала
+GUI:AVAILABLESERVERS|Доступные серверы
+GUI:WAITINGRESP|Ожидание ответа
+GUI:DISCONNECT|Отсоединить
+GUI:NO|Нет
+GUI:YES|Да
+GUI:PLAYER|Игрок
+GUI:LISTENERS|Зрители
+GUI:KILLS|Убито
+GUI:RETURN|Вернуться
+GUI:BRIEFING|Задание
+GUI:LEAVEGAME|Выйти из игры
+GUI:BLANK|
+GUI:OPEN|Открыто
+GUI:CLOSED|Закрыто
+GUI:WAITING|Ожидание...
+ERROR:NAMEISRESERVEDWORD|You have chosen a reserved word as your name! Please choose another.
+ERROR:CANNOTMAP|Error! Command needs this modifier(s).
+ERROR:CANNOTREMAP|Error! Remap base key first.
+STT:MAINBUTTONSINGLEPLAYER|Играть в историческую кампанию или в схватку с компьютером.
+STT:MAINBUTTONWWONLINE|Играть через всемирную сеть Интернет.
+STT:MAINBUTTONNETWORK|Играть по локальной сети с друзьями.
+STT:MAINBUTTONOPTIONS|Настроить управление, звук, отображение и сложность.
+STT:MAINBUTTONEXITGAME|Выйти из игры Красная угроза 2: Месть Юрия.
+STT:SINGLEBUTTONNEWCAMPAIGN|Начать прохождение одной из исторических кампаний.
+STT:SINGLEBUTTONLOADSAVEDGAME|Загрузить прежде сохраненную игру.
+STT:SINGLEBUTTONREPLAYSCENARIO|Переиграть миссию.
+STT:SINGLEBUTTONSKIRMISH|Играть против компьютера один-на-один.
+STT:SINGLEBUTTONBACK|Вернуться в главное меню.
+STT:CAMPAIGNANIMALLIED|Играть в историческую кампанию союзников.
+STT:CAMPAIGNANIMTUTORIAL|Играть в обучающую кампанию.
+STT:CAMPAIGNANIMSOVIET|Играть в советскую историческую кампанию.
+STT:CAMPAIGNSLIDERDIFFICULTY|Выбор уровня сложности в кампании.
+STT:CAMPAIGNBUTTONLOAD|Загрузить выбранную миссию.
+STT:CAMPAIGNLIST|Щелкните по миссии, в которую хотите играть.
+STT:CAMPAIGNBUTTONBACK|Вернуться в меню одного игрока.
+STT:LOADBUTTONLOAD|Загрузить выбранную сохраненную игру.
+STT:LOADLIST|Список игр доступных для загрузки.
+STT:LOADBUTTONBACK|Вернуться в предыдущее меню.
+STT:SKIRMISHEDITPLAYER|Введите здесь свое имя.
+STT:SKIRMISHCOMBOAIPLAYER|Добавить оппонента.
+STT:SKIRMISHPICTUREFLAG|Национальный флаг игрока.
+STT:SKIRMISHCOMBOCOUNTRY|Изменить национальность.
+STT:SKIRMISHCOMBOCOLOR|Изменить цвет.
+STT:SKIRMISHSLIDERSPEED|Настроить скорость подразделений и время постройки.
+STT:SKIRMISHSLIDERCREDITS|Настроить количество наличных финансов в начале игры.
+STT:SKIRMISHSLIDERTECH|Настроить максимальный технологический уровень в игре.
+STT:SKIRMISHSLIDERUNIT|Настроить количество подразделений в начале игры.
+STT:SKIRMISHBUTTONCHOOSEMAP|Настроить тип битвы и поле боя.
+STT:SKIRMISHCBOXREDEPLOYS|Сборочные Цеха могут быть свернуты обратно в МСЦ.
+STT:SKIRMISHCBOXSHORTGAME|Игроки выиграют когда все вражеские постройки будут уничтожены.
+STT:SKIRMISHCBOXCRATES|На карте появляются ящики с сюрпризами.
+STT:SKIRMISHMAPTHUMBNAIL|Картинка со спутника над выбранным полем боя.
+STT:SKIRMISHLABELGAMETYPE|Название выбранного типа игры.
+STT:SKIRMISHLABELSCENARIO|Название выбранного поля боя.
+STT:SKIRMISHSLIDERAIDIFFICULTY|Настроить уровень умений компьютерных игроков.
+STT:SKIRMISHBUTTONSTARTGAME|Начать игру с выбранными вами настройками.
+STT:SKIRMISHBUTTONBACK|Вернуться в предыдущее меню.
+STT:LOBBYEDITYOURNAME|Введите здесь свое имя.
+STT:LOBBYLISTUSERS|Игроки, находящиеся в выбранной вами игре.
+STT:LOBBYLISTGAMES|Вы можете присоединиться к игре.
+STT:LOBBYEDITOUTPUT|Здесь показаны сообщения от других игроков.
+STT:LOBBYEDITINPUT|Напишите ваше сообщение здесь, нажмите Ввод и ждите ответа.
+STT:LOBBYBUTTONNEW|Создать новую сетевую игру.
+STT:LOBBYBUTTONJOIN|Присоединиться к уже существующей сетевой игре.
+STT:LOBBYBUTTONBACK|Вернуться в основное меню.
+STT:HOSTPICTUREACCEPTANCE|Игра начнется только тогда, когда все игроки нажмут 'Применить'.
+STT:HOSTCOMBOPLAYER|'Открыто' позволит игроку присоединиться. 'Закрыто' не пустит игроков.
+STT:HOSTPICTUREFLAG|Национальный флаг игрока.
+STT:HOSTCOMBOCOUNTRY|Национальность игрока.
+STT:HOSTCOMBOCOLOR|Цвет игрока.
+STT:HOSTSLIDERSPEED|Настроить скорость подразделений и время постройки.
+STT:HOSTSLIDERCREDITS|Настроить кол-во финансов в начале игры.
+STT:HOSTSLIDERTECH|Ограничения технологического дерева.
+STT:HOSTSLIDERUNIT|Выбрать количество подразделений в начале игры.
+STT:HOSTCBOXREDEPLOYS|Сборочные Цеха могут быть свернуты обратно в МСЦ.
+STT:HOSTCBOXSHORTGAME|Игрок выигрывает, когда все вражеские здания разрушены.
+STT:HOSTCBOXCRATES|На карте появляются ящики с сюрпризами.
+STT:HOSTEDITOUTPUT|Здесь показаны сообщения от других игроков.
+STT:HOSTEDITINPUT|Напишите ваше сообщение здесь, нажмите Ввод и ждите ответа.
+STT:HOSTMAPTHUMBNAIL|Вид со спутника на поле боя можете поменять только Вы.
+STT:HOSTLABELSCENARIO|Название поля боя можете поменять только Вы.
+STT:HOSTBUTTONGO|Начать игру. Все должны сначала нажать 'Применить'.
+STT:HOSTBUTTONCHOOSEMAP|Выбор поля боя.
+STT:HOSTSLIDERAIDIFFICULTY|Настроить уровень умений компьютерного игрока.
+STT:HOSTBUTTONBACK|Вернуться в меню прихожей.
+STT:GUESTPICTUREACCEPTANCE|Игра начнется только тогда, когда все игроки нажмут 'Применить'.
+STT:GUESTCOMBOPLAYER|'Открыто' позволит игроку присоединиться. 'Закрыто' не пустит игроков.
+STT:GUESTPICTUREFLAG|Национальный флаг игрока.
+STT:GUESTCOMBOCOUNTRY|Национальность игрока.
+STT:GUESTCOMBOCOLOR|Цвет игрока.
+STT:GUESTSLIDERSPEED|Скорость игры может менять только сервер игры.
+STT:GUESTSLIDERCREDITS|Начальные финансы может изменить только сервер игры.
+STT:GUESTSLIDERTECH|Максимальный тех. уровень может изменить только сервер игры.
+STT:GUESTSLIDERUNIT|Только сервер игры может изменить кол-во начальных подразделений.
+STT:GUESTCBOXREDEPLOYS|Только сервер игры может сделать Сборочные Цеха передвижными.
+STT:GUESTCBOXSHORTGAME|Игроки должны уничтожить только все здания для победы.
+STT:GUESTCBOXCRATES|Только сервер игры может включить появление ящиков.
+STT:GUESTEDITOUTPUT|Здесь показаны сообщения от других игроков.
+STT:GUESTEDITINPUT|Напишите Ваше сообщение здесь, нажмите Ввод и ждите ответа.
+STT:GUESTMAPTHUMBNAIL|Вид со спутника на поле боя может менять только сервер игры.
+STT:GUESTLABELSCENARIO|Название поля боя может менять только сервер игры.
+STT:GUESTBUTTONACCEPT|Нажмите эту кнопку, когда будете готовы к игре.
+STT:GUESTSLIDERAIDIFFICULTY|Настроить уровень умений компьютерного игрока.
+STT:GUESTBUTTONBACK|Вернуться в меню прихожей.
+STT:OPTIONSBUTTONPREFERENCES|Изменить настройки пользователя.
+STT:OPTIONSBUTTONSNEAK|Посмотреть небольшой анонс!
+STT:OPTIONSBUTTONMOVIES|Посмотреть видео из исторических кампаний.
+STT:OPTIONSBUTTONCREDITS|Создатели игры из Westwood Studios и переводчики из Siberian Studio.
+STT:OPTIONSBUTTONBACK|Вернуться в основное меню.
+STT:MAINOPTBUTTONGAMESETTINGS|Разрешить вам изменять настройки игры.
+STT:MAINOPTBUTTONDISPLAY|Изменить разрешение экрана.
+STT:MAINOPTBUTTONSOUND|Изменить настройки звука.
+STT:MAINOPTBUTTONKEYBOARD|Изменить клавиатурные команды.
+STT:MAINOPTBUTTONBACK|Вернуться в Главное Меню.
+STT:GAMEOPTSLIDERSPEED|Настроить скорость игры.
+STT:GAMEOPTSLIDERSCROLL|Настроить скорость прокрутки экрана мышкой.
+STT:GAMEOPTSLIDERVISUAL|Настроить уровень графической детализации в игре.
+STT:GAMEOPTSLIDERDIFFICULTY|Настроить сложность игры.
+STT:GAMEOPTCBOXCAMEO|Настроить показ имен подразделений на кнопках панели.
+STT:GAMEOPTCBOXTOOLTIPS|Выбрать, будут показываться подсказки или нет.
+STT:GAMEOPTCBOXTARGETLINES|Вкл. или выкл. линии нацеливания подразделений.
+STT:GAMEOPTCBOXHIDDEN|Показывать подразделения, скрытые зданиями.
+STT:GAMEOPTCBOXSCROLLCOASTING|Вкл. или выкл. плавную прокрутку.
+STT:GAMEOPTBUTTONBACK|Вернуться в меню настроек.
+STT:DISPLAYLISTMODES|Выбор разрешения, которое будет использоваться в игре.
+STT:DISPLAYCBOXSTRETCHMOVIES|Растягивать видео на весь экран - вкл. или выкл.
+STT:DISPLAYBUTTONPROCEED|Применить ваши изменения параметров экрана.
+STT:DISPLAYBUTTONBACK|Вернуться в меню основных опций.
+STT:SOUNDLITESLIDERMUSIC|Настроить уровень громкости музыки.
+STT:SOUNDLITESLIDERSOUND|Настроить уровень громкости звуков.
+STT:SOUNDLITESLIDERVOICE|Настроить уровень громкости голоса.
+STT:SOUNDLITEBUTTONBACK|Вернуться в меню основных опций.
+STT:KEYBOARDCOMBOCATEGORY|Выберите категорию команд клавиатуры.
+STT:KEYBOARDGROUPDESCRIPTION|Описание выбранной Вами команды.
+STT:KEYBOARDLISTCOMMANDS|Возможные команды для этой категории.
+STT:KEYBOARDLABELSHORTCUT|Отображение нынешней клавиши для этой команды.
+STT:KEYBOARDLABELERROR|
+STT:KEYBOARDEDITENTRY|Введите здесь новую команду клавиши.
+STT:KEYBOARDBUTTONASSIGN|Применить Ваш выбор изменения команды клавиши.
+STT:KEYBOARDLABELASSIGNED|На эту команду сейчас назначена горячая клавиша.
+STT:KEYBOARDBUTTONRESETALL|Поставить по умолчанию все значения клавиш.
+STT:KEYBOARDBUTTONBACK|Вернуться в меню настроек.
+STT:BRIEFINGLABELCONTENT|Цели Вашей миссии.
+STT:BRIEFINGBUTTONRETURN|Вернуться к миссии.
+STT:CONFIRMEXITBUTTONABORT|Прервать игру.
+STT:CONFIRMEXITBUTTONRESTART|Переиграть миссию кампании.
+STT:CONFIRMEXITBUTTONRESUME|Вернуться к миссии.
+STT:CONFIRMMODEBUTTONOK|Применить изменения разрешения экрана.
+STT:CONFIRMMODEBUTTONCANCEL|Вернуть Ваше старое разрешение экрана.
+STT:DIPLOMACYLABELPLAYER|Имя игрока.
+STT:DIPLOMACYCBOXALLIES|Предложение заключить союз с этим игроком.
+STT:DIPLOMACYCBOXLISTENERS|Включить Ваши сообщения полученные этим игроком.
+STT:DIPLOMACYCBOXKILLS|Показать количество подразделений уничтоженных этим игроком.
+STT:DIPLOMACYBUTTONRETURN|Возврат к бою.
+STT:IGGAMEOPTSLIDERSPEED|Настроить скорость подразделений и время строительства.
+STT:IGGAMEOPTSLIDERSCROLL|Настроить скорость прокрутки экрана мышкой.
+STT:IGGAMEOPTSLIDERVISUAL|Настроить графические эффекты в игре.
+STT:IGGAMEOPTCBOXTOOLTIPS|Вкл. или выкл. помощь.
+STT:IGGAMEOPTCBOXTARGETLINES|Показывать линии нацеливания подразделений при движении и атаке.
+STT:IGGAMEOPTCBOXHIDDEN|Показывать подразделения, скрытые зданиями.
+STT:IGGAMEOPTCBOXSCROLLCOAST|Tactical map slowly coasts to a stop.
+STT:IGGAMEOPTBUTTONSOUND|Настроить уровень громкости звука.
+STT:IGGAMEOPTBUTTONKEYBOARD|Изменить настройки горячих клавиш.
+STT:IGGAMEOPTBUTTONBACK|Вернуться к бою.
+STT:GENERATECBOXENVIRONMENT|Выбрать поле боя.
+STT:GENERATECBOXTIME|Выбрать время суток (день или ночь).
+STT:GENERATECBOXTHEATER|Выбрать теплый или холодный климат.
+STT:GENERATECBOXMAPSIZE|Выбрать размер поля боя.
+STT:GENERATECBOXRESOURCES|Выбрать количество руды на карте.
+STT:GENERATESLIDERNUMPLAYERS|Максимальное количество оппонентов на этом поле боя.
+STT:GENERATEBUTTONSURPRISE|Поставить случайные параметры поля боя.
+STT:GENERATEBUTTONPREVIEW|Создать поле боя.
+STT:GENERATEBUTTONLOADMAP|Загрузить уже созданные поля боев.
+STT:GENERATEBUTTONSAVEMAP|Сохранить это поле боя.
+STT:GENERATEBUTTONDELETEMAP|Удалить сохраненное поле боя.
+STT:GENERATEBUTTONUSEMAP|Играть на этом поле боя.
+STT:GENERATEBUTTONCANCEL|Вернуться в меню создания игры.
+STT:MSNDLTLISTMISSION|Выбор поля боя для удаления.
+STT:MSNDLTBUTTONDELETE|Удалить выбранное поле боя.
+STT:MSNDLTBUTTONBACK|Вернуться в предыдущее меню.
+STT:MSNSAVELISTMISSION|Поля боя, которые Вы уже сохраняли.
+STT:MSNSAVEEDITNAME|Имя Вашего сохраненного поля боя.
+STT:MSNSAVEBUTTONSAVE|Сохранить поле боя.
+STT:MSNSAVEBUTTONBACK|Вернуться в предыдущее меню.
+STT:MPSCORELABELGAME|Количество игр, которые вы завершили.
+STT:MPSCORELABELTIME|Как долго Вы сражались в битве.
+STT:MPSCORELABELPLAYER|Имя игрока.
+STT:MPSCORELABELKILLS|Количество подразделений, уничтоженных этим игроком.
+STT:MPSCORELABELLOSSES|Количество подразделений, потерянных этим игроком.
+STT:MPSCORELABELBUILT|Количество зданий и подразделений, созданных этим игроком.
+STT:MPSCORELABELSCORE|Общие очки этого игрока.
+STT:MPSCOREBUTTONCONTINUE|Переход к следующему Меню.
+STT:IGSINGLEOPTBUTTONCONTROLS|Изменение ваших настроек.
+STT:IGSINGLEOPTBUTTONLOAD|Загрузить сохраненную миссию и прервать эту.
+STT:IGSINGLEOPTBUTTONSAVE|Сохранить эту миссию.
+STT:IGSINGLEOPTBUTTONABORT|Прервать миссию.
+STT:IGSINGLEOPTBUTTONBACK|Вернуться к миссии.
+STT:IGMULTIOPTBUTTONCONTROLS|Изменение Ваших настроек.
+STT:IGMULTIOPTBUTTONABORT|Прервать эту игру.
+STT:IGMULTIOPTBUTTONRESUME|Вернуться в игру.
+STT:RECONNECTBUTTONPLAYER|Нажать эту кнопку для голосования, чтобы загрузить этого игрока.
+STT:RECONNECTPROGRESSPLAYER|Показывать время до того, как этот игрок покинет игру.
+STT:RECONNECTLABELTIME|Время, оставшееся до конца игры.
+STT:RECONNECTEDITINFO|Инструкции.
+STT:RECONNECTBUTTONLEAVEGAME|Выйти из игры.
+STT:SCENARIOLISTGAMETYPE|Выберите тип битвы.
+STT:SCENARIOLISTMAPS|Выберите поле боя.
+STT:SCENARIOMAPTHUMBNAIL|Вид со спутника над данным полем боя.
+STT:SCENARIOBUTTONUSEMAP|Использовать данное поле боя.
+STT:SCENARIOBUTTONRANDOM|Создать случайное поле боя.
+STT:SCENARIOBUTTONCANCEL|Вернуться в меню создания поля боя.
+STT:SOUNDOPTSLIDERMUSIC|Настроить уровень громкости музыки.
+STT:SOUNDOPTSLIDERSOUND|Настроить уровень громкости звуков.
+STT:SOUNDOPTSLIDERVOICE|Настроить уровень громкости голоса.
+STT:SOUNDOPTLISTSCORE|Список музыкальных дорожек.
+STT:SOUNDOPTCBOXSHUFFLE|Играть случайно выбранные музыкальные дорожки.
+STT:SOUNDOPTCBOXREPEAT|Повторять одну и туже музыкальную дорожку.
+STT:SOUNDOPTBUTTONPLAY|Играть музыкальную дорожку.
+STT:SOUNDOPTBUTTONSTOP|Остановить музыкальную дорожку.
+STT:SOUNDOPTBUTTONBACK|Вернуться в предыдущее меню.
+STT:STANDSCOREUKILLSLEFT|Подразделения, уничтоженные Вами на протяжении сценария.
+STT:STANDSCOREUKILLSRIGHT|Подразделения, уничтоженные врагом на протяжении сценария.
+STT:STANDSCOREUMADELEFT|Подразделения, созданные Вами на протяжении сценария.
+STT:STANDSCOREUMADERIGHT|Подразделения, созданные врагом на протяжении сценария.
+STT:STANDSCOREBKILLSLEFT|Здания уничтоженные Вами в течении сценария.
+STT:STANDSCOREBKILLSRIGHT|Здания уничтоженные Вами в течении сценария.
+STT:STANDSCOREBMADELEFT|Здания созданные Вами в течении сценария.
+STT:STANDSCOREBMADERIGHT|Здания созданные врагом в течении сценария.
+STT:STANDSCORECHARVLEFT|Финансы, которые Вы заработали за сценарий.
+STT:STANDSCORECHARVRIGHT|Количество руды и минералов, собранных врагом.
+STT:STANDSCORECSPENTLEFT|Полное количество финансов, которые Вы потратили.
+STT:STANDSCORECSPENTRIGHT|Финансы, которые заработал враг за сценарий.
+STT:STANDSCOREBUTTONRETURN|Перейти к следующему сценарию.
+TIP:ROCKET|Ракетная
+TIP:REPAIR|Ремонтная
+TIP:MACHINEGUN|Пулеметная
+TIP:DIPLOMACYBUTTON|Дипломатия
+TIP:BRIEFINGBUTTON|Брифинг
+TIP:OPTIONSBUTTON|Меню
+TIP:TAB1|Здания
+TIP:TAB2|Оборонительные Сооружения
+TIP:TAB3|Пехота
+TIP:TAB4|Техника
+TIP:SCROLLUP|Прокрутить Вверх
+TIP:SCROLLDOWN|Прокрутить Вниз
+TIP:DISABLED|Отключено
+TIP:THUMBCLOSED|Показать панель\n команд
+TIP:THUMBOPEN|Спрятать панель\n команд
+TIP:ATTACKMOVE|Атака на ходу
+TIP:AUTODEPLOY|Auto-Deploy
+TIP:BEACON|Маяк
+TIP:DEPLOY|Развернуть
+TIP:GUARD|Охранять
+TIP:PLANNINGMODE|Режим точек пути
+TIP:STOP|Стоп
+TIP:TEAM01|Отряд 01
+TIP:TEAM02|Отряд 02
+TIP:TEAM03|Отряд 03
+TIP:TYPESELECT|Выбор по типу
+WDT:TERRITORYPREFIX|--------- \n
+WDT:REVIEWINGHISTORY|Reviewing History...
+WDT:REVIEWINGHISTORYDAY|Day :
+WDT:DEFAULTSHORTDESCRIPTION|World Domination Tour
+WDT:DEFAULTLONGDESCRIPTION|World Domination Tour
+WDT:FOURPLAYERONLY|4 Players
+WDT:TWOPLAYERONLY|2 Players
+WDT:TECHLEVEL|Tech Level : %hs
+WDT:NOBASES|No Bases
+WDT:BASES|Bases
+WDT:NOTSHORTGAME|Long Game
+WDT:SHORTGAME|Short Game
+WDT:CREDITS|Starting Credits : %hs
+WDT:FOGOFWAR|Fog of War
+WDT:HARVESTERTRUCE|Harvester Truce
+WDT:UNITCOUNT|Starting Units : %hs
+WDT:NOREDEPLOYMCV|MCV Not Redeployable
+WDT:REDEPLOYABLEMCV|MCV Redeployable
+WDT:NOCRATES|No Goodie Crates
+WDT:CRATES|Goodie Crates
+WDT:NORTHAMERICA00|North Pacific
+WDT:NORTHAMERICA01|Grand Forks
+WDT:NORTHAMERICA02|Montana
+WDT:NORTHAMERICA03|Black Hills
+WDT:NORTHAMERICA04|Lake Superior
+WDT:NORTHAMERICA05|Ontario
+WDT:NORTHAMERICA06|Ottowa
+WDT:NORTHAMERICA07|New England
+WDT:NORTHAMERICA08|Gulf of St. Lawrence
+WDT:NORTHAMERICA09|Nova Scotia
+WDT:NORTHAMERICA10|Pacific Coast
+WDT:NORTHAMERICA11|Cascades
+WDT:NORTHAMERICA12|Snake River
+WDT:NORTHAMERICA13|North Rockies
+WDT:NORTHAMERICA14|Western Gateway
+WDT:NORTHAMERICA15|Great Lakes
+WDT:NORTHAMERICA16|Appalachians
+WDT:NORTHAMERICA17|Southern Cal
+WDT:NORTHAMERICA18|Grand Canyon
+WDT:NORTHAMERICA19|Southern Rockies
+WDT:NORTHAMERICA20|Dodge
+WDT:NORTHAMERICA21|Ohio River
+WDT:NORTHAMERICA22|Roanoake
+WDT:NORTHAMERICA23|Panhandle
+WDT:NORTHAMERICA24|Texas Gulf
+WDT:NORTHAMERICA25|Gulf Coast
+WDT:NORTHAMERICA26|Savannah
+WDT:NORTHAMERICA27|Baja
+WDT:NORTHAMERICA28|Sierra Madre
+WDT:NORTHAMERICA29|Southern Gulf
+WDT:EUROPE00|Eire
+WDT:EUROPE01|Britannia
+WDT:EUROPE02|Norway
+WDT:EUROPE03|Sweden
+WDT:EUROPE04|Finland
+WDT:EUROPE05|Bay of Biscay
+WDT:EUROPE06|La Seine
+WDT:EUROPE07|Germany
+WDT:EUROPE08|Poland
+WDT:EUROPE09|Baltic
+WDT:EUROPE10|Belarus
+WDT:EUROPE11|Ukraine
+WDT:EUROPE12|North Atlantic
+WDT:EUROPE13|Ebro
+WDT:EUROPE14|Gulf of Lions
+WDT:EUROPE15|Alps
+WDT:EUROPE16|Liguria
+WDT:EUROPE17|Adriatic Coast
+WDT:EUROPE18|Danube Delta
+WDT:EUROPE19|Black Sea
+WDT:EUROPE20|Sierra Morena
+WDT:EUROPE21|Sardinia
+WDT:EUROPE22|Tyrrhenia
+WDT:EUROPE23|Aegean Coast
+WDT:EUROPE24|Asia Minor
+WDT:EUROPE25|Mesopotamia
+WDT:EUROPE26|Morocco
+WDT:EUROPE27|South Med
+WDT:EUROPE28|Sahara
+WDT:EUROPE29|Tunisia
+WDT:ASIA00|Xinjiang
+WDT:ASIA01|Gansu
+WDT:ASIA02|Nei Mongol
+WDT:ASIA03|Heilongjiang
+WDT:ASIA04|Jilin
+WDT:ASIA05|Liaoning
+WDT:ASIA06|Republic of Korea
+WDT:ASIA07|Japan
+WDT:ASIA08|Japan Islands
+WDT:ASIA09|Eastern Tibet
+WDT:ASIA10|Xizang
+WDT:ASIA11|Qinghai
+WDT:ASIA12|Yunnan
+WDT:ASIA13|Sichuan
+WDT:ASIA14|Shaanxi
+WDT:ASIA15|Shanxi
+WDT:ASIA16|Hebei
+WDT:ASIA17|Henan
+WDT:ASIA18|Shandong
+WDT:ASIA19|Jiangsu
+WDT:ASIA20|Nanjing
+WDT:ASIA21|Hubei
+WDT:ASIA22|Hunan
+WDT:ASIA23|Guangxi
+WDT:ASIA24|Guangdong
+WDT:ASIA25|Taiwan
+WDT:ASIA26|South China Sea
+WDT:ASIA27|Hainan
+WDT:ASIA28|Philippines
+WDT:ASIA29|Guizhou
+GUI:LOGINSSCREEN|Вход на Westwood Online
+GUI:LOGINNAME|Уч. запись
+GUI:PASSWORD ENTRY BOX LABEL|Пароль
+GUI:LOGIN|Вход
+GUI:REMEMBERACCOUNT|Запомнить учетную информацию
+GUI:FORGETACCOUNT|Удалить уч. запись
+GUI:AUTOLOGINQUERY|Вы хотите автоматически входить под этой учетной записью в будущем?
+GUI:DONOTASK|Больше не спрашивать
+GUI:WOLWELCOME|Westwood Online
+GUI:WELCOMERA2ONLINE|Добро пожаловать в игровую сеть игры Красная Угроза 2
+GUI:QUICKMATCH|Быстрый матч
+GUI:CUSTOMMATCH|Свой матч
+GUI:PLAYBUDDY|Список друзей
+GUI:PLAYWDT|Господство
+GUI:MYINFORMATION|Моя информация
+GUI:USERPROFILELABEL|Профиль игрока под именем %hs
+GUI:GAMEWINS|Победы :
+GUI:GAMELOSSES|Поражения :
+GUI:LADDERRANK|Звание :
+GUI:DISCONNECTS|Отключений :
+GUI:UNKNOWNSTATS|?
+GUI:MATCHSTATUS|Статус матча
+GUI:MATCHINGPROGRESS2|Поиск матча...
+GUI:MATCHFOUND|Матч найден!
+GUI:OPENGAMES|Доступные игры
+GUI:CREATEGAME|Создать игру
+GUI:JOINGAME|Присоединиться
+GUI:CLANANDLADDER|Клан/Доска почета
+GUI:MYINFORMATIONLABEL|Моя информация
+GUI:PERSONA|Персона :
+GUI:AUTOLOGIN|Авто-вход на эту уч. запись
+GUI:BUDDYTITLE|Статус друзей
+GUI:STATUS|Статус
+GUI:ADDBUDDY|Добавить друга
+GUI:REMOVEBUDDY|Удалить друга
+GUI:REFRESH|Обновить
+BRIEF:ERROR|Ой, а для этой миссии инструкций нет. Изучите MISSION.INI и RA2.STR чтобы понять, как их сделать.
+TXT_NONE|
+TXT_COPYRIGHT|© 2000, 2001 ELECTRONIC ARTS INC. ВСЕ ПРАВА ЗАЩИЩЕНЫ
+TXT_TIME_FORMAT_HOURS|Время: %02d:%02d:%02d
+TXT_TIME_FORMAT_NO_HOURS|Время:%02d:%02d
+TXT_MONEY_FORMAT_1|$%d
+TXT_MONEY_FORMAT_2|%s $%d
+TXT_READY|Готово
+TXT_HOLD|Пауза
+TXT_PRIMARY|Основное
+TXT_PRI|Осн.
+TXT_OK|ОК
+TXT_YES|Да
+TXT_NO|Нет
+TXT_SCENARIO_WON|Миссия выполнена
+TXT_SCENARIO_LOST|Миссия провалена
+TXT_CANCEL|Отмена
+TXT_IGNORE|Игнорировать
+TXT_CLICK_CONTINUE|Нажмите для продолжения
+TXT_MISSION_EFFICIENCY|ЭФЕКТИВНОСТЬ МИССИИ
+TXT_MISSION_TIME_LAPSE|ВРЕМЕННАЯ ПОГРЕШНОСТЬ МИССИИ
+TXT_CURRENCY|CURRENCY
+TXT_CASUALTIES|ПОТЕРИ
+TXT_BEST_SCORES|Лучший результат
+TXT_STRUCTURES|Здания
+TXT_RESUME_MISSION|Вернуться к миссии
+TXT_VIDEO|Видео
+TXT_MORE|-- Еще --
+TXT_INTERFACE|Интерфейс
+TXT_TEAM|Отряд
+TXT_SELECTION|Выделение
+TXT_CONTROL|Приказы
+TXT_CREATE_TEAM|Создать отряд %2d
+TXT_CD_ERROR1|Красная угроза 2 не может найти ваше устройство чтения компакт-дисков.
+TXT_DLL_INVALID|Красная угроза 2 требует %s версию %d.%d или новее. \n \nПожалуйста, прочитайте файл read me для получения \n информации о том, как получить новую версию %s.
+TXT_ENEMY_SOLDIER|Вражеский солдат
+TXT_ENEMY_VEHICLE|Вражеская техника
+TXT_ENEMY_STRUCTURE|Вражеское здание
+TXT_INITGAME_FAILED|Невозможно иницализовать. Пожалуйста, переустановите.
+TXT_PREPARECOM_FAILED|Один или более DLL файлы не найдены или повреждены. Пожалуйста, переустановите.
+TXT_NO_SOUND_CARD|Звуковая карта не обнаружена
+TXT_INVALIDMODE|Эта игра требует 16бит глубины цвета!
+TXT_LOST|Игра окончена
+TXT_MOUSE_REQUIRED|Для того, чтобы играть в игру Красная угроза 2 нужна мышь.
+TXT_DSOUND_ACCESS|Невозможно воспроизводить звук на первичном буфере Direct Sound.
+TXT_DDRAW_UNKNOWN|Нераспознанный код Direct Draw.
+TXT_VIDEO_ERROR|Ошибка - невозможно установить другое разрешение.
+TXT_SHORT_TITLE|Красная угроза 2
+TXT_CRITICALLY_LOW|Предупреждение - у Вас слишком мало места на жестком диске для сохранения игр. Вы хотите играть в игру Красная угроза 2?
+TXT_TAB_SIDEBAR|Панель
+TXT_TAB_BUTTON_CONTROLS|Настройки
+TXT_SHADOW|Неисследованная территория
+TXT_OPTIONS_MENU|Настройки
+TXT_STOP|Стоп
+TXT_DEPLOY_OBJECT|Развернуть объект
+TXT_DEPLOY_OBJECT_DESC|Развернуть выделенные(ые) объект(ы).
+TXT_WAYPOINTMODE|Режим точек пути
+TXT_WAYPOINTMODE_DESC|Переключатель режима установки точек пути вкл. / выкл.
+TXT_ON|Вкл.
+TXT_OFF|Выкл.
+TXT_MULTIPLAYER_GAME|Коллективная игра
+TXT_SCRNCAP|Снимок экрана
+TXT_SCRNCAP_DESC|Сделать снимок экрана. (Сохранить как 'SCRNxxxx.PCX' файл в папке игры Красная угроза 2.)
+TXT_SENDING_GO|Отправка запроса ВПЕРеД - Пожалуйста, подождите...
+TXT_WAITING_GO|Ожидание ответа ВПЕРеД - пожалуйста, подождите...
+TXT_SENDING_GO_ACK|Отправка подтверждения ВПЕРеД - Пожалуйста, подождите...
+TXT_CWAIT_STAR70|*70
+TXT_CWAIT_70NUM|70#
+TXT_CWAIT_1170|1170
+TXT_EASY|Легкая
+TXT_NORMAL|Нормальная
+TXT_HARD|Сложная
+TXT_HIGH|Высокая
+TXT_LOW|Низкая
+TXT_FASTEST|Быстрейшая
+TXT_FASTER|Оч. быстрая
+TXT_SLOWER|Оч. медленная
+TXT_SLOWEST|Медленнейшая
+TXT_SLOW|Медленная
+TXT_MEDIUM|Средняя
+TXT_FAST|Быстрая
+TXT_UNABLE_READ_SCENARIO|Невозможно прочитать сценарий!
+TXT_ERROR_LOADING_GAME|Ошибка загрузки игры!
+TXT_OBSOLETE_SAVEGAME|[УСТАРЕВШАЯ]
+TXT_MUSTENTER_DESCRIPTION|Вы должны ввести описание!
+TXT_ERROR_SAVING_GAME|Ошибка сохранения миссии!
+TXT_DELETE_FILE_QUERY|Удалить этот файл?
+TXT_EMPTY_SLOT|[СВОБОДНОЕ МЕСТО]
+TXT_MAP|Карта: %s
+TXT_PLAYER_CHANGED_LATENCY|Игрок %s изменил(а) настройки скорости соединения игры.
+TXT_PLAYER_CHANGED_SPEED|Игрок %s изменил(а) настройки скорости игры.
+TXT_REQUEST_DENIED|Запрос отклонен.
+TXT_UNABLE_PLAY_WAAUGH|Невозможно играть; сценарий не найден.
+TXT_NOTHING_TO_JOIN|Некуда присоединяться!
+TXT_NAME_ERROR|Вы должны ввести имя!
+TXT_YOURGAME_OUTDATED|У Вас старая версия игры.
+TXT_DESTGAME_OUTDATED|Версия игры оппонента отличается от Вашей.
+TXT_THATGUYS_GAME|Игра, созданная игроком %s
+TXT_THATGUYS_GAME_BRACKET|[%s игра]
+TXT_REJECT|Выгнать
+TXT_CANT_REJECT_SELF|Вы не можете выгнать самого себя!
+TXT_SELECT_PLAYER_REJECT|Вы должны выбрать игрока, чтобы выгнать.
+TXT_CREDITS_COLON|Финансы:
+TXT_ONLY_ONE|Только один игрок?
+TXT_OOPS|Ое-ей!
+TXT_FROM|От %s:
+TXT_TO|Для %s:
+TXT_TO_ALL|Для всех:
+TXT_MESSAGE|Сообщение:
+TXT_CONNECTION_LOST|Соединение с %s потеряно!
+TXT_LEFT_GAME|%s покинул(а) игру.
+TXT_PLAYER_DEFEATED|%s потерпел(а) поражение!
+TXT_COMPUTER|Компьютер
+TXT_NONAME|[Новый игрок]
+TXT_DEFAULT|По умолчанию
+TXT_SETTINGS|Настройки
+TXT_NAME_COLON|Имя:
+TXT_OUT_OF_SYNC|Ошибка пересоединения!
+TXT_PACKET_TOO_LATE|Пакет получен слишком поздно!
+TXT_USER_SIGNED_OFF|Пользователь вышел!
+TXT_POWER_DRAIN|Энергия = %d \n Потребление = %d
+TXT_STAND_BY|Пожалуйста, подождите...
+TXT_LOW_POWER|Мало энергии - производство замедлено
+TXT_KILLS_COLON|Убито:
+TXT_SPY_INFO|Информация шпиона
+TXT_INFANTRY|Пехота
+TXT_BUILDNGS|Здания
+TXT_CIVILIAN_BUILDING|Гражданское здание
+TXT_TECHNICIAN|Техник
+TXT_UNITS|Подразделения
+TXT_TO_REPLAY|Вы хотите переиграть эту миссию?
+TXT_SURRENDER|Сдаться
+TXT_GAMENAME_MUSTBE_UNIQUE|Название Вашей игры должно быть уникальным.
+TXT_GAME_IS_CLOSED|Игра закрыта.
+TXT_NAME_MUSTBE_UNIQUE|Ваше имя должно быть уникальным.
+TXT_RECONNECTING_TO|Прервалось соединение с  %s. Пытаемся переподключиться.
+TXT_WAITING_FOR_CONNECTIONS|Ожидание, когда все игроки войдут в игру....
+TXT_TIME_ALLOWED|Времени осталось: %02d секунд
+TXT_JUST_YOU_AND_ME|От компьютера: Остались только ты и я!
+TXT_HAS_ALLIED|%s заключил(а) союз с %s
+TXT_AT_WAR|%s объявил(а) войну %s
+TXT_SCENARIOS_DO_NOT_MATCH|Scenarios don't match.
+TXT_CONTINUE|Продолжить
+TXT_QUEUE_FULL|Очередь данных переполнена
+TXT_SPECIAL_WARNING|%s изменил(а) настройки игры!
+TXT_WAITING_FOR_OPPONENT|Ожидание оппонента
+TXT_GAME_WAS_SAVED|Миссия сохранена
+TXT_SPACE_CANT_SAVE|Недостаточно свободного пространства на диске для сохранения игры. Пожалуйста, удалите ненужные сохраненные игры для освобождения места на диске и попытайтесь снова.
+TXT_LOADING|Миссия загружается. Пожалуйста, подождите...
+TXT_LOBBY|Прихожая
+TXT_SAVING_GAME|Миссия сохраняется - Пожалуйста, подождите...
+TXT_GAME_FULL|Игра полная.
+TXT_MUST_SELECT_GAME|Вы должны выбрать игру!
+TXT_S_PLAYING_S|%s играет %s
+TXT_ONLY_HOST_CAN_MODIFY|Только сервер может изменять эту опцию.
+TXT_GAME_CANCELLED|Игра была отменена.
+TXT_S_FORMED_NEW_GAME|%s создал(а) новую игру.
+TXT_GAME_NOW_IN_PROGRESS|Игра созданная %s сейчас в процессе.
+TXT_NO_DIAL_TONE|Нет гудка. Проверьте подключение вашего модема к телефонной линии и попробуйте снова.
+TXT_CONNECTING|Соединение...
+TXT_SELECT_SETTINGS|Please select 'Settings' to setup default configuration
+TXT_ANSWERING|Ответ...
+TXT_INITIALIZING_MODEM|Инициализация модема... подождите
+TXT_ERROR_NO_INIT|Error - Modem did not respond to initialisation string.
+TXT_ERROR_NO_DISABLE|Error - Unable to disable modem auto answer.
+TXT_ERROR_TOO_MANY|Error - Too many errors initialising modem - Aborting.
+TXT_ERROR_ERROR|Error - Modem returned error status.
+TXT_ERROR_TIMEOUT|Ошибка - истекло время ожидания подключения.
+TXT_RECEIVING_SCENARIO|Получение сценария с сервера.
+TXT_SENDING_SCENARIO|Отправка сценария удаленному игроку.
+TXT_NO_FLOW_CONTROL_RESPONSE|Error - Modem failed to respond to flow control command. Your Windows configuration may be incorrect.
+TXT_NO_COMP_DISABLE_RESPONSE|Error - Modem failed to respond to compression disable command. Your Windows configuration may be incorrect.
+TXT_NO_EC_DISABLE_RESPONSE|Error - Modem failed to respond to error correction disable command. Your Windows configuration may be incorrect.
+TXT_UNABLE_TO_OPEN_PORT|Неправильный порт или порт уже используется
+TXT_INVALID_PORT_ADDRESS|Неправильный Порт/Адрес. COM 1-4 ИЛИ АДРЕС
+TXT_IRQ_ALREADY_IN_USE|Прерывание уже используется
+TXT_ERROR_IN_INITSTRING|Error in the InitString
+TXT_MODEM_OR_LOOPBACK|Not a Null Modem Cable Attached! It is a modem or loopback cable.
+TXT_UNABLE_FIND_MODEM|Модем не найден. Проверьте питание и кабели.
+TXT_NULL_CONNERR_CHECK_CABLES|Ошибка соединения! Проверьте ваши кабели. Повторная попытка соединения...
+TXT_MODEM_CONNERR_REDIALING|Ошибка соединения! Пересоединение...
+TXT_MODEM_CONNERR_WAITING|Ошибка соединения! Ожидание звонка...
+TXT_WAITING_CONNECT|Ожидание соединения...
+TXT_CUSTOM|CUSTOM -
+TXT_COM1|COM1 - 3F8
+TXT_COM2|COM2 - 2F8
+TXT_COM3|COM3 - 3E8
+TXT_COM4|COM4 - 2E8
+TXT_NO_CARRIER|No carrier.
+TXT_SHIP_01|UFull Name:ЋЋЋЋЋЋЋЋACoord:ЋЋAHgt:AStr:AAce:ASpd:AAmmoAArm:AGrp:ACloak:APrice:Ће \n
+TXT_SHIP_02|3 3 3 3 3 3 3 3 3 3 3 3 \n
+TXT_SHIP_03|AOwner:ЋЋЋЋЋЋЋЋЋЋЋЋЏTrigger:ЏTarCom:ЋASTarCom:APFace:ЏPath:ЋЋЋЋAЋЋATry:ADelay:' \n
+TXT_SHIP_04|3 3 3 3 3 3 3 3 3 \n
+TXT_SHIP_05|ACargo:ЋЋЋATarget:ЋЏNext:ЋЋЋЏNavCom:ЋЏSNavCom:ЏSFace:ЏPBrk:AHeadTo:ЋAArchive:Ћ' \n
+TXT_SHIP_06|3 3 3 3 3 3 3 3 3 3 \n
+TXT_SHIP_07|ATmr:ASt:ARt:AStageЏRadio:ЋЋЏRadio Message History:ЋЋAЋЋЋЋЋAЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋ' \n
+TXT_SHIP_08|3 3 3 3 3 3 3 \n
+TXT_SHIP_09|AMission:AЋЋЋAЋAQueue:ЋЋЋЋЋЋ' 3 \n
+TXT_SHIP_10|3 3 3 3 \n
+TXT_SHIP_11|AЋЋЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋ' \n
+TXT_SHIP_12|3 3 \n
+TXT_SHIP_13|AЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋ' \n
+TXT_SHIP_14|3Is Down 3AnimAttached3Primary 3Player Owned3Initiated 3Repairing 3 \n
+TXT_SHIP_15|3To Damage 3Falling [ ]3Loaner 3Player Aware3Deploying 3ToSelfRepair3 \n
+TXT_SHIP_16|3To Display 3Useless 3Locked 3Cpu Aware 3Firing 3 3 \n
+TXT_SHIP_17|3In Limbo 3Ticked Off 3Recoil 3Lemon 3Rotating 3 3 \n
+TXT_SHIP_18|3Selected 3Cloakable 3Tethered 3Invul [ ]3Driving 3 3 \n
+TXT_SHIP_19|3To Look 3Unloading 3Formation 3 3 3 3 \n
+TXT_SHIP_20|'Team:IIIҐMmbrs:ҐQnt:ҐCenter:IҐTarget:IOFormation:IIOIIIIIIIIIIIIOIIIIIIIIIIIIж \n
+TXT_SHIP_21|3 3 3 3 3 3 3Understrngth3Moving 3 \n
+TXT_SHIP_22|AMission:AЋЋЋЋЋЋAЋЋЋЋAЋЋЋЋЋЋЋЋЏЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋ'FullStrength3ForcedActive3 \n
+TXT_SHIP_23|3 3 3HasBeen 3Reforming 3 \n
+TXT_SHIP_24|AЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋAЋЋЋЋЋЋЋЋЋЋЋЋU \n
+TXT_SHIP_25|<- F11 Ship F12 ->
+TXT_NUCLEAR_BOMB|Атомная бомба
+TXT_ION_CANNON|Ионная пушка
+TXT_FIRESTORM|Firestorm Defense Toggle
+TXT_LIGHTNING_STORM_APPROACHING|Внимание: Приближается разрушительная гроза.
+TXT_LIGHTNING_STORM|Warning: Catastrophic lightning storm manifesting!
+TXT_EM_PULSE|ЭМ Импульс
+TXT_FIRESTORM_ON|Работает
+TXT_CHARGING|Зарядка...
+TXT_YELLOW|Желтый
+TXT_GRAY|Серый
+TXT_RED|Красный
+TXT_PURPLE|Пурпурный
+TXT_BLUE|Синий
+TXT_CYAN|Cyan
+TXT_TAN|Tan
+TXT_GREEN|Зеленый
+TXT_MODE|Режим
+TXT_RANK|Звание
+TXT_BACK|Назад
+TXT_NOT_IN_LADDER|Sorry, that player or rank is not in the ladder.
+TXT_BYTES_W_TIME|Прочитано байт: %d / %d. Осталось времени: %d секунд
+TXT_BYTES_WO_TIME|Прочитано байт: %d / %d.
+TXT_FINDING_PATCH|Поиск обновления...
+TXT_NO_SERV_LIST|Невозможно получить список серверов
+TXT_UPGRADEREQUIRED|Для этой игры требуется обновление \n Вы хотите скачать его сейчас?
+TXT_DOWNLOADING_X_OF_Y|Скачивание файла %d из %d...
+TXT_SERVER_ERROR|Ошибка сервера беседы
+TXT_LOGIN_USED|Учетная запись уже используется.
+TXT_BADPASS|Неправильное имя или пароль.
+TXT_BANNED|Вы временно внесены в черный список. Хотите открыть Ваш интернет обозреватель для получения дополнительной информации?
+TXT_CANT_CONNECT|Невозможно подключиться к Westwood Online, проверьте ваше соединение с сетью Интернет.
+TXT_CHANCREATE_FAILED|Нельзя создать канал
+TXT_CREATED_CHAN|Созданный канал: %s
+TXT_CANT_JOINCHAN|Ошибка присоединения к каналу %X
+TXT_PAGESENT|Page was successful.
+TXT_PAGEDISABLED|User has pages disabled
+TXT_PAGEUSERGONE|Пользователь не вошел
+TXT_PAGEFAILED|Couldn't page user
+TXT_FINDOK|Пользователь на канале %s
+TXT_FINDNONE|Пользователя нет ни на каких каналах
+TXT_FINDGONE|Пользователь не вошел в сеть
+TXT_FINDDISABLED|User has find disabled
+TXT_FINDFAILED|Поиск невозможен
+TXT_YOURE_DISCON|Вы были отключены от сервера
+TXT_BANNEDTILL|Вы внесены в черный список Westwood Online до %hs
+TXT_CHAN_BAN|%s был(а) выгнан(а) с канала
+TXT_CHAN_UNBAN|%s разрешили находиться на канале
+TXT_YOURE_KICKED|Вы были выгнаны с канала %s пользователем %s
+TXT_USER_KICKED|Пользователя %s выгнал с канала %s некий %s
+TXT_YOULEFT|Вы покинули канал %s
+TXT_FETCHING_SERVLIST|Установка списка серверов
+TXT_CONNECTING_SERVER|Соединение с Westwood Online
+TXT_REQ_CHANLIST|Запрос списка каналов
+TXT_JOINLOB|Присоединение к прихожей
+TXT_JOININGCHAN|Присоединение к каналу: %s
+TXT_SEARCHING|ПОИСК...
+TXT_SEARCHING_FOR|Поиск %s....
+TXT_ACCEPTFIRST|Все игроки должны подтвердить до начала игры.
+TXT_NO_BOUND_NET_CARD|Сеть не найдена
+TXT_INVALID_SOCKET|Номер сокета должен быть от 0 до 16383
+TXT_DESTNET_ADDR_ERROR|Сетевой адрес назначения должен быть формата xx.xx.xx.xx
+TXT_ABOUT_TO_TRY_MODE|Режим экрана был изменен. Если возникнут проблемы с отображением на экран при новом режиме, то подождите и старый режим восстановится.
+TXT_APIMISSING|Библиотека поддержки Westwood Online не найдена или повреждена. Пожалуйста, переустановите бесплатные интернет компоненты с Вашего компакт-диска.
+TXT_APIWRONGVERSION|Установленная версия библиотеки поддержки Westwood Online очень старая. Пожалуйста, переустановите бесплатные интернет компоненты с Вашего компакт-диска.
+TXT_NOTCHANOP|Вы должны быть оператором канала, чтобы сделать это.
+TXT_NOSQUAD|You are not in a Red Alert 2 squad.
+TXT_LAUNCHBROWSER|Вы действительно хотите запустить Ваш обозреватель и посетить эту страницу?
+TXT_NOBROWSER|У вас нет обозревателя связанного с HTML файлами.
+TXT_BAD_CHANNAME|Вы не можете создать канал с таким названием. Попробуйте удалить пробелы и знаки пунктуации.
+TXT_BAD_CHANKEY|Вы не можете создать канал с таким паролем. Попробуйте удалить пробелы и знаки пунктуации.
+TXT_CANTCREATE_CHAN|Вы не можете создать этот канал.
+TXT_NAME_BLANK|У вашего игрока пустое имя, пожалуйста, введите имя.
+TXT_GAME_CLOSED|Этот игровой канал закрыт
+TXT_CHANNEL_FULL|Этот канал полон
+TXT_JOINBAN|Вы были внесены в черный список этого канала
+TXT_ENTER_MESSAGE|Пожалуйста, введите сообщение для отправки
+TXT_NOT_IN_CHAN|Вы не можете посылать сообщения, когда не находитесь на канале
+TXT_WOL_CONNLOST|Потеряно соединение с Westwood Online, внешние пользователи не смогут попасть на вашу страничку.
+TXT_DSOUND_PROCEED|Продолжение с отключенным звуком.
+TXT_REQ_NICK|Запрос новой уч. записи...
+TXT_DISK_NAME|Красная угроза 2: Месть Юрия диск %d
+TXT_CONFIRM_SAVE|Перезаписать эту сохраненную игру?
+TXT_DISKFULL|Предупреждение - вы имеете очень мало свободного места на диске для сохраненных игр.
+TXT_SIGNING_OFF|Завершение - пожалуйста, подождите...
+TXT_CD_DIALOG_1|Пожалуйста, вставьте компакт-диск с игрой Красная угроза 2: Месть Юрия в устройство чтения компакт-дисков.
+TXT_CD_DIALOG_2|Пожалуйста, вставьте компакт-диск %d (%s) в устройство чтения компакт дисков.
+TXT_NAMES|Игроки
+TXT_LOSSES|Потери
+TXT_ECONOMY|Экономия
+TXT_SCORE|Очки
+TXT_KILLS|Убито
+TXT_RESET_HOTKEYS|Вы точно хотите сбросить привязки 'Горячих клавиш'?
+TXT_DSOUND_CANT_CREATE|Предупреждение - невозможно создать объект Direct Sound.
+TXT_DSOUND_NO_COOP|Warning - Unable to set Direct Sound cooperative level.
+TXT_DSOUND_NO_PRIMARY|Внимание - невозможно создать первичный буфер Direct Sound.
+TXT_DSOUND_INCOMPAT|Warning - Your sound card does not meet the product's audio requirements.
+TXT_JANUARY|Январь
+TXT_FEBRUARY|Февраль
+TXT_MARCH|Март
+TXT_APRIL|Апрель
+TXT_MAY|Май
+TXT_JUNE|Июнь
+TXT_JULY|Июль
+TXT_AUGUST|Август
+TXT_SEPTEMBER|Сентябрь
+TXT_OCTOBER|Октябрь
+TXT_NOVEMBER|Ноябрь
+TXT_DECEMBER|Декабрь
+TXT_RELEASE_THE_HOUNDS|Release
+TXT_RECONNECT_HELP1|Щелкните по имени игрока чтобы предложить исключить его из игры.
+TXT_RECONNECT_HELP2|Если индикаторы соединения остальных игроков красные, то наверное это
+TXT_RECONNECT_HELP3|Проверьте ваше соединение с Интернетом. Если вы отключены от Интернета
+TXT_RECONNECT_HELP4|вы отсоединены от сети.
+TXT_RECONNECT_HELP5|Нажмите 'Отмена' для того чтобы прервать игру и вернуться в прихожую.
+TXT_RECONNECT_HELP2B|отсоединены от интернета.
+TXT_RECONNECT_HELP3B|попробуйте переподключить интернет и продолжить игру, если
+TXT_RECONNECT_HELP3C|остальные игроки не удалят вас раньше.
+TXT_RECONNECT_KICK_SELF|Вы не можете удалить самого себя. Нажмите на 'Отмена' чтобы покинуть игру.
+TXT_RECONNECT_KICK_RECEIVED|%s предложил(а) выгнать %s из игры.
+TXT_BIOME_TUNDRA|Тундра
+TXT_BIOME_TAIGA|Тайга
+TXT_BIOME_TEMPERATE|Умеренный
+TXT_BIOME_DESERT|Пустыня
+TXT_TIME_MORNING|Утро
+TXT_TIME_AFTERNOON|Полдень
+TXT_TIME_DUSK|Вечер
+TXT_TIME_NIGHT|Ночь
+TXT_MAPSIZE_SMALL|Маленькая
+TXT_MAPSIZE_MEDIUM|Средняя
+TXT_MAPSIZE_LARGE|Большая
+TXT_MAPSIZE_VERY_LARGE|Огромная
+TXT_RANDOM_MAP_DESCRIPTION|Случайная карта
+TXT_LOADING_GAME1B|Compensating for ambient light values...
+TXT_CONSENT_REQUIRED|Since you are under the age of 13 our privacy policy requires that you send us a parental consent form to continue. Press 'yes' to open your web browser to this page.
+TXT_CLAN_NOSTART|Для начала турнира между кланами игра должна иметь одинаковое количество игроков из двух кланов. Каждый игрок должен состоять в клане.
+TXT_DISABLED|Ваша учетная запись временно недоступна. Убедитесь, что адрес электронной почты, который вы зарегистрировали - правильный. Вы хотите открыть окно вашего обозревателя для получения дополнительной информации?
+TXT_SERIALBANNED|(БОЛЬШЕ НЕЛЬЗЯ ИСПОЛЬЗОВАТЬ)
+TXT_SERIALDUP|Ваш серийный номер уже используется. Вы хотите открыть ваш обозреватель для получения большей информации?
+TXT_SEL_USER|Вы должны выбрать пользователя, чтобы его выгнать/игнорировать/внести в черны список.
+TXT_GOLD|Золото
+TXT_ORANGE|Оранжевый
+TXT_SKY_BLUE|Голубой
+TXT_PINK|Розовый
+TXT_COLOR_IN_USE|Этот цвет уже занят.
+TXT_NO_CLAN|Вы должны входить в боевой клан, чтобы присоединиться к этой игре.
+TXT_LANGCODE|0
+TXT_SERIAL_DUP|There are already 2 players with your serial# in that game.
+TXT_MISMATCH|Несовместимые версии игр. Чтобы убедиться, что у вас установлена самая последняя версия игры, посетите www.westwood.com
+TXT_NO_EXPANSION_SCENARIO|Error - other player does not have this expansion scenario.
+TXT_SCENARIO_ERROR|Incompatable scenario file detected. The scenario may be corrupt.
+TXT_INVALID|Invalid option switch.
+TXT_OPTION_HELP_01|Красная угроза 2 © 2000, 2001 Westwood Studios/2001-2006, Siberian Studio 
+TXT_OPTION_HELP_02|Параметры: \n
+TXT_OPTION_HELP_03|-DESTNET = Specify Network Number of destination system \n
+TXT_OPTION_HELP_04|-SOCKET = Network Socket ID (0 - 16383) \n
+TXT_OPTION_HELP_05|-STEALTH = Hide multiplayer names (
+TXT_OPTION_HELP_06|-MESSAGES = Allow messages from outside this game. \n
+TXT_MAP_ERROR|Ошибка карты!
+TXT_SCATTER|Разбежаться
+TXT_SCATTER_DESC|Разбежаться выделенному(ым) объекту(ам).
+TXT_CENTER_VIEW|Централизовать
+TXT_CENTER_VIEW_DESC|Поставить в центр экрана выделенный объект(ы).
+TXT_CENTER_BASE|Базу в центр
+TXT_LINE_BUSY|Линия занята.
+TXT_NUMBER_INVALID|Неправильный номер.
+TXT_DIALING|Звонок...
+TXT_DIALING_CANCELED|Звонок отменен
+TXT_WAITING_FOR_CALL|Ожидание звонка...
+TXT_ANSWERING_CANCELED|Ответ отключен
+TXT_SYSTEM_NOT_RESPONDING|Другая система не отвечает!
+TXT_NO_COMP_ENABLE_RESPONSE|Error - Modem failed to respond to compression enable command. Your Windows configuration may be incorrect
+TXT_NO_EC_ENABLE_RESPONSE|Error - Modem failed to respond to error correction enable command. Your Windows configuration may be incorrect.
+TXT_CREATE_TEAM_DESC|Создать отряд %d из выделенных подразделений.
+TXT_SELECT_TEAM|Выбрать отряд %2d
+TXT_SELECT_TEAM_DESC|Выбрать созданный отряд %d.
+TXT_ADD_SELECT_TEAM|Добавить отряд %2d
+TXT_ADD_SELECT_TEAM_DESC|Выделить созданный отряд %d без выделения других подразделений.
+TXT_CENTER_TEAM|Отряд %2d в центр
+TXT_CENTER_TEAM_DESC|Перенести центр экран на отряд %d и выделить его.
+TXT_TAUNT|Насмешки
+TXT_TAUNT_NUMBER|Насмешка %2d
+TXT_TAUNT_DESC|Отправить насмешку %d оппоненту.
+TXT_NEXT_OBJECT|Следующий объект
+TXT_NEXT_OBJECT_DESC|Выделить следующий объект.
+TXT_PREV_OBJECT|Предыдущий объект
+TXT_PREV_OBJECT_DESC|Выделить предыдущий объект.
+TXT_STOP_OBJECT|Остановить объект
+TXT_STOP_OBJECT_DESC|Остановить выделенный(ые) объект(ы).
+TXT_GUARD|Охрана
+TXT_GUARD_DESC|Приказать выделенному(ым) объекту(ам) войти\выйти в состояние охраны местности.
+TXT_VICTORIOUS|Вы победитель!
+TXT_CENTER_BASE_DESC|Перенести центр экрана на базу игрока.
+TXT_ALLIANCE|Союз
+TXT_ALLIANCE_DESC|Заключить / разорвать союз с выделенным объектом.
+TXT_SELECT_VIEW|Выбрать Всех
+TXT_SELECT_VIEW_DESC|Выбрать все подразделения на экране
+TXT_REPAIR_MODE|Режим ремонта
+TXT_REPAIR_MODE_DESC|Вкл. / выкл. режим ремонта.
+TXT_SELL_MODE|Режим продажи
+TXT_SELL_MODE_DESC|Вкл. / выкл. режим продажи.
+TXT_POWER_MODE|Режим энергии
+TXT_POWER_MODE_DESC|Переключатель режима энергии вкл. / выкл.
+TXT_RADAR_EVENT|Перейти к событию
+TXT_RADAR_EVENT_DESC|Переместить центр экрана на местоположение последнего события на радаре.
+TXT_RADAR_TOGGLE|Переключатель радара
+TXT_RADAR_TOGGLE_DESC|Вкл. / выкл. режим отображения радара.
+TXT_SIDEBAR_UP|Панель вверх
+TXT_SIDEBAR_UP_DESC|Прокрутить списки на панели вверх.
+TXT_LSIDEBAR_UP|Список зданий вверх
+TXT_LSIDEBAR_UP_DESC|Прокрутить список зданий на панели вверх.
+TXT_RSIDEBAR_UP|Список подразд. вверх
+TXT_RSIDEBAR_UP_DESC|Прокрутить список подразделений на панели вверх.
+TXT_SIDEBAR_PGUP|Панель вверх на страницу
+TXT_SIDEBAR_PGUP_DESC|Прокрутить списки на панели вверх на страницу.
+TXT_LSIDEBAR_PGUP|Список зданий вверх на стр.
+TXT_LSIDEBAR_PGUP_DESC|Прокрутить список зданий на панели вверх на страницу.
+TXT_RSIDEBAR_PGUP|Список подразд. вверх на стр.
+TXT_RSIDEBAR_PGUP_DESC|Прокрутить список подразделений на панели вверх на страницу.
+TXT_SIDEBAR_DOWN|Панель вниз
+TXT_SIDEBAR_DOWN_DESC|Прокрутить списки на панели вниз.
+TXT_LSIDEBAR_DOWN|Список зданий вниз
+TXT_LSIDEBAR_DOWN_DESC|Прокрутить список зданий на панели вниз.
+TXT_SIGNOFF|Завершение - пожалуйста, подождите...
+TXT_RSIDEBAR_DOWN|Список подразд. вниз
+TXT_RSIDEBAR_DOWN_DESC|Прокрутить список подразделений на панели вниз.
+TXT_SIDEBAR_PGDN|Панель вниз на страницу
+TXT_SIDEBAR_PGDN_DESC|Прокрутить списки на панели вниз на страницу.
+TXT_LSIDEBAR_PGDN|Список зданий вниз на стр.
+TXT_LSIDEBAR_PGDN_DESC|Прокрутить список зданий на панели вниз на страницу.
+TXT_RSIDEBAR_PGDN|Список подразд. вниз на стр.
+TXT_RSIDEBAR_PGDN_DESC|Прокрутить список подразделений на панели вниз на страницу.
+TXT_OPTIONS|Настройки
+TXT_OPTIONS_DESC|Экран опций игры.
+TXT_SCROLL_N|Прокрутка на север
+TXT_SCROLL_N_DESC|Прокрутить карту на север.
+TXT_SCROLL_S|Прокрутка на юг
+TXT_SCROLL_S_DESC|Прокрутить карту на юг.
+TXT_SCROLL_E|Прокрутка на восток
+TXT_SCROLL_E_DESC|Прокрутить карту на восток.
+TXT_SCROLL_W|Прокрутка на запад
+TXT_SCROLL_W_DESC|Прокрутить карту на запад.
+TXT_VIEW_BOOKMARK1|Просмотр закладки 1
+TXT_VIEW_BOOKMARK1_DESC|Просмотр закладки местоположения 1 на карте.
+TXT_VIEW_BOOKMARK2|Просмотр закладки 2
+TXT_VIEW_BOOKMARK2_DESC|Просмотр закладки местоположения 2 на карте.
+TXT_VIEW_BOOKMARK3|Просмотр закладки 3
+TXT_VIEW_BOOKMARK3_DESC|Просмотр закладки местоположения 3 на карте.
+TXT_VIEW_BOOKMARK4|Просмотр закладки 4
+TXT_VIEW_BOOKMARK4_DESC|Просмотр закладки местоположения 4 на карте.
+TXT_SET_BOOKMARK1|Установить закладку 1
+TXT_SET_BOOKMARK1_DESC|Установка закладки местоположения 1 на карте.
+TXT_SET_BOOKMARK2|Установить закладку 2
+TXT_SET_BOOKMARK2_DESC|Установка закладки местоположения 2 на карте.
+TXT_SET_BOOKMARK3|Установить закладку 3
+TXT_SET_BOOKMARK3_DESC|Установка закладки местоположения 3 на карте.
+TXT_SET_BOOKMARK4|Установить закладку 4
+TXT_SET_BOOKMARK4_DESC|Установка закладки местоположения 4 на карте.
+TXT_FOLLOW|Следовать
+TXT_FOLLOW_DESC|Следовать за выделенным(и) объектом(и).
+TXT_DEL_WAYPOINT|Удалить точку пути
+TXT_DEL_WAYPOINT_DESC|Удалить выбранную точку пути.
+TXT_PAGEUSER|Страничка пользователя
+TXT_PAGEUSER_DESC|Страничка пользователя Westwood Online. (только для игры через Интернет)
+TXT_SCENARIO_TOO_SMALL|Эта карта рассчитана не более чем на %d игроков. Учитываю человеческих и компьютерных игроков.
+TXT_NEED_AT_LEAST_TWO_PLAYERS|Требуется не менее двух игроков, чтобы начать игру!
+TXT_DOWNLOAD_FAILED|Скачивание невозможно, пожалуйста, проверьте ваше соединение и попробуйте снова.
+TXT_GAME_RESTART|Красная угроза 2: Месть Юрия должна перезапуститься для самостоятельного обновления.
+TXT_PASSWORD_TOO_SHORT|Ваш пароль должен быть не менее 8 символов.
+TXT_PASSWORD_VERIFY|Вы должны дважды ввести одинаковый пароль.
+TXT_LOB_1|Командование США
+TXT_LOB_2|Корейский бункер
+TXT_LOB_3|Германский бункер
+TXT_LOB_4|Штаб США
+TXT_LOB_5|Корейский штаб
+TXT_LOB_6|Французский штаб
+TXT_NEW_GAME|Новая игра
+TXT_NEW_CHAT|Новая беседа
+TXT_NEW|New
+TXT_GAME_CHAN|Игровые каналы C&C2
+TXT_OTHER_GAME|Другие игровые каналы
+TXT_OFFICIAL_CHAT|Официальные игровые каналы
+TXT_USER_CHAT|Каналы общения игроков
+TXT_GAME_PASSWORD|Игра имеет пароль
+TXT_LEAVE|Выйти
+TXT_JOIN|Присоединиться
+TXT_OPER|Оператор канала
+TXT_VOICE|Голос
+TXT_IGNOREUSER|Игнорировать
+TXT_ACCEPTED|Принято
+TXT_JOINED_S|Вы присоединились к каналу %s
+TXT_REQUIRED_FIELD|A required field is missing, or invalid.
+TXT_SCENARIO_COLON|Сценарий:
+TXT_TOURNEY_COLON|Турнир:
+TXT_BATTLE_CLAN|Боевой клан
+TXT_HOST_RANK|Звание Сервера:
+TXT_UNRANKED|Разжалован
+TXT_CANT_KICK|Вы не можете выгнать игрока из турнира.
+TXT_GDI|Союзники
+TXT_NOD|Советский Союз
+TXT_GAME_ID|Игра# %d
+TXT_TOURNAMENT_GAME|Турнир
+TXT_BATTLECLAN_GAME|Игра битва кланов
+TXT_GAME|Игра: %d
+TXT_WORST_CONNECTION|Плохое
+TXT_POOR_CONNECTION|Poor
+TXT_GOOD_CONNECTION|Нормальное
+TXT_BEST_CONNECTION|Быстрое
+TXT_WARNING_LOCALE_UNKNOWN|Вы не выбрали ваше местоположение. Нажмите OK для продолжения или нажмите отмена для возврата и выбора вашего местоположения.
+TXT_DELETE_USER|Вы действительно хотите удалить пользователя '%s' из списка учетных записей?
+TXT_MAP_ARCHIPELAGO|Архипелаг
+TXT_MAP_CONTINENT|Континент
+TXT_MAP_TEAM_CONTINENTS|Острова
+TXT_MAP_INLAND|Внутри континента
+TXT_MAP_MOUNTAINOUS|Горная
+TXT_RESOURCE_LOW|Мало
+TXT_RESOURCE_MODERATE|Достаточно
+TXT_RESOURCE_HIGH|Много
+TXT_RESOURCE_EXTREME|На всех хватит
+TXT_THEATER_TEMPERATE|Лето (травка зеленеет)
+TXT_THEATER_SNOW|Зима (снежок белеет)
+VOX:CEVA001|Внимание: замечена Ядерная Шахта
+GUI:MEATGRIND|Мясорубка
+GUI:NAVALWAR|Морская война
+GUI:NUKEWAR|Ядерная война
+THEME:200METERS|200 Meters
+THEME:BLOWITUP|Blow It Up
+THEME:DESTROY|Destroy
+THEME:BURN|Burn
+THEME:PROBING|Probing
+THEME:EAGLEHUNTER|Eagle Hunter
+THEME:FORTIFICATION|Fortification
+THEME:GIVEEMHELL|Give 'Em Hell
+THEME:GRINDER|Grinder
+THEME:INDEEP|In Deep
+THEME:INDUSTROFUNK|Industro Funk
+THEME:JANK|Jank
+THEME:TENSION|Tension
+MSG:LIGHTNINGSTORMACTIVE|Грозовой шторм уже идет. Активация отменена.
+MSG:NOSTATIONARYCOMMANDS|Боевые единицы не могут выполнять этот приказ в режиме маршрута.
+MSG:POSTTERMINATINGCOMMAND|Последний приказ этой боевой единице отменил маршрут.
+MSG:POSTCONTINUALCOMMAND|Последний приказ этой боевой единице отменил маршрут.
+MSG:POSTLOOP|Подразделениям в режиме патрулирования нельзя отдавать новые приказы.
+MSG:NODEMAXIMUM|Вы достигли предела допустимого количества точек маршрута.
+MSG:PLANNINGMODEINTRO1|Выберите подразделения и спланируйте их последовательные действия.
+MSG:PLANNINGMODEINTRO2|Выберите подразделения и щелкните ЛКМ на карте для задания точек маршрута.
+MSG:PLANNINGMODEINTRO3|После выхода из режима маршрута боевые единицы будут следовать проложенному маршруту.
+MSG:PLANNINGMODEMERGE1|Щелкните на этом пункте чтобы добавить выбранные подразделения к этому маршруту.
+MSG:PLANNINGMODEMERGE2|Merging units will execute the commands after the merge node.
+MSG:PLANNINGMODELOOP1|Click on this node to create a patrol loop.
+MSG:PLANNINGMODELOOP2|The patrol loop will persist as long as it has at least one member.
+MSG:PLANNINGMODEDELETE1|Click this node to select it.
+MSG:PLANNINGMODEDELETE2|A selected node may be deleted using the delete key.
+MSG:PLANNINGMODEOTHERHOUSE|This waypoint path belongs to your ally.
+MSG:PLANNINGMODEALREADYINLOOP1|Cannot connect to this node because the selected units
+MSG:PLANNINGMODEALREADYINLOOP2|are already in a patrol loop.
+MSG:PLANNINGMODETRAILINGNODE|Patrol loops must have 3 or more waypoints.
+MSG:PLANNINGMODEMIXEDLOOP1|Cannot make loop with branch that does not contain the
+MSG:PLANNINGMODEMIXEDLOOP2|entire selection.
+MSG:ATTACKMOVEUNSUPPORTED|A member of the selection does not support attack move.
+MSG:AUTODEPLOYUNSUPPORTED|A member of the selection does not support auto deploy.
+GUI:EMPTY|
+GUI:MOVIESANDCREDITS|Видео и титры
+GUI:AIEASY|Легкий враг
+GUI:AINORMAL|Средний враг
+GUI:AIHARD|Могучий враг
+GUI:QUIT|Выйти
+GUI:LEAVE|Выйти
+GUI:OBSERVE|Наблюдать
+GUI:UIOPTIONS|Настройки ИП
+GUI:AUDIOOPTIONS|Настройки звука
+GUI:SETRESOLUTION|Разрешение игры
+GUI:PARTIME|Рекорд:
+GUI:YOURTIME|Ваше время:
+GUI:HEADSTAKEN|Врагов уничтожено:
+GUI:DUEL|Наземное месиво
+GUI:COOPERATIVE|Совместно
+GUI:DATEFORMAT|(ММ, ДД, ГГГГ)
+GUI:EXITAREYOUSURE|Вы действительно хотите выйти из игры Красная угроза 2: Месть Юрия?
+GUI:TALKTOALL|Сказать всем
+GUI:TALKTOALLIES|Сказать союзникам
+GUI:GIVEMONEY|Дать денег
+GUI:GAVEMONEY|%s дал %s $%d
+GUI:NOUNDERPARTITLE|ПРИМЕЧАНИЕ: Missing under par title.
+GUI:NOUNDERPARMESSAGE|ПРИМЕЧАНИЕ: Missing under par message.
+GUI:NOOVERPARTITLE|ПРИМЕЧАНИЕ: Missing over par title.
+GUI:NOOVERPARMESSAGE|ПРИМЕЧАНИЕ: Missing over par message.
+GUI:PARTITLEALL01|Ваше звание: Сержант
+GUI:PARTITLEALL02|Ваше звание: Сержант персонала
+GUI:PARTITLEALL04|Ваше звание: Сержант-майор
+GUI:PARTITLEALL05|Ваше звание: Второй лейтенант
+GUI:PARTITLEALL06|Ваше звание: Первый лейтенант
+GUI:PARTITLEALL07|Ваше звание: Капитан
+GUI:PARTITLEALL08|Ваше звание: Майор
+GUI:PARTITLEALL09|Ваше звание: Лейтенант-полковник
+GUI:PARTITLEALL10|Ваше звание: Полковник
+GUI:PARTITLEALL11|Ваше звание: Генерал-майор
+GUI:PARTITLEALL12|Ваше звание: Генерал
+GUI:PARTITLEALL13|Ваше звание: Главнокомандующий
+GUI:PARTITLESOV01|Ваше звание: Рядовой
+GUI:PARTITLESOV02|Ваше звание: Ефрейтор
+GUI:PARTITLESOV03|Ваше звание: Младший сержант
+GUI:PARTITLESOV04|Ваше звание: Старший сержант
+GUI:PARTITLESOV05|Ваше звание: Старшина
+GUI:PARTITLESOV06|Ваше звание: Младший лейтенант
+GUI:PARTITLESOV07|Ваше звание: Старший лейтенант 
+GUI:PARTITLESOV08|Ваше звание: Капитан
+GUI:PARTITLESOV09|Ваше звание: Майор
+GUI:PARTITLESOV10|Ваше звание: Подполковник
+GUI:PARTITLESOV11|Ваше звание: Полковник
+GUI:PARTITLESOV12|Ваше звание: Маршал
+GUI:PARTITLESOV13|Ваше звание: Генералиссимус
+GUI:UNDERPARMSGALL01|Ваша молниеносная контратака приостановила советское вторжение.
+GUI:OVERPARMSGALL01|Вы кое-как добились успеха в остановке советского вторжения.
+GUI:UNDERPARMSGALL02|Ваши танки оглушил русских, сдавшихся в течении нескольких коротких часов.
+GUI:OVERPARMSGALL02|Устроенная Вами резня с русскими стоила нам сотней жизней, но зато мы вернули академию военно-воздушных сил.
+GUI:UNDERPARMSGALL03|Президент был спасен, до того как русские смогли разузнать хотя бы один секрет.
+GUI:OVERPARMSGALL03|Президент был спасен, но все же многие военные секреты были поставлены под угрозу.
+GUI:UNDERPARMSGALL04|Трагическая потеря Чикаго, не сравнится с потерей целой страны. Ваше быстрое уничтожение психического усилителя означало, что русские никогда не имели времени для тестирования своих технологий.
+GUI:OVERPARMSGALL04|Психический усилитель был уничтожен, но не для советских сил, приобретших данные важного теста. Несмотря на трагическую потерю Чикаго, тем не менее, Вы сохранили целую страну от попадания под советское психическое влияние.
+GUI:UNDERPARMSGALL05|Советские командиры все еще анализируют Вашу атаку, пытаются обнаружить секреты Вашей скрытной стратегии.
+GUI:OVERPARMSGALL05|Шахты были уничтожены. Остальные советские ракеты были перемещены в глубь СССР.
+GUI:UNDERPARMSGALL06|Точность, с которой Вы уничтожили советские силы и освободили Вашингтон, должна быть зафиксирована в книгах рекордов.
+GUI:OVERPARMSGALL06|Вашингтон был спасен, но ценой большего количества человеческих жертв.
+GUI:UNDERPARMSGALL07|Вы защитили Перл-Харбор и тихий океан теперь наш.
+GUI:OVERPARMSGALL07|Перл-Харбор был спасен, но гавайские острова были разрушены русскими.
+GUI:UNDERPARMSGALL08|Вы спасли Сент-Луис прежде, чем нашим гражданам смогли навредить.
+GUI:OVERPARMSGALL08|Сент-Луис был спасен, но тысячи американцев стали верить в правоту русских.
+GUI:UNDERPARMSGALL09|Советские солдаты зовут Вас 'Призрак' за Ваше умение незаметно наносить удары.
+GUI:OVERPARMSGALL09|Благодаря Вам, наша технология была восстановлена.
+GUI:UNDERPARMSGALL10|Ваша эффективность производит впечатление, немецкие командиры просили, чтобы Вы готовили офицеров стратегии и командованию.
+GUI:OVERPARMSGALL10|Лаборатория в Шварцвальде была спасена, работа Эйнштейна может продолжаться.
+GUI:UNDERPARMSGALL11|Русские командиры боятся Вашего командования больше, чем дивизий Союзников.
+GUI:OVERPARMSGALL11|Хроносфера построена. Благодаря Вашему усилию, Союзники готовы для последнего шага к победе.
+GUI:UNDERPARMSGALL12|Ваши легендарные командные способности останутся навсегда в истории. Вы один из величайших генералов.
+GUI:OVERPARMSGALL12|Романов захвачен, война выиграна. Победа Ваша.
+GUI:UNDERPARMSGSOV01|Пентагон был уничтожен так быстро, что многие важные американские генералы были захвачены нашими солдатами, уничтожающими их вооруженные силы.
+GUI:OVERPARMSGSOV01|Благодаря Вам Пентагон был уничтожен, и американские военные были отправлены в небытие.
+GUI:UNDERPARMSGSOV02|Американский флот вместе с морской базой были уничтожены так быстро, что наши солдаты смогли захватить лишь несколько американских офицеров.
+GUI:OVERPARMSGSOV02|Американский флот был уничтожен. Пока вы приносите победу, большие потери Советского Союза не должны волновать.
+GUI:UNDERPARMSGSOV03|Психический маяк был установлен так быстро, что целая американская танковая дивизия была захвачена, прежде чем смогла убежать.
+GUI:OVERPARMSGSOV03|С вашей помощью растет сила генсека Романова. Американский народ охотно присоединяется к нашей армии.
+GUI:UNDERPARMSGSOV04|Корейское вторжение было остановлено, и даже некоторые люди из их правительства тайно заключили с нами мир.
+GUI:OVERPARMSGSOV04|В долгой и кровавой битве, Вы успешно защитили Матушку Россию.
+GUI:UNDERPARMSGSOV05|Французы боятся Вашего командования больше чем наших танков. В Париже Вы стали известны как 'Мясник'.
+GUI:OVERPARMSGSOV05|Вы превратили Эйфелеву Башню в оружие террора. Вы сполна 'наказали' Европу.
+GUI:UNDERPARMSGSOV06|Адмиралы Союзников отказываются посылать свои суда в море, из-за мгновенного уничтожения Вами Перл-Харбор.
+GUI:OVERPARMSGSOV06|Корейцы и американцы успешно расторгли союз. Тихий океан теперь наш.
+GUI:UNDERPARMSGSOV07|Ваша безжалостная эффективность заработала Вам большую репутацию в Красной Армии.
+GUI:OVERPARMSGSOV07|Военная лаборатория в безопасности. Союзники не осмелятся еще раз нанести удар Матушке России.
+GUI:UNDERPARMSGSOV08|Изменник взят: Ваша внезапная атака в Вашингтоне заставила Ваших конкурентов боятся Ваших стратегических способностей.
+GUI:OVERPARMSGSOV08|Владимир был наказан за его преступления. Ваша победа не осталась незамеченной.
+GUI:UNDERPARMSGSOV09|Мировые лидеры дрожат от страха нападения наших психических войск.
+GUI:OVERPARMSGSOV09|Президент в нашей власти. Вы будете награждены за свой энтузиазм.
+GUI:UNDERPARMSGSOV10|Ваши стратегические способности становятся легендарными. Люди всего Советского Союза открыто говорят о том, что только Вы принесете победу нашей стране.
+GUI:OVERPARMSGSOV10|Союзники не могут держаться против Ваших мощных атак. Вы хорошо используете жизни своих людей.
+GUI:UNDERPARMSGSOV11|Ваше имя уже известно школьникам как величайший генерал, которого когда-либо знал мир.
+GUI:OVERPARMSGSOV11|Оправдания Юрия были слабыми и неправдоподобными. Ваши танковые дивизии отомстили ему.
+GUI:UNDERPARMSGSOV12|Ваше имя останется в истории среди величайших командиров. А сейчас мир готов к Вашему правлению.
+GUI:OVERPARMSGSOV12|Союзники разбиты, и мир просит присоединиться к Вашим вооруженным силам. Вся власть теперь принадлежит только Вам.
+STT:EMPTY|
+STT:MAINBUTTONMOVIES|Посмотреть видеоролики и имена создателей.
+STT:MAINOPTBUTTONNETWORK|Изменить конфигурацию Вашей сети.
+STT:MAINOPTCBOXSTRETCH|Растягивать видео при высоких разрешениях экрана.
+STT:MAINOPTSLIDERVISUAL|Изменить графические эффекты в игре.
+STT:MAINOPTCOMBOMODES|Выбрать разрешение экрана для Вашей игры.
+STT:MAINOPTSLIDERSPEED|Настроить скорость подразделений и времени строительства.
+STT:MAINOPTSLIDERDIFFICULTY|Настроить сложность в игре.
+STT:MAINOPTCBOXCAMEO|Настроить всплывающие названия кнопок в строительных таблицах..
+STT:MAINOPTCBOXTARGETLINES|Показывать линии нацеливания подразделений при движении и атаке.
+STT:MAINOPTCBOXHIDDEN|Показывать подразделения, скрытые зданиями.
+STT:MAINOPTCBOXTOOLTIPS|Показывать описание подразделений, зданий и кнопок.
+STT:MAINOPTSLIDERSCROLL|Настроить скорость прокрутки мышкой.
+STT:MAINOPTCBOXSCROLLCOASTING|Tactical map slowly coasts to a stop.
+STT:MAINOPTSLIDERMUSIC|Настроить уровень громкости музыки.
+STT:MAINOPTSLIDERSOUND|Настроить уровень громкости звуковых эффектов.
+STT:MAINOPTSLIDERVOICE|Настроить уровень громкости голоса.
+STT:MULTIOPTCOMBOCARD|Адреса сетевой карты (только для опытных).
+STT:MULTIOPTEDITSOCKETNUM|Редактировать Ваш номер сокета IPX (только для опытных).
+STT:MULTIOPTEDITDESTADDR|Изменить Ваш адрес назначения (только для опытных).
+STT:MULTIOPTBUTTONOK|Применить Ваши изменения.
+STT:MULTIOPTBUTTONCANCEL|Отменить Ваши изменения.
+STT:CONFIRMEXITBUTTONLEAVE|Прервать игру и покинуть ее.
+STT:CONFIRMEXITBUTTONLEAVEEX|Прервать игру и покинуть ее.
+STT:CONFIRMEXITBUTTONOBSERVE|Сдаться и наблюдать битву.
+STT:IGGAMEOPTCBOX|Настроить всплывающие названия кнопок в строительных таблицах.
+STT:STANDSCOREPARTIME|Стандартное время выполнения этой миссии.
+STT:STANDSCOREYOURTIME|Ваше время выполнения этой миссии.
+STT:STANDSCORETITLE|К вам обращаются.
+STT:STANDSCOREMESSAGE|Оценка итогов ваших действий.
+STT:STANDSCOREKILLS|Количество врагов, уничтоженных на протяжении миссии.
+TIP:CHEER|Ликовать
+CMND:DELETE|Удалить
+CMND:DELETEDESC|Удаляет выбранный объект.
+CMND:PLANNINGMODE|Режим Маршрута
+CMND:PLANNINGMODEDESC|Позволяет параллельно отдавать последовательности приказов, исполнение которых начнется одновременно.
+CMND:ATTACKMOVE|Атака в движении
+CMND:ATTACKMOVEDESC|Приказывает подразделениям атаковать неприятелей, встреченных по ходу движения.
+CMND:AUTODEPLOY|Авторазвертывание
+CMND:AUTODEPLOYDESC|Приказывает боевой единице автоматически разворачиваться на цели.
+CMND:COMBATANTSELECT|Выбор Вооруженных
+CMND:COMBATANTSELECTDESC|Выбирает все боевые подразделения.
+CMND:TYPESELECT|Выбор Типа
+CMND:TYPESELECTDESC|Выделить подразделения по типу. Работает со смешанными группами войск.
+CMND:HEALTHNAVIGATION|Выбор по Здоровью
+CMND:HEALTHNAVIGATIONDESC|Выделение боевых единиц с одинаковым состоянием здоровья.
+CMND:VETNAVIGATION|Выбор по Опыту
+CMND:VETNAVIGATIONDESC|Выделение боевых единиц с одинаковым уровнем опыта.
+CMND:TYPENAVIGATION|Выбор по Типу
+CMND:TYPENAVIGATIONDESC|Выбор боевых единиц одного типа (в порядке возрастания общей стоимости).
+CMND:ALLCHEER|Ликовать
+CMND:ALLCHEERDESC|Приказать войскам ликовать по поводу Ваших успехов.
+WDT:TERRITORYSUFFIX|\n --------- \n
+WOLNEWNICKNAME|New Account
+WOL:NEWACCOUNTFETCH|Contacting Account Server
+GUI:MANAGEACCOUNT|Получить уч. запись
+GUI:LADDERWINS|Победы :
+GUI:LADDERLOSSES|Поражения :
+GUI:LADDERPOINTS|Очки :
+GUI:WOLMATCH|Быстрый матч
+WOL:REQUESTINGMATCH|Requesting Match
+WOL:MATCHTIMEOUT|Error : Timed out waiting for game start
+WOL:MATCHINGSERVERUNAVAILABLE|Error : Matching Server Not Found
+WOL:MATCHGAMESTARTING|Game Starting...
+WOL:MATCHFAILRANK|Cannot locate opponent within your skill range...
+WOL:MATCHFAILPING|Cannot locate opponent with acceptable connection speed...
+WOL:MATCHFAILWDTSIDE|Cannot locate enemy in this territory
+WOL:MATCHFAILEXIT|The matching server is unable to service you at this time
+WOL:MATCHINGPLAYERPOOL|There are currently %s players attempting to match
+WOL:MATCHBADPARAMETERS|Error : Received unrecognized parameters from match server
+WOL:MATCHUNKNOWNSERVERCOMMAND|Error : Unknown command from match server
+WOL:MATCHFOUNDWITH|Found match with %hs
+WOL:MATCHCREATINGGAME|Creating Game...
+WOL:MATCHWAITINGFORJOIN|Waiting for %hs to join game
+WOL:MATCHERRORCREATINGGAME|Error creating game
+WOL:MATCHATTEMPTINGTOFINDGAME|Searching for %hs's game
+WOL:MATCHGAMECHANNELNOTFOUND|Could not find %hs's game
+WOL:MATCHJOINEDGAME|Game Joined
+WOL:MATCHERRORJOININGGAME|Error Joining Game
+WOL:GAMEFULL|The Selected Game is Full
+GUI:PREFERREDSERVER|Любимый сервер :
+GUI:LOCALE|Место :
+GUI:PREFERREDCOUNTRY|Любимая страна
+GUI:PREFERREDCOLOR|Любимый цвет
+GUI:BUDDYNAME|Имя друга
+GUI:NEWBUDDY|Новый друг :
+WOL:BUDDYDISABLEDFIND|Find/Page Disabled
+WOL:BUDDYOFFLINE|Offline
+WOL:BUDDYONLINE|Online/Available
+WOL:BUDDYUNKNOWNSTATUS|?
+WOL:BUDDYPLAYINGGAME|Playing Game
+WOL:FETCHINGBUDDYLIST|Fetching Buddy List
+STT:EMOTEBUTTON|Послать сообщение.
+STT:OPTIONINTERNETLATENCY|Adjusts the expected latency (delay) across the internet
+STT:OPTIONINTERNETSPEEDSLIDER|Установить предпочитаемую скорость игры.
+STT:OPTIONINTERNETGAMECONTROLS|Установить настройки игры.
+STT:OPTIONINTERNETABORTMISSION|Выйти из игры.
+STT:IDC_RESUME_MISSION|Вернуться в игру
+STT:WOLAUTOLOGINDONOTASK|Пометить если Вы не хотите отвечать на этот вопрос снова.
+STT:WOLAUTOLOGINYES|Автоматически использовать эту учетную запись.
+STT:WOLAUTOLOGINNO|Всегда вводить имя и пароль.
+STT:WOLBUDDYBUDDYLIST|Двойной щелчок по имени друга для просмотра его странички
+STT:WOLBUDDYWINS|Ваш друг победил в таком количестве игр.
+STT:WOLBUDDYLOSSES|Ваш друг проиграл в таком количестве игр.
+STT:WOLBUDDYDISCONNECTS|Ваш друг отключался от игр такое количество раз.
+STT:WOLBUDDYRANK|Ваш друг имеет такое звание на доске почета.
+STT:WOLBUDDYPOINTS|Ваш друг имеет такое количество мест на доске почета.
+STT:WOLBUDDYCREATEGAME|Создать игру
+STT:WOLBUDDYJOIN|Присоединиться к выбранной игре или комнате ожидания.
+STT:WOLBUDDYPAGE|Отправить сообщения выбранному другу.
+STT:WOLBUDDYADD|Добавить друга в Ваш список.
+STT:WOLBUDDYREMOVE|Удалить выбранного друга из Вашего списка.
+STT:WOLBUDDYREFRESH|Узнать последний статус Ваших друзей.
+STT:WOLBUDDYBACK|Вернуться в предыдущее меню.
+STT:WOLLOBBYREFRESHCHANNELS|Обновить список открытых игр
+STT:WOLLOBBYCHANNELLIST|Щелчок по прихожей для присоединения.
+STT:WOLBUDDY|Перейти к списку друзей.
+STT:WOLCLANLADDER|Review player and battle clan rankings
+STT:WOLLOBBYOPTIONS|Настроить параметры Westwood Online.
+STT:WOLLOBBYBACK|Вернуться в меню Westwood Online.
+STT:WOLLOGINNICKNAME|Ввести имя вашей уч. записи на Westwood Online или выбрать из списка.
+STT:WOLLOGINPASSWORD|Введите свой пароль здесь
+STT:WOLLOGINLOGIN|Ввести имя вашей уч. записи и пароль на Westwood Online.
+STT:WOLNEWACCOUNT|Создать новую учетную запись на Westwood Online.
+STT:WOLLOGINFORGET|Удалить учетную запись с этого компьютера.
+STT:WOLLOGINBACK|Вернуться в меню Westwood Online.
+STT:WOLMANAGEACCOUNT|Просмотреть и изменить информацию учетной записи.
+STT:WOLMATCHOUTPUT|Отображение статуса, запрошенного Вами, матча.
+STT:WOLMATCHCANCEL|Вернуться в меню Westwood Online.
+STT:WOLMYINFORMATIONNAME|Выбор сохраненного имени учетной записи.
+STT:WOLMYINFORMATIONSERVER|Выбор Вашего любимого сервера.
+STT:WOLMYINFORMATIONLOCALE|Выбор Вашей национальности.
+STT:WOLMYINFORMATIONCOUNTRY|Выбор национальности, которой Вы будите в игре.
+STT:WOLMYINFORMATIONCOLOR|Выбор цвета, которого Вы будите в игре.
+STT:WOLMYINFORMATIONAUTOLOGIN|Пометить, чтобы автоматически использовать эту уч. запись.
+STT:WOLMYINFORMATIONWINS|Количество побед в этих играх.
+STT:WOLMYINFORMATIONLOSSES|Количество поражений в этих играх.
+STT:WOLMYINFORMATIONDISCONNECTS|Количество отключений от этих игр.
+STT:WOLMYINFORMATIONRANK|Это Ваше звание в зале славы.
+STT:WOLMYINFORMATIONPOINTS|Количество набраных очков в зале славы.
+STT:WOLMYINFORMATIONBACK|Вернуться в основное меню
+STT:WOLNEWGAMEMAXPLAYERS|Поставить предел игры на это кол-во игроков.
+STT:WOLNEWGAMEPASSWORD|Ввести пароль для личной игры.
+STT:WOLNEWGAMETOURNAMENT|Пометить если Вы хотите учитывать эту игру на доске почета.
+STT:WOLNEWGAMECLANTOURNAMENT|Пометить если Вы хотите, чтобы эта игра была битвой кланов.
+STT:WOLNEWGAMEOK|Создать игру.
+STT:WOLNEWGAMECANCEL|Отмена и возврат в предыдущее меню.
+STT:WOLOPTIONSPAGE|Пометить если Вы хотите получать странички от других игроков.
+STT:WOLOPTIONSLANGUAGEFILTER|Пометить если Вы не хотите видеть маты.
+STT:WOLOPTIONSFIND|Пометить если Вы хотите, чтобы другие игроки могли найти Вас.
+STT:WOLOPTIONSMUSIC|Щелкните для включения музыки
+STT:WOLOPTIONSSHOWALLINLOBBY|Пометить для показа всех открытых игр.
+STT:WOLOPTIONSOK|Применить эти настройки
+STT:WOLOPTIONSCANCEL|Не применять эти настройки
+STT:WOLWELCOMEQUICKMATCH|Найти игру автоматически.
+STT:WOLWELCOMECUSTOMMATCH|Войти в прихожую для поиска противника.
+STT:WOLWELCOMEWDT|Играть в мировое господство.
+STT:WOLWELCOMEMYINFORMATION|Изменить Вашу учетную запись на Westwood Online.
+STT:WOLWELCOMEBACK|Вернуться в основное меню.
+STT:WOLBEGINNICKMONTH|Выбрать месяц даты Вашего рождения.
+STT:WOLBEGINNICKDAY|Ввести день Вашего рождения.
+STT:WOLBEGINNICKYEAR|Ввести год Вашего рождения (4 цифры)
+STT:WOLBEGINNICKEMAIL|Ввести Ваш адрес электронной почты.
+STT:WOLBEGINNICKNEWSLETTER|Пометить если Вы хотите получать новости о наших играх.
+STT:WOLBEGINNICKCONTINUE|Продолжение.
+STT:WOLBEGINNICKVIEWPRIVACY|Просмотреть наш полис секретности на нашем сайте.
+STT:WOLBEGINNICKCANCEL|Отмена и возврат в предыдущее меню.
+STT:WOLNEWNICKOK|Для учетной записи требуется имя и пароль.
+STT:WOLNEWNICKCANCEL|Отмена и возврат в предыдущее меню.
+STT:WOLNEWNICKNICKNAME|Ввести здесь имя Вашей уч. записи.
+STT:WOLNEWNICKPASSWORD|Ввести здесь Ваш пароль. Должно быть 8 символов.
+STT:WOLNEWNICKVERIFY|Введите еще раз Ваш пароль здесь. Должно быть 8 символов.
+STT:WOLNEWNICKPARENTEMAIL|Введите адрес эл. почты Ваших родителей или опекунов
+STT:WOLNEWNICKSELLINFO|Пометить здесь, чтобы мы распространяли Вашу информацию.
+TXT_WAITING|Ожидание
+TXT_ABORTED|Прервано
+TXT_NEED_TWO|Этот режим игры только для двух игроков.
+TXT_COOP_NEED_TWO|Совместный режим только для двух игроков.
+TXT_COOP_SAVE_SUCCESS|Прогресс кампании сохранен.
+TXT_COOP_SAVE_FAILED|Невозможно сохранить прогресс кампании.
+TXT_COOP_USE_SAVE|Использовать сохр. кампанию
+TXT_BEACON_MESSAGE|Сообщение маяка:
+TXT_BEACON_HELP1|Выделите маяк и нажмите клавишу 'ввод' для ввода текста
+TXT_BEACON_HELP2|Выделите маяк и нажмите клавишу 'delete' для удаления маяка
+MSG:PLANNINGMODEMERGEX|Click on this node to merge the selected units into this plan. Merging units will execute the commands after the merge node.
+MSG:PLANNINGMODELOOPX|Click on this node to create a patrol loop. The patrol loop will persist as long as it has at least one member.
+MSG:PLANNINGMODEDELETEX|Click this node to select it. A selected node may be deleted using the delete key.
+MSG:PLANNINGMODEALREADYINLOOPX|Cannot connect to this node because the selected units are already in a patrol loop.
+MSG:PLANNINGMODEMIXEDLOOPX|Cannot make loop with branch that does not contain the entire selection.
+MSG:PLANNINGMODENOPATROLLOOP1|Did not create patrol loop because at least one participant
+MSG:PLANNINGMODENOPATROLLOOP2|does not support attack move.
+MSG:PLANNINGMODENOPATROLLOOPX|Did not create patrol loop because at least one participant does not support attack move.
+MSG:PLANNINGMODENOJOINPATROL1|Cannot join patrol, because at least one unit in the selection
+MSG:PLANNINGMODENOJOINPATROL2|does not support attack move.
+MSG:PLANNINGMODENOJOINPATROLX|Cannot join patrol, because at least one unit in the selection does not support attack move.
+MSG:PLANNINGMODENOMERGE1|Cannot merge, because at least one unit in the selection
+MSG:PLANNINGMODENOMERGE2|does not support attack move.
+MSG:PLANNINGMODENOMERGEX|Cannot merge, because at least one unit in the selection does not support attack move.
+MSG:PLANNINGMODEINVALIDNODE1|You have clicked on an invalid node location.
+MSG:PLANNINGMODEINVALIDNODE2|Выберете другое место поблизости.
+MSG:PLANNINGMODEINVALIDNODEX|Вы не можете поместить пункт маршрута здесь, выберите другое место.
+MSG:PLANNINGMODEUNSUPPORTED|К части выбранных подразделений не применим режим маршрута.
+GAMETYPEDESC:BATTLE|Ally with other players and battle until one team is victorious.
+GAMETYPEDESC:FFA|Alliances are forbidden, there can be only one victor.
+GAMETYPEDESC:MEATGRINDER|High-technology weapons are not available.
+GAMETYPEDESC:NAVALWAR|Fight for control of the high-seas.
+GAMETYPEDESC:UNHOLY|Begin with both a Soviet and Allied Mobile Construction Vehicle.
+GAMETYPEDESC:LANDRUSH|Begin with only an MCV near your enemies. Rush to the best building locations.
+GAMETYPEDESC:MEGAWEALTH|Capture Oil Derricks in order to make money.
+GAMETYPEDESC:COOPERATIVE|Play campaign with a friend.
+GUI:HOSTGAMESTARTHOST|Другие игроки были извещены, что вы хотите начать игру.
+GUI:HOSTGAMESTARTJOINER|Сервер хочет начать игру. Нажмите кнопку Применить.
+GUI:EJECTAIPLAYERS|Выбор этой карты выбросит одного или несколько ИИ игроков из вашей игры. Чтобы оставить игроков, выберите карту с большим количеством мест или эти игроки присоединятся к игре с большим количеством мест.
+GUI:EJECTPLAYERS|Выбор этой карты выбросит одного или более ИИ или живых игроков из вашей игры. Для того, чтобы не выкинуло игроков, выберите карту на большее количество игроков.
+GUI:PARTITLEALL03|Ваше звание: Старшина
+GUI:GENERATING|Создание...
+TXT_SAVE_CAMP_AVAILABLE|Сохраненная кампания доступна.
+GUI:REPLYPAGE|Отправить
+GUI:REPLYTO|Отправить для:
+STT:WOLOPTIONSSOUNDOPTIONS|Настроить звук.
+GUI:LOGINSCREEN|Вход
+GUI:BUDDYNICKNAME|Имя друга для добавления
+TXT_FETCHING_WDT|Установка информации о туре Мирового господства
+WDTNACAMPAIGN|North America
+WDTEUROPECAMPAIGN|Europe
+WDTASIACAMPAIGN|Asia
+TXT_WOL_LOGGING_OUT|Выход из Westwood Online
+GUI:CREATINGCHANNEL|Создать игровой канал
+GUI:LOGINCOMPLETE|Вход завершен
+WOL:LEAVINGCHANNEL|Leaving channel
+GUI:PAGEBUDDY|Отправить страничку
+GUI:PAGERECEIVED|Получена страничка
+WDT:SMALLMAP|Small Map
+WDT:MEDIUMMAP|Medium Map
+WDT:LARGEMAP|Large Map
+WDT:VERYLARGEMAP|Very Large Map
+MSG:PLANNERMAXIMUM|Вы превысили максимум подразделений, которым можно задавать маршрут.
+GUI:SUPERWEAPONSALLOWED|Супероружие
+GUI:BUILDOFFALLY|Строить около союзников
+GUI:RANDOMEX|Случайно (???)
+GUI:RANDOMASSYMBOLS|???
+GUI:GOLDABBREV|ЗОЛ
+GUI:REDABBREV|КРА
+GUI:BLUEABBREV|СИН
+GUI:GREENABBREV|ЗЕЛ
+GUI:ORANGEABBREV|ОРА
+GUI:SKYBLUEABBREV|ГОЛ
+GUI:PURPLEABBREV|ФИО
+GUI:PINKABBREV|РОЗ
+GUI:LOADING|Загрузка
+GUI:LOADINGEX|Загрузка...
+GUI:DIPLOMACYMENU|Настройки Дипломатии
+GUI:CHAT|Чат
+GUI:VERSION|Версия
+STT:PLAYERNONE|На этом месте нет игрока.
+STT:PLAYERDUMBAI|Легкий компьютерный оппонент.
+STT:PLAYERSMARTAI|Средний компьютерный оппонент
+STT:PLAYERGENIUSAI|Сложный компьютерный оппонент.
+STT:PLAYERHUMAN|Человек.
+STT:PLAYEROPEN|Это место открыто для игроков, которые захотят присоединиться.
+STT:PLAYERCLOSED|Это место закрыто для игроков, которые захотят присоединиться.
+STT:PLAYERSIDERANDOM|Выбрать случайную нацию.
+STT:PLAYERSIDEAMERICA|Американцы могут десантировать парашютистов.
+STT:PLAYERSIDEKOREA|Корейцы могут строить самолеты Черный орел.
+STT:PLAYERSIDEFRANCE|Французы могут строить большие пушки.
+STT:PLAYERSIDEGERMANY|Немцы могут строить Убийц танков.
+STT:PLAYERSIDEBRITAIN|Британцы могут тренировать снайперов.
+STT:PLAYERSIDELIBYA|Ливийцы могут строить ядерные грузовики.
+STT:PLAYERSIDEIRAQ|Иракцы могут тренировать расщепителей.
+STT:PLAYERSIDECUBA|Кубинцы могут тренировать террористов.
+STT:PLAYERSIDERUSSIA|Русские могут строить танки Теслы.
+STT:PLAYERCOLORRANDOM|Изменить на случайный цвет.
+STT:PLAYERCOLORGOLD|Изменить на желтый.
+STT:PLAYERCOLORRED|Изменить на красный.
+STT:PLAYERCOLORBLUE|Изменить на синий.
+STT:PLAYERCOLORGREEN|Изменить на зеленый.
+STT:PLAYERCOLORORANGE|Изменить на оранжевый.
+STT:PLAYERCOLORSKYBLUE|Изменить на голубой.
+STT:PLAYERCOLORPURPLE|Изменить на пурпурный.
+STT:PLAYERCOLORPINK|Изменить на розовый.
+STT:MODEBATTLE|В 'Битве' вы можете заключать союзы с другими игроками.
+STT:MODEMEGAWEALTH|В 'Сверх богатстве' Вы должны захватывать нефтяные вышки для заработка денег.
+STT:MODEDUEL|В 'Наземном месиве' Вы должны найти лучшее место для базы.
+STT:MODEMEATGRIND|В 'Мясорубке' игроки ограничены простыми наземными подразделениями.
+STT:MODENAVALWAR|В 'Морской войне' игроки ограничены морскими подразделениями.
+STT:MODEFREEFORALL|В 'Каждый сам за себя' нельзя объединяться в союзы.
+STT:MODEUNHOLYALLIANCE|В 'Неестественном союзе' игроки начинают с советским и союзническим ПСД.
+STT:MODESIEGE|В 'Осаде' несколько игроков воюют против одного.
+STT:MODECOOPERATIVE|В 'Совместно' 2 игрока играют против врагов управляемых компьютером.
+TXT_PLACE_BEACON|Установить маяк
+TXT_PLACE_BEACON_DESC|Установить маяк связи.
+STT:SKIRMISHCBOXSWALLOWED|Можно создавать супероружие.
+STT:HOSTCBOXSWALLOWED|Выбрать для возможности создания супероружия.
+STT:GUESTCBOXSWALLOWED|Только сервер игры может разрешить использование супероружия.
+STT:SKIRMISHCBOXBUILDOFFALLY|Разрешить игрокам строить возле СЦ их союзников.
+STT:HOSTCBOXBUILDOFFALLY|Разрешить игрокам строить около союзников.
+STT:GUESTCBOXBUILDOFFALLY|Разрешить игрокам строить около зданий союзников.
+WOL:REQUESTINGNICKNAME|Requesting Nickname
+WOL:BUDDYQUICKMATCHING|Quickmatching
+WOL:NOMATCHINGAGENTFOUND|Error: Matching Server Not Found
+WOL:CHANNELJOINFAILURE|Unable to join channel
+GUI:NOSERVERSAVAILABLE|Нет доступных серверов
+GUI:WOLNEWNICKNAME|Новое имя
+GUI:WOLNEWGAME|Новая игра
+WOL:GAMEPING|Ping: %dms
+STT:WOLLOGINREMEMBER|Запомнит эту учетную запись.
+WOL:QUICKMATCHRESOLUTIONQUERY|Quick Match games may only be played with a screen resolution of 640x480. Would you like to change screen resolution now?
+WOL:WDTRESOLUTIONQUERY|World Domination games may only be played with a screen resolution of 640x480. Would you like to change screen resolution now?
+WOL:RESOLUTIONLIMITED640|This game is limited to a screen resolution of 640x480. Would you like to change the in-game screen resolution now?
+WOL:RESOLUTIONLIMITED800|This game is limited to a screen resolution of 800x600. Would you like to change the in-game screen resolution now?
+WDT:FACTIONSELECTTOOLTIP|Click on a logo to choose a side to fight for
+WDT:FACTIONSELECTALLIESTOOLTIP|Click on logo to fight for the Allies
+WDT:FACTIONSELECTSOVIETTOOLTIP|Click on logo to fight for the Soviets
+WDT:TERRITORYSELECTTOOLTIP|Click on a white territory to engage in battle
+STT:WOLLIMITSCREENRESOLUTION|Требование всем игрокам использовать Ваше разрешение или меньше
+WDT:TERRITORYSELDISPTOOLTIP|Click to fight in this territory
+WOL:LIMITSCREENRESOLUTION|Limit Screen Resolution
+TXT_WDT_NET_ERR|Невозможно соединиться с сервером Мирового господства.
+TXT_UNKNOWN_PING|Задержка : ?
+TXT_SERIALUNKNOWN|Возможно, Ваш серийный номер неправильный. Вы хотите открыть Ваш обозреватель интернета для получения дополнительной информации?
+TXT_SKUSERIALMISMATCH|Возможно, Ваш серийный номер принадлежит другой игре от Westwood Studios. Вы хотите открыть Ваш обозреватель интернета для получения дополнительной информации?
+TXT_BAD_MAP|Сервер выбрал измененную карту. Это дает серверу несправедливое преимущество. Предварительный просмотр невозможен.
+THEME:POWER|Энергия
+THEME:MOTORIZED|Motorized
+THEME:HM2|HM2
+THEME:C&C IN THE HOUSE|C&C In The House
+WOL:WDTFACTIONBACK|Return to the Westwood Online menu
+WOL:WDTTERRITORYBACK|Return to the Faction Select menu
+WOL:WDTMATCHBACK|Return to WDT Territory menu
+WOL:LOCALE00|Unknown
+WOL:LOCALE01|Rest of World
+WOL:LOCALE02|United States
+WOL:LOCALE03|Canada
+WOL:LOCALE04|United Kingdom
+WOL:LOCALE05|Germany
+WOL:LOCALE06|France
+WOL:LOCALE07|Spain
+WOL:LOCALE08|Netherlands
+WOL:LOCALE09|Belgium
+WOL:LOCALE10|Austria
+WOL:LOCALE11|Switzerland
+WOL:LOCALE12|Italy
+WOL:LOCALE13|Denmark
+WOL:LOCALE14|Sweden
+WOL:LOCALE15|Norway
+WOL:LOCALE16|Finland
+WOL:LOCALE17|Israel
+WOL:LOCALE18|South Africa
+WOL:LOCALE19|Japan
+WOL:LOCALE20|South Korea
+WOL:LOCALE21|China
+WOL:LOCALE22|Singapore
+WOL:LOCALE23|Taiwan
+WOL:LOCALE24|Malaysia
+WOL:LOCALE25|Australia
+WOL:LOCALE26|New Zealand
+WOL:LOCALE27|Brazil
+WOL:LOCALE28|Thailand
+WOL:LOCALE29|Argentina
+WOL:LOCALE30|Philippines
+WOL:LOCALE31|Greece
+WOL:LOCALE32|Ireland
+WOL:LOCALE33|Poland
+WOL:LOCALE34|Portugal
+WOL:LOCALE35|Mexico
+WOL:LOCALE36|Russia
+WOL:LOCALE37|Turkey
+WDT:ALLIEDHELDTOOLTIP|This territory is controlled by the Allies
+WDT:SOVIETHELDTOOLTIP|This territory is controlled by the Soviets
+CRD:CREDITS|CREDITS
+CRD_TTL:PRODUCTION|PRODUCTION
+GUI:HOSTNOMAP|%s не имеет %s.
+GUI:JOINERNOMAP|У вас нет %s. Чтобы убедится, что у Вас самые последние карты, посетите www.westwood.com.
+MSG:PLANNINGMODEINTRO1BUTTON|Вы вошли в режим маршрута. Нажмите эту кнопку еще раз для выхода.
+MSG:PLANNINGMODEINTRO1KEY|Вы вошли в режим маршрута. Для выхода отпустите кнопку.
+MSG:PLANNINGMODELOOPHELP|Вы создали маршрут патрулирования. Войска будут следовать ему до получения новых приказов.
+MSG:PLANNINGMODEDELETEHELP|Вы выбрали точку маршрута. Для ее удаления нажмите 'Delete'
+MSG:PLANNINGMODENOSTOP|В режиме маршрута команда 'Остановиться' недоступна.
+MSG:PLANNINGMODENOSCATTER|В режиме маршрута приказ 'Рассредоточить' недоступен.
+MSG:PLANNINGMODENODEPLOY|В режиме маршрута команда 'Развернуть' недоступна.
+MSG:PLANNINGMODENOGUARDAREA|Выбранным подразделениям нельзя отдать приказ об охране в реж. маршрута.
+MSG:PLANNINGMODENOAIRCRAFT|Для авиации режим маршрута недоступен.
+COOPERATIVEWIN|YOU ARE VICTORIOUS!
+GUI:TAUNTSON|Насмешки вкл.
+STT:TAUNTSON|Разрешить посылать и получать насмешки.
+GUI:STANDALONESCORE|Итоги Миссии
+GUI:MULTIPLAYERSCORE|Итоги Сражения
+TXT_POWER_DRAIN2|Энергия = %d Потребление = %d
+WOL:MATCHFAIL|Cannot locate a suitable opponent...
+STT:WOLLOCALEOK|Настроить мое местоположение
+STT:WOLLOCALECANCEL|Не настраивать мое местоположение.
+TXT_CD_DIALOG_A|Пожалуйста, вставьте компакт-диск Союзников игры Красная угроза 2 в устройство чтения компакт-дисков.
+TXT_CD_DIALOG_S|Пожалуйста, вставьте компакт-диск Советского Союза игры Красная угроза 2 в устройство чтения компакт-дисков.
+MSG:PLANNINGMODEHETEROSEL|Для задания след. точки все выбранные подразделения должны принадлежать одному маршруту!
+MSG:PLANNINGMODENOBUILDINGS|Для зданий режим маршрута недоступен.
+MSG:PLANNINGMODENOUNKNOWNS|Одна из боевых единиц не может пользоваться режимом маршрута.
+GUI:FIRSTPLACE|Первое место
+GUI:SECONDPLACE|Второе место
+GUI:CAMPAIGNRESULTS|Результат кампании
+GUI:DIFFICULTYSTRING|Сложность: %s
+GUI:CAMPAIGNLABEL|Кампания: %d
+TXT_DIFFICULTY_EASY|ЛЕГКО
+TXT_DIFFICULTY_MEDIUM|СРЕДНЕ
+TXT_DIFFICULTY_BRUTAL|СЛОЖНО
+STT:MPSCORELABELSTATUS|Этот игрок готов.
+STT:MPSCORELABELCAMPAIGNNAME|Название кампании.
+STT:MPSCORELABELMAPNAME|Название карты, в которую играли.
+STT:MPSCORELABELDIFFICULTY|Сложность кампании.
+STT:MPCAMPSCORECONTINUE|Продолжить на следующей карте.
+STT:MPCAMPSCOREQUIT|Выйти из этой кампании.
+STT:MPCAMPENDCAMPAIGNNUMBER|Количество сыгранных кампаний.
+STT:MPCAMPENDTIME|Полное время для кампании.
+STT:IGSINGLEOPTBUTTONDELETE|Используйте это, чтобы удалить сохраненную игру.
+GUI:SAVEMAPMENU|Сохранить карту
+GUI:DELETEMAPMENU|Удалить карту
+GUI:LOADMAPMENU|Загрузить карту
+GUI:MAPSAVED|Карта сохранена
+GUI:PLAYMOVIE|Просмотреть
+GUI:SELECTMOVIE|Выбор видеоролика
+ERROR:PLAYERLEFTGAMEABORTED|One of the players left the game during initialization. The game has been aborted.
+GUI:WWBRAND|2006, 2007 ЛОКАЛИЗАЦИЯ SIBERIAN STUDIO. ВСЕ ПРАВА ЗАЩИЩЕНЫ
+GUI:SKIRMISHSCORE|Итоги схватки
+STT:OPTIONINTERNETRESUMEMISSION|Вернуться к миссии.
+STT:IGRLOGIN|Введите Ваше имя на Westwood Online.
+STT:WOLADDBUDDYQUERYDONOTASK|Пометить если Вы не хотите отвечать на этот вопрос снова.
+STT:WOLADDBUDDYQUERYYES|Добавить этого игрока в Ваш список друзей.
+STT:WOLADDBUDDYQUERYNO|Не добавлять этого игрока в список друзей.
+GUI:DEBUG|Информация
+GUI:CURSORCHEAT|Координаты
+DESC:CURSORCHEAT|Displays coordinates at the cursor.
+STT:WOLOPTIONFILTERASIAN|Показывать сообщения, использующие азиатскую кодировку.
+STT:WOLOPTIONFILTERNONASIAN|Показывать сообщения, не использующие азиатскую кодировку.
+GUI:WOLCHECKSTATUS|Сетевой статус
+GUI:FILTERASIANMESSAGES|Показывать азиатские сообщения
+GUI:FILTERNONASIANMESSAGES|Показывать неазиатские сообщения
+TXT_LOB_7|Китайский бункер
+TXT_LOB_8|Intl. Command
+WOL:MATCHOPPONENTRANK|Opponent Rank = %d \n
+WOL:MATCHOPPONENTRANKUNKNOWN|Opponent Rank Unknown
+WOL:MATCHOPPONENTPINGUNKNOWN|Opponent Ping Unknown
+WOL:MATCHOPPONENTPING|Opponent Ping = %dms \n
+WOL:ADDBUDDYQUERY|Add %hs to your buddy list?
+GUI:TO|Для
+GUI:AMOUNT|Сумма
+GUI:CURRENT|Текущая
+GUI:GIVE|Дать
+TXT_PAGE_COMMAND|/page
+TXT_ONLINE_COMMAND|/on
+GUI:NORMALGAMEICONDESC|Эта игра не будет записана на доске почета Westwood.
+GUI:TOURNAMENTGAMEICONDESC|Эта игра будет записана на доске почета Westwood.
+GUI:CLANGAMEICONDESC|Эта игра является битвой кланов.
+GUI:RESOLUTIONLIMITICONDESC|Эта игра для особого разрешения экрана.
+GUI:OBSERVERALLOWEDICONDESC|Эта игра позволяет наблюдать за участниками.
+GUI:PASSWORDICONDESC|Эта игра требует пароль для входа.
+GUI:OPERATORICONDESC|Этот игрок является представителем Westwood Studios или Red Alert 2.
+TXT_OBSERVER_CANT_PAGE|Зритель не может отправлять личные сообщения игрокам во время игры.
+TXT_SCOUT|Разведка местности
+TXT_SCOUT_DESC|Приказать подразделению исследовать близлежащую местность.
+TXT_STRUCTURE_TAB|Выбор таблицы зданий
+TXT_STRUCTURE_TAB_DESC|Переключить панель на таблицу зданий.
+TXT_DEFENSE_TAB|Выбор таблицы вооружений
+TXT_USER_FOUND|%s на канале %s.
+TXT_USER_NOT_IN_CHANNEL|%s нет на канале.
+TXT_USER_NOT_ONLINE|%s не зарегистрирован(а) на Westwood Online.
+TXT_USER_FIND_DISABLED|%s не отвечает на команду поиска.
+TXT_REPLY_COMMAND|/reply
+TXT_REPLY_COMMAND_SHORT|/r
+TXT_NO_AI_WITH_OBSERVER|Вы не можете выбирать компьютерного оппонента, когда присутствует наблюдатель
+TXT_OBSERVER_BOOTED_AI|Режим наблюдателя сбрасывает выбранных ИИ игроков
+GUI:GRAYABBREV|НАБ
+GUI:OPENOBSERVER|Для наблюдателя
+TXT_OBSERVER_CANT_SEND|Наблюдатель может только посылать сообщения всем игрокам
+TXT_NO_AI_OBSERVATION|Нельзя наблюдать при таких настройках.
+STT:PLAYERCOLOROBSERVER|Выберите это, чтобы быть наблюдателем.
+STT:PLAYERSIDEOBSERVER|Наблюдатели могут видеть все поле боя.
+STT:PLAYEROPENOBSERVER|Это место открыто для игроков, которые захотят понаблюдать.
+STT:OBSERVERTOGGLE|Щелкните здесь, чтоб наблюдать за игрой.
+STT:LOBBYBUTTONOBSERVE|Наблюдать за уже существующей сетевой игрой.
+TXT_LATENCY_ICON_TOOLTIP_PING|Качество соединения между %s и сервером %s. Задержка = %dмс.
+TXT_LATENCY_ICON_TOOLTIP_NOPING|Качество соединения между %s и сервером %s. %s
+TXT_GOOD|good
+TXT_FAIR|fair
+TXT_POOR|poor
+TXT_UNKNOWN|неизвестно
+TXT_NO_ONE_WHOM_TO_REPLY|You have not been paged yet. Unable to send reply.
+TXT_NO_NAME_SPECIFIED|You did not specify a person to send the page to.
+TXT_CANT_SEND_BLANK_PAGE|Невозможно послать пустую страничку.
+GUI:ICONGLOSSARY|Описание иконок используемых на Westwood Online
+GUI:LATENCYICONDESC|Качество соединения между игроком и сервером.
+TXT_PLAYER_TOOLTIP_UNR_C_CR|Имя игрока, %s, клан %s, статус клана = %d
+TXT_PLAYER_TOOLTIP_UNR_C_CUNR|Имя игрока, %s, клан %s, клан без статуса
+TXT_PLAYER_TOOLTIP_R_C_CR|Имя игрока, %s %d, клан %s, статус клана = %d
+TXT_PLAYER_TOOLTIP_R_C_CUNR|Имя игрока, %s %d, клан %s, клан без статуса
+TXT_PLAYER_TOOLTIP_UNR_NOC|Имя игрока, %s
+TXT_PLAYER_TOOLTIP_R_NOC|Имя игрока, %s %d
+TXT_NO_NAME|Вы не ввели корректное имя пользователя.
+GUI:OBSERVER|Наблюдатель
+GUI:ANIMTEXTON|Вкл. прокрутку текста
+STT:ANIMTEXTON|Разрешить прокрутку текста сообщений.
+TXT_OBSERVER_FULL|Нет комнат для наблюдателей.
+TXT_TOO_MANY_PLAYERS|Интернет игры могут проходить не более чем с 4 игроками.
+GUI:CONNECTINGTOPLAYERS|Соединение с другими игроками
+TXT_FAILED_TO_TALK|Невозможно соединиться с другими игроками \n 
+TXT_TALK_REPORTED_PROBLEM|Игрок %s имеет проблемы со связью \n
+TXT_TALK_LOCAL_PROBLEM|Невозможно соединиться с игроком %s \n
+TXT_TALK_FORWARDER_PROBLEM_GUES|Невозможно соединиться с сервером игры \n
+TXT_TALK_FORWARDER_PROBLEM_HOST|Игрок %s не может соединиться с сервером игры \n
+TXT_TALK_HOST_ABORTED|Сервер игры сообщает о наличии проблем со связью у игроков \n
+GUI:HOSTMAPTRANSFER|%s не имеет неофициальной карты %s. Она будет отправлена в начале игры.
+GUI:JOINERMAPTRANSFER|У вас нет неофициальной карты %s. Она будет отправлена в начале игры.
+TXT_DISCON_ABORT|You have disconnected too many times from a tournament game. This game will count as a loss.
+TXT_DETECTING_FIREWALL_SETTINGS|Проверка настроек сетевого экрана(firewall)
+GUI:LANSETTINGS|Настройки локальной сети
+GUI:FIREWALLSETTINGS|Настройка брандмауэра Интернет
+GUI:FIREWALLSENDDELAY|Задержка
+GUI:PORTNUMBER|Номер порта
+STT:MULTIOPTPORTNUMBER|Редактировать Ваш номер локального порта (только для опытных).
+STT:MULTIOPTSENDDELAY|Другие игроки ждут перед отправкой к Вам (только для опытных).
+TXT_FIREWALL_SETTINGS_WARNING1|Warning: \n The 'Send delay' option is only required for a very limited number of firewalls and may cause connection problems if used unnecessarily.
+TXT_FIREWALL_SETTINGS_WARNING2|Warning: \n Specifying a local port number requires your firewall to be configured with static forwarding rules. \n Most firewalls and NATs are supported automatically without changing this value.
+TXT_PORT_NUMBER_ERROR|Номер порта должен быть от 0 до 65535
+GUI:MAPTRANSFER|Передача карты...
+STT:PLAYERSIDEYURICOUNTRY|Сторона Юрия уникальна.
+GUI:PAGEBUTTON|Страничка
+STT:WOLPAGEBUTTON|Страничка пользователя
+GUI:PLAYERSORTCLAN|Клан
+STT:WOLPLAYERSORTCLAN|Сортировать список игроков по клану
+GUI:PLAYERSORTRANK|Звание
+GUI:PLAYERSORTALPHA|Алфавит
+STT:WOLPLAYERSORTRANK|Сортировать список игроков по званию
+STT:WOLPLAYERSORTALPHA|Сортировать список игроков в алфавитном порядке
+GUI:GAMESORTPING|Задержка
+STT:WOLGAMESORTPING|Сортировать список игр по качеству связи
+GUI:GAMESORTALPHA|Алфавит
+STT:WOLGAMESORTALPHA|Сортировать список игр в алфавитном порядке
+GUI:GAMESORTRESLOCK|Разрешение/Наблюдатель
+STT:WOLGAMESORTRESLOCK|Sort games according to the observer and resolution lock options
+GUI:GAMESORTPASSWORD|Пароль
+STT:WOLGAMESORTPASSWORD|Сортировка игр по наличию пароля
+GUI:GAMESORTGAMETYPE|Тип игры
+STT:WOLGAMESORTGAMETYPE|Сортировать игры по типу
+GUI:QUICKCOOP|Быстрая совместная игра
+STT:QUICKCOOP|Автоматическая настройка совместной игры
+GUI:OBSRANK|Звание %s
+GUI:OBSKILLS|%s уничтожено
+GUI:OBSUNITS|%s б. единиц
+GUI:OBSCREDITS|$%s
+TXT_NAT_NO_PREVIEW|Просмотр невозможен
+TXT_DEFENSE_TAB_DESC|Переключить панель на таблицу вооружений.
+TXT_INFANTRY_TAB|Выбор таблицы пехоты
+TXT_INFANTRY_TAB_DESC|Переключить панель на таблицу пехоты.
+TXT_UNIT_TAB|Выбор таблицы техники
+TXT_UNIT_TAB_DESC|Переключить панель на таблицу техники.
+GUI:UNDERPARMSGALL01MD|Вы быстро отреагировали и защитили нас от Советского Союза и Юрия. Советское вторжение в Сан-Франциско помогло помешать Юрию осуществить свои планы. Отличная работа, командир.
+GUI:OVERPARMSGALL01MD|Хоть мы и помешали планам Советского Союза и Юрия, но население Сан-Франциско понесло большие потери.
+GUI:UNDERPARMSGALL04MD|С помощью Вас Эйнштейн был спасен и появление Юрия здесь больше не грозит. Юрий теперь понял, что Вы являетесь реальной угрозой.
+GUI:OVERPARMSGALL04MD|Вы спасли Эйнштейна, но Юрий успел вывести основные силы до уничтожения его базы.
+GUI:UNDERPARMSGALL05MD|Завод Юрия по клонированию был уничтожен благодаря Вашей тактике. Отличная работа!
+GUI:OVERPARMSGALL05MD|Вы уничтожили завод Юрия по клонированию, но после долгих сражений половина Сиднея была разрушена.
+GUI:PARTITLESOV01MD|Ваше звание: Старшина
+GUI:PARTITLESOV02MD|Ваше звание: Младший Лейтенант
+GUI:PARTITLESOV03MD|Ваше звание: Старший Лейтенант
+GUI:UNDERPARMSGSOV04MD|Генсек Романов был найден и успешно эвакуирован благодаря тому, что Вы быстро и решительно уничтожили базу Юрия.
+GUI:OVERPARMSGSOV04MD|Генсек Романов был найден и эвакуирован. Но он недоволен тем, что вы так долго занимались его спасением.
+GUI:PARTITLESOV04MD|Ваше звание: Капитан
+GUI:PARTITLESOV05MD|Ваше звание: Майор
+GUI:UNDERPARMSGSOV06MD|Вы перемещались так быстро, что Юрий не смог ничего предпринять для сохранения своего присутствия на луне. Луна теперь является частью Советского Союза.
+GUI:OVERPARMSGSOV06MD|Лунная база Юрия была уничтожена. Поздравляем, генерал.
+GUI:PARTITLESOV06MD|Ваше звание: Подполковник
+GUI:PARTITLESOV07MD|Ваше звание: Полковник
+GUI:UNDERPARMSGALL02MD|Отличная работа, командир. Ваши быстрые действия свели к минимуму потери среди гражданского населения и лишили Юрия важного источника финансов его планов. Голливудские режиссеры уже договариваются на экранизацию Вашей жизни.
+GUI:OVERPARMSGALL02MD|Юрий потерял важный источник финансов, но население Лос-Анджелеса также понесло немалые потери.
+GUI:UNDERPARMSGALL03MD|План Юрия по терроризированию города Сиэтл был сорван. Ваша быстрая реакция предотвратила крупные потери среди гражданского населения. Юрию придется искать новый источник финансирования своей армии.
+GUI:OVERPARMSGALL03MD|Хоть Юрий и был выброшен из Сиэтла, город заплатил огромную цену за Вашу победу. Сиетл частично в радиоактивных руинах и рынок ПО долго будет оправлятся от удара.
+GUI:UNDERPARMSGALL06MD|Юрий никогда не имел шанса. Мировые лидеры в безопасности и Юрий покинул Лондон. Отличная работа, генерал.
+GUI:OVERPARMSGALL06MD|День выигран... но какой ценой? Мировые лидеры испугались за свою жизнь во время битвы и унесли ноги при первой возможности. Договор в силе... пока.
+GUI:UNDERPARMSGALL07MD|Весь мир теперь узнал своего освободителя - Вас, командир. Ваши портреты появились во всем мире и в Вашу честь был объявлен международный праздник.
+GUI:OVERPARMSGALL07MD|Мир никогда не знал такой близости к полному разрушению. Будем надеяться, что мы уничтожили последний клон Юрия.
+GUI:UNDERPARMSGSOV01MD|Вы уничтожили психический подчинитель до того как Юрий им воспользовался. Юрий теперь не помешает нашим планам.
+GUI:OVERPARMSGSOV01MD|Психический подчинитель был уничтожен... но Юрий теперь знает о наших планах.
+GUI:UNDERPARMSGSOV03MD|Психический подчинитель был уничтожен и Союзники верят, что мы боремся за общее благо. Вот, дураки.
+GUI:OVERPARMSGSOV03MD|Этот психический подчинитель был нейтрализован, но я сомневаюсь, что Союзники согласятся вновь с нами сотрудничать.
+GUI:UNDERPARMSGSOV05MD|Ваша быстрая атака сохранила этот секретный остров в тайне навечно. Все войска Юрия отступают. Поднажмите, генерал -- Нанесите поражение Юрию!
+GUI:OVERPARMSGSOV05MD|Подлодки Юрия больше не представляют угрозы, но Вы дали Юрию время для создания нового плана.
+GUI:PARTITLEALL14|Ваше звание: Главнокомандующий
+GUI:YURIWEBSITE|Сообщество
+GUI:STARTPOSITION|Начало
+GUI:TEAM|Команда
+GUI:NONEASSYMBOLS|---
+GUI:FILTERBUDDIES|Показывать сообщения только от друзей.
+GUI:FILTERCLAN|Показывать сообщения только от членов клана.
+GUI:MATCHSAMERES|Разрешение экрана опонентов в матче.
+GUI:WELCOMEUPDATE|Профиль последний раз обновлялся %s в %s.
+GUI:MATCHING|Играется матч
+STT:MAINBUTTONYURIWEBSITE|Страничка игры Красная угроза 2: Месть Юрия
+STT:HOSTCOMBOSTART|Начальное местоположение игрока.
+STT:HOSTCOMBOTEAM|Команда игрока.
+STT:GUESTCOMBOSTART|Начальное местоположение игрока.
+STT:GUESTCOMBOTEAM|Команда игрока.
+STT:WELCOMEUPDATE|Время, когда этот профиль последний раз был обновлен.
+STT:MATCHSAMERES|Only match with players using the same screen resolution as you.
+GUI:AUTOLOGINQUERYTITLE|Автоматический вход
+GUI:FINDSTATUS|Статус
+STT:WOLOPTIONFILTERCLAN|Отметить для показывания сообщения только от членов клана
+STT:WOLOPTIONFILTERBUDDIES|Отметить для показывания сообщения только от друзей
+TXT_FINDPAGE_NOT_ONLINE|Not Online
+TXT_FINDPAGE_NOT_IN_CHANNEL|Not in channel
+TXT_FINDPAGE_FIND_DISABLED|Find Disabled
+GUI:UNDERPARMSGSOV02MD|Ваша быстрая атака на лабораторию Эйнштейна и уничтожение Хроносферы гарантирует, что советский народ выйдет победителем в этой войне. Войска Союзников уже отступают со всех направлений фронта.
+GUI:OVERPARMSGSOV02MD|Хотя Хроносфера была уничтжена, Эйнштейну удалось скрыться с его исследованиями и чертежами, что позволит сохраниться проекту Хроносферы.
+GUI:UNDERPARMSGSOV07MD|Свирепость Вашей атаки и гениальной тактики поразили Юрия. Теперь он устранен раз и навсегда.
+GUI:OVERPARMSGSOV07MD|Хотя битва была очень долгой, но Вы полностью освободили мир от Юрия.
+GUI:PARTITLESOV08MD|Ваше звание: Маршал Советского Союза
+GUI:TEAMGAME|Командный союз
+STT:MODETEAMGAME|В 'командном союзе' игроки должны выбрать места рядом со своими союзниками.
+GUI:TEAMSELECTION|Выбор команды.
+GUI:STARTSELECTION|Выбор начального местоположения.
+THEME:BRAINFREEZE|Brain Freeze
+THEME:DROK|Drok
+THEME:DECEIVER|Deceiver
+THEME:PHATATTACK|Phat Attack
+GUI:TRADEMARKTOP|Command & Conquer является торговой маркой
+GUI:TRADEMARKBOTTOM|Electronic Arts Inc. на территории США и/или других стран.
+TXT_CANNOT_ALLY|Для начала игры необходимо больше одной команды!
+STT:MAINBUTTONEXITGAMEMD|Выйти из игры Красная угроза 2: Месть Юрия.
+THEME:DEFENDTHEBASE|Defend the Base
+THEME:TACTICS|Tactics
+THEME:TRANCELVANIA|Trance L. Vania
+THEME:BULLYKIT|Bully Kit
+TXT_AWAY_LOADING|The user you just paged is loading a map and is unable to reply to pages.
+TXT_AWAY_QUICKMATCH|The user you just paged is in quickmatch and is unable to reply to pages.
+TXT_AWAY_SCORESCREEN|The user you just paged is at a score screen and is unable to reply to pages.
+GUI:NEXTMISSION|Следующая миссия:
+GUI:PREVIOUSMISSION|Предыдущая миссия
+TXT_HOW_TO_REPLY|Press the page user button (u by default) to reply to the message you just received.
+GUI:PLAYERLEFTCOOP|%s покинул(а) совместную кампанию.
+GUI:BADGESOFHONOR|Badges of Honor
+STT:BADGESOFHONOR|Medals awarded for command excellence.
+GUI:CLAN|Клан
+GUI:NEWS|Новости
+STT:WOLCLAN|Go to the Battleclan Manager.
+STT:WOLTOURNAMENT|View tournament rankings.
+STT:WOLNEWS|Узнать последние новости о игре Красная угроза 2: Месть Юрия.
+STT:ALLIEDCAMPAIGNICON|Щелкните по иконке Союзников для начала кампании Союзников.
+STT:SOVIETCAMPAIGNICON|Щелкните по иконке Советского Союза для начала советской кампании.
+MSG:DOMINATORACTIVE|Пси-Доминатор уже активирован. Активация отменена.
+TXT_INSERT_CD_DIALOG|Пожалуйста, вставьте компакт-диск Красная угроза 2: Месть Юрия
+LETTER_A|A
+LETTER_B|B
+LETTER_C|C
+LETTER_D|D
+LETTER_E|E
+LETTER_F|F
+LETTER_G|G
+LETTER_H|H
+STT:MAINBUTTONEXITGAMEMO|Выйти из Mental Omega.
+GUI:PLAYMISSION|Начать
+NAME:TEMPERATE|Temperate
+NAME:SNOW|Snow
+NAME:URBAN|Urban
+NAME:GENERAL|Yuri's Revenge -- Official Rules of Engagement
+NAME:BRITISH|Great Britain
+NAME:FRENCH|France
+NAME:GERMANS|Germany
+NAME:AMERICANS|America
+NAME:ALLIANCE|Korea
+NAME:RUSSIANS|Russia
+NAME:CONFEDERATION|Cuba
+NAME:AFRICANS|Libya
+NAME:ARABS|Iraq
+NAME:SPECIAL|JP
+NAME:NEUTRAL|Civilian
+NAME:E1|GI
+NAME:SNIPE|Sniper
+NAME:FLAKT|Flak Trooper
+NAME:E2|Conscript
+NAME:SHK|Tesla Trooper
+NAME:ENGINEER|Engineer
+NAME:JUMPJET|Rocketeer
+NAME:GHOST|SEAL
+NAME:TANYA|Tanya
+NAME:YURI|Yuri
+NAME:IVAN|Crazy Ivan
+NAME:DESO|Desolator
+NAME:CLEG|Chrono Legionnaire
+NAME:DOG|Attack Dog
+NAME:CIV1|Civilian
+NAME:CIV2|Civilian
+NAME:CIV3|Civilian
+NAME:COW|Cow
+NAME:CTECH|Technician
+NAME:WEEDGUY|Chem Spray Infantry
+NAME:SPY|Spy
+NAME:TERROR|Terrorist
+NAME:CCOMAND|Chrono Commando
+NAME:PTROOP|Psi-Corps Trooper
+NAME:CIVAN|Chrono Ivan
+NAME:YURIPR|Yuri Prime
+NAME:HVR|Hover Monkey
+NAME:APOC|Apocalypse
+NAME:DTRUCK|Demolition Truck
+NAME:TRUCKA|Truck
+NAME:TRUCKB|Truck (loaded)
+NAME:SUB|Typhoon Attack Sub
+NAME:DLPH|Dolphin
+NAME:AEGIS|Aegis Cruiser
+NAME:CARRIER|Aircraft Carrier
+NAME:CARRIERB|Aircraft Carrier Nimitz
+NAME:DRED|Dreadnought
+NAME:DREDB|Dreadnought +3
+NAME:HYD|Sea Scorpion
+NAME:DEST|Destroyer
+NAME:V3|V3 Launcher
+NAME:DRON|Terror Drone
+NAME:SQD|Giant Squid
+NAME:HORV|War Miner
+NAME:HARV|War Miner
+NAME:CMON|Chrono Miner(noback)
+NAME:CMIN|Chrono Miner
+NAME:AMCV|Allied Construction Vehicle
+NAME:SMCV|Soviet Construction Vehicle
+NAME:LCRF|Amphibious Transport
+NAME:HTK|Flak Track
+NAME:BUS|School Bus
+NAME:LOCOMOTIVE|Locomotive
+NAME:TRAINCAR|Train Car
+NAME:CARGOCAR|Cargo Car
+NAME:PICK|Pickup Truck
+NAME:CAR|Automobile
+NAME:WINI|Recreational Vehicle
+NAME:HTNK|Rhino Heavy Tank
+NAME:LTNK|Light Tank
+NAME:MTNK|Grizzly Battle Tank
+NAME:MGTK|Mirage Tank
+NAME:FV|IFV
+NAME:TNKD|Tank Destroyer
+NAME:HOWI|Howitzer
+NAME:SAPC|Amphibious Transport
+NAME:TTNK|Tesla Tank
+NAME:SREF|Prism Tank
+NAME:XCOMET|Placeholder
+NAME:ORCA|Harrier
+NAME:BEAGLE|Black Eagle
+NAME:ORCATRAN|Black Oops Transport BAD VERSION
+NAME:HIND|Hind Transport
+NAME:TRNSPORT|Carryall
+NAME:SHAD|NightHawk Transport
+NAME:ZEP|Kirov Airship
+NAME:HORNET|Hornet
+NAME:DMISL|Missile
+NAME:ASW|Osprey
+NAME:V3ROCKET|V3 Rocket
+NAME:APACHE|Harpy
+NAME:PDPLANE|Cargo Plane
+NAME:GATECH|Allied Battle Lab
+NAME:GAWEAP|Allied War Factory
+NAME:NAWEAP|Soviet War Factory
+NAME:GACNST|Allied Construction Yard
+NAME:NACNST|Soviet Construction Yard
+NAME:GADPSA|Deployed Sensor Array
+NAME:GAICBM|Deployed ICBM
+NAME:GATICK|Deployed Tick Tank
+NAME:GAARTY|Deployed Artillery
+NAME:GAREFN|Allied Ore Refinery
+NAME:NAREFN|Soviet Ore Refinery
+NAME:GASILO|Silo
+NAME:GAYARD|Allied Shipyard
+NAME:NAYARD|Soviet Shipyard
+NAME:GAAIRC|Air Force Command Headquarters
+NAME:GAHPAD|Airfield
+NAME:NAHPAD|Helipad
+NAME:GARADR|Command Center
+NAME:GASPYSAT|SpySat Uplink
+NAME:GAGAP|Gap Generator
+NAME:NASTLH|Stealth Generator
+NAME:GAPOWR|Power Plant
+NAME:NAPOWR|Tesla Reactor
+NAME:NAAPWR|Advanced Power Plant
+NAME:NATECH|Soviet Battle Lab
+NAME:NAHAND|Soviet Barracks
+NAME:GAOREP|Ore Purifier
+NAME:NACLON|Cloning Vats
+NAME:GAPILE|Allied Barracks
+NAME:GADEPT|Allied Repair Depot
+NAME:GAPAVE|Pavement
+NAME:GAGREEN|Green Building
+NAME:GASAND|Sandbags
+NAME:GAWALL|Allied Wall
+NAME:GAFWLL|French Wall
+NAME:NAWALL|Soviet Wall
+NAME:CABHUT|Bridge Repair Hut
+NAME:NAPULS|EMP Cannon
+NAME:GACTWR|Component Tower
+NAME:GAKODK|Kodiak
+NAME:NAIRON|Iron Curtain Device
+NAME:GAWEAT|Weather Controller
+NAME:GACSPH|Chrono Sphere
+NAME:GADUMY|Chrono Sphere
+NAME:NARADR|Radar Tower
+NAME:NAPSIS|Psychic Sensor
+NAME:NAWAST|Waste Facility
+NAME:TESLA|Tesla Coil
+NAME:ATESLA|Prism Tower
+NAME:NAMISL|Nuclear Missile Silo
+NAME:GAVULC|Vulcan Cannon
+NAME:GAROCK|RPG Upgrade
+NAME:GACSAM|SAM Upgrade
+NAME:GAPOWRUP|Power Turbine
+NAME:GAPLUG1|Threat Rating Node
+NAME:GAPLUG2|Seeker Control
+NAME:GAPLUG3|Ion Cannon Uplink
+NAME:GAFIRE|Fire Storm Generator
+NAME:NAPOST|Laser Fence Post
+NAME:NAFNCE|Laser Fence Section
+NAME:NALASR|Sentry Gun
+NAME:GAPILL|Pill Box
+NAME:NASAM|Patriot Missile
+NAME:GAFSDF|Firestorm Wall Section
+NAME:ABAN01|WS Logging Company
+NAME:ABAN02|Panullo Hacienda
+NAME:ABAN03|Abandoned Factory
+NAME:ABAN04|City Hall
+NAME:ABAN05|Hunting Lodge
+NAME:ABAN06|Local Inn & Lodging
+NAME:ABAN07|Church
+NAME:ABAN08|Abandoned Wharehouse
+NAME:ABAN09|Tall's Residence
+NAME:ABAN10|Denzil's Last Chance Motel
+NAME:ABAN11|Miele Manor
+NAME:ABAN12|Kettler's Place
+NAME:ABAN13|Long's Home
+NAME:ABAN14|Local Store
+NAME:ABAN15|Adam's House
+NAME:ABAN16|Gas Station
+NAME:ABAN17|Gas Pumps
+NAME:ABAN18|Gas Station Sign
+NAME:CA0001|Rade's Roadhouse
+NAME:CA0002|Sandberg and Son's
+NAME:CA0003|Temp Housing
+NAME:CA0004|Waystation
+NAME:CA0005|Ferbie's 4 Sale
+NAME:CA0006|Deluxe Accomodations
+NAME:CA0007|Field Generator
+NAME:CA0008|Subterranean Dwelling
+NAME:CA0009|Subterranean Dwelling
+NAME:CA0010|Leary Traveller Inn
+NAME:CA0011|Water Tank
+NAME:CA0012|Greenhouse
+NAME:CA0013|Water Purifier
+NAME:CA0014|Observation Tower
+NAME:CA0015|Port-A-Shack
+NAME:CA0016|Port-A-Shack Deluxe
+NAME:CA0017|Energy Transformer
+NAME:CA0018|Solar Panel
+NAME:CA0019|Solar Panel
+NAME:CA0020|Solar Panel
+NAME:CA0021|Solar Panel
+NAME:GAOLDCC1|Old Construction Yard
+NAME:GAOLDCC2|Old Temple
+NAME:GAOLDCC3|Old Weapons Factory
+NAME:GAOLDCC4|Old Refinery
+NAME:GAOLDCC5|Old Advanced Power Plant
+NAME:GAOLDCC6|Old Silos
+NAME:CAOUTP|Tech Outpost
+NAME:CATHOSP|Tech Hospital
+NAME:CAHOSP|Civilian Hospital
+NAME:CAAIRP|Tech Airport
+NAME:CAOILD|Tech Oil Derrick
+NAME:CAARMR|Civilian Armory
+NAME:CAPYR01|Pyramid
+NAME:CAPYR02|Pyramid
+NAME:CAPYR03|Pyramid
+NAME:CAARAY|Civilian Array
+NAME:GASPOT|Light Tower
+NAME:CITY01|Connelly Court Apts.
+NAME:CITY02|Lightner's Luxury Suites
+NAME:CITY03|Office Building
+NAME:CITY04|Westwood Stock Exchange
+NAME:CITY05|Daily Sun Times
+NAME:CITY06|YEO-CA Cola Corp.
+NAME:CITY07|Urban Housing
+NAME:CITY08|Yee's Discount Liquor
+NAME:CITY09|Abandoned Warehouse
+NAME:CITY10|Urban Storefront
+NAME:CITY11|Ambrose Lounge
+NAME:CITY12|Bostic Tower
+NAME:CITY13|Hewitt Hair Salon
+NAME:CITY14|Business Offices
+NAME:CITY15|2nd National Bank
+NAME:CITY16|Highrise Hotel
+NAME:CITY17|The Projects
+NAME:CITY18|Archer Asylum
+NAME:CITY19|Fill'er Up-Pump'N'Go
+NAME:CITY20|Gas Pump
+NAME:CITY21|Gas Station Sign
+NAME:CITY22|Church
+NAME:CTVEGA|Vega's Pyramid
+NAME:BBOARD01|Eat at Rade's Roadhouse
+NAME:BBOARD02|Drink YEO-CA Cola!
+NAME:BBOARD03|Hamburgers $.99
+NAME:BBOARD04|Visit Scenic Las Vegas
+NAME:BBOARD05|Rooms $29 a nite
+NAME:BBOARD06|Warhouse
+NAME:BBOARD07|Alkaline's Battery Superstore
+NAME:BBOARD08|Alex-gators petshop just ahead!
+NAME:BBOARD09|TacticX games rock!
+NAME:BBOARD10|WW Surf and Turf hits the spot!
+NAME:BBOARD11|Only 11 miles to Zydeko's cafe!
+NAME:BBOARD12|No escape from Archer's Asylum!
+NAME:BBOARD13|Stop in at Hewitt's hair salon
+NAME:BBOARD14|Billy Bob's Harvester school
+NAME:BBOARD15|Pannullo's hacienda es bueno
+NAME:CTDAM|Dam
+NAME:CAPARS01|Paris Tower
+NAME:CACITY01|Building
+NAME:CACITY02|Building
+NAME:CACITY03|Building
+NAME:CACITY04|Building
+NAME:CANEWY01|Building
+NAME:CANEWY04|Statue of Liberty
+NAME:CANEWY05|World Trade Center
+NAME:CASWST01|Building
+NAME:CATECH01|Communications Center
+NAME:CATEXS01|Building
+NAME:CATEXS02|Alamo
+NAME:CAWASH01|White House
+NAME:CAFARM01|Farm
+NAME:CAFARM02|Farm Silo
+NAME:CALIT01E|Light
+NAME:CALIT01N|Light
+NAME:CALIT01S|Light
+NAME:CALIT01W|Light
+NAME:CAMISC01|Barrels
+NAME:CAMISC02|Barrel
+NAME:CAMISC03|Dumpster
+NAME:CAMISC04|Mailbox
+NAME:CAPOL01E|Telephone Pole
+NAME:CAPOL01N|Telephone Pole
+NAME:CAPOL01S|Telephone Pole
+NAME:CAPOL01W|Telephone Pole
+NAME:AMMOCRAT|Ammo Crate
+NAME:GTGCAN|Grand Cannon
+NAME:NANRCT|Nuclear Reactor
+NAME:NAFLAK|Flak Cannon
+NAME:CAWSH12|Washington Monument
+NAME:NUKE|Nuclear Missile
+NAME:ION|Ion Cannon
+NAME:IRON|Iron Curtain
+NAME:STORM|Weather Storm
+NAME:CHRONO|Chronosphere
+NAME:CHRONO2|Chrono Stage Two
+NAME:PARA|Paradrop
+NAME:ALLIGATOR|Alligator
+NAME:NADEPT|Soviet Repair Depot
+NAME:CAWASH05|Building
+NAME:CAWASH04|Building
+NAME:CAWASH03|Building
+NAME:CAWASH07|Building
+NAME:CAWASH11|Building
+NAME:CAWASH12|Washington Monument
+NAME:CAWASH08|Building
+NAME:CAWSH08|Building
+NAME:CAWSH09|Building
+NAME:CAWASH10|Building
+NAME:CAWSH10|Building
+NAME:CAWASH13|Building
+NAME:CAEUR1|Cottage
+NAME:CAEUR2|Cottage
+NAME:CAMIAM02|Hotel
+NAME:CAPRS03|Generic World-Famous Museum
+NAME:CANWY05|Building
+NAME:CAEUR04|Building
+NAME:CAMEX01|Mayan Pyramid
+NAME:MAYAN|Mayan Pyramid
+NAME:CANEWY06|Building
+NAME:CANEWY07|Building
+NAME:CANEWY08|Building
+NAME:CAPARS02|Building
+NAME:CAPARS08|Building
+NAME:CAPARS09|Building
+NAME:CARUS03|Kremlin
+NAME:CANEWY10|Building
+NAME:CANEWY11|Building
+NAME:CANEWY12|Building
+NAME:CANEWY13|Building
+NAME:CANEWY14|Building
+NAME:CANEWY15|Building
+NAME:CANEWY16|Building
+NAME:CANEWY17|Building
+NAME:CANEWY18|Building
+NAME:CAPRS04|Building
+NAME:CAPRS05|Building
+NAME:CAPRS06|Building
+NAME:CAPRS07|Phone Booth
+NAME:CAWASH15|Lincoln Memorial
+NAME:CAPARS10|Building
+NAME:CAPARS13|Building
+NAME:CAPARS14|Building
+NAME:CAGAS01|Gas Station
+NAME:CAPARS11|Paris Arch of Winning
+NAME:CAPARS12|Cathedral
+NAME:CAFARM06|Light House
+NAME:CAMIAM04|Lifeguard
+NAME:NAPSYB|Psychic Beacon
+NAME:NAPSYA|Psychic Amplifier
+NAME:CAIND01|Factory
+NAME:CACOLO01|Air Force Academy Chapel
+NAME:CANWY09|Building
+NAME:CANWY22|Building
+NAME:CANWY23|Building
+NAME:CANWY24|Building
+NAME:CANWY25|Building
+NAME:CANWY26|Building
+NAME:CATEXS03|Building
+NAME:CATEXS04|Building
+NAME:CATEXS05|Building
+NAME:CACHIG04|Chicago Associates Center
+NAME:CAMIAM03|Hotel
+NAME:CAMIAM01|Hotel
+NAME:CARUS07|Red Square
+NAME:CATEXS06|Office Building
+NAME:CATEXS07|Office Building
+NAME:CATEXS08|Office Building
+NAME:CACHIG01|Building
+NAME:CACHIG02|Building
+NAME:CACHIG03|Building
+NAME:CAWASH16|Smithsonian Castle
+NAME:CAWASH17|Smithsonian Natural History Museum
+NAME:CACHIG05|Sears Tower
+NAME:CAWASH19|Iwo Jima Victory Monument
+NAME:CANEWY20|Warehouse
+NAME:CARUS04|Building
+NAME:CARUS05|Building
+NAME:CARUS06|Building
+NAME:CAMSC01|Mr. Yummy's Hot Dogs!
+NAME:CAMSC02|Umbrellas
+NAME:CAMSC04|Beach Towels
+NAME:CAMSC06|Camp Fire
+NAME:CAMSC07|Hut
+NAME:CAWASH18|Fountain
+NAME:CAEURO05|Statue
+NAME:CAPARK01|Park Bench
+NAME:CAPARK02|Swing Set
+NAME:CAPARK03|Merry-Go-Round
+NAME:CAHSE02|House
+NAME:CAHSE03|House
+NAME:CAHSE04|House
+NAME:CASTL01|Building
+NAME:CASTL02|Building
+NAME:CASTL03|Building
+NAME:CASTL04|Arch
+NAME:CAHSE05|Mobile Home
+NAME:CAHSE06|Mobile Home
+NAME:CAMIAM05|Hotel
+NAME:CAMIAM06|Hotel
+NAME:CAMIAM07|Hotel
+NAME:CAARMY01|Army Tents
+NAME:CAUSFGL|US Flag
+NAME:CAGARD01|Guard Shack
+NAME:CARUS01|St. Basil's Cathedral
+NAME:CAFRMA|Farm House
+NAME:CAFRMB|Outhouse
+NAME:CAHSE01|House
+NAME:CAWT01|Water Tower
+NAME:CATS01|Grain Silo
+NAME:CABARN02|Barn
+NAME:CAWA2A|Pentagon
+NAME:ALL01|Operation: Lone Guardian
+NAME:ALL02|Operation: Eagle Dawn
+NAME:ALL03|Operation: Hail to the Chief
+NAME:ALL04|Operation: Last Chance
+NAME:ALL05|Operation: Dark Night
+NAME:ALL06|Operation: Liberty
+NAME:ALL07|Operation: Deep Sea
+NAME:ALL08|Operation: Free Gateway
+NAME:ALL09|Operation: Sun Temple
+NAME:ALL10|Operation: Mirage
+NAME:ALL11|Operation: Fallout
+NAME:ALL12|Operation: Chrono Storm
+NAME:SOV01|Operation: Red Dawn
+NAME:SOV02|Operation: Hostile Shore
+NAME:SOV03|Operation: Big Apple
+NAME:SOV04|Operation: Home Front
+NAME:SOV05|Operation: City of Lights
+NAME:SOV06|Operation: Sub-Divide
+NAME:SOV07|Operation: Chrono Defense
+NAME:SOV08|Operation: Desecration
+NAME:SOV09|Operation: The Fox and the Hound
+NAME:SOV10|Operation: Weathered Alliance
+NAME:SOV11|Operation: Red Revolution
+NAME:SOV12|Operation: Polar Storm
+NAME:TRN01|Boot Camp - Day 1
+NAME:TRN02|Boot Camp - Day 2
+NAME:TEXAS_DMZ|Texas DMZ
+NAME:EUROPEAN_THEATER|European Theater
+NAME:GUARDIANS_OF_THE_EAST|Guardians of the East
+NAME:AFRICAN_WARLORDS|African Warlords
+NAME:RED_STORM|Red Storm
+NAME:CONA|Excavator
+NAME:CAWSH14|Jefferson Memorial
+NAME:VLADBOAT|Vladimir's Command Ship
+NAME:PIGCAR|Police Car
+NAME:PRES|President
+NAME:CAMISC06|V3 Ammunition
+NAME:TAXI|Taxi
+NAME:CRUISESHIP|Cruise Ship
+NAME:PROPA|Propaganda Truck
+NAME:LIMO|Limousine
+NAME:CDEST|Coast Guard Boat
+NAME:TUGBOAT|Tug Boat
+NAME:GATE1|Gate
+NAME:CAMIAM08|Arizona Memorial
+NAME:CAMISC12|Practice Target
+NAME:CAMISC13|Derelict Tank
+NAME:CASTL05|Stadium
+NAME:CUBANFLAG|Cuban Flag
+NAME:RUSSIANFLAG|Russian Flag
+NAME:FRENCHFLAG|French Flag
+NAME:IRAQFLAG|Iraqi Flag
+NAME:KOREAFLAG|Korean Flag
+NAME:LYBIAFLAG|Lybian Flag
+NAME:GERMANFLAG|German Flag
+NAME:UKFLAG|British Flag
+NAME:POLISHFLAG|Polish Flag
+NAME:MAYANRUINS|Mayan Ruins
+NAME:MAYANTEMPLE|Mayan Temple
+NAME:CAMISC05|Pipes
+NAME:CAMISC11|Tires
+NAME:CAMSC10|McBurger Kong
+NAME:SECRETSERVICE|Secret Service
+NAME:EINSTEINLAB|Einstein's Laboratory
+NAME:CABANA|Cabana Bar
+NAME:PCOMMANDO|Psi Commando
+NAME:TOURNEY1|Official Tournament Map (2)
+NAME:TOURNEY2|Official Tournament Map (4)
+NAME:TOURNEY3|Official Tournament Map (8)
+NAME:POLARBEAR|Polar Bear
+NAME:MONKEY|Monkey
+NAME:WEEK1|Wall Street
+NAME:WEEK2|Army of the Potomac (2-6)
+NAME:WEEK3|Mutually Assured Destruction
+NAME:WEEK4|Russian Roulette (2-8)
+NAME:WEEK5|Lady of the Lake
+NAME:WEEK6|Lost Lake (2-4)
+NAME:WEEK7|Sea of Isolation (2-4)
+NAME:WEEK8|Oceanside (2-4)
+NAME:WEEK9|Pacific Heights (2-4)
+NAME:WEEK10|Bermuda Triangle (2-6)
+NAME:WEEK11|Sleep with the Fishes
+NAME:WEEK12|Boat Show
+NAME:WEEK13|Amerika's Cup
+NAME:WEEK14|Tsunami (2-4)
+NAME:WEEK15|Valley of Gems (2-4)
+NAME:WEEK16|Streets of Gold (2-6)
+NAME:WEEK17|Goldmine
+NAME:WEEK18|Goldfinger
+NAME:WEEK19|King Midas
+NAME:WEEK20|Yellow Brick Road
+NAME:WEEK21|Box Canyon
+NAME:WEEK22|Mount Olympus (2-4)
+NAME:WEEK23|Red Rocks
+NAME:WEEK24|Cloudscape
+NAME:WEEK25|Fodder Hills
+NAME:WEEK26|Sovereign Land (2)
+NAME:WEEK27|Shrapnel Mountain (2-4)
+NAME:WEEK28|Xanadu
+NAME:WEEK29|Megalopolis
+NAME:WEEK30|Sinkhole (2-4)
+NAME:WEEK31|Canyon View
+NAME:WEEK32|POW Camp
+NAME:WEEK33|Northwest Territory
+NAME:WEEK34|Louisiana Purchase
+NAME:WEEK35|Bay of Pigs (2-6)
+NAME:WEEK36|Chicago Fire
+NAME:WEEK37|Broadway and 42nd
+NAME:WEEK38|Deadman's Ridge (2)
+NAME:WEEK39|City Under Siege (2-4)
+NAME:WEEK40|Wild West
+NAME:WEEK41|Kalifornia (2-6)
+NAME:WEEK42|Romanov's Revenge
+NAME:WEEK43|Yuri's Plot (2-3)
+NAME:WEEK44|Carville's Convoy (2-4)
+NAME:WEEK45|Mr. President
+NAME:WEEK46|Moscow on line 2
+NAME:WEEK47|Invasion Confirmed (2-4)
+NAME:WEEK48|Nuclear Threat
+NAME:WEEK49|Tanya's Training Grounds (2-4)
+NAME:WEEK50|Apocalypse on the Move
+NAME:WEEK51|No more Flak
+NAME:WEEK52|Fire Break
+NAME:WEEK53|Shooting Star
+NAME:WEEK54|Close Quarters
+NAME:WEEK55|Breakaway (2-3)
+NAME:WEEK56|Rockets Red Glare (2-4)
+NAME:WEEK57|Red Badge
+NAME:WEEK58|Loaded Barrel (2)
+NAME:WEEK59|Killer Instinct (2-3)
+NAME:WEEK60|Territorial Imperative (2-8)
+NAME:WEEK61|Manifest Destiny
+NAME:WEEK62|Monroe Doctrine
+NAME:WEEK63|Element of Chance
+NAME:WEEK64|Brink of Disaster (2-4)
+NAME:WEEK65|Surprise Visit
+NAME:WEEK66|Pop Quiz
+NAME:WEEK67|Crunch Mode
+NAME:WEEK68|Trash Compactor
+NAME:WEEK69|Meat Grinder (2)
+NAME:WEEK70|Blender
+NAME:WEEK71|Proud and Few
+NAME:WEEK72|Semper Fi
+NAME:WEEK73|Hail Mary (2)
+NAME:WEEK74|No Rest for the Wicked (2-4)
+NAME:WEEK75|A Bridge Too Far
+NAME:WEEK76|Stormy Weather (2-4)
+NAME:WEEK77|Episode 1
+NAME:WEEK78|Dustbowl (2)
+NAME:WEEK79|Obedience Training
+NAME:WEEK80|Death trap (2-8)
+NAME:WEEK81|Deadman Walking
+NAME:WEEK82|Skyscraper (5)
+NAME:WEEK83|Powder Keg (2-8)
+NAME:WEEK84|Angst Driven
+NAME:WEEK85|Roundhouse Kick (2-4)
+NAME:WEEK86|Country Swing (2-4)
+NAME:WEEK87|Toxic Spill
+NAME:WEEK88|Extinction Level Event
+NAME:WEEK89|Lightning Rod
+NAME:WEEK90|The Maze
+NAME:WEEK91|Tower of Power (2-4)
+NAME:WEEK92|Pack Animal
+NAME:WEEK93|Riding Shotgun
+NAME:WEEK94|Happy Trails (2)
+NAME:WEEK95|Shiny New Tank
+NAME:WEEK96|Head for the Hills (2-4)
+NAME:WEEK97|Tourney
+NAME:WEEK98|Matchmaker
+NAME:WEEK99|Duel
+NAME:WEEK100|Boot Camp
+NAME:WEEK101|Sanctioned Event 1
+NAME:WEEK102|Sanctioned Event 2
+NAME:WEEK103|Sanctioned Event 3
+NAME:WEEK104|Sanctioned Event 4
+NAME:WEEK105|Tournament 1
+NAME:WEEK106|Tournament 2
+NAME:WEEK107|Tournament 3
+NAME:WEEK108|Tournament 4
+NAME:WEEK109|Arena (2-4)
+NAME:WEEK110|Scavenger Hunt
+NAME:WEEK111|Capture the Flag
+NAME:WEEK112|Olympics 1
+NAME:WEEK113|Olympics 2
+NAME:WEEK114|Olympics 3
+NAME:WEEK115|Olympics 4
+NAME:WEEK116|Clean Shave
+NAME:WEEK117|Fallout Shelter
+NAME:WEEK118|New Heights (2)
+NAME:CAMOV01|Movie Screen
+NAME:CAMOV02|Concession Stand
+NAME:COOPDESC1|- Texas DMZ - \n It's Americans versus Soviets in the Southwestern United States. Players must push the Soviets and their Cuban allies out of the Texas plains. The campaign ends with the destruction of a Russian fortress just inside the Mexican border. Difficulty is EASY.
+NAME:COOPDESC2|- European Theater - \n Knock on the Soviet's front door in Eastern Europe. Players choose between British, French and German Allies. The battle ends with an attack across the Russian border at a major Soviet outpost. Difficulty is EASY.
+NAME:COOPDESC3|- Guardians of the East - \n The Republic of Korea must thwart Soviet aggression in South East Asia. The campaign culminates with the Korean forces invading the snowy shoreline of eastern Russia. Difficulty is MODERATE.
+NAME:COOPDESC4|- African Warlords - \n Seize the oil fields of North Africa. Players control Iraqi and Libyan factions, fighting European Allies. Difficulty is MODERATE.
+NAME:COOPDESC5|- Red Storm - \n Players choose among the American and European Allies to fight the Russians in the North Sea and across Northern Europe. The campaign ends with a spectacular naval battle in the cold Baltic sea. Difficulty is HARD.
+NAME:CABUNK01|Bunker
+NAME:INTROMOVIE|Intro Movie
+NAME:APARA|Airborne
+NAME:TOURNEY4|Official Tournament Map A (2)
+NAME:TOURNEY5|Official Tournament Map B (2)
+NAME:OBSERVER|Observer
+NAME:YURICOUNTRY|Yuri
+NAME:INIT|Initiate
+NAME:VIRUS|Virus
+NAME:BRUTE|Brute
+NAME:YURICLONE|Yuri Clone
+NAME:YURIPRIME|Yuri Prime
+NAME:LASHER|Lasher Light Tank
+NAME:GATTTANK|Gattling Tank
+NAME:CHAOSDRONE|Chaos Drone
+NAME:MASTERMIND|Master Mind
+NAME:MAGNETRON|Magnetron
+NAME:YMCV|Yuri MCV
+NAME:BOOMER|Boomer
+NAME:BIOR|Bio Reactor
+NAME:YBARRACKS|Yuri Barracks
+NAME:YWARFACTORY|Yuri War Factory
+NAME:GRINDER|Grinder
+NAME:YBLAB|Yuri Battle Lab
+NAME:YNAVAL|Yuri Naval Yard
+NAME:YAPSYT|Psychic Tower
+NAME:GATTCANNON|Gattling Cannon
+NAME:CITADEL|Citadel Walls
+NAME:YAPPET|Psychic Dominator
+NAME:BATTLEFORTRESS|Battle Fortress
+NAME:GUARDIANGI|Guardian GI
+NAME:SIEGECHOPPER|Siege Chopper
+NAME:BORIS|Boris
+NAME:INDUSTRIALPLANT|Industrial Plant
+NAME:NATBNK|Tank Bunker
+NAME:ALL_COOP|Allied Campaign
+NAME:SOV_COOP|Soviet Campaign
+NAME:YURI_COOP|Yuri Campaign
+NAME:WORLD_COOP|World Alliance
+NAME:ARENA33|Arena 33 Forever (2-6)
+NAME:VALGIRL|Death Valley Girl (2-4)
+NAME:DINOWARS|Dino Wars (2-8)
+NAME:DINOZOO|Dinosaur Zoo (2-8)
+NAME:2XTRBLE|Double Trouble (2-4)
+NAME:DRYHEAT|Dry Heat (2-4)
+NAME:EASTVSBEST|East vs Best (2-6)
+NAME:4CRNERS|Four Corners (2-4)
+NAME:OADES|Isle Of Oades (2-4)
+NAME:MONVALLEY|Monument Valley (2-6)
+NAME:MOONBASE|Moon Base (2-4)
+NAME:OFFDEF|Offense Defense (2-4)
+NAME:OTTERSREVENGE|Otters Revenge (2-4)
+NAME:FORFIRES|Return to Forest Fires
+NAME:SEDONAPASS|Sedona Pass (2-6)
+NAME:SPOLESLUG|South Pole Slugfest (2-4)
+NAME:TOPOTHEHILL|Top o'the Hill (2-3)
+NAME:TOUROFEGYPT|Tour Of Egypt (2-6)
+NAME:TRAILERPARK|Trailer Park (2-8)
+NAME:TURFWAR|Turfwar (2-4)
+NAME:YAGNTC|Genetic Mutator
+NAME:NABNKR|Battle Bunker
+NAME:COOPDESC11|Soviet bases in Cuba pose a threat to the Continental United States so they must be eliminated. Commander 1 will take control of our secret Air Force Command near the coast. Commander 2 will secure the city of Havana.
+NAME:COOPDESC12|Yuri has managed to establish bases in the Hollywood Hills. Commander 1 will take charge of the area around LAX. Commander 2 will take command of the power and oil facilities just east of the freeway.
+NAME:COOPDESC13|You have successfully driven Yuri and his Russian allies back into the USSR. The time has come to finish them, Commanders. Establish your bases and end this war.
+NAME:COOPDESC21|The Americans believe they can hold Seattle. Crush thier defensive positions and let us move on to more glorious battles. Commander 1 will take command of our naval forces, while Commander 2 prepares for a crushing armored assault.
+NAME:COOPDESC22|The traitor Yuri is rebuilding his forces in the Egyptian desert. Commander 1 will take charge of our old base along the Nile. Commander 2 must protect our oil fields just south of Yuri's front lines.
+NAME:COOPDESC23|It appears the Black Forest of Germany will be the final resting place of both our enemies. Both seek out Einstein's laboratory in vain hope it will give them hope of survival. Intelligence has pin pointed the location of the nuclear reactors that must surely power Einstein's lab. Secure your positions and then seek out and destroy the enemies of the Soviet state once and for all.
+NAME:COOPDESC31|The Allies have constructed defenses around their precious White House. They hide behind their technology like scared children. Establish your bases and end their poor mindless attempts to hold us back.
+NAME:COOPDESC32|The Red Army has managed to steal the Allies prism technology and is trying to develop their own version of the Prism Tower at a secret research facility deep in the Yucatan jungle. We will launch a surprise attack on their base and squash the Soviets last hope for victory. Commander 1 will begin north of a small oil field. Commander two will begin just east of a local airport.
+NAME:COOPDESC33|The Allies and Soviets have allied against us. They have gathered the last of their forces in London. Commander 1 will control our oil derrick in the city and Commander 2 will control the hospital across the Thames. This victory will ensure Yuri's mastery of the world.
+NAME:COOPDESC41|In the wake of the Soviet invasion, Yuri has established two bases in the heart of New York City. No longer under Yuri's control, the Red Army has allied with the Americans to defeat the traitor.
+NAME:CASLAB|Tech Secret Lab
+NAME:DISK|Floating Disc
+NAME:SMIN|Slave Miner
+NAME:SLAV|Slave
+NAME:YACNST|Yuri Construction Yard
+NAME:ROBOTANK|Robot Tank
+NAME:ROBOCONT|Robot Control Center
+NAME:FORCESHIELD|Force Shield
+NAME:TESTERSMAP|Tester's Map
+NAME:ALL01MD|Operation: Time Lapse
+NAME:ALL02MD|Operation: Hollywood and Vain
+NAME:ALL03MD|Operation: Power Play
+NAME:ALL04MD|Operation: Tomb Raided
+NAME:ALL05MD|Operation: Clones Down Under
+NAME:ALL07MD|Operation: Brain Dead
+NAME:SOV01MD|Operation: Time Shift
+NAME:SOV02MD|Operation: Deja Vu
+NAME:SOV03MD|Operation: Brain Wash
+NAME:SOV04MD|Operation: Romanov on the Run
+NAME:SOV05MD|Operation: Escape Velocity
+NAME:SOV06MD|Operation: To The Moon
+NAME:SOV07MD|Operation: Head Games
+NAME:SPYP|Spy Plane
+NAME:AUSTIN|Austin, TX (2-4)
+NAME:TRIPLE|Triple Crossed (3-6)
+NAME:WIMPS|No Wimps (2-4)
+NAME:MNTRUSH|Mount Rush More (2-5)
+NAME:CAML|Camel
+NAME:EINS|Einstein
+NAME:DNOA|T-Rex
+NAME:CLNT|Flint Westwood
+NAME:RMNV|Premier Romanov
+NAME:MUMY|Mummy
+NAME:STLN|Sammy Stallion
+NAME:ARND|Arnnie Frankenfurter
+NAME:CAEGYP03|Sphinx
+NAME:CALA01|Mini Mall
+NAME:CALA09|Convenience Store
+NAME:CALOND04|British Parliament
+NAME:CALOND06|Tower of London
+NAME:CALOND05|Big Ben
+NAME:CAMORR05|Rick's Place
+NAME:CASANF05|Alcatraz
+NAME:CASANF04|Golden Gate Bridge
+NAME:CASANF15|Alcatraz Water Tower
+NAME:CASEAT02|MassiveSoft Campus
+NAME:CASYDN03|Sydney Opera House
+NAME:CAEAST01|Moai
+NAME:CAEAST02|Yuri Statue
+NAME:CATRAN03|Yuri's Fortress
+NAME:CALA03|Hollywood Sign
+NAME:CALA04|Hollywood Bowl
+NAME:CALA05|LAX
+NAME:CALA06|LAX Control Tower
+NAME:CALA08|Car Dealership
+NAME:CASEAT01|Seattle Space Needle
+NAME:CASYDN02|McRoo Burger
+NAME:CATRAN01|Crypt
+NAME:LUNR|Cosmonaut
+NAME:CAMACH|Tech Machine Shop
+NAME:BLACKCAB|Black Cab
+NAME:YCAB|Yellow Cab
+NAME:DOLY|Camera Dolly
+NAME:CBLC|Cable Car
+NAME:FTRK|Fire Truck
+NAME:AMBU|Ambulance
+NAME:CALA07|Movie Theater
+NAME:YAROCK|Unknown Building
+NAME:RVIEW|Remote Viewing
+NAME:YURIRAD|Psychic Radar
+NAME:FRANK01|This game mode requires more than one player.
+NAME:FRANK02|This game mode requires more than one human player.
+NAME:FRANK03|This game mode requires more than one team.
+NAME:FRANK04|You must be a registered user to get this map.
+NAME:PTBLANK|Point Blank
+NAME:RUSHHR|Rush Hour (2-4)
+NAME:HIDVALLY|Hidden Valley (2)
+NAME:DPFREEZE|Deep Freeze
+NAME:OASIS|Oasis
+NAME:ACRSSNILE|Across the Nile
+NAME:DTHVALLEY|Death Valley
+NAME: CNTRPUNCH|Counterpunch
+NAME:STPARADE|Main Street Parade
+NAME:TRBLWTR|Troubled Waters
+NAME:SINKSWIM|Sink or Swim
+NAME: DSRTMRCH|Desert March
+NAME: DEATHMRCH|Death March
+NAME:BLDFEUD|Blood Feud (2)
+NAME:BUOY|Buoyancy
+NAME:TRGTACQRD|Target Acquired
+NAME:MOJORISE|Mojo Rising
+NAME:MOJOSPIRIT|The Spirit of Mojo One
+NAME:BRDRSKIRM|Border Skirmish
+NAME:FOOTWORK|Fancy Footwork
+NAME:GOLONG|Going the Distance
+NAME:CUBEWRLD|Cubicle World
+NAME:DEATHDOOR|At Death's Door
+NAME:2PEAKS|Twin Peaks (2)
+NAME:IAMTHELAW|Martial Law
+NAME:RIOT|Civilian Unrest
+NAME:UNREPENT|Unrepentant
+NAME:BRIDGEGAP|Bridging the Gap (2-6)
+NAME:CSTLEYURI|Castle Yuri
+NAME:WOLFNLNDN|Werewolves of London
+NAME:POLAROP|Polar Opposites
+NAME:OPPOSEFRCE|Opposing Force
+NAME:CITYSCAPE|Cityscape
+NAME:URBRENEWAL|Urban Renewal
+NAME:HAVOC|Major Havoc
+NAME:BETWEEN|A Hill Between (2)
+NAME:LANDORSEA|By Land or By Sea
+NAME:STORMSIEGE|Storm Siege
+NAME:PARTS|Component Parts
+NAME:CIRCUITBRD|Circuit Board
+NAME:BOMBING|Air Strike
+NAME:CNDTNRED|Condition Red
+NAME:MOJOLAND|Mojo's Landing
+NAME:ISLEOLAND|Islands on the Land
+NAME:5PTHARNESS|Five-point Harness
+NAME:CFODDER2|Canyon Fodder II
+NAME:INCOMING|Incoming
+NAME:SILOARMED|Silos Armed
+NAME:YURIAGAIN|Return of Yuri
+NAME:MOJODOJO|Mojo's Dojo
+NAME:HITDECK|Hit the Deck
+NAME:HARDDECK|Hard Deck
+NAME:FACEDWN|Face Down (2-4)
+NAME:PETCMETRY|Pet Cemetery
+NAME:CARWARS|Car Wars
+NAME:FIGHT|Let There Be Fight (2)
+NAME:PATHTAKEN|The Path Most Taken
+NAME:MNKYTREX|Crouching Monkey, Hidden T-Rex
+NAME:LOSTWRLD|The Time The World Forgot
+NAME:HEATWAVE|Heat wave
+NAME:FROSTBITE|Frostbite (2-4)
+NAME:MALARIA|Malaria
+NAME:LONGNIGHT|The Longest Night
+NAME:CITYVILLE|Downtown, Cityville (2-4)
+NAME:KTOURN1|Korea Tournament 1
+NAME:KTOURN2|Korea Tournament 2
+NAME:ATOURN1|America Tournament 1
+NAME:ATOURN2|America Tournament 2
+NAME:GTOURN1|German Tournament 1
+NAME:GTOURN2|German Tournament 2
+NAME:ECNTYSDE|English Countryside
+NAME:CRISISCO|Crisis in the Costwolds
+NAME:LONDONFL|London Falling
+NAME:RIVERRAM|River Rampage
+NAME:RIVERRAI|River Raid
+NAME:TOWERTRO|Tower Trouble
+NAME:WAROFTHE|War of the Roses
+NAME:SCARSOFS|Scars of Scotland
+NAME:EYGPTIAN|Egyptian Munitions
+NAME:LITTLEPI|Little Piece of Dune (2)
+NAME:DUNEPATR|Dune Patrol (2)
+NAME:MOONPATR|Moon Patrol
+NAME:MOONBREA|Moon Breaker
+NAME:CRATERCA|Crater Canyon
+NAME:TAMPICOT|Tampico Trauma
+NAME:MANHATTA|Manhattan Mayhem (2-4)
+NAME:BRONXBOM|Bronx Bombers
+NAME:HARLEMHO|Harlem Hotspot
+NAME:TRANSYLV|Transylvania Trouble
+NAME:TNKRSHHR|Tank Rush Hour
+NAME:TESLATER|Tesla Termination
+NAME:SIBERIAN|Siberian Wasteland
+NAME:HARVESTE|Harvester Home
+NAME:ORETRUCK|Ore Truck Driver Blues
+NAME:SQUEAKYA|Squeaky Axle
+NAME:SAHARAMI|Sahara Mirage (2)
+NAME:ISLANDRU|Island Ruins
+NAME:YURISLEG|Yuri's Legacy
+NAME:ONEVSMAN|One vs Many (2-4)
+NAME:OPRATANN|Operation: Annihilation
+NAME:TERRAINF|Terrain Feature
+NAME:LANDACCE|Land Access Denied
+NAME:NEAROREF|Near Ore Far (2-8)
+NAME:RUNNINGT|Running the Gauntlet (2)
+NAME:OPRATDEA|Operation: Deathwatch
+NAME:WARMONGE|Warmonger
+NAME:ASSAULTA|Assault and Pepper
+NAME:EXPOSEDF|Exposed Flanks (2-4)
+NAME:GROUNDZE|Ground Zero (2-4)
+NAME:CLAYMORE|Claymore
+NAME:CODEBROA|Codename: Broadsword
+NAME:LGHTCAVL|Light Cavalry
+NAME:VALHALLA|Valhalla
+NAME:CAGEDTIG|Caged Tiger
+NAME:BLASTRAD|Blast Radius
+NAME:EXPANDED|Expanded Empire
+NAME:FALLENEM|Fallen Empire
+NAME:SHATTERE|Shattered Ruins
+NAME:BATTLECR|Battle Creek
+NAME:MONSTERM|Monster Movie
+NAME:LDNTHEDA|London, the day after (2-6)
+NAME:STATNTAR|Stationary Target
+NAME:DSGNTARG|Designated Target
+NAME:HIGHEXPR|High Explosive Round
+NAME:FULLAUTO|Full Auto
+NAME:REACTARM|Reactive Armor
+NAME:TRNOFLIE|A Tournament of Lies
+NAME:UNANSCHA|Unanswered Challenge
+NAME:OPNGTSTK|Operation: Knight Stalker
+NAME:ARMORPRD|Armor Piercing Round
+NAME:TGELIMIN|Target Eliminated
+NAME:JOUST|Joust (2)
+NAME:STARFISH|Starfish (2-5)
+NAME:THREECRD|Three's a Crowd (2-3)
+NAME:SIX_PACK|Six Pack (2-6)
+NAME:FOURODIA|The Four of Diamonds (2-4)
+NAME:SEVEN_UP|Seven Up (2-7)
+NAME:ATETOOMU|Ate too Much (2-8)
+NAME:CUPLET|Cuplet (2)
+NAME:IAMB|Iambic Iam (2)
+NAME:PENTAMET|Pentameter (2-5)
+NAME:UNFAIRAD|Unfair Advantage
+NAME:CREVASSE|Crevasse
+NAME:ICE_AGE|Ice Age
+NAME:IRVINECA|Irvine, California
+NAME:CALA10|Billboard
+NAME:CAURB03|Spotlight
+NAME:CASTRT05|Bus Stop
+NAME:CABARR|Hedgehog
+NAME:CASIN03|Construction Sign
+NAME:CAURB02|Fire Hydrant
+NAME:CATIME02|Time Machine
+NAME:CAURB01|Telephone Booth
+NAME:DNOB|Brachiosaurus
+NAME:BPLN|MiG
+NAME:JEEP|Jeep
+NAME:YACOMD|Yuriґs Command Center
+NAME:REDBUS|Bus
+NAME:GLOBE|Globe Theater
+NAME:ALL06MD|Operation: Trick or Treaty
+NAME:CAPOWR|Tech Power Plant
+NAME:CIVILIAN_PLANE|Passenger Plane
+NAME:PSYREVEAL|Psychic Reveal
+NAME:CALUNR01|Lunar Lander
+NAME:ESCALATION|Escalation (2-4)
+NAME:ALLFINALMOVIE|Allied Victory
+NAME:SOVFINALMOVIE|Soviet Victory
+NAME:ALL01MDSAV|Allied 01 - Time Lapse
+NAME:ALL02MDSAV|Allied 02 - Hollywood and Vain
+NAME:ALL03MDSAV|Allied 03 - Power Play
+NAME:ALL04MDSAV|Allied 04 - Tomb Raided
+NAME:ALL05MDSAV|Allied 05 - Clones Down Under
+NAME:ALL06MDSAV|Allied 06 - Trick or Treaty
+NAME:ALL07MDSAV|Allied 07 - Brain Dead
+NAME:ALLFINALE|Allied Finale
+NAME:SOV01MDSAV|Soviet 01 - Time Shift
+NAME:SOV02MDSAV|Soviet 02 - Deja Vu
+NAME:SOV03MDSAV|Soviet 03 - Brain Wash
+NAME:SOV04MDSAV|Soviet 04 - Romanov on the Run
+NAME:SOV05MDSAV|Soviet 05 - Escape Velocity
+NAME:SOV06MDSAV|Soviet 06 - To The Moon
+NAME:SOV07MDSAV|Soviet 07 - Head Games
+NAME:SOVFINALE|Soviet Finale
+NAME:HERO1|Cowboy
+NAME:HERO2|Bodybuilder
+NAME:HERO3|Hero

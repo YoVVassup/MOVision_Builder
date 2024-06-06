@@ -1,0 +1,2913 @@
+DESC:ABLUT|Blut Royale (A)
+DESC:ABUGGY|Attack on Buggy (A)
+DESC:AENFO|Enforcers (A)
+DESC:AMONSTER|Mad Monster (A)
+DESC:APWAR|Impersonal War (A)
+DESC:ASARIN|Good Old Times (A)
+DESC:CANNIS01|Switchback Ravine (2)
+DESC:CANNIS02|Switchback Ridge (2)
+DESC:CANNIS03|OverExtended (2)
+DESC:CANNIS04|Frigid Triangle (2-3)
+DESC:CANNIS04X|Frigid Triangle (2vs1)
+DESC:CANNIS07|Field & Stream (2-6)
+DESC:CANNIS08|Amazon Assault (2-6)
+DESC:CANNIS09|Sunstroke (2-4)
+DESC:CANNIS10|Moonlit Bay (2-4)
+DESC:CANNIS11|Gem Pit II (2-4)
+DESC:CANNIS12|FreezeOut (2-6)
+DESC:CANNIS13|OutGrowth (2-8)
+DESC:CANNIS14|Inversion (2-4)
+DESC:CANNIS15Y|Stacked Odds (6vs1)
+DESC:CANNIS16|CrissCross (2-4)
+DESC:CAPMEL03|Total Destruction (2-4)
+DESC:CRBLWS01|Dueling Islands (2)
+DESC:CUSTOM|========  Свои Карты  ==========
+DESC:ECOR|Cornered (E)
+DESC:ELIES|Television Lies (E)
+DESC:EPAIN|Brain Reset (E)
+DESC:ERAIN|Rainmaker (E)
+DESC:ERETAL|Retaliation (E)
+DESC:ERUSH|Rush Tactics (E)
+DESC:F32|Top o'the Hill (2vs1)
+DESC:F54|Lonely Island (4vs1)
+DESC:MIR4DR01|Quarterpounder (2-4)
+DESC:MIR4DR02|War Paint (2-4)
+DESC:MIR4DR03|4 Pack (2-4)
+DESC:MIR4DR05|Scars (2-4)
+DESC:MIR4DR06|Snowdog (2-6)
+DESC:MIR4DR07|Subdivisions (2-8)
+DESC:MIR4DR08|Bacchus Plateau (2-8)
+DESC:MIR4DR10|Six Holes (2-6)
+DESC:MIR4DR11|Passing the 5th Side (2-5)
+DESC:MO201|City Delta (2)
+DESC:MO202|Delta Duel (2)
+DESC:MO203|Sunset Vista (2)
+DESC:MO204|Perseco Terra (2)
+DESC:MO205|Fire Island (2)
+DESC:MO206|Couplet (2)
+DESC:MO207|Cloud Nine (2)
+DESC:MO208|River Rampage (2)
+DESC:MO209|Cabana Republic (2)
+DESC:MO210|Glacier Gorge (2)
+DESC:MO211|Cape Fear (2)
+DESC:MO212|Tournament Decision (2)
+DESC:MO213|Serpentine (2)
+DESC:MO214|Pig Race Isle (2)
+DESC:MO215|Baltic Arena (2)
+DESC:MO216|Roselake Redux (2)
+DESC:MO217|Snow Plow (2)
+DESC:MO218|Drought (2)
+DESC:MO219|Industrial Strength (2)
+DESC:MO220|Urban Pipeline (2)
+DESC:MO221|Fractured (2)
+DESC:MO222|Turtle Village (2)
+DESC:MO223|Twisted Malice (2)
+DESC:MO224|Small Town USA (2)
+DESC:MO225|Arden River (2)
+DESC:MO226|Infinity Isle (2)
+DESC:MO227|Saint and Sinner (2)
+DESC:MO228|Amazonas Delta (2)
+DESC:MO229|Little Big Bay (2)
+DESC:MO231|Predator Instinct (2)
+DESC:MO232|Bay War (2)
+DESC:MO233|Grinder Ravine (2)
+DESC:MO234|Blistering Red Sands (2)
+DESC:MO235|Cold Winter (2)
+DESC:MO236|Sand Snakes (2)
+DESC:MO237|Impact Crater (2)
+DESC:MO238|Asvetia Cliffs (2)
+DESC:MO239|Loud Kingdom (2)
+DESC:MO240|Dune Shredder (2)
+DESC:MO241|Stand Off (2)
+DESC:MO242|Moonlit Waters (2)
+DESC:MO243|Oasis Trouble (2)
+DESC:MO244|Jungle Basin (2)
+DESC:MO245|Winteryear (2)
+DESC:MO248|Heatstroke (2)
+DESC:MO249|Paradise Lost (2)
+DESC:MO302|Paradox Spiral (2-3)
+DESC:MO303|Caldera of Chaos (2-3)
+DESC:MO304|Yelcraz Lagoon (2-3)
+DESC:MO305|Triple Threat (2-3)
+DESC:MO305X|Triple Threat (2vs1)
+DESC:MO306|Arch La Indigo (2-3)
+DESC:MO307|Pyroclasm (2-3)
+DESC:MO308|Dam (2-3)
+DESC:MO309|Silver River (2-3)
+DESC:MO310|Tiki Torture (2-3)
+DESC:MO311|Hostile Iceberg (2-3)
+DESC:MO312|Minos Canyon (2-3)
+DESC:MO401|Ruination (2-4)
+DESC:MO402|Crimson Alert (2-4)
+DESC:MO403|Seperated (2-4)
+DESC:MO404|Desert Twilight (2-4)
+DESC:MO405|Lakeside (2-4)
+DESC:MO406|Frozen Throne (2-4)
+DESC:MO407|Shattered (2-4)
+DESC:MO408|City Fights Back (2-4)
+DESC:MO409|Double Malice (2-4)
+DESC:MO410|Frostration (2-4)
+DESC:MO411|Rogue State (2-4)
+DESC:MO412|Velillian Islands (2-4)
+DESC:MO413|Circuit Board (2-4)
+DESC:MO414|Lake Istelv (2-4)
+DESC:MO415|Deep Freeze (2-4)
+DESC:MO416|Alaskan Outback (2-4)
+DESC:MO417|Desertification (2-4)
+DESC:MO418|Collision Course (2-4)
+DESC:MO420|Combat Zone (2-4)
+DESC:MO422|Water Shed (2-4)
+DESC:MO423|Fort Urban Square (2-4)
+DESC:MO424|Caverns of Siberia (2-4)
+DESC:MO425|Infinity (2-4)
+DESC:MO427|Fort Kickass (2-4)
+DESC:MO429|Crystal Forest (2-4)
+DESC:MO431|Bull Run (2-4)
+DESC:MO432|Little Piece of Island (2-4)
+DESC:MO433|Yin Yang (2-4)
+DESC:MO433X|Yin Yang (2vs1)
+DESC:MO434|Desert Pacific (2-4)
+DESC:MO435|Vicious Standings (2-4)
+DESC:MO441|Matrices (2-4)
+DESC:MO442|Pak Choi (2-4)
+DESC:MO443|Stalington (2-4)
+DESC:MO501|Rahn's Dungeon (2-5)
+DESC:MO502|Sacred Lore (2-5)
+DESC:MO503|Apocalypse Now (2-5)
+DESC:MO506|Starcrossed (2-5)
+DESC:MO601|Jungle Boogie (2-6)
+DESC:MO602|Lost & Found (2-6)
+DESC:MO603|High Explosive Round (2-6)
+DESC:MO604|Ice Age (2-6)
+DESC:MO606|Unrepentant (2-6)
+DESC:MO607|Battle for Dune (2-6)
+DESC:MO608|Bay of Pigs II (2-6)
+DESC:MO611|Dead Six (2-6)
+DESC:MO613|Mount Mirage (2-6)
+DESC:MO614|Resource Strain (2-6)
+DESC:MO615|Vodka on the Rocks (2-6)
+DESC:MO616|Team-D-Arena (2-6)
+DESC:MO617|Sidewinder (2-6)
+DESC:MO802|Irvine, California (2-8)
+DESC:MO803|Elusive Peace (2-8)
+DESC:MO804|Hi-way, No-way (2-8)
+DESC:MO805|Ore Pit (2-8)
+DESC:MO806|Twilight Frost (2-8)
+DESC:MO807|Twin Bridge (2-8)
+DESC:MO808|Bordertown Beatdown (2-8)
+DESC:MO809|Barren Wasteland (2-8)
+DESC:MO810|Angst Driven (2-8)
+DESC:MO811|Canyon Frost (2-8)
+DESC:MO812|Hex Bay (2-8)
+DESC:MO813|Mirage Oasis (2-8)
+DESC:MO814|Jungle Warfare (2-8)
+DESC:MO815|Crosshair (2-8)
+DESC:MO816|Maelstrom (2-8)
+DESC:MO817|Desperate Measures (2-8)
+DESC:MO818|Cowfields (2-8)
+DESC:MO819|Toxicity (2-8)
+DESC:MO819X|Toxicity (4vs2)
+DESC:MO820|Aquatic Divide (2-8)
+DESC:MO820X|Aquatic Divide (4vs2)
+DESC:MO821|Wheel of Torture (2-8)
+DESC:MO822|Mayhem Islands (2-8)
+DESC:MO823|In Need Indeed (2-8)
+DESC:MO824|More of Egypt (2-8)
+DESC:MO825|Seven Bridges (2-8)
+DESC:MO826|North Sea (2-8)
+DESC:MO827|Blue Hole (2-8)
+DESC:MOI21|Paradise Islands (2)
+DESC:MOI22|Cold War Stalemate (2)
+DESC:MOI41|Honeymoon (2-4)
+DESC:MOI42|Tsunami (2-4)
+DESC:MOI43|Depth Charge (2-4)
+DESC:MOI81|Wyvern's Wrath (2-8)
+DESC:MOI82|Elusive Bridges (2-8)
+DESC:MOI83|Hex Bay Ex (2-8)
+DESC:MOI84|Heisenberg (2-8)
+DESC:MP01DU|South Pacific (2-4)
+DESC:MP01T4|Twin Isles (2-4)
+DESC:MP02T2|Isle of War (2)
+DESC:MP03T4|Anytown, Amerika (2-4)
+DESC:MP05T4|Heartland (2-4)
+DESC:MP06T2|Urban Rush (2)
+DESC:MP07T4|Hammer and Sickle (2-4)
+DESC:MP08T2|Little Big Lake (2)
+DESC:MP09T3|Canyon Fodder (2-3)
+DESC:MP10S4|Depth Charge (2-4)
+DESC:MP11T2|Pinch Point (2)
+DESC:MP12S4|Lake Blitzen (2-4)
+DESC:MP13S4|Montana Warzone (2-4)
+DESC:MP14T2|El Dorado (2)
+DESC:MP15DZ|Double Trouble (2)
+DESC:MP15S4|Snow Valley (2-4)
+DESC:MP16S4|Snowball's Chance (2-4)
+DESC:MP17T6|Malibu Cliffs (2-6)
+DESC:MP18DU|Cold War (2-4)
+DESC:MP18S3|Cold War (2-3)
+DESC:MP19T4|Golden State Fwy (2-4)
+DESC:MP20T6|Wild Nile Ride (2-6)
+DESC:MP21S2|Alaskan Oil Spill (2)
+DESC:MP22S8|Arctic Circle (2-8)
+DESC:MP24DU|Bonanza (2-4)
+DESC:MP24T2|Gold Rush (2)
+DESC:MP25T6|DEFCON 6 (2-6)
+DESC:MP26S6|Bering Strait (2-6)
+DESC:MP27T8|A Path Beyond II (2-8)
+DESC:MP28DU|LA Reservoir (2-4)
+DESC:MP28U4|YR: Studio City (2-4)
+DESC:MP29U2|The Alamo (2)
+DESC:MP29U4|The Alamo (2)
+DESC:MP30S6|Siberian Wastes (2-6)
+DESC:MP31U2|May Day (2)
+DESC:MP32S8|Heck Freezes Over (2-8)
+DESC:MP33U4|Paris Revisited (2-4)
+DESC:MP34U4|DC Uprising (2-4)
+DESC:NODESCRIPTION|No description
+DESC:SBURNED|Burned Alive (S)
+DESC:SEGO|Ego Ergo Hax (S)
+DESC:SLIGHTS|Lights Out (S)
+DESC:SREPEN|Repentance (S)
+DESC:SROLE|Role Reversal (S)
+DESC:STHUNDER|Thunder God (S)
+DESC:WEEK109|Arena Attack (2-4)
+DESC:XTN01T2|Tournament Temple (2)
+DESC:XTN02S4|Tournament Square (2-4)
+DESC:XTN04T2|Tournament Isle (2)
+GUI:AIEASY|Нормальный ИИ
+GUI:AIHARD|Смертельный ИИ
+GUI:AINORMAL|Сложный ИИ
+GUI:ASSAULT|Штурм
+GUI:BATTLE|Битва
+GUI:BLOODYGAMES|Пехотная Война
+GUI:BUILDOFFALLY|Строить У Союзника
+GUI:CAMPAIGNLABEL|Миссия: %d
+GUI:CAMPAIGNMENU|Миссии
+GUI:CAMPAIGNRESULTS|Итоги Миссии:
+GUI:CAPTURE|Захват
+GUI:COOPERATIVE|Совместная Игра
+GUI:CRATEPICKUP|Ящики Повсюду
+GUI:CREATERANDOMMAP|Генератор Карт
+GUI:EXITAREYOUSURE|Вы точно хотите выйти из Mental Omega?
+GUI:FORTRESS|Крепость
+GUI:GRANDERWAR|Метеоритный Дождь
+GUI:HEROARENA|Арена Героев
+GUI:ICONGLOSSARY|Описание значков, используемых в сетевой игре
+GUI:ISLANDS|Острова
+GUI:JOINERNOMAP|Не обнаружено карты %s. Посетите www.mo.cncguild.net чтобы проверить, все ли карты у вас есть.
+GUI:KOTH|Царь Горы
+GUI:LOADSAVEDGAME|Загрузить Игру
+GUI:LOCALE|Место
+GUI:MONSTERTRUCK|Войны Смертников
+GUI:MOVIESANDCREDITS|Информация
+GUI:MULTIENGINEER|Несколько Инженеров
+GUI:NETWORK|LAN/VPN
+GUI:NEWCAMPAIGN|Миссии
+GUI:NEXTMISSION|Операция:
+GUI:NOBASES|Без Базы
+GUI:NORMALGAMEICONDESC|Эта игра не отобразится в статистике.
+GUI:OK|OK
+GUI:OPERATORICONDESC|Этот игрок оперирует сервером.
+GUI:PARTIME|Рекорд
+GUI:PLAYMOVIES|Ссылки
+GUI:PREFERREDSERVER|Любимый Сервер
+GUI:PREVIOUSMISSION|
+GUI:SCAVENGERS|Мусорщики
+GUI:SELECTCAMPAIGN|Выбрать Миссию
+GUI:SNEAKPEEKS|О Нас
+GUI:TEAMS|Команды
+GUI:TECHALLIANCE|Технологический Союз
+GUI:TECHLEVEL|Тех. Уровень
+GUI:TOURNAMENTGAMEICONDESC|Эта игра отобразится в статистике.
+GUI:TRADEMARKBOTTOM|Если это не решило проблему, перезагрузите компьютер.
+GUI:TRADEMARKTOP|Произошла ошибка при запуске игры. Пожалуйста, перезапустите её.
+GUI:UNHOLYALLIANCE|Нечестный Союз
+GUI:URBANAREAS|Создать Городские Районы
+GUI:VERSION|3.0 Бета 1\n
+GUI:VIEWCREDITS|Авторы
+GUI:WELCOMERA2ONLINE|Welcome to Mental Omega Online
+GUI:WOLWELCOME|Multiplayer
+GUI:WORKINGPLEASEWAIT|Подождите, идет работа...
+GUI:WWBRAND|
+GUI:WWONLINE|Сетевая Игра
+GUI:YURISREVENGE|Mental Omega
+GUI:YURIWEBSITE|mo.cncguild.net
+NAME:ABRM|Танк Абрамс
+NAME:ADOG|Боевой Пес Альянса
+NAME:AERO|Вспышка
+NAME:AHMV|Хамви Десанта
+NAME:AHVYBOT|Танк Будущего X-0
+NAME:AIAMCV|Мобильный Сборочный Цех Альянса
+NAME:AISMCV|Мобильный Сборочный Цех Советов
+NAME:AIYMCV|Мобильный Сборочный Цех Эпсилон
+NAME:AKULA|Ракетный Крейсер Акула
+NAME:ALL_COOP|Allied Coop Campaign
+NAME:ALLIES|Альянс
+NAME:AMC|МБМ Архонт
+NAME:AMCV|Мобильный Сборочный Цех Альянса
+NAME:AMEDIC|Полевой Медик
+NAME:AMWC|Технологический Грузовик
+NAME:ANT|Гигантский Муравей
+NAME:APARA|Десант
+NAME:APOC|Танк Апокалипсис
+NAME:ARGT|Такси
+NAME:ARMR|Норио
+NAME:ASSN|Раан
+NAME:AUSTIN|Austin, Texas (2-4)
+NAME:AZIZ|Военачальник
+NAME:BACKWARP|Хронооткат
+NAME:BANK|Банк
+NAME:BARRELS|Хранилище Бочек
+NAME:BARRIER|Кинетический Барьер
+NAME:BASILISK|Василиск
+NAME:BASS|Орудие Афина
+NAME:BATTERSEA|Электростанция Баттерси
+NAME:BEAG2|Черный Орел
+NAME:BEETLE|Гигантский Жук
+NAME:BGGY|Багги-Бомба
+NAME:BIGPOWER|Городская Электростанция
+NAME:BIKE|Безумный мотоциклист
+NAME:BIOR|Биореактор
+NAME:BISON|Бизон
+NAME:BLOODHOUNDS|Ищейки
+NAME:BLZZ|Танк Буран
+NAME:BOOMER|Платформа "Град"
+NAME:BOREK|БТР Борилло
+NAME:BPLN|Бомбардировщик МиГ
+NAME:BPLNX|Прототип X-МиГ
+NAME:BRUTA|Мутант
+NAME:BUILDING|Здание
+NAME:BURA|Буратино
+NAME:CAABOX|Коробка
+NAME:CAAFLG|Флаг Альянса
+NAME:CAAPAD|Вертолетная Площадка
+NAME:CAAPWR|Нефтезавод
+NAME:CAARFGL|Флаг Аргентины
+NAME:CAART|Гражданский Артиллерийский Бункер
+NAME:CAARTY|Большая Пушка
+NAME:CAASHN|Рекламный Щит Фрэнка Клепаки
+NAME:CAASUK|Рекламный щит Ares - Расширяя границы возможного
+NAME:CAAZIZ|Дворец Рашиди
+NAME:CABALL|Пушечные Ядра
+NAME:CABANN01|Баннер
+NAME:CABANN03|Железнодорожный Знак
+NAME:CABARR2|Бункер Повстанцев
+NAME:CABILL01A|ПОДЧИНЯЙСЯ
+NAME:CABILL02A|Рекламный Щит Серп и Молот
+NAME:CABILL03A|Рекламный Щит Советского Мира
+NAME:CABILL04A|Будь с Юрием
+NAME:CABILL05A|Рекламный Щит Советской Армии
+NAME:CABILL06A|Долг Зовет!
+NAME:CABILL07A|Рекламный Щит Романова
+NAME:CABILL08A|Рекламный Щит Юрия и Романова
+NAME:CABILL09A|Рекламный Щит Космонавтики
+NAME:CABILL10A|Рекламный Щит Советского Космоса
+NAME:CABILL11A|Рекламный Щит Ленина
+NAME:CABIOS|Археологический Музей
+NAME:CABRID|Мост
+NAME:CABRKK|Здание
+NAME:CABSTA|Бронзовый Стадион
+NAME:CABUBB|Бочки
+NAME:CABUBL|Резервуар
+NAME:CABUDD|Статуя Будды
+NAME:CACANN01|Орудие
+NAME:CACARG01|Контейнер
+NAME:CACASK|Пивная Бочка
+NAME:CACAST|Бастион
+NAME:CACHIN|Флаг Китая
+NAME:CACHNA03|Башня
+NAME:CACHUR01|Храм
+NAME:CACHUR02|Собор Св.Джеймса
+NAME:CACHUR09|Руины Цитадели
+NAME:CACHUT|КПП
+NAME:CACMNT|Радиовышка
+NAME:CACNONA|Маленькая Пушка
+NAME:CACNSRV|Музей
+NAME:CACOLM|Колонна
+NAME:CACOLO|Колизей
+NAME:CACOMN|Станция Взлома Спутников
+NAME:CACRYO|Криокупол
+NAME:CACTNT|Палатка
+NAME:CADEFN|Защитная Система Гладиус
+NAME:CADFLY|Стрекоза
+NAME:CADOME|Радиолокационная Станция
+NAME:CADRAG01|Хвост Дракона
+NAME:CADRAG02|Врата Дракона
+NAME:CADRAG03|Голова Дракона
+NAME:CADRAG04|Голова Дракона
+NAME:CADRIL|Ржавый Бур
+NAME:CADTBG|Дополнение К Классике - Спешите Увидеть!
+NAME:CAEAST02|Статуя Юрия
+NAME:CAEMBA|Посольство
+NAME:CAESBL|Небоскреб Эмпайр Стэйт Билдинг
+NAME:CAEXCV|Место Земляных Работ
+NAME:CAFACC|Старый Завод
+NAME:CAFCTR|Завод
+NAME:CAFDZ|Ветряная Электростанция
+NAME:CAFLAG|Флаг Игрока
+NAME:CAFNCB|Черный Забор
+NAME:CAFNCP|Тюремная Ограда
+NAME:CAFNCW|Белый Забор
+NAME:CAFUEL|Топливный Резервуар
+NAME:CAFUSI|Сейсмический Стабилизатор
+NAME:CAGARD|Сторожевая Вышка
+NAME:CAGARG|Гараж
+NAME:CAGEAR|Ангар FutureTech
+NAME:CAHANG|Ангар
+NAME:CAHEAV|Храм Небес
+NAME:CAHEL3|Шахта Добычи Гелия-3
+NAME:CAHELI|Вертолетная Площадка
+NAME:CAHERT|Штаб-Квартира Ставки
+NAME:CAHMG|Гражданская Пулеметная Вышка
+NAME:CAHTCH|Люк
+NAME:CAIFLG|Флаг Италии
+NAME:CAINDU01|Промышленные Руины
+NAME:CAJAPA06|Японская Стена
+NAME:CAJHUT|Бамбуковая Хижина
+NAME:CAJORA|Храм
+NAME:CAJPFLG|Флаг Японии
+NAME:CAJUNK|Склад Металлолома
+NAME:CAJWAT|Старая Водонапорная Башня
+NAME:CAKANE01|Лаборатории Канегава Индастриз
+NAME:CAKANE05|Ассамблея Канегава Индастриз
+NAME:CAKANE06|Штаб-Квартира Канегава Индастриз
+NAME:CAKRMW|Стена
+NAME:CALASR|Skywatcher
+NAME:CALGHT01|Прожектор
+NAME:CALIT02|Фонарь
+NAME:CALIT03|Фонарь
+NAME:CALOND06|Тауэр
+NAME:CAMALL|Большой Торговый Центр
+NAME:CAMDDB|Рекламный Щит ModDB
+NAME:CAMIKU|Рекламный Щит World Beyond
+NAME:CAMINE|Вход В Шахту
+NAME:CAMINE01|Добывающий Комбинат
+NAME:CAMINE02|Ангар
+NAME:CAMINE04|Шахта
+NAME:CAMISC06|Ракеты Эльбрус
+NAME:CAMISC06X|Ракеты Эльбрус
+NAME:CAMISC0X|Бочка
+NAME:CAMISL|Гражданский Ракетный Бункер
+NAME:CAMONA|Собор Св. Софии
+NAME:CAMONEY|Donation Crate
+NAME:CAMONU|Обелиск
+NAME:CAMRKT01|Рынок
+NAME:CAMSC13|Брошенный Танк Мамонт
+NAME:CAMUSE01|Особняк
+NAME:CANAVY|Администрация Порта
+NAME:CANEWY05|Всемирный Торговый Центр
+NAME:CANMIN|Подводная Мина
+NAME:CANRKR|Флаг Северной Кореи
+NAME:CANWY05|Всемирный Торговый Центр
+NAME:CAOILDX|Нефтевышка
+NAME:CAOLEO|Участок Нефтепровода
+NAME:CAOPER|Оперный Театр Тенерифе
+NAME:CAOPLT|Нефтедобывающая Платформа
+NAME:CAOS|Генодрон
+NAME:CAOSTA|Сапфировый Стадион
+NAME:CAPAD|Вертолетная Площадка
+NAME:CAPALA|Особняк
+NAME:CAPALACE|Дворец Екатерины
+NAME:CAPARS01|Эйфелева Башня
+NAME:CAPARS11|Триумфальная Арка
+NAME:CAPARS12|Нотр-Дам
+NAME:CAPC|Казак
+NAME:CAPETE|Руины Базилики Св. Петра
+NAME:CAPHUT|Пляжная Будка
+NAME:CAPICN01|Столик
+NAME:CAPIPE|Бетонные Блоки
+NAME:CAPLAT|Вокзал
+NAME:CAPLAT01|Разрушенная Платформа
+NAME:CAPOLI|Полицейский Участок
+NAME:CAPOWR|Гражданская Электростанция
+NAME:CAPOZN|Гала-Арена
+NAME:CAPP|Угольная Электростанция
+NAME:CAPRS03|Музей Лувр
+NAME:CAPRS03X|Музей Лувр
+NAME:CAPRSN|Тюремное Здание
+NAME:CARADI|Башня Радиосвязи
+NAME:CARADT|Гражданская Станция Радиосвязи
+NAME:CARAIL|Психокинетическая Башня
+NAME:CAREFN|Гражданский Перерабатывающий Комбинат
+NAME:CARIK|Местечко Рика
+NAME:CARING|Площадь Св. Петра
+NAME:CARODS01|Стальные Прутья
+NAME:CARSIN|Знак Радиационной Опасности
+NAME:CARV|Генерал Карвилль
+NAME:CASAM|Гражданский Бункер ЗРК
+NAME:CASANF15|Водонапорная Башня
+NAME:CASANT|Замок Сант'Анджело
+NAME:CASCIE01|Исследовательский Модуль
+NAME:CASEJM01|Польский Сейм
+NAME:CASEJM02|Здание Сейма
+NAME:CASEJM03|Здание Сейма
+NAME:CASHIP|Обломки Корабля
+NAME:CASHSE01|Дом С Хранилищами
+NAME:CASHSE02|Кирпичный Склад
+NAME:CASHSE03|Завод С Хранилищами
+NAME:CASHUT|Склад
+NAME:CASIEG|Поместье Зигфрида
+NAME:CASLUM|Трущобы
+NAME:CASOLR|Солнечная Панель
+NAME:CASPAC|Пусковая Площадка
+NAME:CASSAM|Автономный ЗРК
+NAME:CASTAT|Вокзал
+NAME:CASTEI|Рекламный Щит Классики
+NAME:CASTEIN|Берлинский Университет ШтейнТек
+NAME:CASTON|Каменная Статуя
+NAME:CASTOR|Хранилище
+NAME:CATA|Танк Катастрофа
+NAME:CATARGII|Тренировочная Мишень
+NAME:CATEKN01|Лаборатория
+NAME:CATEKN02|Старая Лаборатория
+NAME:CATENT01|Палатка
+NAME:CATHOSP|Гражданский Госпиталь
+NAME:CATIER|Гражданская Лаборатория Передовых Исследований
+NAME:CATIKI01|Истукан
+NAME:CATOKY|Башня Токио
+NAME:CATPIP|Участок Трубопровода
+NAME:CATSAR|Царь-Колокол
+NAME:CATSTAT|Вокзал
+NAME:CATUR|Гражданский Орудийный Бункер
+NAME:CATURR|Противотанковая Турель
+NAME:CAVENT|Вентилятор
+NAME:CAWARS|Склад
+NAME:CAWHEE|Водное Колесо
+NAME:CAWIND|Ветряк
+NAME:CAWOOD|Деревянные Доски
+NAME:CAWSTA|Платиновый Стадион
+NAME:CAYBAN|Знамя Эпсилон
+NAME:CAYUNO|Рекламный Щит CnCNet
+NAME:CAZOO|Зоопарк
+NAME:CCOMAND|Крио Коммандо
+NAME:CDOG|Пес
+NAME:CHINESE|Китай
+NAME:CHITZ|Чицкой
+NAME:CHRONO|Хроносдвиг
+NAME:CHRONOACTIVE|ВНИМАНИЕ - Активирована Хроносфера!
+NAME:CHRTNK|Танк Харон
+NAME:CITADEL|Стена Цитадели
+NAME:CLNT|Клинт Иствуд
+NAME:CLUS|Десант
+NAME:CMDVH|Штабная Машина
+NAME:CNTR|Штурмовой Шагоход Центурион
+NAME:COMA|Ястреб Войны
+NAME:COMND|Дрон-Хакер
+NAME:CONFEDERATION|Конфедерация
+NAME:CONFEDERATIONZ|Конфедерация
+NAME:CONVEH|Строительная Техника
+NAME:COPCAR|Полицейский Фургон
+NAME:CRYO|Криокоптер
+NAME:CRYOFIELD|Обледенение
+NAME:CRYS|Генератор
+NAME:CTNK|Танк Цилинь
+NAME:CTRUCK|Грузовик
+NAME:CYBO|Прототип Киборга
+NAME:CYBORG|Киборг
+NAME:CYCOM|Киборг-Коммандо
+NAME:CYURI|Хроно-Адепт
+NAME:DARTY|Demolisher Artillery
+NAME:DBMOV|Рекламный Щит Darker than Black
+NAME:DDBX|Двухэтажный Автобус
+NAME:DDREC|Пси-Маяк можно будет захватить через:
+NAME:DEBRIS|Стройматериалы
+NAME:DECI|Танк Дециматор
+NAME:DEER|Олень
+NAME:DEFD|Защитник
+NAME:DELTA|Дельта
+NAME:DEPILUS|Пси-Прерыватель
+NAME:DERSPIELER|Штаб "Der Spieler"
+NAME:DESERT|Пустыня
+NAME:DESO|Северная Корея
+NAME:DESO2|Загрязнитель
+NAME:DESOR|Выжигатель
+NAME:DETRIEV|Детриев
+NAME:DEV|Совратитель
+NAME:DEVO|Колосс
+NAME:DISK|Посягатель
+NAME:DLPHCALL|Дельфиний Зов
+NAME:DMOBUGY|Багги-Бомба
+NAME:DOG|Советский Боевой Пес
+NAME:DOME|Радиолокационная Станция
+NAME:DOMINACTIVE|ВНИМАНИЕ - Активирован Пси-Подчинитель!
+NAME:DONATION|Пожертвование
+NAME:DOOMTUR|Улей Нанороя
+NAME:DOZER|Бульдозер
+NAME:DRIL|Буроход
+NAME:DRONC|Дрон Ужаса
+NAME:DTRUCK|Китай
+NAME:DTRUCK2|Грузовик-Бомба
+NAME:DUMMY|
+NAME:DUMMYDUMMY|
+NAME:DUNE|Пустынный Серфер
+NAME:EDRN|Дрон Стрекоза
+NAME:ELECTRICPULSE|Сонарное Сканирование
+NAME:ELEPHANT|Слон
+NAME:EMP|Импульс ЭМИ
+NAME:EMPR|Орудие Нюйва
+NAME:EMPULS|Импульс ЭМИ
+NAME:ENFO|Штурмовой Специалист
+NAME:ENGINEER|Инженер Альянса
+NAME:EPSILON|Эпсилон
+NAME:ETNK|Легкий Танк Бульдог
+NAME:EUROALLIANCE|Евросоюз
+NAME:EXPPOST|Строительный Аванпост
+NAME:EZOMBIE|Зараженный Зомби
+NAME:FADTNK|Легкий Танк
+NAME:FEYRIS|Колесо Обозрения
+NAME:FLAKEY|Енот
+NAME:FLAMER|Огнеметчик
+NAME:FLATA|Ракетовоз
+NAME:FLTNK|Огнеметный Танк
+NAME:FORTRESS|Барракуда
+NAME:FOX|Фокстрот
+NAME:FREB|Повстанец
+NAME:FRIDGE|Ледовоз
+NAME:FTHQ|Спектральная Башня ШтейнТек
+NAME:FV|БМП Страйкер 
+NAME:GAAIRB|Штаб ВВС Альянса
+NAME:GAAIRC|Штаб ВВС Альянса
+NAME:GABUNK|Мгновенное Укрытие
+NAME:GACNST|Сборочный Цех Альянса
+NAME:GACREM|Части Хроносферы
+NAME:GACSPH|Хроносфера
+NAME:GADUMY|Хроносфера
+NAME:GAFNCE|Призма-Барьер
+NAME:GAFSDF|Nanoswarm Section
+NAME:GAGARD|Смотровая Вышка
+NAME:GAGUN|Орудийная Башня
+NAME:GAHAMM|Турель Молот
+NAME:GAHPAD|Взлетная Полоса
+NAME:GAIA|Платформа Геи
+NAME:GAMGAP|Deployed Mirage Tank
+NAME:GAMISL|Ракетная Шахта
+NAME:GAOREP|Очиститель Руды
+NAME:GAPOST|Узел Призма-Барьера
+NAME:GARADR|Радарная Станция
+NAME:GARAIN|Погодный Кристалл
+NAME:GASCEA|Центр Управления Щитом
+NAME:GASCPF|Центр Управления Роботизированными Операциями
+NAME:GASCUS|Улучшение Штаба ВВС:\nШтаб Десантных Операций
+NAME:GASNPR|Смотровая Вышка
+NAME:GASONIC|Орудие Небесный Луч
+NAME:GASPST|Станция Связи С Шпионским Спутником
+NAME:GASPYSAT|Радарный Комплекс
+NAME:GATECH|Технологический Центр Альянса
+NAME:GATECHZ|Технологический Центр
+NAME:GATEEW|Ворота Запад-Восток
+NAME:GATENE|Ворота \
+NAME:GATENS|Ворота Север-Юг
+NAME:GATESW|Ворота /
+NAME:GATTCANNON|Орудие Гаттлинга
+NAME:GATTTANK|Танк Гаттлинга
+NAME:GAWALL|Бетонная Стена
+NAME:GAWEAP|Военный Завод Альянса
+NAME:GAWEAPZ|Военный Завод Альянса
+NAME:GAWEAT|Устройство Управления Погодой
+NAME:GAYARD|Верфь Альянса
+NAME:GAYARDX|Верфь Альянса
+NAME:GBEAR|Гризли
+NAME:GENE|Мутация
+NAME:GENERAL|Mental Omega 3.3.Х -- Official Rules of Engagement
+NAME:GENIUS|Гений
+NAME:GGOLEM|Каменный Голем
+NAME:GGRAIN|Rainmaker
+NAME:GHOST|Морской Котик
+NAME:GOTTER|Воздушная Крепость Иркалла
+NAME:GOVER|Правительственное Здание
+NAME:GREECE|Греция
+NAME:GTGCAN|France
+NAME:GUANTANAMO|Бухта Гуантанамо
+NAME:GUARDIANGI|Гвардеец
+NAME:GUNB|Канонерка
+NAME:GUNNER|Наемник
+NAME:GYRO|Гирокоптер
+NAME:HARP|Лучник
+NAME:HARV|Боевой Рудокоп
+NAME:HAULR|Грузовик
+NAME:HAUN|Haunebu
+NAME:HCAN|Орудие Гидра
+NAME:HCRUIS|Линкор Трезубец
+NAME:HEADQUATERS|Штаб Эпсилон
+NAME:HEAVYTANK|Тяжелый Танк
+NAME:HELIX|Часовой
+NAME:HERO1|Ковбой
+NAME:HERO2|Качок
+NAME:HERO3|Герой
+NAME:HIJACKER|Угонщик
+NAME:HINATECH|Китайский Штаб
+NAME:HMMV|Хамви
+NAME:HOPL|Гоплит
+NAME:HOPLITE|Гоплит
+NAME:HORVZ|Боевой Рудокоп (Разгружается)
+NAME:HOVERTANK|Танк Каппа
+NAME:HOVR|Реактивный Транспорт
+NAME:HOWI|САУ Зефир
+NAME:HTK|Вездеход
+NAME:HUMMER|Гиена
+NAME:HYENA|Гиена
+NAME:ICBM|Тополь-М
+NAME:ILLUSION|Иллюзия
+NAME:IMMO|Испепелитель
+NAME:INFC|Инфектор
+NAME:INFECT|Танк Инфектор
+NAME:INFECTION|Инфекция
+NAME:INITIATION|Psyvolution
+NAME:INTRUDER|Лазутчик
+NAME:INVADER|Посягатель
+NAME:IONCANNON|Ионная Пушка
+NAME:IONSTORM|Пси-Шторм
+NAME:IONSTORMD|Время вышло. Победил действующий Царь Горы.
+NAME:IRAQFLAG|Флаг Ирака
+NAME:IRAQZ|Ирак
+NAME:IRON|Неуязвимость
+NAME:IRONACTIVE|ВНИМАНИЕ - Включен Железный Занавес!
+NAME:IRR|Загрязнитель
+NAME:ITINERIS|Itineris
+NAME:JACKAL|Шакал
+NAME:JATECH|Башня ФьючерТек
+NAME:JEEP|Джип
+NAME:JTNK|Ударный Танк Ягуар
+NAME:JUGGER|Джаггернаут
+NAME:KAMAZ|Камаз
+NAME:KAMS|Kaamos Cannon
+NAME:KANGAROO|Кенгуру
+NAME:KAOS|Чумной Клещ
+NAME:KEN|Hellhound Kennel
+NAME:KENNL|Конура
+NAME:KEYBLD|Устройство Судного Дня
+NAME:KHANINF|Воин
+NAME:KHANTANK|Неизвестный Танк
+NAME:KICKASS|Fort Kickass
+NAME:KINAD|Kinetic Admin
+NAME:KINETICBARRIER|Кинетический Барьер
+NAME:KIS|Ученый К.И.
+NAME:KOREAFLAG|Флаг Южной Кореи
+NAME:KSTARF|Авиаудар
+NAME:KWHALE|Кит-Убийца
+NAME:LANC|Lancer
+NAME:LCRF|Десантный Корабль Мореход
+NAME:LIBRA|Либра
+NAME:LIBRACLONES|Клоны Либры
+NAME:LION|Лев
+NAME:LTNK|Легкий Танк
+NAME:LUYA|Luyang Missile Destroyer
+NAME:LYBIAFLAG|Флаг Ливии
+NAME:MACHINERY|Гражданский Ангар
+NAME:MAGNETICSTORM|Магнитная Буря
+NAME:MAMM|Танк Апокалипсис
+NAME:MANTIS|Наблюдатель
+NAME:MARA|Мародер
+NAME:MASTERMIND|Повелитель Мысли
+NAME:MERCURY|Станция Связи С Меркурием
+NAME:MERCURYSTRIKE|Удар Меркурия
+NAME:MGG|Мобильный Генератор Разрыва
+NAME:MGTK|Танк Мираж
+NAME:MIDAS|Неисправный Тополь-М с МБР на борту
+NAME:MIG2|МиГ
+NAME:MIGSPY|Mig Transport
+NAME:MILT|Ополчение
+NAME:MINDHAZE|Кольцо Тени
+NAME:MINEDROP|Десант
+NAME:MINERDROP|Miner Drop
+NAME:MIR3|Caustic Tank
+NAME:MIR4DR11X|Passing the 5th Side (4vs1)
+NAME:MLRS|Rapier MLRS
+NAME:MNTRUSHX|Mount Rush More (3vs2)
+NAME:MODEV|Устройство Омеги Разума
+NAME:MOGILA|Illusion Core
+NAME:MOLE|Mole Machine
+NAME:MOLEBOMB|Бомба-Крот
+NAME:MOMOV|Рекламный Щит Command & Conquer
+NAME:MORALES|Моралес
+NAME:MORTA|Тесла-Минометчик
+NAME:MOTHER|Геенна
+NAME:MOTHRA|Ворон
+NAME:MOTOR|Минометный Квадроцикл
+NAME:MOTORAMBUSH|Моторизированная Засада
+NAME:MPAD|Mobile Support Airpad
+NAME:MRAHN|Mutated Rahn
+NAME:MRM|Передвижной Исследовательский Модуль
+NAME:MTNK|Средний Танк Кавалер
+NAME:MUTA|Мутант
+NAME:MUTA2|Brutation
+NAME:MUTATION|Разрыв ДНК
+NAME:MWF|Кулак Сталина
+NAME:NAAIRB|Советская Авиабаза
+NAME:NAAIRBB|Air Control Upgrade
+NAME:NAAZT1|Ацтекский Храм
+NAME:NABCAN|Blast Turret
+NAME:NACSTB01|Брошенный Перерабатывающий Комбинат
+NAME:NADEPT|Советская Станция Техобслуживания
+NAME:NADRON|Ремонтный Кран
+NAME:NAFIST|Развернутый Кулак Сталина
+NAME:NAFLAM|Огнеметная Турель
+NAME:NAFLMT|Огнеметная Башня
+NAME:NAHALL|Развернутый Автобус Эйнштейна
+NAME:NAHALLM|Автобус Эйнштейна
+NAME:NAHAMM|Защитная Система Молот
+NAME:NAHOSP|Полевой Госпиталь
+NAME:NAHPAD|Вертолетная Площадка
+NAME:NAINC|Single Core Nuclear Reactor
+NAME:NAINCI|Hellstorm Turret
+NAME:NAINDP2|Промышленное Предприятие
+NAME:NAIRON|Генератор Железного Занавеса
+NAME:NAMISL|Ядерная Ракетная Шахта
+NAME:NAPSIS|Пси-Сенсор
+NAME:NAPSYB1|Неизвестное Сооружение
+NAME:NARADR|Радарная Башня
+NAME:NASAM|ЗРК Патриот
+NAME:NATECHC|Военная Лаборатория
+NAME:NATECHZ|Дворец
+NAME:NATEK|Атомный Центр
+NAME:NATRAP|ЭМИ Мина
+NAME:NAWALL|Стена Крепости
+NAME:NAWEAPZ|Советский Военный Завод
+NAME:NAYARD|Советская Верфь
+NAME:NAYARDX|Советская Верфь
+NAME:NGHT|Acolyte
+NAME:NUKE|Ядерный Удар
+NAME:NUKEACTIVE|ВНИМАНИЕ - Запущена Ядерная Ракета!
+NAME:OADES|Isle of Oades (2-4)
+NAME:OADES2|Isle of Oades (2-4)
+NAME:OBL|Убийца Танков
+NAME:OBSERVER|Наблюдатель
+NAME:OILTANKER|Танкер-Нефтевоз
+NAME:OILTRUCK|Нефтевоз
+NAME:OREMINER|Рудокоп
+NAME:OVERCHARGE|Перегрузка
+NAME:OXID|Окислитель
+NAME:PACIFICFRONT|Тихоокеанский Фронт
+NAME:PALADIN|Железный Дракон
+NAME:PARA|США
+NAME:PARA2|Десант
+NAME:PARA3|Десант
+NAME:PARABOMBS|Авиаудар
+NAME:PATRON|Покровитель
+NAME:PCV|МСЦ Эпсилон
+NAME:PDPLANE|Грузовой Самолет
+NAME:PDPLANEZ|Грузовой Самолет
+NAME:PENTGENX|Генерал
+NAME:PHAL|Phalanx Tank
+NAME:PHAS|Valkyrie Transport
+NAME:PIG|Свинья
+NAME:PIRANHA|Подлодка Пиранья
+NAME:PLAG|Разносчик Чумы
+NAME:POLISHFLAG|Флаг Польши
+NAME:PRISONER|Тюремный Груз
+NAME:PROPTR|Грузовик Оповещения
+NAME:PROTOPCV|Прототип МСЦ
+NAME:PSICOM|Пси-Коммандо
+NAME:PSICORPS|Пси-Корпус
+NAME:PSYBREADY|Конец игры - Пси-Маяк будет готов через:
+NAME:PSYD|Подчинение
+NAME:PTROOP|Боец Пси-Корпуса
+NAME:QTNK|Легкий Танк Богомол
+NAME:RAGAAAGUN|Старая Зенитка
+NAME:RAGAAPP|Старая Продвинутая Электростанция Альянса
+NAME:RAGABARR|Старые Казармы Альянса
+NAME:RAGADOME|Старый Радар Альянса
+NAME:RAGAFACT|Старый Военный Завод Альянса
+NAME:RAGAPDOX|Старая Хроносфера
+NAME:RAGAPWR|Старая Электростанция Альянса
+NAME:RAGAREF|Старый Перерабатывающий Комбинат Альянса
+NAME:RAGARGAP|Старый Генератор Разрыва
+NAME:RAGE|Ярость
+NAME:RAGEACTIVE|ВНИМАНИЕ - Активирован Генератор Ярости!
+NAME:RAGEINDUCTOR|Генератор Ярости
+NAME:RANAAPP|Старая Советская Продвинутая Электростанция
+NAME:RANACONY|Старый Сборочный Цех
+NAME:RANADOME|Старый Советский Радар
+NAME:RANADPT|Старая Станция Техобслуживания
+NAME:RANAFACT|Старый Советский Военный Завод
+NAME:RANAFLMT|Старая Огнеметная Башня
+NAME:RANAHELI|Старая Вертолетная Площадка
+NAME:RANAICUR|Старый Генератор Железного Занавеса
+NAME:RANAPILE|Старые Советские Казармы
+NAME:RANAPWR|Старая Советская Электростанция
+NAME:RANAREF|Старый Советский Перерабатывающий Комбинат
+NAME:RANASAIR|Старый Советский Аэродром
+NAME:RANASAMT|Старый ЗРК
+NAME:RANATCOIL|Старая Тесла-Катушка
+NAME:RANATEK|Старый Советский Технологический Центр
+NAME:RAVA|Тюремная Машина Дракув
+NAME:RAVEN|Ворон
+NAME:RAVENS|Ворон-разведчик
+NAME:RELAY|Старая Радиолокационная Станция
+NAME:REPORT|Результаты Сражения:
+NAME:REPORTR|Послание Рашиди:
+NAME:REPORTY|Послание Юрия:
+NAME:RESO|Призрачный Рудокоп
+NAME:RESP|Баллистическая Подлодка Решеф
+NAME:RHAD|Рашиди
+NAME:RISEN|Восходящий Монолит
+NAME:RUSSIANFLAG|Флаг России
+NAME:RUSSIANS|USSR
+NAME:SAPC|Десантный Корабль Зубр
+NAME:SARINFAC|Хранилища Белого Фосфора
+NAME:SAS|Ополчение
+NAME:SBTR|Диверсант
+NAME:SCAN|Радарный Шифратор
+NAME:SCAR|БТР Тигр
+NAME:SCAV|Тиран
+NAME:SCHP|Стервятник
+NAME:SCHWARZ|Schwarze Sonne
+NAME:SCORP|Скорпион
+NAME:SCORPIONCELL|Ячейка Скорпион
+NAME:SCOUTJEEP|Разведывательный Джип
+NAME:SCRAW|Советский Завоеватель
+NAME:SCUD|Ракетная Установка Эльбрус
+NAME:SCUD2|Ракета
+NAME:SCUDTRANSPORT|Перевозчик Ракет
+NAME:SDRN|Ремонтный Дрон
+NAME:SEAL|Морской Котик
+NAME:SEKR|Василиск
+NAME:SEL|Морской Котик
+NAME:SENERGYCRIS|Soviets - Operation: Energy Crisis
+NAME:SENGINEER|Советский Инженер
+NAME:SFB237I|Santa Fe B23-7
+NAME:SFC408WL|Santa Fe C40-8W
+NAME:SFCAB|Santa Fe Caboose
+NAME:SFCF7R|Santa Fe CF7
+NAME:SFGP50L|Santa Fe GP-50
+NAME:SFGP60L|Santa Fe GP60M
+NAME:SFV|БМП Страйкер
+NAME:SHAD|Транспортный Вертолет Жеребец
+NAME:SHADOW|Танк Тень
+NAME:SHADOWRING|Кольцо Тени
+NAME:SHEEP|Баран
+NAME:SHUTTLE|Шаттл
+NAME:SIBTOWR|Башни-Близнецы
+NAME:SIEGFRIED|Зигфрид
+NAME:SLHYT|Статуя Дракона
+NAME:SMCV|Советский МСЦ
+NAME:SMOKEBOMBS|Дымовая Бомбардировка
+NAME:SNIPE|Great Britain
+NAME:SNIPE2|Снайпер
+NAME:SONARPULSE|Сонарное Сканирование
+NAME:SOV_COOP|Soviet Coop Campaign
+NAME:SOVIETS|Soviets
+NAME:SPIN|Крыльчатка
+NAME:SPYSAT|Спутниковое Сканирование
+NAME:STALKER|Сталкер
+NAME:STEAM|Локомотив
+NAME:STEINSTECH|Лаборатория ШтейнТек
+NAME:STINGER|Стингер
+NAME:STLN|Сильвестр Сталлоне
+NAME:STNK|Танк Опус
+NAME:STOREROOM|Хранилище
+NAME:STORM|Грозовой Шторм
+NAME:STORMACTIVE|ВНИМАНИЕ - Приближается гроза!
+NAME:STRM|Дитя Бури
+NAME:STRMT|Штурмовик
+NAME:SUB|Боевая Подлодка Тайфун
+NAME:SUPPLIES|Припасы
+NAME:SUPPLYDOCK|Склад Припасов
+NAME:SUPR|Угнетатель
+NAME:SVAP|Советская Взлетная Полоса
+NAME:SVSTNK|Железный Кулак
+NAME:SWLF|Канонерка Морской Волк
+NAME:TANKDROP|Сброс Бронетехники
+NAME:TAPIR|Тапир
+NAME:TARGET|ЦЕЛЬ
+NAME:TARGETPAINTER|Целеуказатель
+NAME:TECHMISSILE|Ракетный Удар
+NAME:TENGU|Цуруги
+NAME:TERROR|Конфедерация
+NAME:TERRORIST|Безумный Водитель
+NAME:TESTMAP|Object Test Map 1 (Temperate, Basic)
+NAME:TESTMAP2|Object Test Map 2 (Snow, Elite)
+NAME:TESTMAP3|TESTMAP3 (for mission tests)
+NAME:TESTMAP4|TESTMAP4 (for mission tests)
+NAME:THOR|Тор
+NAME:THORX|Супер-Тор
+NAME:TIGER|Тигр
+NAME:TNKD|Германия
+NAME:TOTEM|Тотем
+NAME:TRASH|Мусоровоз
+NAME:TRIKE|Боевой Трицикл
+NAME:TRIPLE|Triple Crossed (2-6)
+NAME:TRIPLEX|Triple Crossed (3vs2)
+NAME:TRUCKA|Грузовик (пустой)
+NAME:TRUCKB|Грузовик (с грузом)
+NAME:TTNK|СССР
+NAME:TTNK2|Тесла Крейсер
+NAME:TU16|Песчаная Буря
+NAME:UNDER|Малвер
+NAME:UNITEDSTATES|США
+NAME:UNKNOWN|Неизвестный Объект
+NAME:USSR|Россия
+NAME:UTOPIA|Транспортная Капсула Утопия
+NAME:V2RACK|Боеприпасы В-2
+NAME:VBTLU|Meerth Battleship
+NAME:VCARR|Установка Град
+NAME:VENTREX|Градина
+NAME:VLADIMIR|Владимир
+NAME:VLADMIRX|Генерал
+NAME:VOLKOV|Волков
+NAME:VULTURE|Стервятник
+NAME:WEAVERS|Засада Клещей
+NAME:WEEK22|Mount of Imprulz (2-4)
+NAME:WELDER|Сварщик
+NAME:WHIPLASH|Танк Хлыст
+NAME:WINI|Грузовик-Рефрижератор
+NAME:WLFRIN|Экспериментальный Бронекостюм
+NAME:WOLF|Волкодав
+NAME:WORLD_COOP|World Alliance
+NAME:WORM|Wormachine
+NAME:WRMN|Mevitar Miner
+NAME:WTC|Всемирный Торговый Центр
+NAME:WYVERN|Виверна
+NAME:WZHDL|Грузовик
+NAME:XCOMET|Placeholder
+NAME:XPCV|МСЦ Эпсилон
+NAME:YAACAD|Академия Эпсилон
+NAME:YAACID|Mindhaze
+NAME:YABEAM|Focus Beam
+NAME:YACAOS|Пси-Маяк
+NAME:YACNST|Сборочный Цех Эпсилон
+NAME:YACNSTZ|Сборочный Цех Эпсилон
+NAME:YACOMD|Командный Центр Эпсилон
+NAME:YACXST|Сборочный Цех Эпсилон
+NAME:YADEPOT|Станция Техобслуживания Эпсилон
+NAME:YADEVO|Колосс (режим ПВО)
+NAME:YADMME|Пси-Модуль
+NAME:YADOME|Химический Модуль
+NAME:YADOMM|Генетический Модуль
+NAME:YADRPL|Буровая Платформа
+NAME:YAGGUN|Пулемет Гаттлинга
+NAME:YAGNTC|Пожиратель Теней
+NAME:YAHADE|Батарея Антарес
+NAME:YAHCR|Платформа Геенна
+NAME:YAMPSI|Чтец Мыслей
+NAME:YAPC|Транспорт-Амфибия
+NAME:YAPLN|Перехватчик
+NAME:YAPPET|Пси-Подчинитель
+NAME:YAPPETZ|Пси-Подчинитель
+NAME:YAPPPT|Недостроенный Пси-Подчинитель
+NAME:YAPPXT|Пси-Подчинитель
+NAME:YAPROT|Прототип Сборочного Цеха
+NAME:YAPSIS|Радарный Шпиль
+NAME:YAPSYB|Пси-Прерыватель
+NAME:YAPSYT|Пси-Башня
+NAME:YAPSYT2|Пси-Башня
+NAME:YAPSYTB|Психокинетическая Башня
+NAME:YAPYLO|Столб
+NAME:YAQNTM|Квантовая Пушка
+NAME:YARIREFN|Перерабатывающий Комбинат Эпсилон
+NAME:YARIFT|Сердце Химеры
+NAME:YAROCK|Пусковая Площадка
+NAME:YASBIO|Bio Churner
+NAME:YASERPH|Horus Gun
+NAME:YASILO|AT Mine
+NAME:YASPAD|Аэродром Эпсилон
+NAME:YASPIL|Epsilon Sky Pillar
+NAME:YASPIR|Пси-Маяк
+NAME:YAWEAPZ|Военный Завод Эпсилон
+NAME:YAYARDX|Верфь Эпсилон
+NAME:YAYGUN|Орудие Омега
+NAME:YBARRACKS|Казармы Эпсилон
+NAME:YBLAB|Цитадель Пандоры
+NAME:YBLABZ|Цитадель Пандоры
+NAME:YDOG|Боевой Пес Эпсилон
+NAME:YDRON|Дрон Установки Град
+NAME:YENGINEER|Инженер Эпсилон
+NAME:YHVR|Десантный Корабль Манжет
+NAME:YMIN|Рудокоп-Призрак
+NAME:YNAVAL|Верфь Эпсилон
+NAME:YNESTNK|Mobile Illusion
+NAME:YSGEN|Mobile Illusion
+NAME:YTNK|Танк Гаттлинга
+NAME:YUNRU|Юнру
+NAME:YURI|Боец Пси-Корпуса
+NAME:YURI_COOP|Epsilon Coop Campaign
+NAME:YURICLONE|Адепт Эпсилон
+NAME:YURICOUNTRY|Пси-Корпус
+NAME:YURIPR|Адепт-Невидимка
+NAME:YURIPRIME|Юрий
+NAME:YURIX|Элита Эпсилон
+NAME:YWARFACTORY|Военный Завод Эпсилон
+NAME:ZAMCV|Украденный МСЦ Альянса
+NAME:ZOMBIE|Зомби
+NAME:ZPCV|Украденный МСЦ Эпсилон
+NAME:ZSMCV|Украденный Советский МСЦ
+NAME:ZTARGET|Целеуказатель Зефиров
+NAME:ZZEP|Командирский Дирижабль Сергея Кирова
+STT:CAMPAIGNBUTTONLOAD|Начать выбранную миссию.
+STT:CAMPAIGNLIST|Выберите миссию, которую хотите начать.
+STT:CAMPAIGNSLIDERDIFFICULTY|Выберите сложность миссии.
+STT:IGRLOGIN|Введите ваш никнейм.
+STT:IGSINGLEOPTBUTTONDELETE|Используйте для удаления сохраненных игр.
+STT:IGSINGLEOPTBUTTONLOAD|Загрузить сохраненную игру.
+STT:IGSINGLEOPTBUTTONSAVE|Сохранить игру.
+STT:MAINBUTTONEXITGAME|Вернуться в лаунчер Mental Omega.
+STT:MAINBUTTONEXITGAMEMD|Вернутся в лаунчер Mental Omega.
+STT:MAINBUTTONMOVIES|Посмотреть информацию о Mental Omega.
+STT:MAINBUTTONNETWORK|Играть по локальной сети или по CNC.net.
+STT:MAINBUTTONSINGLEPLAYER|Играть против компьютера или начать прохождение миссий.
+STT:MAINBUTTONWWONLINE|Играть через интернет. Ищите противников на mo.cncguild.net/chat
+STT:MAINBUTTONYURIWEBSITE|Сайт Mental Omega
+STT:MODEASSAULT|'Штурм' - уничтожьте вражеские флаги и защитите свой.
+STT:MODEBATTLE|'Битва' - сражение, где можно заключать и разрывать союзы.
+STT:MODEBLOODYGAMES|'Пехотная Война' - никакой техники, только пехота.
+STT:MODECOOPERATIVE|'Cовместная игра' - проходите миссии вместе.
+STT:MODECRATEPICKUP|'Ящики Повсюду' - по всей карте разбросаны ящики с сюрпризами.
+STT:MODECTF|'Захват' - захватите вражеские флаги и защитите свой.
+STT:MODEFORTRESS|'Крепость' - победите игрока, занявшего укрепленный район.
+STT:MODEGRANDERWAR|'Метеоритный Дождь' - ИИ будет жульничать как никогда раньше.
+STT:MODEHEROARENA|'Арена Героев' - Эйнштейн вернулся и передает привет.
+STT:MODEISLANDS|'Острова' - базы разделены водой, а значит морские битвы неизбежны.
+STT:MODEKOTH|'Царь Горы' - захватите и удержите Устройство Судного Дня.
+STT:MODEMONSTERTRUCK|'Войны Смертников' - выиграйте битву с помощью... грузовика-бомбы?
+STT:MODENOBASES|'Без Базы' - именно, никаких баз, только войска.
+STT:MODESCAVENGERS|'Мусорщики' - используйте реверсную инженерию, чтобы открыть войска.
+STT:MODETEAMS|'Командная Игра' - битва с изначально заключенными союзами.
+STT:MODEUNHOLYALLIANCE|'Нечестный Союз' - все технологии мира в вашем распоряжении.
+STT:MULTIENGINEER|Инженеры захватывают только поврежденные здания.
+STT:OPTIONSBUTTONCREDITS|Посмотреть список благодарностей.
+STT:OPTIONSBUTTONMOVIES|Посмотреть список полезных ссылок.
+STT:PLAYERCOLORBLUE|Установить синий цвет.
+STT:PLAYERCOLORBROWN|Установить коричневый цвет.
+STT:PLAYERCOLORDARKGREEN|Установить темно-зеленый цвет.
+STT:PLAYERCOLORGOLD|Установить желтый цвет.
+STT:PLAYERCOLORGREEN|Установить зеленый цвет.
+STT:PLAYERCOLORKHAKI|Установить цвет хаки.
+STT:PLAYERCOLORMAGENTA|Установить сиреневый цвет.
+STT:PLAYERCOLOROLIVE|Установить оливковый цвет.
+STT:PLAYERCOLORORANGE|Установить оранжевый цвет.
+STT:PLAYERCOLORPINK|Установить розовый цвет.
+STT:PLAYERCOLORPURPLE|Установить фиолетовый цвет.
+STT:PLAYERCOLORRED|Установить красный цвет.
+STT:PLAYERCOLORSKYBLUE|Установить голубой цвет.
+STT:PLAYERCOLORTEAL|Установить цвет морской волны.
+STT:PLAYERSIDEAMERICAN|Соединенные Штаты используют быстрое развертывание и точные удары.
+STT:PLAYERSIDECHINESE|Арсенал Китая состоит из медленной, но мощной техники.
+STT:PLAYERSIDECONFEDERATION|Латиноамериканская Конфедерация преуспевает в диверсиях и налетах.
+STT:PLAYERSIDEEUROALLIANCE|Евросоюз опирается на поддержку войск и оборонительную тактику.
+STT:PLAYERSIDEHEADQUATERS|Штаб Эпсилон использует генетически модифицированных солдат и технологии невидимости.
+STT:PLAYERSIDEPACIFICFRONT|Тихоокеанский Фронт применяет криогенное и дальнобойное вооружение.
+STT:PLAYERSIDEPSICORPS|Пси-Корпус использует антигравитацию, телепатию и телекинез.
+STT:PLAYERSIDERANDOM|Фракция будет выбрана случайно.
+STT:PLAYERSIDESCORPIONCELL|Ячейка Скорпион полагается на численное превосходство и быстрые налеты.
+STT:PLAYERSIDEUSSR|Россия использует тесла-технологии и мобильные войска.
+STT:RMGURBANAREAS|Разрешить или запретить наличие городских районов.
+STT:SINGLEBUTTONLOADSAVEDGAME|Загрузить сохраненную игру.
+STT:SINGLEBUTTONNEWCAMPAIGN|Играть в миссии Mental Omega.
+STT:SKIRMISHCBOXBUILDOFFALLY|Если включено, игроки могут строить рядом со зданиями союзников.
+STT:WOLLOBBYBACK|Вернуться в меню сетевой игры
+STT:WOLNEWACCOUNT|Создать новый аккаунт
+STT:WOLNEWS|Последние новости о Mental Omega.
+STT:WOLWELCOMEMYINFORMATION|Настроить аккаунт сетевой игры.
+THEME:ACTON|Act On Instinct
+THEME:AENIGMATA|Aenigmata
+THEME:BANISHED|Banished
+THEME:BRAINDEAD|Brain Dead
+THEME:CHAOTICIMPULSE|Chaotic Impulse
+THEME:CONSTRUCT|Construct
+THEME:CYBERTEK|Cybertek
+THEME:DECIBLE|Decible
+THEME:DEFUNKT|Defunkt
+THEME:DIABLO|Diablo
+THEME:DUALITY|Duality
+THEME:ECHO|Echo
+THEME:ESCAPE|Escape
+THEME:FANTASY|Fantasy
+THEME:FORGOTTEN|Forgotten
+THEME:FROSTBURN|Frostburn
+THEME:GETONIT|Get On It
+THEME:HELIVES|He Lives
+THEME:HMM|Hell March Medley
+THEME:INFILTRATOR|Infiltrator
+THEME:INSIDE|Inside Your Soul
+THEME:INTHETUNNEL|In The Tunnel
+THEME:INYOFACE|In Yo Face
+THEME:ITHASBEGUN|It Has Begun
+THEME:KILL|Kill
+THEME:MAGNAFRIED|Magnafried
+THEME:MECHANICAL|Mechanical Man
+THEME:MINDPRISON|Mind Prison
+THEME:MORPHSCAPE|Morphscape
+THEME:MORPHUNK|Morphunk
+THEME:OBSIDIANSANDS|Beyond the Obsidian Sands
+THEME:ODDFUNK|Odd Funk
+THEME:OUTBREAK|Outbreak
+THEME:OWNAGE|Ownage
+THEME:PSYCHOSIS|Psychosis
+THEME:REALMS|Nine Realms
+THEME:REAPING|Reaping
+THEME:ROCKTRONIC|Rocktronic
+THEME:ROX|Rox
+THEME:SOLARA|Solara
+THEME:SONICPAIN|Sonic Pain
+THEME:STRANGE|Strange
+THEME:THEEDGE|The Edge
+THEME:THEGATES|Opening of the Gates
+THEME:THESTREETS|The Streets
+THEME:VIGILANTE|Vigilante
+THEME:VIRTUALCONTROL|Virtual Control
+THEME:VVERSUSP|Virus vs Predator
+THEME:WARFARE|Warfare
+TIP:0|0
+TIP:1|1
+TIP:2|2
+TIP:3|3
+TIP:4|4
+TIP:5|5
+TIP:6|6
+TIP:7|7
+TIP:8|8
+TIP:9|9
+TIP:MACHINEGUN|
+TIP:ROCKET|
+TIP:Z|Z
+TXT_COMMAND_DISABLED|ОШИБКА - Эта команда недоступна в публичной бета-версии
+TXT_COPYRIGHT|
+TXT_EASY|Нормальная
+TXT_HARD|Невыносимая
+TXT_LIGHTNING_STORM|Начался грозовой шторм!
+TXT_LOB_1|Lobby 1
+TXT_LOB_2|Lobby 2
+TXT_LOB_3|Lobby 3
+TXT_LOB_4|Lobby 4
+TXT_LOB_5|Lobby 5
+TXT_LOB_6|Lobby 6
+TXT_LOB_7|Lobby 7
+TXT_LOB_8|Lobby 8
+TXT_MISMATCH|Версии игры несовместимы. Убедитесь, что вы и организатор игры используете одну и ту же версию.
+TXT_MOVIESANDCREDITSBUTTON_MSG|Наш Сайт --------- mentalomega.com\nНаш Форум ---------- mentalomega.com/forum\nАдрес ModDB ----------- moddb.com/mods/mental-omega\nАдрес Desura ----------- desura.com/mods/mental-omega\nАдрес Facebook -------- facebook.com/MentalOmegaAPYR\nТвиттер Speeder'а ------- twitter.com/speeder_mo\nКанал на YouTube ------- youtube.com/MentalOmegaAPYR\nБлагодарности  -------------- mentalomega.com/credits
+TXT_NORMAL|Сложная
+TXT_RELEASE_NOTE|
+TXT_SCRNCAP_DESC|Сделать снимок экрана (сохраняется как 'SCRNxxxx.PCX' в папке с Mental Omega).
+GUI:LOAD|Начать Миссию
+GUI:SELECTCAMPAIGN|Выберите Кампанию
+GUI:URBANAREAS|Создать Городские Районы
+NAME:DESERT|Пустыня
+STT:MULTIENGINEER|Инженеры захватывают только поврежденные здания.
+STT:RMGURBANAREAS|На карте будут присутствовать городские участки.
+STT:PLAYERCOLORBROWN|Установить коричневый цвет.
+STT:PLAYERCOLORCHARCOAL|Установить темно-серый цвет.
+STT:PLAYERCOLORLIGHTBLUE|Установить голубой цвет.
+STT:PLAYERCOLORLIME|Установить ядовито-зеленый цвет.
+STT:PLAYERCOLORTEAL|Установить цвет морской волны.
+STT:PLAYERCOLORLILAC|Установить лиловый цвет.
+TXT_COMMAND_DISABLED|Команда %s недоступна.
+TXT_RELEASE_NOTE|
+TXT_SCRNCAP_DESC|Сделать снимок экрана. (Сохраняется в папке с игрой.)
+DESC:2PEAKS|(2) Twin Peaks
+DESC:4CORNERS|(4) Four Corners
+DESC:ABALANCE|Balance of Power (Allies)
+DESC:ADOWN|Downfall (Allies)
+DESC:ALA|Low Rider (Allies)
+DESC:ARENA33|(6) Arena Thirty-Three
+DESC:ATECH|Technologic (Allies)
+DESC:AUSTIN|(4) Austin, Texas
+DESC:BAYOFPIGS|(6) Bay of Pigs
+DESC:BLDFEUD|(2) Blood Feud
+DESC:CARVILLE|(4) Carville's Convoy
+DESC:CHAL01|VS United States
+DESC:CHAL02|VS Euro Alliance
+DESC:CHAL03|VS Pacific Front
+DESC:CHAL04|VS Russia
+DESC:CHAL05|VS Confederation
+DESC:CHAL06|VS China
+DESC:CHAL07|VS PsiCorps
+DESC:CHAL08|VS Scorpion Cell
+DESC:CHAL09|VS Headquarters
+DESC:CHAL10|VS Haihead
+DESC:CHAL11|VS Coronia
+DESC:CHAL12|VS Last Bastion
+DESC:CITYVILLE|(4) Downtown, Cityville
+DESC:CSWING|(4) Country Swing
+DESC:CUS|(4) City Under Siege
+DESC:DEADMAN|(2) Deadman's Ridge
+DESC:DISASTER|(4) Brink of Disaster
+DESC:DRYHEAT|(4) Dry Heat
+DESC:DTRBLE|(4) Double Trouble
+DESC:DUNEPATR|(2) Dune Patrol
+DESC:DUSTBOWL|(2) Dustbowl
+DESC:EMONO|Monochrome (Epsilon)
+DESC:F31|(3) Diamond Rift
+DESC:F33|(3) Sinner Within
+DESC:F34|(3) Citadel Aquaria
+DESC:F35|(3) Slippyhill Strategy
+DESC:F36|(3) Both Sides Now
+DESC:F37|(3) Placebo Effect
+DESC:F38|(3) Neptune Valley
+DESC:F39|(3) Unfair Advantage
+DESC:F41|(4) Mount Rush More
+DESC:F42|(4) Banzai Charge
+DESC:F43|(4) Death of Money
+DESC:F44|(4) Clash in America
+DESC:F51|(5) Flower of Power
+DESC:F52|(5) Resurrection Bolt
+DESC:F53|(5) Eternal Defense
+DESC:F55|(5) Yunru's Keep
+DESC:F61|(6) Rahn's Snowy Castle
+DESC:F62|(6) Stronghold Prime
+DESC:F63|(6) Perseverance
+DESC:F72|(7) Diamond Is Unbreakable
+DESC:F73|(7) Ring of Death
+DESC:F81|(8) The Sky Mountain
+DESC:FACEDWN|(4) Face Down
+DESC:FROSTBITE|(4) Frostbite
+DESC:FSURGE|Power Surge (Foehn)
+DESC:GROUNDZE|(4) Ground Zero
+DESC:HAILMARY|(2) Hail Mary
+DESC:HIDVALLY|(2) Hidden Valley
+DESC:HILLBETWEEN|(2) A Hill Between
+DESC:HILLS|(4) Head for the Hills
+DESC:INVASION|(4) Invasion Confirmed
+DESC:KALIFORNIA|(6) Kalifornia
+DESC:KILLER|(3) Killer Instinct
+DESC:LITTLEPI|(2) Little Piece of Dune
+DESC:LOADEDBRL|(2) Loaded Barrel
+DESC:LOSTLAKE|(4) Lost Lake
+DESC:LTBF|(2) Let There Be Fight
+DESC:MEATGRINDER|(2) Meat Grinder
+DESC:MO230|(2) Escalation
+DESC:MO246|(2) Polar Nights
+DESC:MO247|(2) Isolation Isle
+DESC:MO250|(2) Tournament Arena
+DESC:MO251|(2) Battlebase Beta
+DESC:MO252|(2) Pirate Bay
+DESC:MO253|(2) Pipeline Problem
+DESC:MO254|(2) No Man's Land
+DESC:MO255|(2) Forest Joust
+DESC:MO256|(2) Knockout
+DESC:MO257|(2) Freezing Field
+DESC:MO258|(2) Tournament Tower
+DESC:MO259|(2) Action Reaction
+DESC:MO260|(2) Nevada Valley
+DESC:MO261|(2) Amazonas Zeta
+DESC:MO262|(2) Tokyo Drift
+DESC:MO263|(2) Tikal
+DESC:MO264|(2) Tournament City
+DESC:MO265|(2) Artificial Ice
+DESC:MO266|(2) Dune Patrol II
+DESC:MO267|(2) Reconcile
+DESC:MO268|(2) Dry Canyon
+DESC:MO269|(2) Renaissance
+DESC:MO270|(2) Burning Streets
+DESC:MO271|(2) Canyon Fodder II
+DESC:MO272|(2) Eye of Terror
+DESC:MO273|(2) Frontier Duelists
+DESC:MO274|(2) Suspect
+DESC:MO275|(2) Steadfast
+DESC:MO276|(2) Boracay
+DESC:MO277|(2) Tournament Vale
+DESC:MO278|(2) Tournament Dune
+DESC:MO279|(2) Tournament Canal
+DESC:MO280|(2) Hostility
+DESC:MO281|(2) Canals of Carnage
+DESC:MO282|(2) Dual Duel Redux
+DESC:MO283|(2) Water Splash
+DESC:MO284|(2) Twin Apex
+DESC:MO285|(2) Mirror's Edge
+DESC:MO286|(2) Exhausted Isle
+DESC:MO287|(2) Chitzkoi's Iron Cages
+DESC:MO288|(2) Usurpation
+DESC:MO289|(2) Landslide
+DESC:MO301|(3) Canyon Fodder III
+DESC:MO302K|(3) Paradox Spiral K
+DESC:MO305K|(3) Triple Threat K
+DESC:MO306K|(3) Arch La Indigo K 
+DESC:MO307K|(3) Pyroclasm K
+DESC:MO313|(3) Mystery Town
+DESC:MO314|(3) Norio's Dojo
+DESC:MO315|(3) Ore Troika
+DESC:MO316|(3) Rapid Trio
+DESC:MO317|(3) Batchawana Bay
+DESC:MO318|(3) Direttissima
+DESC:MO319|(3) Laced River
+DESC:MO410K|(4) Forestation K
+DESC:MO412K|(4) Velillian Islands K
+DESC:MO415K|(4) Deep Freeze K
+DESC:MO417K|(4) Desertification K
+DESC:MO419|(4) Coldest Peak
+DESC:MO419K|(4) Coldest Peak K
+DESC:MO421|(4) Divide and Conquer
+DESC:MO426|(4) Turf War Redux
+DESC:MO428|(4) Frozen Lands
+DESC:MO436|(4) Tournament Island
+DESC:MO444|(4) Kool Party
+DESC:MO445|(4) Temple Toveena
+DESC:MO446|(4) Peaceful Struggle
+DESC:MO447|(4) Pinecone Island
+DESC:MO448|(4) Canyon Fodder IV
+DESC:MO449|(4) Battleblock Theatre
+DESC:MO450|(4) Once Calm
+DESC:MO451|(4) Double Patrol
+DESC:MO452|(4) Lowlands
+DESC:MO453|(4) Ebony and Ivory
+DESC:MO454|(4) Eve of Destruction
+DESC:MO455|(4) Tournament Complex
+DESC:MO456|(4) Eternal Alliance
+DESC:MO457|(4) Giant Hog Bay
+DESC:MO458|(4) Overcome
+DESC:MO459|(4) Sessions Pass
+DESC:MO460|(4) Hellhound
+DESC:MO461|(4) Morales' Sanctuary
+DESC:MO462|(4) Libra's Playground
+DESC:MO463|(4) Timberland
+DESC:MO464|(4) Soldier Game
+DESC:MO465|(4) Barran Valley
+DESC:MO466|(4) Black's Big Battle
+DESC:MO467|(4) Tournament Ridge
+DESC:MO468|(4) Lady of the Lake
+DESC:MO469|(4) Yuri Is Not Easy
+DESC:MO470|(4) Advancement
+DESC:MO471|(4) Fair and Square
+DESC:MO472|(4) Division Delta
+DESC:MO473|(4) Canals of Drainage
+DESC:MO474|(4) Shivering Isle
+DESC:MO475|(4) Two-Faced
+DESC:MO476|(4) The Polaroblong
+DESC:MO477|(4) Oppidan Cay
+DESC:MO478|(4) Snow Feathers
+DESC:MO479|(4) FinAlizeNation
+DESC:MO480|(4) Eureka's Proving Grounds
+DESC:MO481|(4) Big Town USA
+DESC:MO482|(4) Central Channel
+DESC:MO483|(4) Tournament Dune II
+DESC:MO484|(4) Stratification
+DESC:MO485|(4) Tropical Nights
+DESC:MO486|(4) Upriver
+DESC:MO487|(4) Face the Ocean Frog
+DESC:MO488|(4) Fiordland
+DESC:MO489|(4) Walk of Egypt
+DESC:MO490|(4) Quatrain
+DESC:MO503K|(5) Apocalypse Now K
+DESC:MO604K|(6) DEFCON Six K
+DESC:MO605|(6) Offensive Tactics
+DESC:MO609|(6) Vertigo
+DESC:MO610|(6) Gang War
+DESC:MO612|(6) Advanced Warfare
+DESC:MO613K|(6) Mount Mirage K
+DESC:MO618|(6) Ravenous
+DESC:MO619|(6) Misery Malice
+DESC:MO620|(6) Battlebase Hexis
+DESC:MO621|(6) Power Shift
+DESC:MO622|(6) Malver's Sandbox
+DESC:MO623|(6) Triviallakes
+DESC:MO624|(6) Barren Grounds
+DESC:MO625|(6) Bad Weather
+DESC:MO626|(6) Yunru's Snowglass
+DESC:MO627|(6) Mechanical Island
+DESC:MO628|(6) Magmageddon
+DESC:MO629|(6) Crazy Diamond
+DESC:MO630|(6) Faith Bound
+DESC:MO631|(6) Arabian Nights
+DESC:MO632|(6) Battle Tendency
+DESC:MO633|(6) Connection Cut
+DESC:MO801|(8) Snow Snow Snow
+DESC:MO805K|(8) Ore Pit K
+DESC:MO815K|(8) Crosshair K
+DESC:MO821K|(8) Wheel of Torture K
+DESC:MO823K|(8) In Need Indeed K
+DESC:MO828|(8) Stone Ocean
+DESC:MO829|(8) Omega City
+DESC:MO830|(8) Atomic Eight
+DESC:MO831|(8) Blood Paint
+DESC:MO832|(8) Made of Sand
+DESC:MO833|(8) Icy Trinity
+DESC:MO834|(8) Siegfried's Techzentrum
+DESC:MO835|(8) Bridge Builder
+DESC:MO836|(8) East Wind Valley
+DESC:MO837|(8) Westernfield
+DESC:MO838|(8) The Grand Stadium
+DESC:MO839|(8) Grey Wind
+DESC:MO840|(8) Bon Chat, Bon Rat
+DESC:MO841|(8) Life in the Oasis
+DESC:MO842|(8) Volkov's Dominion
+DESC:MO843|(8) Clover Conflict
+DESC:MO844|(8) Bay of Pigs III
+DESC:MO845|(8) Tea Moon Cake
+DESC:MO846|(8) Ridge Carnage Redux
+DESC:MO847|(8) Cold Hard Truth
+DESC:MO848|(8) Catching Fire
+DESC:MO849|(8) Dedication
+DESC:MO850|(8) Frozen Ripple
+DESC:MO851|(8) World Rejector
+DESC:MO852|(8) Stardust Crusaders
+DESC:MOI23|(2) Swim Peaks
+DESC:MOI24|(2) Oil Spill Crisis
+DESC:MOI25|(2) Flood
+DESC:MOI26|(2) Casual Encounter
+DESC:MOI31|(3) Arizona Memorial
+DESC:MOI44|(4) Zero Point
+DESC:MOI45|(4) Death Bolt
+DESC:MOI46|(4) Vanilla Ice Cream
+DESC:MOI47|(4) Entwined
+DESC:MOI61|(6) Loaded Dice
+DESC:MOI62|(6) Rings of Power
+DESC:MOI63|(6) Conquest
+DESC:MOI85|(8) Arctic Thaw
+DESC:MOI86|(8) Red Reef
+DESC:MOI87|(8) Bridge Rejector
+DESC:MOP41|(4) Inside Story [24]
+DESC:MOP42|(4) Convergence [24]
+DESC:MOP43|(4) Valley of Hell [24]
+DESC:MOP44|(4) Highway to Hell [24]
+DESC:MOP45|(4) Chessboard [24]
+DESC:MOP46|(4) Quartet [24]
+DESC:MOP61|(6) Requiem [36]
+DESC:MOP62|(6) Ridge Carnage [36]
+DESC:MOP63|(6) Hourglass [36]
+DESC:MOP64|(6) Turtle Kingdom [36]
+DESC:MOP65|(6) Battle for Dune II [36]
+DESC:MOP81|(8) Fight for Liberty [48]
+DESC:MOP82|(8) Xtreme Wealth [48]
+DESC:MOP83|(8) Snow Storm [48]
+DESC:MOP84|(8) Ultima Arena [48]
+DESC:MOP85|(8) Deadlands [48]
+DESC:MOP86|(8) All-Out Oil Race [48]
+DESC:NEWHEIGHTS|(2) New Heights
+DESC:OADES|(4) Isle of Oades
+DESC:OCEANSIDE|(4) Oceanside
+DESC:OFFDEF|(4) Offense Defense
+DESC:OTTERS|(4) Otters' Revenge
+DESC:PHGHTS|(4) Pacific Heights
+DESC:PKEG|(8) Powder Keg
+DESC:POTOMAC|(6) Army of the Potomac
+DESC:ROCKETS|(4) Rockets Red Glare
+DESC:RUROUL|(8) Russian Roulette
+DESC:SAHARAMI|(2) Sahara Mirage
+DESC:SEDONA|(6) Sedona Pass
+DESC:SINKHOLE|(4) Sinkhole
+DESC:SNEEDLE|Needlehead (Soviets)
+DESC:SOISO|(4) Sea of Isolation
+DESC:SOVEREIGNLAND|(2) Sovereign Land
+DESC:SRAVAGE|Ravages of War (Soviets)
+DESC:SSOURCE|Money Source (Soviets)
+DESC:STOWEATH|(4) Stormy Weather
+DESC:STOXIC|Intoxicated (Soviets)
+DESC:TERRITOR|(8) Territorial Imperative
+DESC:TOE|(6) Tour of Egypt
+DESC:TOWER|(4) Tower of Power
+DESC:TRAILERPARK|(8) Trailer Park
+DESC:TRIPLE|(6) Triple Crossed
+DESC:TTG|(4) Tanya's Training Grounds
+DESC:VALGIRL|(4) Death Valley Girl
+DESC:VALLEY|(4) Valley of Gems
+DESC:WIMPS|(4) No Wimps
+DESC:WIMPSK|(4) No Wimps K
+DESC:XBERMUDA|(6) Bermuda Triangle
+DESC:YURIPLOT|(3) Yuri's Plot
+GUI:CHALLENGE|Режим Вызова
+GUI:PETROWAR|Битва: Нефтяная Война
+GUI:PLAYERLEFTCOOP|Игрок %s покинул совместную игру.
+GUI:PLAYMISSION|Начать Миссию
+GUI:SURVIVAL|Битва: Выживание
+GUI:TECHMIX|Битва: Смесь Технологий
+NAME:4ARCH|1 Танк Харон
+NAME:4CAVA|4 Танка Кавалер
+NAME:4INFSQ|2 Призма-Танка
+NAME:4THOR|1 Тор
+NAME:ACTIVATE|Включить
+NAME:ADEPT|Адепт Эпсилон
+NAME:AHVYBOT2|Танк Будущего Альфа
+NAME:AICLEG|Хроно Легионер
+NAME:ALL|Аллигатор
+NAME:AMBAS|Переговорщик
+NAME:ARCH|Архелон
+NAME:ARMA|Броненосец
+NAME:ARSO|Поджигатель
+NAME:ASA|Watchfrog
+NAME:B52|Стратофортресс
+NAME:BANE|Убийца Гигантов
+NAME:BANE_N|Убийца Богов
+NAME:BASIL|Василиск
+NAME:BBEAR|Советский Боевой Медведь
+NAME:BEACONACTIVE|ВНИМАНИЕ - Активирован Пси-Подчинитель!
+NAME:BFRT|Боевая Черепаха
+NAME:BIZON|Танк Бизон
+NAME:BLACKOUTMISSILE|Отключающая Ракета
+NAME:BLAST|Нагнетательный Барьер
+NAME:BLASTACTIVE|ВНИМАНИЕ - Нагнетательная Печь активирована!
+NAME:BLASTCHARGE|
+NAME:BLASTDETECT|ВНИМАНИЕ - Обнаружена Нагнетательная Печь!
+NAME:BLASTRUNNING| -ВКЛЮЧЕНО-  
+NAME:BLIGHT|Налетчик
+NAME:BOID|Артиллерийская Установка Анаконда
+NAME:BOIDBLITZ|Бросок Анаконды
+NAME:BOIDFIELD|Boid Field
+NAME:BUZZ|Канюк
+NAME:CAACAD|Академия
+NAME:CAAERO|Авиастроительное КБ
+NAME:CAAIRP|Гражданский Аэродром
+NAME:CABANK|Гражданский Депозитный Банк
+NAME:CABATT|Батарея Парадокса
+NAME:CABORS|Статуя Бориса
+NAME:CABUNK01|Гражданский Бетонный Бункер
+NAME:CACORE|Суперкомпьютер
+NAME:CACPTL|Капитолий
+NAME:CADEFB|Бюро Оборонительных Операций
+NAME:CADOCK|Военные Доки
+NAME:CAFHOSP|Гражданский Госпиталь
+NAME:CAFORT|Гражданская Бетонная Крепость
+NAME:CAHMCH|Машиностроительный Цех
+NAME:CALLBORIS|Вызвать Бориса
+NAME:CAMAUS|Мавзолей Ленина
+NAME:CAMEL|Верблюд
+NAME:CAMORR06B|Owl & Friends
+NAME:CAMUSE01B|Уяздовский Замок
+NAME:CANRCT|Гражданская Атомная Электростанция
+NAME:CAOILDOM|Нефтевышка
+NAME:CAPRLT|Восточная Жемчужина
+NAME:CARGR|Irritator Troop Crawler
+NAME:CARUSHT|Национальный Исторический Музей
+NAME:CASEIM|Сейм
+NAME:CASING|Сингапурский Конгресс
+NAME:CASTRF|Центр Технического Обслуживания
+NAME:CAVHNG|Ангар ШтейнТек
+NAME:CAWALL|Бетонная Стена
+NAME:CAWSIR|Варшавская Русалка
+NAME:CAYURST|Статуя Юрия
+NAME:CBRIS|Космический Коммандо
+NAME:CHAR|Харибда
+NAME:CHMIN|Вызов Хроно-Рудокопов
+NAME:CHRONOBOOST|Хроноускорение
+NAME:CHRONODETECT|ВНИМАНИЕ - Обнаружена Хроносфера!
+NAME:CHRONOLIFT|Хроноперенос
+NAME:CHRP|Хроно-Тюрьма
+NAME:CIVILIAN|Гражданский
+NAME:CLAIR|Провидец
+NAME:CMISLE|Ракета Акулы
+NAME:CMON|Хроно-Рудокоп
+NAME:CONF|Провокатор
+NAME:CORONIA|Крылья Коронии
+NAME:COUNTERGAP|RPCM System
+NAME:COWW|Корова
+NAME:CRATEDROP|Сброс Ящиков
+NAME:CRISIS|Кризис
+NAME:CRYC|Крио-Коммандо
+NAME:CRYOCOMMAND|Крио-Коммандо
+NAME:CTECHM|Техник
+NAME:CYCL|Шагоход Циклоп
+NAME:CZEP|Командирский Дирижабль Киров
+NAME:DANGERZONE|Danger Zone
+NAME:DBAT|Налетчик
+NAME:DEPLOY|Вызвать
+NAME:DESTINATION|Нажмите, чтобы выбрать это место как точку назначения
+NAME:DEVI|Девиатор
+NAME:DEVOURER|Пожиратель
+NAME:DHAND|Рука Смерти
+NAME:DIVER|Дрон-Камикадзе "Пчела"
+NAME:DMISLE|Ракета Дредноута
+NAME:DNOAA|Тиранозавр
+NAME:DOMINDETECT|ВНИМАНИЕ - Обнаружен Пси-Подчинитель!
+NAME:DRACO|Танк Дракон
+NAME:DRACOD|Автоматическая Турель Дракона
+NAME:DRONP|Прототип Дрона
+NAME:DUPL|Дубликатор
+NAME:DUST|Курильщик
+NAME:EMPTY|
+NAME:ENEMYSOLDIER|Вражеский Пехотинец
+NAME:ENEMYSTR|Вражеское Здание
+NAME:ENEMYVEH|Вражеская Техника
+NAME:EPSILONHEADQUATERS|Штаб Эпсилон
+NAME:EUREKA|Эврика
+NAME:FAAREN|Проектор Мегаарены
+NAME:FAAVAL|Испаритель
+NAME:FABARR|Казармы Фоэн
+NAME:FABARR_B|Улучшение Казарм: Протокол "Падение Рыцарей"
+NAME:FABLST|Нагнетательная Печь
+NAME:FABOID|Анаконда (Боевой Режим)
+NAME:FABTRC|Нагнетательный Канал
+NAME:FACLDP|Метеоцентр
+NAME:FACLDP_B|Расширение Метеоцентра
+NAME:FACNST|Сборочный Цех Фоэн
+NAME:FACOAT|Регулятор Нанопокрытия
+NAME:FACOMP|Усмиритель
+NAME:FACONF|Дезориентирующая Сеть
+NAME:FACORE|Ядро ВОЛКНЕТ
+NAME:FACYBR|Кибернетический Центр
+NAME:FACYBR_B|Расширение Киберцентра
+NAME:FADROP|Маяк Падения Рыцарей
+NAME:FAELEV|Творец Бурь
+NAME:FAFILD|Парализующая Сеть
+NAME:FAFNCE|Секция Ветровой Турбины
+NAME:FAGREN|Placeholder Grand Cannon
+NAME:FAGUAR|Гнездо Сорокопута
+NAME:FAHARB|Башня Предвестника
+NAME:FAINHI|Подавитель Сигналов
+NAME:FAMMIN|Мина M.A.D. 
+NAME:FAMSA|Содарная Установка (Рабочий Режим)
+NAME:FANANO|Синтезатор Нановолокон
+NAME:FANANO_B|Расширение Синтезатора Нановолокон
+NAME:FAPOST|Ветровая Турбина
+NAME:FARAIL|Рельсовая Башня
+NAME:FAREFN|Перерабатывающий Комбинат Фоэн
+NAME:FAREPR|Переработчик
+NAME:FASONI|Резонаторная Турель
+NAME:FASPIN|Крыльчатка
+NAME:FASWPR|Водомерка (Боевой Режим)
+NAME:FATRAP|Ветроуловитель
+NAME:FAWALL|Стена Бастиона
+NAME:FAWEAP|Военный Завод Фоэн
+NAME:FAYARD|Верфь Фоэн
+NAME:FDRON|Дрон Ярости
+NAME:FENGINEER|Инженер Фоэн
+NAME:FIN|Фин
+NAME:FMCV|Мобильный Сборочный Цех Фоэн
+NAME:GACLAB|Генератор Искажений
+NAME:GANODE|Хроновышка
+NAME:GAPOWR|Электростанция Альянса
+NAME:GAPOWRUP|Улучшение Электростанции:\nУсовершенствованная Турбина
+NAME:GAROD|Громоотвод
+NAME:GAZEPH|Бот-Наводчик САУ Зефир
+NAME:GEARCHANGE|Отладка Конвееров\nБонус +$3000
+NAME:GHTNK|Гавиал
+NAME:GIANTBANE|Убийца Гигантов
+NAME:GREATTEMPEST|Великая Буря
+NAME:GREATTEMPESTA|ВНИМАНИЕ - Активирован Творец Бурь!
+NAME:GREATTEMPESTNO|Погодные условия в данный момент нестабильны. Активация отменена.
+NAME:GREATTEMPESTS|Началась Великая Буря!
+NAME:GRUMBLE|ЗРК Фаворит
+NAME:HAIHEAD|Голова Акулы
+NAME:HARBINGER|Предвестник
+NAME:HBIRD|Колибри
+NAME:HEALTHPACKS|Аптечки Дракува
+NAME:HKAMAZ|Бронированный Грузовик
+NAME:HORVV|Боевой Рудокоп
+NAME:HUNTERSEEKER|Дрон-Охотник\n(Не более 5)
+NAME:HUNTR|Охотница
+NAME:HURR|Станция Аланка
+NAME:IDRAG|Железный Дракон
+NAME:IPBM|Рука Смерти
+NAME:IRONDETECT|ВНИМАНИЕ - Обнаружен Генератор Железного Занавеса!
+NAME:IRRADIATE|Облучение
+NAME:JOSH|Обезьяна
+NAME:JOSVITH|Grand Nanomaster Josvith
+NAME:JUMPHOOKS|Jumphooks
+NAME:KILLER|Killer King
+NAME:KINGS|Королевский Рыцарь
+NAME:KNIGHT|Рыцарь
+NAME:KNIGHTFALL|Падение Рыцарей
+NAME:KRUKOV|Крюков
+NAME:LANCER|Улан
+NAME:LANCERFALL|Lancerfall
+NAME:LASTBASTION|Последний Бастион
+NAME:LATINCONFEDERATION|Конфедерация
+NAME:LEVI|Левиафан
+NAME:LEVIDET|ВНИМАНИЕ - Предвестник прибыл на поле боя!
+NAME:LIONH|Бомбардировщик Львиное Сердце
+NAME:MAD|M.A.D.M.A.N.
+NAME:MAGNET|Магнитный Луч
+NAME:MAINT|Ремонт Зданий
+NAME:MANAGE|Manage
+NAME:MEGA|Мегалодон
+NAME:MEGAARENA|Мегаарена
+NAME:MIND|Повелитель Мысли
+NAME:MONSTERCOME|До прибытия русских монстр-танков:
+NAME:MOSAC|Дрон-Бомбардировщик
+NAME:MSA|Содарная Установка
+NAME:MSD|Graveller Device
+NAME:NABNKRR|Боевой Бункер
+NAME:NAEMPS|Станция Управления ЭМИ
+NAME:NAFBUR|Полевое Разведбюро
+NAME:NAFTUR|Огнеметная Башня
+NAME:NAFURY|Развернутый Дрон Ярости
+NAME:NAGRUM|Развернутый ЗРК Фаворит
+NAME:NAIRDM|Железный Страж
+NAME:NAMORT|Дымовая Турель
+NAME:NANANA|Наноцентрифуга
+NAME:NANOCHARGE|Нанозаряд
+NAME:NANOFIBER|Синхронизация \nНановолокон
+NAME:NANRCT|Ядерный Реактор
+NAME:NAPOWR|Тесла-Реактор
+NAME:NASCOM|Детекторная Вышка
+NAME:NATRAPS|ЭМИ-Мины
+NAME:NEGATIVESPIN|Negative Spin
+NAME:NMIN|Рудокоп-Муравей
+NAME:NSPAWN|
+NAME:NUKEDETECT|ВНИМАНИЕ - Обнаружена Тактическая Ядерная Шахта!
+NAME:ORCIN|Волнообразователь Косатка
+NAME:PANTHER|Истребитель Танков Паладин
+NAME:PERUN|Перун
+NAME:PHNT|РСЗО Фантом
+NAME:PHOEN|Феникс
+NAME:POLARB|Белый Медведь
+NAME:POST|Ветровая Турбина (Мобильный Режим)
+NAME:POWERCONTROL|Grid Control
+NAME:POWERREGEN|Восстановление Энергии
+NAME:PRED|Удар Тенгу
+NAME:PREDL|
+NAME:PRESD|Президент Дьюган
+NAME:PRISM|Призмогоплит
+NAME:PROME|Мастодонт
+NAME:PSYBREADYCAMP|До активации Пси-Маяка:
+NAME:QUAD|Размыватель
+NAME:QUETZ|Кетцаль
+NAME:QUICK|Скачок
+NAME:RACC|Енот
+NAME:RAGEDETECT|ВНИМАНИЕ - Обнаружен Генератор Ярости!
+NAME:RAIL|Рельсотронщик
+NAME:RAMW|Таран
+NAME:RANGER|Рейнджер
+NAME:RECON|Разведывательный Зонд
+NAME:RECONB|Грузовой Дрон
+NAME:RECONSORTIE|Разведвылет
+NAME:REZNOV|Резнов
+NAME:RIOTT|Миротворец
+NAME:ROADR|Скороход
+NAME:SALA|Саламандра
+NAME:SCDROCKET|Ракета Эльбрус
+NAME:SDOG|Советский Боевой Пес
+NAME:SEAT|Десантный Корабль Панцирь
+NAME:SEEKERD|Глаза Кетцаля
+NAME:SEEKERM|ПТ Мина
+NAME:SEITAAD|Баллиста Сейтаад
+NAME:SEIZER|Поработитель
+NAME:SHARK|Акула-Ангел
+NAME:SHRAY|Лучевой Танк Скат
+NAME:SHRIKE|Сорокопут
+NAME:SIBFIN|Фин
+NAME:SICALI|Ализ
+NAME:SIGJAM|Глушение Сигналов
+NAME:SKYPHANTASM|Sky Phantasm
+NAME:SLAV|Рабочий
+NAME:SOVGEN|Советский Генерал
+NAME:SPACEBARRAGE|Метеоритный Дождь
+NAME:SPACEBARRAGED|ВНИМАНИЕ - Начался Метеоритный Дождь!
+NAME:SPACEBARRAGENO|Метеоритный Дождь уже вызван. Активация отменена.
+NAME:SPACEBARRAGEO|Искусственные метеориты вошли в атмосферу!
+NAME:SPACEENGINEER|Инженер-Космонавт
+NAME:SPOOK|Страшила
+NAME:STARDUST|Парадокс
+NAME:STORMABORT|Управление погодой уже происходит. Активация супероружия отменена.
+NAME:STORMDETECT|ВНИМАНИЕ - Обнаружено Устройство Управления Погодой!
+NAME:SUDDENACTIVE|ВНИМАНИЕ - Активирована Внезапная Смерть.
+NAME:SUPPLYBUNKER|Бункер Снабжения
+NAME:SURVIVAL|Вы выживете, если продержитесь:
+NAME:SWEEPERDROP|Сброс Водомерок
+NAME:SWORD|Меч-Рыба
+NAME:SWPR|Водомерка
+NAME:SYCKLE|Серп
+NAME:SYNC|Синхронин
+NAME:SYNC_N|Синхронавт
+NAME:TARCHIA|Тархия
+NAME:TEMPDETECT|ВНИМАНИЕ - Обнаружен Творец Бурь!
+NAME:TERA|Тераторн
+NAME:TERRORDROP|Десант Ужаса
+NAME:TICKTRAP|Засада Клещей
+NAME:TIMEFREEZE|Заморозка Времени
+NAME:TOXICSTRIKE|Токсиновый Удар
+NAME:TRACTOR|Падальщик
+NAME:UNITEDSTATESOFAMERICA|Соединенные Штаты Америки
+NAME:URAGAN|Ураган
+NAME:V2|Пусковая Установка В-2
+NAME:V2ROCKET|Ракета В-2
+NAME:VENOM|Эволюционер
+NAME:VIPER|Птеранодон
+NAME:VISION|Предвидение
+NAME:VISIONC|
+NAME:WALLBUSTER|Стенолом
+NAME:WHEELER|Wheeler
+NAME:WHLR|Wheeler
+NAME:WIDOW|Черная Вдова
+NAME:WIMPSK|No Wimps K (2-4)
+NAME:WINDGLOBE|Windglobe
+NAME:WINDGLOBES|Windglobe
+NAME:WINGD|Перышко
+NAME:WINGSOFCORONIA|Крылья Коронии
+NAME:WORMQ|Королева Червей
+NAME:YAAIRF|Аэродром Эпсилон
+NAME:YABIO|Биорезервуар
+NAME:YABIOB|Большой Биорезервуар
+NAME:YAKAOS|Туннель Чумных Клещей
+NAME:YAPOWR|Биореактор
+NAME:YAQUAD|Развернутый Размыватель
+NAME:YARAIL|Адская Башня
+NAME:YASMIN|Развернутый Рудокоп-Рабовладелец
+NAME:YAVNMM|Генетическая Мина
+NAME:YENGNEER|Инженер Эпсилон
+NAME:YLNR|Луноход
+NAME:YOU|Вы
+NAME:YURIHIMSELF|Юрий
+NAME:ZAPPER|Lil' Zapper
+NAME:ZORB|Зорбоход
+NAME:ZORB_N|Зорболет
+STT:MODECHALLENGE|'Режим Вызова' - Бросьте вызов всем подфракциям одной фракции на специальных картах.
+STT:MODEPETROWAR|'Нефтевойна' - Сражайтесь за единственный источник дохода - неуязвимые Нефтевышки.
+STT:MODESURVIVAL|'Выживание' - Продержитесь против толп врагов, наступающих на вас.
+STT:MODETECHMIX|'Смесь Технологий' - Доступны технологии всех подфракций.
+STT:PLAYERSIDECORONIA|Крылья Коронии широко применяют манипуляцию воздухом и летающее вооружение.
+STT:PLAYERSIDEHAIHEAD|Голова Акулы использует кибернетику и нанотехнологии для быстрого уничтожения целей.
+STT:PLAYERSIDELASTBASTION|Последний Бастион использует тяжелые танки и нановолокна, чтобы держать свои рубежи в безопасности.
+STT:STANDSCOREPARTIME|Рекорд разработчика по прохождению на этой сложности.
+THEME:AFTERSHOCK|Aftershock
+THEME:ALTERTHEFUTURE|Alter The Future
+THEME:BEYOND|Beyond
+THEME:BREAKDOWN|Breakdown
+THEME:BROTHERHOOD|The Brotherhood
+THEME:CALIBRATION|ctOS Calibration
+THEME:DESTINYCOMBAT|Destiny
+THEME:DESTROYER|The Destroyer
+THEME:DOWNFALL|Downfall
+THEME:EDGERAZOR|Edge Of The Razor
+THEME:EXMACHINA|Ex Machina
+THEME:FINALCHANCE|One Final Chance
+THEME:HEROIC|Heroic
+THEME:LLOD|The Last Line Of Defence
+THEME:NOMORESUN|No More Sun
+THEME:PURETENSION|Pure Tension
+THEME:RELATIVITY|Relativity
+THEME:REMNANT|Remnant Of The Distant Future
+THEME:REVOLT|Revolt
+THEME:RIGHTONTRACK|Right On Track
+THEME:SHOULDERS|On The Shoulders Of Giants
+THEME:STORMBRINGER|Stormbringer
+THEME:THEREMNANT|The Remnant
+THEME:THERESCUE|The Rescue
+TXT_ASSAULT_RULES|Задача: Для победы уничтожьте флаги врагов, при этом защитив собственный.
+TXT_BOUNTYHUNT_RULES|ОХОТА ЗА ПРЕМИЯМИ: Уничтожайте вражеские объекты чтобы получать деньги, \nзанимайте Бункеры Снабжения, чтобы получать ящики с ресурсами и бонусами.
+TXT_CAPTURE_RULES|Задача: Для победы захватите флаги врагов, не дав захватить свой собственный.
+TXT_COOP_SAVE_FAILED|Совместная миссия провалена.
+TXT_COOP_SAVE_SUCCESS|Совместная миссия выполнена.
+TXT_COOP_USE_SAVE|Загрузить сохраненную совместную игру.
+TXT_DEFENSE_BUREAU_CAPTURE|Захвачено Бюро Оборонительных Операций - Все защитные сооружения производятся уже с улучшением.
+TXT_EXP1OF3|Первое из 3 расширений карты через:
+TXT_EXP2OF3|Второе из 3 расширений карты через:
+TXT_EXP3OF3|Третье из 3 расширений карты через:
+TXT_FAKE|ФАЛЬШИВКА
+TXT_KOTH_RULES|Задача: Захватите и удержите Пси-Маяк в центре, чтобы поработить врагов и победить.
+TXT_LOW_POWER|Нехватка энергии - Скорость производства снижена на 50%.
+TXT_MISSILE_BUNKER_CAP|Захвачена Ракетная Шахта - Подготавливается ракетный удар.
+TXT_OILCONTROL_RULES|КОНТРОЛЬ НЕФТИ: На карте нет руды. Единственный источник дохода - Депозитные Банки и неуязвимые Нефтевышки.
+TXT_PSYCHICBEACON_CAPTURED|Пси-Маяк захвачен - Удерживайте его до окончания активации, чтобы выиграть.
+TXT_PSYCHICBEACON_LOST|Пси-Маяк потерян.
+TXT_RELEASE|Версия
+TXT_RELEASE_NOTE_B|MO3.3.5
+TXT_SAVE_CAMP_AVAILABLE|Доступна сохраненная совместная игра.
+TXT_SILOS|Вы должны соорудить дополнительные хранилища руды.
+TXT_TECH_ACADEMY_CAPTURED|Захвачена Академия - Вся пехота производится уже в звании ветерана.
+TXT_TECH_ACADEMY_LOST|Академия потеряна.
+TXT_TECH_AIRFIELD_CAPTURED|Захвачен Гражданский Аэродром - Доступен парашютный десант.
+TXT_TECH_AIRFIELD_LOST|Гражданский Аэродром потерян.
+TXT_TECH_BASEEXP_CAPTURED|Захвачен Строительный Аванпост - Получено новое место для строительства.
+TXT_TECH_BASEEXP_LOST|Строительный Аванпост потерян.
+TXT_TECH_DEFENSE_BUREAU_CAP|Захвачено Бюро Оборонительных Операций - Все защитные сооружения производятся уже с улучшением.
+TXT_TECH_DEFENSE_BUREAU_LOST|Бюро Оборонительных Операций потеряно.
+TXT_TECH_DOCKS_CAPTURED|Захвачены Военные Доки - Все морские боевые единицы производится уже в звании ветерана.
+TXT_TECH_DOCKS_LOST|Военные Доки потеряны.
+TXT_TECH_MAINTENANCE_CAPTURED|Захвачен Центр Технического Обслуживания - Доступен быстрый ремонт зданий.
+TXT_TECH_MAINTENANCE_LOST|Центр Технического Обслуживания потерян.
+TXT_TECH_MISSILE_BUNKER_CAP|Захвачен Гражданская Ракетная Шахта - Тактическая ракета готовится к запуску.
+TXT_TECH_MISSILE_BUNKER_LOST|Гражданская Ракетная Шахта потеряна.
+TXT_TECH_SATHACK_CAPTURED|Захвачен Центр Взлома Спутников - Получен полный вид на поле боя.
+TXT_TECH_SATHACK_LOST|Центр Взлома Спутников потерян.
+TXT_TECHAERONAUTICS_CAPTURED|Захвачено Авиастроительное КБ - Вся авиация производится уже в звании ветерана.
+TXT_TECHAERONAUTICS_LOST|Авиастроительное КБ потеряно.
+TXT_TECHBANK_CAPTURED|Захвачен Гражданский Депозитный Банк - Получен источник дополнительных ресурсов.
+TXT_TECHBANK_LOST|Гражданский Депозитный Банк потерян.
+TXT_TECHHOSPITAL_CAPTURED|Захвачен Гражданский Госпиталь - Вся пехота получает автоматическое лечение.
+TXT_TECHHOSPITAL_LOST|Гражданский Госпиталь потерян.
+TXT_TECHMACHINERY_CAPTURED|Захвачен Машиностроительный Цех - Вся техника производится уже в звании ветерана.
+TXT_TECHMACHINERY_LOST|Машиностроительный Цех потерян.
+TXT_TECHMACHINESHOP_CAPTURED|Захвачена Гражданская Автомастерская - Вся техника получает авторемонт.
+TXT_TECHMACHINESHOP_LOST|Гражданская Автомастерская потеряна.
+TXT_TECHNUKE_CAPTURED|Захвачена Гражданская Атомная Электростанция - Выработка энергии увеличена.
+TXT_TECHNUKE_LOST|Гражданская Ядерная Электростанция потеряна.
+TXT_TECHOIL_CAPTURED|Захвачена Нефтевышка - Получен дополнительный источник ресурсов.
+TXT_TECHOIL_LOST|Нефтевышка потеряна.
+TXT_TECHPOWER_CAPTURED|Захвачена Гражданская Электростанция - Получен дополнительный источник энергии.
+TXT_TECHPOWER_LOST|Гражданская Электростанция потеряна.
+TXT_TECHSECRETLAB_CAPTURED|Захвачена Секретная Лаборатория - Получена новая технология.
+TXT_TECHSECRETLAB_LOST|Секретная Лаборатория потеряна.
+TXT_TECHSUPPLY_CAPTURED|Занят Бункер Снабжения - рядом с бункером будут появляться ящики с припасами.
+TXT_TECHSUPPLY_LOST|Бункер Снабжения потерян.
+NAME:CAPU|Тяжелый Солдат
+NAME:CYBOV|Киборг-Авангард
+NAME:GAHYPE|Гиперион
+NAME:NAUT|Магнитная Подлодка Наутилус
+NAME:PSYCHICWAVE|Дистанционное Управление
+NAME:WAVEACTIVE|ВНИМАНИЕ - Дистанционное Управление активировано!
+TXT_LIGHTNING_STORM_APPROACHING|ВНИМАНИЕ - Приближается грозовой шторм!
+MSG:BLACKOUTTIMER|Энергия отключена на:
+NAME:CIA|ЦРУ
+NAME:YAVNMMS|Генетические Мины
+NAME:ARND|Арни Фрэнкфюртер
+NAME:CAROAD|Бетонный Блок
+NAME:TBRUTE|Громила-Титан
+TXT_MOVIETHEATER|Захвачен Кинотеатр - А вот и киногерой!
+NAME:CAR|Гражданская Машина
+NAME:DOMINACTIVEX|ВНИМАНИЕ - Рядом с вашими позициями концентрируется большое количество ментальной энергии!
+NAME:SMAMM|Танк Супер Апокалипсис
+NAME:YANEUR|Фабрика Нейротоксина
+NAME:3ROBO|4 Роботанка
+NAME:ARRIVING|Прибытие..
+NAME:BRANC|Бранский Замок
+NAME:CATPAD|Площадка Сброса Подкреплений
+NAME:ENROUTE|В пути
+NAME:MIXER|Бетономешалка
+NAME:NAPALMSTORE|Хранилище Напалма
+NAME:REINFOPAD|Подкрепления
+TXT_TECHREINFO_CAPTURED|Захвачена Площадка Сброса Подкреплений - Ожидайте прибытия дополнительной техники.
+TXT_TECHREINFO_LOST|Площадка Сброса Подкреплений потеряна.
+NAME:CTOW|Контрольная Башня
+NAME:AETHER|Эфирный Факел
+NAME:AMBUL|Скорая Помощь
+NAME:ASW|Оспрей
+NAME:BOAT|Корабль
+NAME:BOBC|Бобкэт
+NAME:CAARMY01A|Военная Палатка
+NAME:CAARMY01B|Военная Палатка
+NAME:CABARB|Колючая Проволока
+NAME:CABUNK01A|Бетонный Бункер
+NAME:CAGARD01A|Будка Охраны
+NAME:CALA10A|Рекламный Щит Westwood
+NAME:CAMISC01A|Бочки
+NAME:CAMISC02A|Бочка
+NAME:CAMSC07A|Хижина
+NAME:CAPARS11X|Триумфальная Арка
+NAME:CAPARS12X|Собор Нотр-Дам
+NAME:CARS|Автомобиль
+NAME:CAVAL|Средний Танк Кавалер
+NAME:CAWASH18A|Фонтан
+NAME:CAWOAH|Woah!
+NAME:CMONO|Хроно Рудокоп (Разгружается)
+NAME:COTTER|Воздушная Крепость Чицкалла
+NAME:DIGG|Малый Экскаватор
+NAME:DNOBB|Бронтозавр
+NAME:DRLLTRCK|Буровая Машина
+NAME:FAORCI|Касатка (Рабочий Режим)
+NAME:FARM|Трактор
+NAME:FBOAT|Рыбацкий Корабль
+NAME:FCAR|Болид Ф-1
+NAME:FLOAD|Погрузчик
+NAME:FTRKA|Пожарная Машина
+NAME:GAGATE_A|Шлагбаум
+NAME:GAHPADR|Взлетная Полоса
+NAME:GIGA|Гигахорс
+NAME:GROOMER|Снеговыравниватель
+NAME:HFTK|Вездеход
+NAME:IRONWING|Железнокрыл
+NAME:KALOOP|Узел Турбокольца
+NAME:LCRFB|Десантный Корабль Мореход
+NAME:LIBRC|Клон Либры
+NAME:MACK|Тягач
+NAME:MTRUCK|Бигфут
+NAME:NAPSYBK|Пси-Маяк
+NAME:NATBUNKER|Быстрое Укрепление
+NAME:PICKK|Пикап
+NAME:PLOW|Снегоуборочная Машина
+NAME:PROPPL|Пропеллерный Самолет
+NAME:RDROLLER|Дорожный Каток
+NAME:REPORTE|Оценка Ситуации:
+NAME:ROLLER|Паровой Каток
+NAME:SAPCB|Десантный Корабль Зубр
+NAME:SDOZ|Малый Бульдозер
+NAME:SMOB|Снегоход
+NAME:SPORT|Спорткар
+NAME:STALL|Вертолет Жеребец
+NAME:TAXII|Такси
+NAME:TOW|Эвакуатор
+NAME:TRUCKAA|Грузовик (Пустой)
+NAME:TRUCKBB|Грузовик (с грузом)
+NAME:YABRCK|Казармы Эпсилон
+NAME:YACNSTA|Сборочный Цех Эпсилон
+NAME:YAROCKT|Ракетная Пусковая Площадка
+NAME:YAYARDA|Верфь Эпсилон
+NAME:ZEPH|САУ Зефир
+TXT_TECH_REF_CAP|Захвачен Гражданский Перерабатывающий Комбинат - Получен дополнительный пункт разгрузки комбайнов.
+TXT_TECH_REF_LOST|Гражданский Перерабатывающий Комбинат потерян.
+NAME:ABAN01|WS Logging Company
+NAME:ABAN02|Panullo Hacienda
+NAME:ABAN03|Заброшенный Завод
+NAME:ABAN04|Сити-Хол
+NAME:ABAN05|Охотничий Домик
+NAME:ABAN06|Local Inn & Lodging
+NAME:ABAN07|Церковь
+NAME:ABAN08|Заброшенный Склад
+NAME:ABAN09|Tall's Residence
+NAME:ABAN10|Denzil's Last Chance Motel
+NAME:ABAN11|Miele Manor
+NAME:ABAN12|У Кеттлера
+NAME:ABAN13|Дом Лонга
+NAME:ABAN14|Местный Магазин
+NAME:ABAN15|Дом Адама
+NAME:ABAN16|Заправка
+NAME:ABAN17|Gas Pumps
+NAME:ABAN18|Знак Заправки
+NAME:AEGIS|Крейсер Эгида
+NAME:AFRICANS|Libya
+NAME:ALL06MD|Operation: Trick or Treaty
+NAME:ALLIANCE|Korea
+NAME:ALLIGATOR|Аллигатор
+NAME:AMBU|Скорая Помощь
+NAME:AMERICANS|America
+NAME:AMMOCRAT|Ящик Боеприпасов
+NAME:APACHE|Гарпия
+NAME:ARABS|Iraq
+NAME:ATESLA|Призма-Башня
+NAME:BATTLEFORTRESS|Самоходная Крепость
+NAME:BBOARD01|Eat at Rade's Roadhouse
+NAME:BBOARD02|Drink YEO-CA Cola!
+NAME:BBOARD03|Hamburgers $.99
+NAME:BBOARD04|Visit Scenic Las Vegas
+NAME:BBOARD05|Rooms $29 a nite
+NAME:BBOARD06|Warhouse
+NAME:BBOARD07|Alkaline's Battery Superstore
+NAME:BBOARD08|Alex-gators petshop just ahead!
+NAME:BBOARD09|TacticX games rock!
+NAME:BBOARD10|WW Surf and Turf hits the spot!
+NAME:BBOARD11|Only 11 miles to Zydeko's cafe!
+NAME:BBOARD12|No escape from Archer's Asylum!
+NAME:BBOARD13|Stop in at Hewitt's hair salon
+NAME:BBOARD14|Billy Bob's Harvester school
+NAME:BBOARD15|Pannullo's hacienda es bueno
+NAME:BEAGLE|Черный Орел
+NAME:BLACKCAB|Лондонское Такси
+NAME:BORIS|Борис
+NAME:BRITISH|Great Britain
+NAME:BRUTE|Громила
+NAME:BUS|Школьный Автобус
+NAME:CA0001|Rade's Roadhouse
+NAME:CA0002|Sandberg and Son's
+NAME:CA0003|Temp Housing
+NAME:CA0004|Waystation
+NAME:CA0005|Ferbie's 4 Sale
+NAME:CA0006|Deluxe Accomodations
+NAME:CA0007|Полевой Генератор
+NAME:CA0008|Subterranean Dwelling
+NAME:CA0009|Subterranean Dwelling
+NAME:CA0010|Leary Traveller Inn
+NAME:CA0011|Резервуар с водой
+NAME:CA0012|Маяк
+NAME:CA0013|Водоочиститель
+NAME:CA0014|Наблюдательная Вышка
+NAME:CA0015|Port-A-Shack
+NAME:CA0016|Port-A-Shack Deluxe
+NAME:CA0017|Трансформатор
+NAME:CA0018|Солнечная Панель
+NAME:CA0019|Солнечная Панель
+NAME:CA0020|Солнечная Панель
+NAME:CA0021|Солнечная Панель
+NAME:CAARAY|Civilian Array
+NAME:CAARMR|Civilian Armory
+NAME:CAARMY01|Армейская Палатка
+NAME:CABANA|Кабак
+NAME:CABARN02|Сарай
+NAME:CABARR|Противотанковые Баррикады
+NAME:CABHUT|Станция Управления Мостом
+NAME:CACHIG01|Здание
+NAME:CACHIG02|Здание
+NAME:CACHIG03|Здание
+NAME:CACHIG04|Центр Ассоциаций Чикаго
+NAME:CACHIG05|Сирс-Тауэр
+NAME:CACITY01|Здание
+NAME:CACITY02|Здание
+NAME:CACITY03|Здание
+NAME:CACITY04|Здание
+NAME:CACOLO01|Академия ВВС
+NAME:CAEAST01|Истукан
+NAME:CAEGYP03|Сфинкс
+NAME:CAEUR04|Здание
+NAME:CAEUR1|Коттедж
+NAME:CAEUR2|Коттедж
+NAME:CAEURO05|Статуя
+NAME:CAFARM01|Ферма
+NAME:CAFARM02|Хранилище
+NAME:CAFARM06|Маяк
+NAME:CAFRMA|Фермерский Дом
+NAME:CAFRMB|Туалет
+NAME:CAGARD01|Будка Охранника
+NAME:CAGAS01|Заправка
+NAME:CAHOSP|Гражданский Госпиталь
+NAME:CAHSE01|Дом
+NAME:CAHSE02|Дом
+NAME:CAHSE03|Дом
+NAME:CAHSE04|Дом
+NAME:CAHSE05|Дом на колесах
+NAME:CAHSE06|Дом на колесах
+NAME:CAIND01|Фабрика
+NAME:CALA01|Mini Mall
+NAME:CALA03|Знак Голливуда
+NAME:CALA04|Амфитеатр Голливуда
+NAME:CALA05|LAX
+NAME:CALA06|Контрольная Башня LAX
+NAME:CALA07|Кинотеатр
+NAME:CALA08|Продажа Машин
+NAME:CALA09|Вечерний Магазин
+NAME:CALA10|Рекламный Щит
+NAME:CALIT01E|Light
+NAME:CALIT01N|Light
+NAME:CALIT01S|Light
+NAME:CALIT01W|Light
+NAME:CALOND04|Британский Парламент
+NAME:CALOND05|Биг Бен
+NAME:CALUNR01|Лунный Модуль
+NAME:CAMACH|Гражданская Автомастерская 
+NAME:CAMEX01|Пирамида Майя
+NAME:CAMIAM01|Отель
+NAME:CAMIAM02|Отель
+NAME:CAMIAM03|Отель
+NAME:CAMIAM04|Будка Спасателя
+NAME:CAMIAM05|Отель
+NAME:CAMIAM06|Отель
+NAME:CAMIAM07|Отель
+NAME:CAMIAM08|Мемориал Аризоны
+NAME:CAMISC01|Бочки
+NAME:CAMISC02|Бочка
+NAME:CAMISC03|Мусорка
+NAME:CAMISC04|Почтовый Ящик
+NAME:CAMISC05|Трубы
+NAME:CAMISC11|Покрышки
+NAME:CAMISC12|Тренировочная Мишень
+NAME:CAMISC13|Брошенный Танк
+NAME:CAML|Верблюд
+NAME:CAMORR05|Местечко Рика
+NAME:CAMOV01|Киноэкран
+NAME:CAMOV02|Касса
+NAME:CAMSC01|Хотдоги Мистера Ням-Ням!
+NAME:CAMSC02|Зонтики
+NAME:CAMSC04|Пляжные Полотенца
+NAME:CAMSC06|Костер
+NAME:CAMSC07|Хижина
+NAME:CAMSC10|МакБургер Конг
+NAME:CANEWY01|Здание
+NAME:CANEWY04|Статуя Свободы
+NAME:CANEWY06|Здание
+NAME:CANEWY07|Здание
+NAME:CANEWY08|Здание
+NAME:CANEWY10|Здание
+NAME:CANEWY11|Здание
+NAME:CANEWY12|Здание
+NAME:CANEWY13|Здание
+NAME:CANEWY14|Здание
+NAME:CANEWY15|Здание
+NAME:CANEWY16|Здание
+NAME:CANEWY17|Здание
+NAME:CANEWY18|Здание
+NAME:CANEWY20|Склад
+NAME:CANWY09|Здание
+NAME:CANWY22|Здание
+NAME:CANWY23|Здание
+NAME:CANWY24|Здание
+NAME:CANWY25|Здание
+NAME:CANWY26|Здание
+NAME:CAOILD|Нефтевышка
+NAME:CAOUTP|Tech Outpost
+NAME:CAPARK01|Скамейка
+NAME:CAPARK02|Качели
+NAME:CAPARK03|Карусель
+NAME:CAPARS02|Здание
+NAME:CAPARS08|Здание
+NAME:CAPARS09|Здание
+NAME:CAPARS10|Здание
+NAME:CAPARS13|Здание
+NAME:CAPARS14|Здание
+NAME:CAPOL01E|Телеграфный Столб
+NAME:CAPOL01N|Телеграфный Столб
+NAME:CAPOL01S|Телеграфный Столб
+NAME:CAPOL01W|Телеграфный Столб
+NAME:CAPRS04|Здание
+NAME:CAPRS05|Здание
+NAME:CAPRS06|Здание
+NAME:CAPRS07|Телефонная Будка
+NAME:CAPYR01|Пирамида
+NAME:CAPYR02|Пирамида
+NAME:CAPYR03|Пирамида
+NAME:CARGOCAR|Грузовая Тележка
+NAME:CARRIER|Авианосец
+NAME:CARRIERB|Авианосец Нимиц
+NAME:CARUS01|Собор Василия Блаженного
+NAME:CARUS03|Кремль
+NAME:CARUS04|Здание
+NAME:CARUS05|Здание
+NAME:CARUS06|Здание
+NAME:CARUS07|Красная Площадь
+NAME:CASANF04|Мост Золотые Ворота
+NAME:CASANF05|Алькатрас
+NAME:CASEAT01|Башня Спейс-Нидл
+NAME:CASEAT02|Кампус МассивСофт
+NAME:CASIN03|Знак Стройки
+NAME:CASLAB|Гражданская Лаборатория
+NAME:CASTL01|Здание
+NAME:CASTL02|Здание
+NAME:CASTL03|Здание
+NAME:CASTL04|Арка
+NAME:CASTL05|Стадион
+NAME:CASTRT05|Автобусная Остановка
+NAME:CASWST01|Здание
+NAME:CASYDN02|Бургеры МакРу
+NAME:CASYDN03|Здание Оперы Сиднея
+NAME:CATECH01|Центр Связи
+NAME:CATEXS01|Здание
+NAME:CATEXS02|Аламо
+NAME:CATEXS03|Здание
+NAME:CATEXS04|Здание
+NAME:CATEXS05|Здание
+NAME:CATEXS06|Офисное Здание
+NAME:CATEXS07|Офисное Здание
+NAME:CATEXS08|Офисное Здание
+NAME:CATIME02|Машина Времени
+NAME:CATRAN01|Усыпальница
+NAME:CATRAN03|Замок Юрия
+NAME:CATS01|Хранилище
+NAME:CAURB01|Телефонная Будка
+NAME:CAURB02|Пожарный Гидрант
+NAME:CAURB03|Прожектор
+NAME:CAUSFGL|Флаг США
+NAME:CAWA2A|Пентагон
+NAME:CAWASH01|Белый Дом
+NAME:CAWASH03|Здание
+NAME:CAWASH04|Здание
+NAME:CAWASH05|Здание
+NAME:CAWASH07|Здание
+NAME:CAWASH08|Здание
+NAME:CAWASH10|Здание
+NAME:CAWASH11|Здание
+NAME:CAWASH12|Мемориал Вашингтона
+NAME:CAWASH13|Здание
+NAME:CAWASH15|Мемориал Линкольна
+NAME:CAWASH16|Замок Смитсониан
+NAME:CAWASH17|Смитсоновский Исторический Музей
+NAME:CAWASH18|Фонтан
+NAME:CAWASH19|Монумент Победы При Иводзиме
+NAME:CAWSH08|Здание
+NAME:CAWSH09|Здание
+NAME:CAWSH10|Здание
+NAME:CAWSH12|Мемориал Джорджа Вашингтона
+NAME:CAWSH14|Мемориал Джефферсона
+NAME:CAWT01|Водонапорная Башня
+NAME:CBLC|Вагон Фуникулера
+NAME:CDEST|Корабль Береговой Охраны
+NAME:CHAOSDRONE|Дрон Хаоса
+NAME:CHRONO2|Хроносдвиг II
+NAME:CITY01|Connelly Court Apts.
+NAME:CITY02|Lightner's Luxury Suites
+NAME:CITY03|Офисное Здание
+NAME:CITY04|Westwood Stock Exchange
+NAME:CITY05|Daily Sun Times
+NAME:CITY06|YEO-CA Cola Corp.
+NAME:CITY07|Urban Housing
+NAME:CITY08|Yee's Discount Liquor
+NAME:CITY09|Заброшенный Склад
+NAME:CITY10|Urban Storefront
+NAME:CITY11|Ambrose Lounge
+NAME:CITY12|Bostic Tower
+NAME:CITY13|Hewitt Hair Salon
+NAME:CITY14|Деловые Офисы
+NAME:CITY15|Второй Национальный Банк
+NAME:CITY16|Highrise Hotel
+NAME:CITY17|The Projects
+NAME:CITY18|Archer Asylum
+NAME:CITY19|Fill'er Up-Pump'N'Go
+NAME:CITY20|Gas Pump
+NAME:CITY21|Gas Station Sign
+NAME:CITY22|Церковь
+NAME:CIV1|Гражданский
+NAME:CIV2|Гражданский
+NAME:CIV3|Гражданский
+NAME:CIVAN|Хроно Иван
+NAME:CIVILIAN_PLANE|Пассажирский Самолет
+NAME:CLEG|Хроно Легионер
+NAME:CMIN|Хроно Рудокоп
+NAME:CONA|Экскаватор
+NAME:COW|Корова
+NAME:CRUISESHIP|Круизный Корабль
+NAME:CTDAM|Дамба
+NAME:CTECH|Техник
+NAME:CTVEGA|Vega's Pyramid
+NAME:CUBANFLAG|Флаг Кубы
+NAME:DEST|Эсминец
+NAME:DLPH|Дельфин
+NAME:DMISL|Ракета
+NAME:DNOA|Ти-Рекс
+NAME:DNOB|Брахиозавр
+NAME:DOLY|Тележка Камеры
+NAME:DRED|Дредноут
+NAME:DREDB|Dreadnought +3
+NAME:DRON|Дрон Ужаса
+NAME:E1|Солдат
+NAME:E2|Призывник
+NAME:EINS|Эйнштейн
+NAME:EINSTEINLAB|Лаборатория Эйнштейна
+NAME:FLAKT|Зенитчик
+NAME:FORCESHIELD|Силовой Щит
+NAME:FRANK01|Для этого режима игры нужно больше одного игрока.
+NAME:FRENCH|France
+NAME:FRENCHFLAG|Флаг Франции
+NAME:FTRK|Пожарная Машина
+NAME:GAARTY|Deployed Artillery
+NAME:GACTWR|Component Tower
+NAME:GADPSA|Deployed Sensor Array
+NAME:GAFWLL|French Wall
+NAME:GAGAP|Генератор Разрыва
+NAME:GAGREEN|Зеленое Здание
+NAME:GAICBM|Deployed ICBM
+NAME:GAKODK|Kodiak
+NAME:GAOLDCC1|Старый Сборочный Цех
+NAME:GAOLDCC2|Old Temple
+NAME:GAOLDCC3|Old Weapons Factory
+NAME:GAOLDCC4|Old Refinery
+NAME:GAOLDCC5|Old Advanced Power Plant
+NAME:GAOLDCC6|Old Silos
+NAME:GAPAVE|Pavement
+NAME:GAPILE|Казармы Альянса
+NAME:GAPILL|Д.О.Т.
+NAME:GAPLUG1|Threat Rating Node
+NAME:GAPLUG2|Seeker Control
+NAME:GAPLUG3|Ion Cannon Uplink
+NAME:GAREFN|Перерабатывающий Комбинат Альянса
+NAME:GAROCK|RPG Upgrade
+NAME:GASAND|Мешки с Песком
+NAME:GASILO|Хранилище
+NAME:GASPOT|Light Tower
+NAME:GATE1|Шлагбаум
+NAME:GATICK|Deployed Tick Tank
+NAME:GAVULC|Vulcan Cannon
+NAME:GERMANFLAG|Флаг Германии
+NAME:GERMANS|Germany
+NAME:GLOBE|Театр
+NAME:GRINDER|Дробилка
+NAME:HORNET|Шершень
+NAME:HORV|Боевой Рудокоп
+NAME:HTNK|Танк Носорог
+NAME:HVR|Hover Monkey
+NAME:HYD|Морской Скорпион
+NAME:INDUSTRIALPLANT|Промышленное Предприятие
+NAME:INIT|Посвященный
+NAME:INTROMOVIE|Intro Movie
+NAME:ION|Ion Cannon
+NAME:IVAN|Безумный Иван
+NAME:JUMPJET|Ракетчик
+NAME:LASHER|Танк Надзиратель
+NAME:LIMO|Лимузин
+NAME:LOCOMOTIVE|Локомотив
+NAME:LUNR|Космонавт
+NAME:MAGNETRON|Магнетрон
+NAME:MAYAN|Пирамида Майя
+NAME:MAYANRUINS|Руины Майя
+NAME:MAYANTEMPLE|Храм Майя
+NAME:MNTRUSH|Mount Rush More (2-5)
+NAME:MONKEY|Обезьяна
+NAME:MUMY|Мумия
+NAME:NAAPWR|Advanced Power Plant
+NAME:NABNKR|Боевой Бункер
+NAME:NACLON|Чаны Клонирования
+NAME:NACNST|Советский Сборочный Цех
+NAME:NAFLAK|Зенитка
+NAME:NAFNCE|Laser Fence Section
+NAME:NAHAND|Советские Казармы
+NAME:NALASR|Охранный Пулемет
+NAME:NAPOST|Узел Лазерного Заграждения
+NAME:NAPSYA|Пси-Усилитель
+NAME:NAPSYBB|Пси-Маяк
+NAME:NAPULS|EMP Cannon
+NAME:NAREFN|Советский Перерабатывающий Комбинат
+NAME:NATBNK|Танковый Бункер
+NAME:NATECH|Советская Военная Лаборатория
+NAME:NAWAST|Waste Facility
+NAME:NAWEAP|Советский Военный Завод
+NAME:NEUTRAL|Гражданский
+NAME:ORCA|Харриер
+NAME:ORCATRAN|Black Oops Transport BAD VERSION
+NAME:PICK|Грузовик
+NAME:PIGCAR|Полицейская Машина
+NAME:POLARBEAR|Белый Медведь
+NAME:PRES|Президент
+NAME:PROPA|Грузовик Пропаганды
+NAME:REDBUS|Автобус
+NAME:RMNV|Премьер Романов
+NAME:ROBOTANK|Роботанк
+NAME:RVIEW|Remote Viewing
+NAME:SECRETSERVICE|Секретный Агент
+NAME:SHK|Тесла Солдат
+NAME:SIEGECHOPPER|Осадный Вертолет
+NAME:SMIN|Рудокоп-рабовладелец
+NAME:SNOW|Снежный
+NAME:SPECIAL|JP
+NAME:SPY|Шпион
+NAME:SPYP|Самолет-шпион
+NAME:SQD|Гигантский Кальмар
+NAME:SREF|Призма Танк
+NAME:TANYA|Таня
+NAME:TAXI|Такси
+NAME:TEMPERATE|Умеренный
+NAME:TESLA|Тесла-Катушка
+NAME:TESTERSMAP|Tester's Map
+NAME:TEXAS_DMZ|ДМЗ Техаса
+NAME:TRAINCAR|Тележка Поезда
+NAME:TRNSPORT|Carryall
+NAME:TUGBOAT|Буксир
+NAME:UKFLAG|Флаг Великобритании
+NAME:URBAN|Городской
+NAME:V3|Пусковая установка Фау-3
+NAME:V3ROCKET|Ракета Фау-3
+NAME:VIRUS|Вирус
+NAME:VLADBOAT|Флагман Владимира
+NAME:WEEDGUY|Chem Spray Infantry
+NAME:WIMPS|No Wimps (2-4)
+NAME:YCAB|Желтый Кэб
+NAME:YMCV|МСЦ Юрия
+NAME:YURIRAD|Пси-Радар
+NAME:ZEP|Дирижабль Киров
+NAME:GAENGN|Разбившийся Парадокс
+NAME:ITNK|Танк Инфектор
+NAME:NAGIGA|Гигакатушка
+NAME:NATBNKK|Танковый Бункер
+NAME:YASPAT|Защитная Система Спата
+NAME:CHENYING|Чен Инг
+NAME:MANTA|Хвостокол
+NAME:YAHCR2|Платформа Геена
+NAME:CAOILR|Нефтеочистительный Завод
+NAME:CAOILS|Нефтерезервуар
+NAME:CAOPIP|Нефтепровод
+NAME:MECHA|Тенгу
+NAME:ROCONTR|Пульт Управления Ракетой
+NAME:YAHIVE|Гнездо Диббуков
+TXT_SAVING_GAME|Игра сохраняется. Подождите...
+NAME:CAGREFGL|Флаг Греции
+NAME:CALCFGL|Флаг Конфедерации
+NAME:CASPAFGL|Флаг Испании
+NAME:CREAM|Фургончик Мороженого
+NAME:DESTISIDE|Выбрать этот отряд в качестве основного.
+NAME:DEVOD|Колосс (Режим ПВО)
+NAME:DHANDL|Рука Эрешкигаль
+NAME:DHANDR|Рука Эрешкигаль
+NAME:GABSTA|Экспериментальная Станция Отключения
+NAME:GAMGG|Развернутый Мобильный Генератор Разрыва
+NAME:HARBSTRIKE|Авиаудар Предвестников
+NAME:HUNTERSEEKERB|Дрон Охотник
+NAME:ICBMROCKET|Ракета Тополь-М
+NAME:NARECL|Восстановительный Завод
+NAME:REPORTX|Сообщение от ???:
+NAME:SATHACK|Взлом Спутников
+NAME:YABOLT|Пси-Преобразователь
+NAME:GACRYO|Криомина
+NAME:GACRYOS|Криомины
+NAME:TNKKIL|Убийца Танков
+TXT_POWERUNIT|Ï
+TXT_DEVELOPMENT|Разработка
+TXT_DUMP_AI_BASE_PLAN|Выгрузить значения AI Base Plan
+TXT_DUMP_AI_BASE_PLAN_DESC|Сохраняет парамерты планирования базы ИИ в debug.log.
+TXT_DUMP_MEMORY|Выгрузить память процесса
+TXT_DUMP_MEMORY_DESC|Сохраняет память процесса в debug.log.
+TXT_DUMP_TYPES|Выгрузить списки типов
+TXT_DUMP_TYPES_DESC|Сохраняет текущие списки типов в debug.log.
+TXT_FPS_COUNTER|Счетчик FPS
+TXT_FPS_COUNTER_DESC|Включает счетчик FPS, отображающий текущую и среднюю скорость обновления кадра.
+TXT_GAME_WAS_SAVED|Миссия успешно сохранена.
+TXT_MAP_SNAPSHOT|Снимок карты
+TXT_MAP_SNAPSHOT_DESC|Сохраняет текущее состояние карты в папку с игрой.
+TXT_TECH_SHIELDGEN_CAPTURED|Захвачен Щитогенератор - Техника в зоне действия получит дополнительную защиту.
+TXT_TECH_SHIELDGEN_LOST|Щитогенератор потерян.
+TXT_TOGGLE_POWER|Управление Энергией
+TXT_TOGGLE_POWER_DESC|Позволяет включать или выключать здания, управляя потреблением энергии.
+NAME:AENGINEER|Инженер Альянса
+NAME:ARTY|Артиллерия
+NAME:BCNTR|Черный Штурмовой Шагоход Центурион
+NAME:BLOWER|Снегосдуватель
+NAME:BUSRED|Автобус
+NAME:CAACOM|Вышка Связи
+NAME:CAANNN|Благовещенский Собор
+NAME:CAAUFLG|Флаг Австралии
+NAME:CABARRX|Противотанковый Еж
+NAME:CABCRN|Портовый Кран
+NAME:CABLSH|Большой Театр
+NAME:CABSTOP|Автобусная Остановка
+NAME:CACABL|Опора
+NAME:CACITY|Офисное Здание
+NAME:CACRAN|Портовый Кран
+NAME:CADORM|Успенский Собор
+NAME:CADSTA|Овальный Стадион
+NAME:CADWAR|Склад
+NAME:CAEAFLG|Флаг Евросоюза
+NAME:CAEAST02X|Бюст Юрия
+NAME:CAEGYP|Пирамида
+NAME:CAETNT|Палатки
+NAME:CAEURO05X|Статуя Священника
+NAME:CAFARM06F|Маяк
+NAME:CAGAS02|Бензоколонка
+NAME:CAGAS03|Указатель Заправки
+NAME:CAGCUG|Гаражи Донки
+NAME:CAHALL02|Армейский Склад
+NAME:CAHALL02N|Армейский Склад
+NAME:CAHBNK|Вертолетный Бункер
+NAME:CAHHFLG|Флаг Головы Акулы
+NAME:CAHOLO|Голографический Щит Фоэн
+NAME:CAHPIP|Рампа
+NAME:CAHSE|Дом
+NAME:CAIDFGL|Флаг Исландии
+NAME:CAIND01X|Фабрика
+NAME:CAJAPA|Здание
+NAME:CAJARC|Тории
+NAME:CAKRAR|Арсенал Московского Кремля
+NAME:CAKRSN|Сенатский Дворец
+NAME:CALA01X|Мелочевка Кигана
+NAME:CALA03X|Знак Голливуда
+NAME:CALA04X|Голливудская Чаша
+NAME:CALA10B|All Your Base Are Belong To Us
+NAME:CALBFLG|Флаг Последнего Бастиона
+NAME:CALUNR02|Флаг США
+NAME:CAMHME|Дом На Колесах
+NAME:CAMINF|Обогатительный Комбинат
+NAME:CAMOV01X|Киноэкран - Бананы
+NAME:CAMOV03|Киноэкран - Муравьи
+NAME:CAMOV04|Киноэкран - Westwood
+NAME:CAMOV05|Киноэкран - Советская Европа
+NAME:CAMOV06|Киноэкран - Ядерные Испытания
+NAME:CAMOV07|Киноэкран - Погоня
+NAME:CAMSC02X|Зонты
+NAME:CAMSC04X|Пляжные Полотенца
+NAME:CAMSC12|Учебная Мишень
+NAME:CAMSC14|Факел
+NAME:CAMSC15|Деревянный Факел
+NAME:CAMXFLG|Флаг Мексики
+NAME:CANEWY20X|Склад
+NAME:CANPLM|Хранилище Напалма
+NAME:CANWFGL|Флаг Норвегии
+NAME:CAOFFC|Офисы Донки
+NAME:CAONIO|Луковичная Арена
+NAME:CAORAN|Арбузная Арена
+NAME:CAPARKB|Скамейка
+NAME:CAPARS01A|Эйфелева Башня
+NAME:CAPFFLG|Флаг Тихоокеанского Фронта
+NAME:CAPICN01X|Столик
+NAME:CAPIER|Пирс Маяка
+NAME:CAPROP|Стальные Бочки
+NAME:CAPYRA|Пирамида Хеопса
+NAME:CARDBK|Дорожное Заграждение
+NAME:CARPUB|Паб Донки
+NAME:CARRIERE|Авианосец Энтерпрайз
+NAME:CARUS01X|Собор Василия Блаженного
+NAME:CARUS03X|Большой Кремлевский Дворец
+NAME:CARUS07X|Лобное Место
+NAME:CASANF04X|Мост Золотые Ворота
+NAME:CASANF16|Маяк
+NAME:CASBAN|Знамя Ячейки Скорпион
+NAME:CASBUN|Бункер Снабжения
+NAME:CASHLD|Гражданский Щитогенератор
+NAME:CASIN03E|Знак Строительных Работ
+NAME:CASSUN|Голографический Экран Заката
+NAME:CASTAT01|Статуя
+NAME:CASTEIB|Лондонский Университет ШтейнТек
+NAME:CASTEID|Университет ШтейнТек
+NAME:CASTL04X|Арка Сент-Луиса
+NAME:CASTL05X|Стадион
+NAME:CASTOF|Офисы ШтейнТек
+NAME:CASWFGL|Флаг Швеции
+NAME:CATESL|Брошенный Реактор
+NAME:CATIMEX|Машина Времени
+NAME:CATRAN01X|Склеп
+NAME:CATRAN03X|Трансильванский Замок
+NAME:CAURB03B|Прожектор
+NAME:CAWA2AX|Пентагон
+NAME:CAWCFLG|Флаг Крыльев Коронии
+NAME:CAWT|Водонапорная Башня
+NAME:CAWT01C|Водонапорная Башня
+NAME:CAWTXS|Добро Пожаловать В Техас
+NAME:CHAOSTOUCH|Касание Хаоса
+NAME:COMBINE|Комбайн
+NAME:CONTP|Передвижная Платформа
+NAME:CONTR|Автокран
+NAME:COON|Полоскун
+NAME:CRYOSHOT|Криоудар
+NAME:CRYOSPEAR|Криокопье
+NAME:DBOAT|Корабль-Бомба Москит
+NAME:DESTH|Эсминец Горизонт
+NAME:DIST|Расщепитель
+NAME:DREDK|Дредноут Кузнецов
+NAME:DTRK|Самосвал
+NAME:ELEVATOR|Подъемник
+NAME:ELITERESERVES|Элитные Резервы
+NAME:EMC1|Спасательная Машина
+NAME:ENGITEAM|Команда Инженеров
+NAME:ERESREADY|Элитные Резервы закончились.
+NAME:FENCE|Забор
+NAME:GADEPO|Арсенал
+NAME:GAFWLLS|Стена Цитадели
+NAME:GAHYBR|Гибридная Башня
+NAME:GASTAS|Координационный Узел
+NAME:GAWALLS|Бетонная Стена
+NAME:GAYARDS|Верфь Альянса
+NAME:GOLDENWIND|Золотой Ветер
+NAME:GRAV|Гравитрон
+NAME:GRND|Передвижная Дробилка
+NAME:HEPH|Стражник Ганзир
+NAME:HIJACKERS|Угонщики
+NAME:HORNETE|Шершень
+NAME:JEEPP|Джип
+NAME:JUDGEMENT|Приговор
+NAME:KSNK|Тяжелый Танк
+NAME:LEVIA|Вертодрон
+NAME:LIMOW|Лимузин
+NAME:LOGL|Погрузчик Бревен
+NAME:LONGBOW|Лонгбоу
+NAME:MAMU|Танк Мамонт
+NAME:MAYANP|Призма Майя
+NAME:MAYANRUIN|Руины Майя
+NAME:MOONDROP|Лунный Десант
+NAME:MVAN|Минивэн
+NAME:NAPSYD|Развалины Пси-Усилителя
+NAME:NARDRD|Улучшенная Радарная Башня
+NAME:NATTCH|Переделанный Технологический Центр
+NAME:NATUNE|Вход В Туннель
+NAME:NATUNH|Узел Туннельной Сети
+NAME:NAWALLS|Стена Крепости
+NAME:NAYARDS|Советская Верфь
+NAME:PASPLN|Пассажирский Самолет
+NAME:PSYCHICFLASH|Пси-Вспышка
+NAME:PU|П
+NAME:REGENDRUGS|Стимуляторы Регенерации
+NAME:RJAM|Глушитель Радаров
+NAME:RUINER|Губитель
+NAME:SA|Советский Агент
+NAME:SCRG|Хлыст
+NAME:SCTR|Ракетовоз
+NAME:SHINBOT|Дециматор Шин-Цуруги
+NAME:SHOCK|Тесла-Штурмовик
+NAME:SIREN|Фрегат Сирена
+NAME:SUBX|Боевая Подлодка Тайфун
+NAME:SWAT1|Грузовик SWAT
+NAME:SWAT2|Фургон SWAT
+NAME:TRKO|Грузовик
+NAME:WARRIG|Боевой Бурильщик
+NAME:WIDOWA|Черная Вдова Альфа
+NAME:WONDERDRUGS|Чудо-Стимуляторы
+NAME:YACOMDS|Командный Центр Эпсилон
+NAME:YAMREF|Развернутый Боевой Бурильщик
+NAME:YAOMGA|Узловой Шпиль
+NAME:YARCON|Пульт Управления Ракетой
+NAME:YATUNL|Туннель Чумных Клещей
+NAME:YAVULT|Камера Синтеза
+NAME:BLDZ|Бульдозер
+NAME:BOOMCAR|Железнодорожный Кран
+NAME:BOXCAR|Грузовой Вагон
+NAME:BTRUCK|Грузовик
+NAME:CABRFLG|Флаг Бразилии
+NAME:CABSFLG|Флаг Биссау
+NAME:CACAFLG|Флаг Канады
+NAME:CAFNFLG|Флаг Финляндии
+NAME:CAHBAN|Знамя Штаба Эпсилон
+NAME:CAIRFLG|Флаг Ирландии
+NAME:CAJTAL|Присоединяйтесь к Альянсу!
+NAME:CAKIND|Рекламный Щит Канегава Индастриз
+NAME:CAKNIN|Рекламный Щит ФьючерТек
+NAME:CAMCFLG|Флаг Морокко
+NAME:CAMPER|Автодом
+NAME:CAPBAN|Знамя Пси-Корпуса
+NAME:CASGFLG|Флаг Сингапура
+NAME:CASTCH|Рекламный Щит ШтейнТек
+NAME:CATIME02X|Машина Времени
+NAME:CATRFLG|Флаг Турции
+NAME:CAZOPH|Красная Угроза!
+NAME:CEASEFIRE|Перемирие
+NAME:CIVP|Транспортный Самолет
+NAME:CTCAR|Контейнер
+NAME:FIAT|Малыш
+NAME:FLATCAR|Платформа
+NAME:GACPIL|Замаскированный ДОТ
+NAME:KOREAFLAGX|Флаг Южной Кореи
+NAME:LYBIAFLAGG|Флаг Ливии
+NAME:PILL|ДОТ
+NAME:PSOLDIER|Пси-Солдат
+NAME:REJU|Покровитель
+NAME:SCOMA|Сталкер-Коммандо
+NAME:SELECT|Выбрать
+NAME:TRINCAR|Вагон Поезда
+NAME:YADYNA|Динамо Разума
+NAME:YTOWER|Башня Юрия
+NAME:CAAEFLG|Флаг Эмиратов
+NAME:CAINDFLG|Флаг Индонезии
+NAME:CAINFLG|Флаг Индии
+NAME:CAKZFLG|Флаг Казахстана
+NAME:CANGFLG|Флаг Нигерии
+NAME:CAPEFLG|Флаг Перу
+NAME:CAPHFLG|Флаг Филиппин
+NAME:CAVEFLG|Флаг Венесуэлы
+NAME:GACSPHH|Хроносфера
+NAME:NASAMM|ЗРК Патриот
+NAME:CAFBRL|Бочка
+NAME:CANCON|Наноконтейнер
+NAME:BOO|Привидение
+NAME:CABRFC|Кирпичный Забор
+NAME:WAT|???
+NAME:CASWLL|Каменная Стена
+NAME:COPA|Прототип Апокалипсиса
+NAME:CACOOL|Криоагент
+NAME:CACRTK|Криорезервуар
+NAME:CAGLOB|Гологлобус
+TXT_GUARD|Охранять Место
+NAME:BOO|Призрак
+NAME:CACAPP|Хранилище Руды
+NAME:DEVIL|Красный Дьявол
+TIP:GUARD|Режим охраны
+MSG:CANNOTFIRE|Активация отменена.
+NAME:CABRTB|Барный Столик
+NAME:FAAAAVAL|Так и знал, что ты полезешь менять Испаритель. Иди лучше займись чем-нибудь действительно полезным.
+TXT_COST_LABEL|$
+TXT_PWR_LABEL|?
+TXT_TIME_LABEL|?
+GUI:MAINMENU|
+NAME:AMMOCRATES|Ящики Боеприпасов
+NAME:CABLUL|Голубой Сигнал
+NAME:CADKFLG|Флаг Дании
+NAME:CAFMSC01|Неоновый Факел
+NAME:CAFMSC02|Неоновая Колонна
+NAME:CAFMSC04|Неоновая Пыль
+NAME:CAFMSC05|Неоновый Куб
+NAME:CAFOOT|Пешеходный Мостик
+NAME:CAGRNL|Зелёный Сигнал
+NAME:CAJAIL|Тюрьма
+NAME:CAMISC05X|Трубы
+NAME:CAMPG|Полевой Электрогенератор
+NAME:CANMINB|Морская ЭМИ-мина
+NAME:CANTHR|Нанонити
+NAME:CANTOW|Неоновая Башня
+NAME:CANZFLG|Флаг Новой Зеландии
+NAME:CAPKFLG|Флаг Пакистана
+NAME:CAREDL|Красный Сигнал
+NAME:CASSFLG|Флаг КША
+NAME:CASTAIR|Лестница
+NAME:CASTSGN|Знак ШтейнТек
+NAME:CATCSK|Канистры Террановы
+NAME:CATRBN|Ветровая Турбина
+NAME:CAUAFLG|Флаг Украины
+NAME:CAVNFLG|Флаг Вьетнама
+NAME:CAWELL|Фонтан
+NAME:CAWSTT|Панель Управления
+NAME:COND|Кондор
+NAME:DECOYSQUADRON|Обманная Эскадрилья
+NAME:DECOYTEAM|Обманный Отряд
+NAME:DYBTR|Диббук-Транспорт
+NAME:ENEMYAIR|Вражеская Авиация
+NAME:ESDR|Созерцатель
+NAME:FABARR_D|Улучшение Казарм: Протокол "Нетраннер"
+NAME:FADBAY|Зона Погрузки Транспортника
+NAME:FARWAL|Укреплённая Стена
+NAME:FATURB|Трансформатор
+NAME:FSPEC|Специалист Фоэн
+NAME:GACIRC|Хроно-Контур
+NAME:GACOND|Энергопроводящий Узел Парадокса
+NAME:GLACIALSCREEN|Ледяной Щит
+NAME:IRRADIATEBETA|Облучение β-типа
+NAME:IRRADIATEGAMMA|Облучение γ-типа
+NAME:KINGSNAKES|Короли Небес
+NAME:MADMINE|Мина M.A.D.
+NAME:MADU|Танк M.A.D.
+NAME:NADIST|Расщепитель
+NAME:NANRCTUP|Улучшение Ядерного Реактора: Реактор-Конвертер
+NAME:NAPSYB2|Пси-Маяк
+NAME:NOTHING|
+NAME:NUCLEARPATH|Ядерный Путь
+NAME:PACKATTACK|Стайная Атака
+NAME:PALADINAID|Подкрепления Паладинов
+NAME:PROS|Обращённый
+NAME:PSYCHICFLASHB|Супер Пси-Вспышка
+NAME:RADATTACK|Грязная Атака
+NAME:REAP|Корвет Жнец
+NAME:RELEASE|Запуск
+NAME:REPU|Репульсор
+NAME:ROBO|Роботанк
+NAME:SANDBAGS|Мешки с Песком
+NAME:SAVG|Дикарь
+NAME:SDRNS|Ремонтные Дроны
+NAME:SENT|Часовой
+NAME:SNAKE|Королевская Змея
+NAME:UMIN|Ультра-Рудокоп
+NAME:UMON|Ультра-Рудокоп (разгружается)
+NAME:WASP|Неоновая Оса
+NAME:WASTE|Захоронщик
+NAME:YAMAGN|Магнитный Узел
+NAME:YASHRD|Турель Измельчитель
+NAME:YAULAB|Подземная Лаборатория
+NAME:YBLABX|Цитадель Пандоры
+THEME:RA2200METER|RA2: 200 Meters
+THEME:RA2BLOWITUP|RA2: Blow It Up
+THEME:RA2BRAINFRE|RA2: Brain Freeze
+THEME:RA2BULLY|RA2: Bully Kit
+THEME:RA2BURN|RA2: Burn
+THEME:RA2DECEIVER|RA2: Deceiver
+THEME:RA2DEFEND|RA2: Defend The Base
+THEME:RA2DESTROY|RA2: Destroy
+THEME:RA2DROK|RA2: Drok
+THEME:RA2EAGLEHUN|RA2: Eagle Hunter
+THEME:RA2FORTIFIC|RA2: Fortification
+THEME:RA2GRINDER|RA2: Grinder
+THEME:RA2HM2|RA2: HM2
+THEME:RA2INDEEP|RA2: In Deep
+THEME:RA2INDUSTRO|RA2: Industrofunk
+THEME:RA2JANK|RA2: Jank
+THEME:RA2MOTORIZE|RA2: Motorize
+THEME:RA2OPT|RA2: Option
+THEME:RA2OPTIONX|RA2: Option X
+THEME:RA2PHATATTA|RA2: Phat Attack
+THEME:RA2POWER|RA2: Power
+THEME:RA2SCO|RA2: Score
+THEME:RA2SCOREX|RA2: Score X
+THEME:RA2TACTICS|RA2: Tactics
+THEME:RA2TENSION|RA2: Tension
+THEME:RA2TRANCELV|RA2: Trance L. Vania
+TXT_CREDIT|$
+TXT_GUARD|Охранять Место
+TXT_NEXT_IDLE_HARVESTER|Следующий Рудокоп
+TXT_NEXT_IDLE_HARVESTER_DESC|Выбрать следующий незанятый рудокоп.
+TXT_POWER|?
+TXT_TIME|?
+NAME:INFC|Зараженный
+TXT_HARV|⛏
+NAME:NARADRB|Радарная Башня

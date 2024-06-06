@@ -1,3 +1,5 @@
 *.bik
+PreBuild/
 Build/
+CustomCompileFiles/MOV/expandmo98_Vision/
 CustomCompileFiles/expandmo90/
