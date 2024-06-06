@@ -1,5 +1,5 @@
 @echo off
-chcp 65001
+chcp 65001 > nul
 : git config core.autocrlf false [fix]
 title MOVision_Builder_OnlyAudio
 echo Mental Omega Vision Audio

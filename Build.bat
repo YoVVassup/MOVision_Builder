@@ -1,14 +1,15 @@
 @echo off
-chcp 65001
+chcp 65001 > nul
 : git config core.autocrlf false [fix]
-title MOVision_Builder
-echo Mental Omega Vision
-echo.
 
 : Обязательная предварительная сборка
 echo Ожидание завершения предварительной сборки...
 echo.
 call PreBuild.bat
+echo.
+
+title MOVision_Builder
+echo Mental Omega Vision
 echo.
 
 : Очистка папки Build 
