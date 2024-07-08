@@ -3743,7 +3743,7 @@ PlayerControl=no
 [Basic]
 Name=Red_Dawn
 Brief=<none>
-Intro=S01_f00e
+Intro=s01_f00e
 Theme=No theme
 Player=Player House
 Percent=0

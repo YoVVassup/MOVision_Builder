@@ -4414,7 +4414,7 @@ PlayerControl=no
 
 [Basic]
 Name=Liberty
-Brief=A06_f00e
+Brief=a06_f00e
 Theme=Power
 Player=Player House
 Percent=0

@@ -5579,7 +5579,7 @@ b=1,4,1,0D15B59C,0,0,0,0,A
 0A95ED7C=8,99,7,_Amb_OceanHeavy,0,0,0,0,CB,99,7,_Amb_OceanHeavy,0,0,0,0,R,99,7,_Amb_OceanHeavy,0,0,0,0,T,99,7,_Amb_OceanHeavy,0,0,0,0,S,99,7,_Amb_OceanHeavy,0,0,0,0,CC,99,7,_Amb_OceanHeavy,0,0,0,0,CD,99,7,_Amb_OceanHeavy,0,0,0,0,W,99,7,_Amb_OceanHeavy,0,0,0,0,BB
 0A95F8BC=7,99,7,_Amb_OceanHeavy,0,0,0,0,V,99,7,_Amb_OceanHeavy,0,0,0,0,AS,99,7,_Amb_OceanHeavy,0,0,0,0,AB,99,7,_Amb_OceanHeavy,0,0,0,0,AC,99,7,_Amb_OceanHeavy,0,0,0,0,AU,99,7,_Amb_OceanHeavy,0,0,0,0,X,99,7,_Amb_OceanHeavy,0,0,0,0,AP
 0A95FBBC=2,99,7,_Amb_OceanLight,0,0,0,0,BJ,99,7,_Amb_OceanLight,0,0,0,0,BM
-0A9CD77C=5,112,0,0,0,0,0,0,BL,19,7,CameraSwitch,0,0,0,0,A,117,0,87,0,0,0,0,A,53,2,0C9771AC,0,0,0,0,A,46,0,0,0,0,0,0,A
+0A9CD77C=5,112,0,0,0,0,0,0,BL,19,7,CameraSwitch,0,0,0,0,A,117,0,83,0,0,0,0,A,53,2,0C9771AC,0,0,0,0,A,46,0,0,0,0,0,0,A
 0AD61B0C=1,56,0,19,0,0,0,0,A
 0AD71F3C=1,113,0,14,0,0,0,0,A
 0AD7FBAC=4,7,1,0879C3EC,0,0,0,0,A,7,1,087A247C,0,0,0,0,A,7,1,087A223C,0,0,0,0,A,7,1,087AA6AC,0,0,0,0,A
@@ -5742,7 +5742,7 @@ PlayerControl=no
 
 [Basic]
 Name=Fallout
-Brief=A11_f00e
+Brief=a11_f00e
 Theme=BlowItUp
 Player=Player House
 Percent=0

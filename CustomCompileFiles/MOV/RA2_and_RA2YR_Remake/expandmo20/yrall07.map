@@ -12223,8 +12223,7 @@ Versus.garrison_c=65%
 
 [Basic]
 Name=Brain_Dead
-Brief=<none>
-Intro=A07YR-0
+Brief=a07yr-0
 Theme=Deceiver
 Player=UnitedStates
 Percent=0
@@ -12236,7 +12235,7 @@ EndOfGame=no
 FreeRadar=yes
 MaxPlayer=8
 MinPlayer=2
-PostScore=A08YR-0
+PostScore=a08yr-0
 SkipScore=no
 TrainCrate=no
 TruckCrate=no

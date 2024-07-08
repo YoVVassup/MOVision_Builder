@@ -4927,7 +4927,7 @@ MultiplayPassive=true
 
 [Basic]
 Name=Deep_Sea 
-Brief=A07_f00e
+Brief=a07_f00e
 Theme=Tension
 Player=Player House
 Percent=0

@@ -2023,7 +2023,7 @@ PlayerControl=yes
 
 [Basic]
 Name=Big_Apple 
-Brief=S03_f00e
+Brief=s03_f00e
 Theme=InDeep
 Player=Player House
 Percent=0

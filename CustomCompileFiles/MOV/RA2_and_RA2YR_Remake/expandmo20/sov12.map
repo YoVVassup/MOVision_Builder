@@ -3251,7 +3251,7 @@ AreTeamMembersRecruitable=no
 0CDA6F3C=1,113,0,14,0,0,0,0,A
 0CDA750C=1,1,0,14,0,0,0,0,A
 0D0203D0=2,80,1,087D6EFC,0,0,0,0,M,80,1,087D680C,0,0,0,0,N
-0D10EF3C=4,53,2,01000034,0,0,0,0,A,53,2,0CDA6F3C,0,0,0,0,A,53,2,0CDA750C,0,0,0,0,A,10,0,109,0,0,0,0,A
+0D10EF3C=4,53,2,01000034,0,0,0,0,A,53,2,0CDA6F3C,0,0,0,0,A,53,2,0CDA750C,0,0,0,0,A,10,0,110,0,0,0,0,A
 
 [Aircraft]
 1=BadGuy2 House,ORCA,256,79,31,64,Guard,None,0,0,1,0
@@ -3455,10 +3455,10 @@ PlayerControl=no
 
 [Basic]
 Name=Polar_Storm
-Brief=S12_f00e
+Brief=s12_f00e
 Theme=Fortification
 Player=Player House
-PostScore=S13_f01e
+PostScore=s13_f01e
 Percent=0
 GameMode=standard
 HomeCell=98

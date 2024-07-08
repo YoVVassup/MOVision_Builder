@@ -2283,7 +2283,7 @@ PlayerControl=no
 
 [Basic]
 Name=Weathered_Alliance
-Brief=S10_f00e
+Brief=s10_f00e
 Theme=Destroy
 Player=Player House
 Percent=0

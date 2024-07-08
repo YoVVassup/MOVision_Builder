@@ -7884,8 +7884,7 @@ PlayerControl=no
 
 [Basic]
 Name=Deja_Vu 
-Brief=<none>
-Intro=S02YR-0
+Brief=s02yr-0
 Theme=Ownage
 Player=Player House
 Percent=0

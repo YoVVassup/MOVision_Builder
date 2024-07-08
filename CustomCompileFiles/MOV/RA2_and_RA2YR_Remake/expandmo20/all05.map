@@ -2357,7 +2357,7 @@ AreTeamMembersRecruitable=yes
 
 [Basic]
 Name=Dark_Night
-Brief=A05_f00e
+Brief=a05_f00e
 Theme=No theme
 Player=Player House
 Percent=0
