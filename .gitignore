@@ -1,7 +1,15 @@
+## Video Cutscene
 *.bik
+
+## Build generated
 PreBuild/
 Build/
+
+## Custom Duplicate (expandmo98)
 CustomCompileFiles/MOV/expandmo98_Vision/
+
+## Custom Audio (.wav)
 CustomCompileFiles/expandmo90/
-CustomFiles/reshade-shaders/Shaders/* linguist-vendored
-CustomFiles/reshade-shaders/Textures/* linguist-vendored
+
+## Fix Linguist
+CustomFiles/reshade-shaders/* linguist-vendored

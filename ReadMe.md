@@ -14,7 +14,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 - WanNiang Series - 10 миссий (Оригинальное авторство за WanNiang, название 【WanNiang任務系列】殺時間的任務包, была создан для версии мода Mental Omega 3.3.4-3.3.5);
 - Foehn Mission Pack - 25 миссий различных авторов;
 - Режим COOP миссии в соло добовляет 3 новых режима в мультиплеере - SP Co-Op Easy, SP Co-Op Medium и SP Co-Op Hard, где управление заточено под одного игрока (`FIX`, теперь не требуются дополнительные действия для выбора);
-- Новые мультиплеерные режимы Armor Fist, Elite Force, Helpless, Monster Truck, Scavengers, Blinded, Clone, Lost Journey, Lucky, Tech Climb, Lost Colony, Shadow Raid (Оригинальное авторство за Morphunk, Hoa Tuyet и A Very Festive Scarecrow);
+- Новые мультиплеерные режимы Armor Fist, Elite Force, Helpless, Monster Truck, Mixed Modes, Scavengers, Blinded, Clone, Lost Journey, Lucky, Tech Climb, Lost Colony, Shadow Raid (Оригинальное авторство за Morphunk, Hoa Tuyet и A Very Festive Scarecrow);
 - Последний русификатор от Damfoos для Mental Omega (3.3.6), он же администратор русскоязычной группы vk по [Mental Omega](https://vk.com/mental.omega).
 
 Дополнительно:
@@ -23,7 +23,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 - Новые треки для музыкального плеера игры, в которые были добавлены все скрытые оригинальные треки, а также дополнительные треки из фан-компаний (`FIX`, для переключения используется список выбора который можно найти на вкладке `Настройки` → `Audio` → `Soundtrack` → `Vision (Extendet) Soundtrack` → Соглашаемся с изменениями и перезагрузкой).
 - Полный сброс на параметры по умолчанию, для обновления на новую версию и для случаев некорректного использования аддона с помощью файла `Reset[Использовать-только-при-ошибке-запуска].bat` `FIX`.
 - Набор инструментов для пост-пользовательской CLI доработки аддона (`Resources\Tools`).
-- Обновлены и добавлены версии стабильных рендеров [DDrawCompat](https://github.com/narzoul/DDrawCompat) (текущая стабильная версия 0.5.3, лучший выбор для встроенной графики от Intel, для вызова окна доп. настроек нажать Shift+F11), [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw) (текущая версия 6.7.0.0), [CnC-DDraw-Old](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/1.4.0.0) (старая версия CnC-DDraw 1.4.0.0 от FunkyFr3sh, оставлена для совместимости с шейдерами DX9), [DirectX](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v5.1.0.0) (специально перенастроенная версия CnC-DDraw 5.1.0.0 от FunkyFr3sh, лучший выбор для видеокарт от NVIDIA, см. [доп.настройки](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/DirectX.md)).
+- Обновлены и добавлены версии стабильных рендеров [DDrawCompat](https://github.com/narzoul/DDrawCompat) (текущая стабильная версия 0.5.4, лучший выбор для встроенной графики от Intel, для вызова окна доп. настроек нажать Shift+F11), [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw) (текущая версия 6.9.0.0), [CnC-DDraw-Old](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/1.4.0.0) (старая версия CnC-DDraw 1.4.0.0 от FunkyFr3sh, оставлена для совместимости с шейдерами DX9), [DirectX](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v5.1.0.0) (специально перенастроенная версия CnC-DDraw 5.1.0.0 от FunkyFr3sh, лучший выбор для видеокарт от NVIDIA, см. [доп.настройки](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/DirectX.md)).
 - Обновлен файл `qres.dat`, отвечающий за разрешения экрана в игре (добавлены редкие разрешения).
 
 ## Сборка
