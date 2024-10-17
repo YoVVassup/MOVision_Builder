@@ -3,3 +3,5 @@ PreBuild/
 Build/
 CustomCompileFiles/MOV/expandmo98_Vision/
 CustomCompileFiles/expandmo90/
+CustomFiles/reshade-shaders/Shaders/* linguist-vendored
+CustomFiles/reshade-shaders/Textures/* linguist-vendored
