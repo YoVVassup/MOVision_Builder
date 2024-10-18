@@ -13,5 +13,6 @@ CustomCompileFiles/expandmo90/
 
 ## Fix Linguist
 *.fx linguist-detectable=false
+*.fxh linguist-detectable=false
 *.hlsl linguist-detectable=false
 *.map linguist-language=INI
