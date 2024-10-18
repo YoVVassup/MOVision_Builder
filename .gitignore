@@ -12,4 +12,5 @@ CustomCompileFiles/MOV/expandmo98_Vision/
 CustomCompileFiles/expandmo90/
 
 ## Fix Linguist
-CustomFiles/reshade-shaders/* linguist-vendored
+*.fx linguist-detectable=false
+*.map linguist-language=INI
