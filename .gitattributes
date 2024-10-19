@@ -2,4 +2,6 @@
 *.fx linguist-detectable=false
 *.fxh linguist-detectable=false
 *.hlsl linguist-detectable=false
-*.map linguist-language=INI
+*.py linguist-detectable=false
+*.map linguist-language=ini
+*.ini linguist-detectable=true
