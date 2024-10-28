@@ -25,6 +25,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 - Набор инструментов для пост-пользовательской CLI доработки аддона (`Resources\Tools`).
 - Обновлены и добавлены версии стабильных рендеров [DDrawCompat](https://github.com/narzoul/DDrawCompat) (текущая стабильная версия 0.5.4, лучший выбор для встроенной графики от Intel, для вызова окна доп. настроек нажать Shift+F11), [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw) (текущая версия 6.9.0.0), [CnC-DDraw-Old](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/1.4.0.0) (старая версия CnC-DDraw 1.4.0.0 от FunkyFr3sh, оставлена для совместимости с шейдерами DX9), [DirectX](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v5.1.0.0) (специально перенастроенная версия CnC-DDraw 5.1.0.0 от FunkyFr3sh, лучший выбор для видеокарт от NVIDIA, см. [доп.настройки](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/DirectX.md)).
 - Обновлен файл `qres.dat`, отвечающий за разрешения экрана в игре (добавлены редкие разрешения).
+- Добавлено опциональное изменение шрифтов как для самой игры, так и для лаунчера DTA (`Настройки` → `Display` → `Fonts [Game]` и `Настройки` → `Display` → `Fonts [DTA]`).
 
 ## Сборка
 

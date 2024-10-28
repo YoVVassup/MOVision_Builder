@@ -3,14 +3,20 @@ chcp 65001
 : git config core.autocrlf false [fix]
 title Reset Mental Omega
 
-esentutl /y "MOV\BattleClient_Original.ini" /d "INI\BattleClient.ini" /o
-esentutl /y "MOV\MentalOmegaMaps_Original.ini" /d "INI\MentalOmegaMaps.ini" /o
-esentutl /y "MOV\ClientDefinitions_Original.ini" /d "Resources\ClientDefinitions.ini" /o
-esentutl /y "MOV\GameOptions_Original.ini" /d "Resources\GameOptions.ini" /o
-esentutl /y "MOV\SkirmishLobby_Original.ini" /d "Resources\SkirmishLobby.ini" /o
-esentutl /y "MOV\thememo_Original.ini" /d "thememo.ini" /o
-esentutl /y "MOV\expandmo98_Russian.mix" /d "expandmo98.mix" /o
-esentutl /y "MOV\expandmo99_Original.mix" /d "expandmo99.mix" /o
+copy /Y ".\MOV\BattleClient_Original.ini" /A ".\INI\BattleClient.ini"
+copy /Y ".\MOV\MentalOmegaMaps_Original.ini" /A ".\INI\MentalOmegaMaps.ini"
+copy /Y ".\MOV\ClientDefinitions_Original.ini" /A ".\Resources\ClientDefinitions.ini"
+copy /Y ".\MOV\GameOptions_Original.ini" /A ".\Resources\GameOptions.ini"
+copy /Y ".\MOV\SkirmishLobby_Original.ini" /A ".\Resources\SkirmishLobby.ini"
+copy /Y ".\MOV\thememo_Original.ini" /A ".\thememo.ini"
+copy /Y ".\MOV\expandmo98_Russian.mix" ".\expandmo98.mix"
+copy /Y ".\MOV\expandmo99_Original.mix" ".\expandmo99.mix"
+copy /Y ".\MOV\Fonts\DTA\SpriteFont0_Original.xnb" ".\Resources\SpriteFont0.xnb"
+copy /Y ".\MOV\Fonts\DTA\SpriteFont1_Original.xnb" ".\Resources\SpriteFont1.xnb"
+copy /Y ".\MOV\Fonts\DTA\SpriteFont2_Original.xnb" ".\Resources\SpriteFont2.xnb"
+copy /Y ".\MOV\Fonts\DTA\SpriteFont3_Original.xnb" ".\Resources\SpriteFont3.xnb"
+copy /Y ".\MOV\Fonts\DTA\SpriteFont4_Original.xnb" ".\Resources\SpriteFont4.xnb"
+copy /Y ".\MOV\Fonts\DTA\SpriteFont5_Original.xnb" ".\Resources\SpriteFont5.xnb"
 if exist ".\mapselmo.ini" (del /f /q mapselmo.ini)
 if exist ".\missionmo.ini" (del /f /q missionmo.ini)
 if exist ".\fan_artmo.ini" (del /f /q fan_artmo.ini)
@@ -39,6 +45,7 @@ if exist ".\stringtable71.csf" (del /f /q stringtable71.csf)
 if exist ".\stringtable72.csf" (del /f /q stringtable72.csf)
 if exist ".\stringtable73.csf" (del /f /q stringtable73.csf)
 if exist ".\TEST.map" (del /f /q TEST.map)
+if exist ".\game.fnt" (del /f /q game.fnt)
 if exist ".\dxgi.dll" (del /f /q dxgi.dll)
 if exist ".\d3d9.dll" (del /f /q d3d9.dll)
 if exist ".\opengl32.dll" (del /f /q opengl32.dll)
