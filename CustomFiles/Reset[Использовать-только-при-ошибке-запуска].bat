@@ -49,5 +49,16 @@ if exist ".\game.fnt" (del /f /q game.fnt)
 if exist ".\dxgi.dll" (del /f /q dxgi.dll)
 if exist ".\d3d9.dll" (del /f /q d3d9.dll)
 if exist ".\opengl32.dll" (del /f /q opengl32.dll)
+if exist ".\RAIN.shp" (del /f /q RAIN.shp)
+if exist ".\SNOW.shp" (del /f /q SNOW.shp)
+if exist ".\Map Editor\aqrit.cfg" (del /f /q ".\Map Editor\aqrit.cfg")
+if exist ".\Map Editor\CncVxlRenderText.dll" (del /f /q ".\Map Editor\CncVxlRenderText.dll")
+if exist ".\Map Editor\ddraw.dll" (del /f /q ".\Map Editor\ddraw.dll")
+if exist ".\Map Editor\FA2sp.dll" (del /f /q ".\Map Editor\FA2sp.dll")
+if exist ".\Map Editor\fadata.ini" (del /f /q ".\Map Editor\fadata.ini")
+if exist ".\Map Editor\theater.mix" (del /f /q ".\Map Editor\theater.mix")
+copy /Y ".\MOV\Extention\Map Editor\Ext\FA2Ext.dll" ".\Map Editor\Ext\FA2Ext.dll"
+copy /Y ".\MOV\Extention\Map Editor\Ext\FA2Ext.dll.inj" ".\Map Editor\Ext\FA2Ext.dll.inj"
+copy /Y ".\MOV\Extention\Map Editor\Ext\fadata.ini" /A ".\Map Editor\Ext\fadata.ini"
 .\Resources\Tools\inifile RA2MO.ini [CustomSettings] /remove
 .\Resources\Tools\inifile RA2MO.ini [Options] CheckforUpdates=False
