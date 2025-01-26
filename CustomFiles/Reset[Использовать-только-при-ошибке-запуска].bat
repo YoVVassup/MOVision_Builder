@@ -11,12 +11,12 @@ copy /Y ".\MOV\SkirmishLobby_Original.ini" /A ".\Resources\SkirmishLobby.ini"
 copy /Y ".\MOV\thememo_Original.ini" /A ".\thememo.ini"
 copy /Y ".\MOV\expandmo98_Russian.mix" ".\expandmo98.mix"
 copy /Y ".\MOV\expandmo99_Original.mix" ".\expandmo99.mix"
-copy /Y ".\MOV\Fonts\DTA\SpriteFont0_Original.xnb" ".\Resources\SpriteFont0.xnb"
-copy /Y ".\MOV\Fonts\DTA\SpriteFont1_Original.xnb" ".\Resources\SpriteFont1.xnb"
-copy /Y ".\MOV\Fonts\DTA\SpriteFont2_Original.xnb" ".\Resources\SpriteFont2.xnb"
-copy /Y ".\MOV\Fonts\DTA\SpriteFont3_Original.xnb" ".\Resources\SpriteFont3.xnb"
-copy /Y ".\MOV\Fonts\DTA\SpriteFont4_Original.xnb" ".\Resources\SpriteFont4.xnb"
-copy /Y ".\MOV\Fonts\DTA\SpriteFont5_Original.xnb" ".\Resources\SpriteFont5.xnb"
+copy /Y ".\MOV\Extention\Fonts\DTA\SpriteFont0_Original.xnb" ".\Resources\SpriteFont0.xnb"
+copy /Y ".\MOV\Extention\Fonts\DTA\SpriteFont1_Original.xnb" ".\Resources\SpriteFont1.xnb"
+copy /Y ".\MOV\Extention\Fonts\DTA\SpriteFont2_Original.xnb" ".\Resources\SpriteFont2.xnb"
+copy /Y ".\MOV\Extention\Fonts\DTA\SpriteFont3_Original.xnb" ".\Resources\SpriteFont3.xnb"
+copy /Y ".\MOV\Extention\Fonts\DTA\SpriteFont4_Original.xnb" ".\Resources\SpriteFont4.xnb"
+copy /Y ".\MOV\Extention\Fonts\DTA\SpriteFont5_Original.xnb" ".\Resources\SpriteFont5.xnb"
 if exist ".\mapselmo.ini" (del /f /q mapselmo.ini)
 if exist ".\missionmo.ini" (del /f /q missionmo.ini)
 if exist ".\fan_artmo.ini" (del /f /q fan_artmo.ini)
@@ -55,7 +55,6 @@ if exist ".\Map Editor\aqrit.cfg" (del /f /q ".\Map Editor\aqrit.cfg")
 if exist ".\Map Editor\CncVxlRenderText.dll" (del /f /q ".\Map Editor\CncVxlRenderText.dll")
 if exist ".\Map Editor\ddraw.dll" (del /f /q ".\Map Editor\ddraw.dll")
 if exist ".\Map Editor\FA2sp.dll" (del /f /q ".\Map Editor\FA2sp.dll")
-if exist ".\Map Editor\fadata.ini" (del /f /q ".\Map Editor\fadata.ini")
 if exist ".\Map Editor\theater.mix" (del /f /q ".\Map Editor\theater.mix")
 copy /Y ".\MOV\Extention\Map Editor\Ext\FA2Ext.dll" ".\Map Editor\Ext\FA2Ext.dll"
 copy /Y ".\MOV\Extention\Map Editor\Ext\FA2Ext.dll.inj" ".\Map Editor\Ext\FA2Ext.dll.inj"

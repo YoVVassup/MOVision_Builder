@@ -1,11 +1,7 @@
-Github Project https://github.com/Starkku/FA2sp
-Current version 1.6.3
+Github Project https://github.com/secsome/FA2sp + fix from https://github.com/NyaCl/FA2sp
+Current version 1.6.3.1
 
 Usage Instructions:
-1.Open the Map Editor folder located in the MO336 directory.
-2.Delete any files related to FA2Ext.
-3.Extract all files from the compressed package into this directory.
-
 Hold CTRL to select multiple items. 
 Hold CTRL+SHIFT to deselect tiles. 
 Press CTRL+D to deselect all. 
