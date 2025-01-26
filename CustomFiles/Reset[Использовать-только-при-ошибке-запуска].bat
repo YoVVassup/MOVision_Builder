@@ -59,5 +59,8 @@ if exist ".\Map Editor\theater.mix" (del /f /q ".\Map Editor\theater.mix")
 copy /Y ".\MOV\Extention\Map Editor\Ext\FA2Ext.dll" ".\Map Editor\Ext\FA2Ext.dll"
 copy /Y ".\MOV\Extention\Map Editor\Ext\FA2Ext.dll.inj" ".\Map Editor\Ext\FA2Ext.dll.inj"
 copy /Y ".\MOV\Extention\Map Editor\Ext\fadata.ini" /A ".\Map Editor\Ext\fadata.ini"
+if exist ".\ExtMiniFix.dll" (del /f /q ExtMiniFix.dll)
+if exist ".\ObjectInfo.dll" (del /f /q ObjectInfo.dll)
+if exist ".\objectinfo.ini" (del /f /q objectinfo.ini)
 .\Resources\Tools\inifile RA2MO.ini [CustomSettings] /remove
 .\Resources\Tools\inifile RA2MO.ini [Options] CheckforUpdates=False
