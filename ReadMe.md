@@ -48,6 +48,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 
 Для сборщика:  
 Любая версия Windows, начиная от Windows XP. Наличие [.NET Framework 4.0](https://www.microsoft.com/ru-ru/download/details.aspx?id=17718).  
+Для Windows XP/2003 перед использованием сборки нужно применить [патч](https://github.com/YoVVassup/MOVision_Builder/blob/main/FixTools/cmd_xp_65001_fix) на расширенную поддержку юникод-символов, иначе в консоли не будет кириллицы! Просто запустите cmd-cmdutf8-replace.bat с правами "Администратора". Что за патч и зачем он вообще можно посмотреть [тут](https://www.dostips.com/forum/viewtopic.php?t=5588).
 Для аддона Mental Omega Vision:  
 Такие же, что и для чистой Mental Omega. 
 

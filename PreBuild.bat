@@ -17,7 +17,7 @@ echo Сборка bag и idx файлов дополнительных звук�
 Tools\BagFileTool.exe -i ".\Tools\audio00.bag" -o ".\PreBuild\MOV\expandmo09\audio99.bag" -a ".\PreCustomCompileFiles\MOV\expandmo09\audio99"
 echo.
 
-: Передсборка csf-файлов для оригинальной Mental Omega
+: Предсборка csf-файлов для оригинальной Mental Omega
 copy ".\Tools\stringtable00.csf" ".\PreBuild\MOV\expandmo98_Russian\ra2md.csf"
 Tools\CSFTool -t ".\PreCustomCompileFiles\MOV\expandmo98_Russian\ra2md.txt" -o ".\PreBuild\MOV\expandmo98_Russian\ra2md.csf" -a
 copy ".\Tools\stringtable00.csf" ".\PreBuild\MOV\expandmo98_Russian\stringtable00.csf"
