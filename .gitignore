@@ -10,3 +10,8 @@ CustomCompileFiles/MOV/expandmo98_Vision/
 
 ## Custom Audio (.wav)
 CustomCompileFiles/expandmo90/
+
+## Temp Audio converter files
+TempAudio/**/*
+!TempAudio/**/
+!TempAudio/**/.gitkeep

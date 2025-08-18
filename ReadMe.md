@@ -48,7 +48,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 
 Для сборщика:  
 Любая версия Windows, начиная от Windows XP. Наличие [.NET Framework 4.0](https://www.microsoft.com/ru-ru/download/details.aspx?id=17718).  
-Для Windows XP/2003 перед использованием сборки нужно применить [патч](https://github.com/YoVVassup/MOVision_Builder/blob/main/FixTools/cmd_xp_65001_fix) на расширенную поддержку юникод-символов, иначе в консоли не будет кириллицы! Просто запустите cmd-cmdutf8-replace.bat с правами "Администратора". Что за патч и зачем он вообще можно посмотреть [тут](https://www.dostips.com/forum/viewtopic.php?t=5588).
+Для Windows XP/2003 перед использованием сборки нужно применить [патч](https://github.com/YoVVassup/MOVision_Builder/blob/main/FixTools/cmd_xp_65001_fix) на расширенную поддержку юникод-символов, иначе в консоли не будет кириллицы! Просто запустите `cmd-cmdutf8-replace.bat` с правами "Администратора". Что за патч и зачем он вообще можно посмотреть [тут](https://www.dostips.com/forum/viewtopic.php?t=5588).  
 Для аддона Mental Omega Vision:  
 Такие же, что и для чистой Mental Omega. 
 
@@ -58,7 +58,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 
 Уточнение для корректной работы по оригинальной Mental Omega:
 - Следуем официальной [инструкции по установке](https://mentalomega.com/ru/index.php?page=install).
-- Не используем папку Red Aler 2 Yuri's Revenge в качестве базы для установки, берем из нее лишь указанные файлы: BINKW32.dll, BLOWFISH.dll, gamemd.exe (обязательно версии 1.001), ra2.mix, ra2md.mix, language.mix, langmd.mix
+- Не используем папку Red Alert 2 Yuri's Revenge в качестве базы для установки, берем из нее лишь указанные файлы: BINKW32.dll, BLOWFISH.dll, gamemd.exe (обязательно версии 1.001), ra2.mix, ra2md.mix, language.mix, langmd.mix
 - Русскую локализацию ставить не обязательно, она уже включена в аддон.
 - Для установки аддона использовать только версию Mental Omega 3.3.6.
 - Проверяем работоспособность вашей сборки Mental Omega, до установки аддона, т.к. сам аддон не влияет на запуск игры.
