@@ -1,8 +1,68 @@
 @echo off
-chcp 65001
-: git config core.autocrlf false [fix]
+chcp 65001 > nul
+setlocal enabledelayedexpansion
+
 title Reset Mental Omega
 
+echo Установка параметров запуска для Red Alert 2 Yuri's Revenge
+
+rem Проверяем наличие утилиты inifile.exe
+if not exist ".\Resources\Tools\inifile.exe" (
+    echo Ошибка: Утилита inifile.exe не найдена в папке Resources\Tools.
+    pause
+    exit /b 1
+)
+
+rem Определяем количество физических ядер процессора
+for /f "skip=1 tokens=*" %%i in ('wmic cpu get NumberOfCores 2^>NUL') do (
+    if not "%%i"=="" (
+        set "Cores=%%i"
+        goto :CoresFound
+    )
+)
+
+:CoresFound
+rem Удаляем все лишние пробелы из значения
+for /f "tokens=*" %%i in ("!Cores!") do set "Cores=%%i"
+
+if not defined Cores (
+    echo Не удалось определить количество ядер. Используется значение по умолчанию: 8.
+    set "Cores=8"
+)
+
+echo Найдено ядер в системе: !Cores!
+
+rem Запрашиваем у пользователя выбор
+choice /c:12 /m "Выберите вариант запуска: 1 - Использовать 1 ядро (универсальное решение), 2 - Использовать все ядра (только для cnc-draw рендеров)"
+
+if errorlevel 2 (
+    rem Использовать все ядра
+    set /a "Mask=(1 << !Cores!) - 1"
+    echo Выбрано использование всех ядер.
+) else (
+    rem Использовать 1 ядро
+    set "Mask=1"
+    echo Выбрано использование 1 ядра.
+)
+
+rem Формируем строку параметров
+set "Params=-CD -SPEEDCONTROL -LOG -AFFINITY:!Mask! -hidewarning --mix-list MixLoader.cfg"
+
+echo Записываем параметры в файл конфигурации:
+echo !Params!
+
+rem Записываем параметры в INI-файл с помощью inifile.exe
+Resources\Tools\inifile.exe ".\MOV\ClientDefinitions_Vision.ini" [Settings] ExtraCommandLineParams=!Params!
+
+if !errorlevel! equ 0 (
+    echo Успешно записано в ClientDefinitions_Vision.ini
+) else (
+    echo Ошибка записи в INI-файл. Код ошибки: !errorlevel!
+)
+
+echo Сброс всех настроек Mental Omega
+
+rem Возвращаем все в исходное состояние
 copy /Y ".\MOV\BattleClient_Original.ini" /A ".\INI\BattleClient.ini"
 copy /Y ".\MOV\MentalOmegaMaps_Original.ini" /A ".\INI\MentalOmegaMaps.ini"
 copy /Y ".\MOV\ClientDefinitions_Original.ini" /A ".\Resources\ClientDefinitions.ini"
@@ -65,3 +125,6 @@ if exist ".\ObjectInfo.dll" (del /f /q ObjectInfo.dll)
 if exist ".\objectinfo.ini" (del /f /q objectinfo.ini)
 .\Resources\Tools\inifile RA2MO.ini [CustomSettings] /remove
 .\Resources\Tools\inifile RA2MO.ini [Options] CheckforUpdates=False
+
+echo Можно закртыть эту консоль.
+pause

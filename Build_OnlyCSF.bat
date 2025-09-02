@@ -1,16 +1,16 @@
 @echo off
 chcp 65001 > nul
-: git config core.autocrlf false [fix]
+rem git config core.autocrlf false [fix]
 title MOVision_Builder_OnlyCSF
 echo Mental Omega Vision CSF
 echo.
 
-: Проверка существования \ создание папки Build
+rem Проверка существования \ создание папки Build
 echo Проверка существования предыдущей сборки...
 if exist ".\Build" ( echo Найдена предыдущая папка сборки. ) else ( mkdir ".\Build" && echo Папка для сборки создана. )
 echo.
 
-: Сборка csf-файлов Mental Omega Vision
+rem Сборка csf-файлов Mental Omega Vision
 echo Сборка csf файла содержащего текст новых мультиплеерных карт...
 if exist ".\Build\MOV" ( echo Найдена предыдущая папка сборки. ) else ( mkdir ".\Build\MOV" && echo Папка для сборки создана. )
 copy ".\Tools\stringtable00.csf" ".\Build\MOV\stringtable66.csf"

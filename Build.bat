@@ -1,8 +1,8 @@
 @echo off
 chcp 65001 > nul
-: git config core.autocrlf false [fix]
+rem git config core.autocrlf false [fix]
 
-: Обязательная предварительная сборка
+rem Обязательная предварительная сборка
 echo Ожидание завершения предварительной сборки...
 echo.
 call PreBuild.bat
@@ -12,18 +12,18 @@ title MOVision_Builder
 echo Mental Omega Vision
 echo.
 
-: Очистка папки Build 
+rem Очистка папки Build 
 echo Удаление файлов предыдущей сборки...
 rmdir /s /q ".\Build"
 mkdir ".\Build"
 echo.
 
-: Копирование CustomFiles
+rem Копирование CustomFiles
 echo Копирование файлов аддона не требующих предварительной сборки или доработки...
 xcopy /s ".\CustomFiles" ".\Build"
 echo.
 
-: Сборка основных файлов Mental Omega Vision
+rem Сборка основных файлов Mental Omega Vision
 echo Сборка mix-файла дополнительных аудиотреков MO Vision...
 Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\expandmo90" --mix ".\Build\expandmo90.mix"
 echo.
@@ -49,32 +49,32 @@ copy ".\OriginalFilesMO\expandmo99.mix" ".\Build\MOV\expandmo99_Original.mix"
 echo.
 echo Создание модифицированного mix-файла содержащего все внутренние ini-настройки игры (без rulesmo.ini)...
 copy ".\OriginalFilesMO\expandmo99.mix" ".\Build\MOV\expandmo99_Mod.mix"
-: [#include]
+rem [#include]
 echo '4918da: 5b23 696e 636c 7564 655d' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: 1=fan_artmo.ini
+rem 1=fan_artmo.ini
 echo '491912: 313d 6661 6e5f 6172 746d 6f2e 696e 69' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: [#include];Menta // fix ужатие + перенос
+rem [#include];Menta // fix ужатие + перенос
 echo '56cf22: 5b23 696e 636c 7564 655d 3b4d 656e 7461' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: l
+rem l
 echo '56cf32: 6c' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: 1=fan_soundmo.in // fix перенос
+rem 1=fan_soundmo.in // fix перенос
 echo '56cf5c: 313d 6661 6e5f 736f 756e 646d 6f2e 696e' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: i
+rem i
 echo '56cf6c: 69' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: [#include];Menta // fix ужатие + перенос
+rem [#include];Menta // fix ужатие + перенос
 echo '95d0b2: 5b23 696e 636c 7564 655d 3b4d 656e 7461' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: l
+rem l
 echo '95d0c2: 6c' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
-: 1=fan_aimo.ini
+rem 1=fan_aimo.ini
 echo '95d0ea: 313d 6661 6e5f 6169 6d6f 2e69 6e69' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod.mix"
 echo.
 echo Создание модифицированного mix-файла содержащего все внутренние ini-настройки игры (с rulesmo.ini)...
 copy ".\Build\MOV\expandmo99_Mod.mix" ".\Build\MOV\expandmo99_Mod_Rules.mix"
-: [#include]
+rem [#include]
 echo '252c5d: 5b 2369 6e63 6c75 6465 5d' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod_Rules.mix"
-: 1=fan_rulesmo.in // fix перенос
+rem 1=fan_rulesmo.in // fix перенос
 echo '252c98: 31 3d66 616e 5f72 756c 6573 6d6f 2e69 6e' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod_Rules.mix"
-: i
+rem i
 echo '252ca8: 69' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod_Rules.mix"
 echo.
 echo Сборка csf файла содержащего текст новых мультиплеерных карт...
@@ -144,13 +144,13 @@ copy ".\Tools\stringtable00.csf" ".\Build\MOV\WanNiang_Series\stringtable52.csf"
 Tools\CSFTool -t ".\CustomCompileFiles\MOV\WanNiang_Series\stringtable52.txt" -o ".\Build\MOV\WanNiang_Series\stringtable52.csf" -a
 echo.
 
-: Копирование набора инструментов для post-пользовательской отладки
+rem Копирование набора инструментов для post-пользовательской отладки
 echo Добавление набор инструментов для быстрой пользовательской отладки...
 mkdir ".\Build\Resources\Tools"
 xcopy /s ".\Tools" ".\Build\Resources\Tools"
 echo.
 
-: Заглушки для катсцен
+rem Заглушки для катсцен
 echo Проверка на отсутствие файлов катсцен и создание заглушек...
 where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_720p.mix && echo Заглушка катсцен для разрешений 720p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_720p.mix" 1024
 where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_768p.mix && echo Заглушка катсцен для разрешений 768p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix" 1024
@@ -158,7 +158,7 @@ where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1080p.mix && echo За
 where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1440p.mix && echo Заглушка катсцен для разрешений 1440p не требуется. || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p.mix" 1024
 echo.
 
-: Заглушка для аудиотреков
+rem Заглушка для аудиотреков
 echo Проверка на отсутствие файлов игровых аудиотреков и создание заглушек...
 where /Q /R ".\Build" expandmo90.mix && echo Заглушка для игровых аудиотреков не требуется. || fsutil file createnew ".\Build\expandmo90.mix" 1024
 echo.
