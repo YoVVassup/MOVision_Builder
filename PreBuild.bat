@@ -14,7 +14,7 @@ echo.
 
 rem Предсборка дополнительных файлов Mental Omega Vision
 echo Сборка bag и idx файлов дополнительных звуков MO Vision...
-Tools\BagFileTool.exe -i ".\Tools\audio00.bag" -o ".\PreBuild\MOV\expandmo09\audio99.bag" -a ".\PreCustomCompileFiles\MOV\expandmo09\audio99"
+Tools\BagFileTool.exe -o ".\PreBuild\MOV\expandmo09\audio99.bag" -a ".\PreCustomCompileFiles\MOV\expandmo09\audio99" -n 99 -y
 echo.
 
 rem Предсборка csf-файлов для оригинальной Mental Omega
