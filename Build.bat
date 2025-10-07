@@ -25,24 +25,24 @@ echo.
 
 rem Сборка основных файлов Mental Omega Vision
 echo Сборка mix-файла дополнительных аудиотреков MO Vision...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\expandmo90" --mix ".\Build\expandmo90.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\expandmo90" --mix ".\Build\expandmo90.mix"
 echo.
 echo Сборка mix-файла уникальных едениц, юнитов и др. дополнений MO Vision...
 where /Q /R ".\PreBuild\MOV\expandmo09" audio??.* && xcopy /s /y ".\PreBuild\MOV\expandmo09" ".\CustomCompileFiles\MOV\expandmo09" || echo Файлов дополнительных звуков для MO Vision небыло обнаружено.
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo09" --mix ".\Build\MOV\expandmo09.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo09" --mix ".\Build\MOV\expandmo09.mix"
 echo.
 echo Сборка mix-файла оригинальных аудиотреков из RA2 и RA2YR + MO2...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo10" --mix ".\Build\MOV\expandmo10.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo10" --mix ".\Build\MOV\expandmo10.mix"
 echo.
 echo Сборка mix-файла отвечающего за руссификацию оригинальной MO...
 where /Q /R ".\PreBuild\MOV\expandmo98_Russian" *.csf && xcopy /s /y ".\PreBuild\MOV\expandmo98_Russian" ".\CustomCompileFiles\MOV\expandmo98_Russian" || echo Файлов измененной русской локализации для Mental Omega небыло обнаружено.
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo98_Russian" --mix ".\Build\MOV\expandmo98_Russian.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo98_Russian" --mix ".\Build\MOV\expandmo98_Russian.mix"
 copy ".\Build\MOV\expandmo98_Russian.mix" ".\Build\expandmo98.mix"
 echo.
 echo Сборка mix-файла отвечающего за руссификацию оригинальной MO (с переопределением едениц, юнитов и др. дополнений из MO)...
 xcopy /s /y ".\CustomCompileFiles\MOV\expandmo98_Russian\" ".\CustomCompileFiles\MOV\expandmo98_Vision\"
 xcopy /s /y ".\PreCustomCompileFiles\MOV\expandmo98_Vision\" ".\CustomCompileFiles\MOV\expandmo98_Vision\"
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo98_Vision" --mix ".\Build\MOV\expandmo98_Vision.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\expandmo98_Vision" --mix ".\Build\MOV\expandmo98_Vision.mix"
 echo.
 echo Копирование оригинального mix-файла содержащего все внутренние ini-настройки игры...
 copy ".\OriginalFilesMO\expandmo99.mix" ".\Build\MOV\expandmo99_Original.mix"
@@ -78,70 +78,60 @@ rem i
 echo '252ca8: 69' | Tools\xxd -r - ".\Build\MOV\expandmo99_Mod_Rules.mix"
 echo.
 echo Сборка csf файла содержащего текст новых мультиплеерных карт...
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\stringtable66.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\stringtable66.txt" -o ".\Build\MOV\stringtable66.csf" -a
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\stringtable66.txt" -o ".\Build\MOV\stringtable66.csf" --to-csf
 echo.
 
 echo Сборка csf и mix-файлов для APRA Series...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\APRA_Series\expandmo21" --mix ".\Build\MOV\APRA_Series\expandmo21.mix"
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\APRA_Series\expandmo51" --mix ".\Build\MOV\APRA_Series\expandmo51.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\APRA_Series\stringtable68.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\APRA_Series\stringtable68.txt" -o ".\Build\MOV\APRA_Series\stringtable68.csf" -a
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\APRA_Series\stringtable69.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\APRA_Series\stringtable69.txt" -o ".\Build\MOV\APRA_Series\stringtable69.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\APRA_Series\expandmo21" --mix ".\Build\MOV\APRA_Series\expandmo21.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\APRA_Series\expandmo51" --mix ".\Build\MOV\APRA_Series\expandmo51.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\APRA_Series\stringtable68.txt" -o ".\Build\MOV\APRA_Series\stringtable68.csf" --to-csf
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\APRA_Series\stringtable69.txt" -o ".\Build\MOV\APRA_Series\stringtable69.csf" --to-csf
 echo.
 
 echo Сборка csf и mix-файлов для B.M.A. Series...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\B.M.A._Series\expandmo12" --mix ".\Build\MOV\B.M.A._Series\expandmo12.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\B.M.A._Series\stringtable50.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\B.M.A._Series\stringtable50.txt" -o ".\Build\MOV\B.M.A._Series\stringtable50.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\B.M.A._Series\expandmo12" --mix ".\Build\MOV\B.M.A._Series\expandmo12.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\B.M.A._Series\stringtable50.txt" -o ".\Build\MOV\B.M.A._Series\stringtable50.csf" --to-csf
 echo.
 
 echo Сборка csf и mix-файлов для Epsilon Mission Pack...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Epsilon_Pack\expandmo02" --mix ".\Build\MOV\Epsilon_Pack\expandmo02.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\Epsilon_Pack\stringtable72.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\Epsilon_Pack\stringtable72.txt" -o ".\Build\MOV\Epsilon_Pack\stringtable72.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Epsilon_Pack\expandmo02" --mix ".\Build\MOV\Epsilon_Pack\expandmo02.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\Epsilon_Pack\stringtable72.txt" -o ".\Build\MOV\Epsilon_Pack\stringtable72.csf" --to-csf
 echo.
 
 echo Сборка csf и mix-файлов для Foehn Mission Pack...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Foehn_Pack\expandmo03" --mix ".\Build\MOV\Foehn_Pack\expandmo03.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\Foehn_Pack\stringtable73.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\Foehn_Pack\stringtable73.txt" -o ".\Build\MOV\Foehn_Pack\stringtable73.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Foehn_Pack\expandmo03" --mix ".\Build\MOV\Foehn_Pack\expandmo03.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\Foehn_Pack\stringtable73.txt" -o ".\Build\MOV\Foehn_Pack\stringtable73.csf" --to-csf
 
 echo Сборка csf и mix-файлов для P.M.O.S. Series...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\P.M.O.S._Series\expandmo13" --mix ".\Build\MOV\P.M.O.S._Series\expandmo13.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\P.M.O.S._Series\stringtable51.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\P.M.O.S._Series\stringtable51.txt" -o ".\Build\MOV\P.M.O.S._Series\stringtable51.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\P.M.O.S._Series\expandmo13" --mix ".\Build\MOV\P.M.O.S._Series\expandmo13.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\P.M.O.S._Series\stringtable51.txt" -o ".\Build\MOV\P.M.O.S._Series\stringtable51.csf" --to-csf
 echo.
 
 echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 720p...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_720p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_720p.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_720p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_720p.mix"
 echo.
 echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 768p...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_768p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_768p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix"
 echo.
 echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1080p...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix"
 echo.
 echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1440p...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p.mix"
 echo.
 echo Сборка остальных csf и mix-файлов для RA2 and RA2YR Remake...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo20" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo20.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\RA2_and_RA2YR_Remake\stringtable67.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\stringtable67.txt" -o ".\Build\MOV\RA2_and_RA2YR_Remake\stringtable67.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo20" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo20.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\stringtable67.txt" -o ".\Build\MOV\RA2_and_RA2YR_Remake\stringtable67.csf" --to-csf
 echo.
 
 echo Сборка csf и mix-файлов для Soviet Mission Pack...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Soviet_Pack\expandmo01" --mix ".\Build\MOV\Soviet_Pack\expandmo01.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\Soviet_Pack\stringtable71.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\Soviet_Pack\stringtable71.txt" -o ".\Build\MOV\Soviet_Pack\stringtable71.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Soviet_Pack\expandmo01" --mix ".\Build\MOV\Soviet_Pack\expandmo01.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\Soviet_Pack\stringtable71.txt" -o ".\Build\MOV\Soviet_Pack\stringtable71.csf" --to-csf
 echo.
 
 echo Сборка csf и mix-файлов для WanNiang Series...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\WanNiang_Series\expandmo14" --mix ".\Build\MOV\WanNiang_Series\expandmo14.mix"
-copy ".\Tools\stringtable00.csf" ".\Build\MOV\WanNiang_Series\stringtable52.csf"
-Tools\CSFTool -t ".\CustomCompileFiles\MOV\WanNiang_Series\stringtable52.txt" -o ".\Build\MOV\WanNiang_Series\stringtable52.csf" -a
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\WanNiang_Series\expandmo14" --mix ".\Build\MOV\WanNiang_Series\expandmo14.mix"
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\WanNiang_Series\stringtable52.txt" -o ".\Build\MOV\WanNiang_Series\stringtable52.csf" --to-csf
 echo.
 
 rem Копирование набора инструментов для post-пользовательской отладки

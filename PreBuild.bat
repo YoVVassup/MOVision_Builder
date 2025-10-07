@@ -14,16 +14,13 @@ echo.
 
 rem Предсборка дополнительных файлов Mental Omega Vision
 echo Сборка bag и idx файлов дополнительных звуков MO Vision...
-Tools\BagFileTool.exe -o ".\PreBuild\MOV\expandmo09\audio99.bag" -a ".\PreCustomCompileFiles\MOV\expandmo09\audio99" -n 99 -y
+Tools\BagFileTool -o ".\PreBuild\MOV\expandmo09\audio99.bag" -a ".\PreCustomCompileFiles\MOV\expandmo09\audio99" -n 99 -y
 echo.
 
 rem Предсборка csf-файлов для оригинальной Mental Omega
-copy ".\Tools\stringtable00.csf" ".\PreBuild\MOV\expandmo98_Russian\ra2md.csf"
-Tools\CSFTool -t ".\PreCustomCompileFiles\MOV\expandmo98_Russian\ra2md.txt" -o ".\PreBuild\MOV\expandmo98_Russian\ra2md.csf" -a
-copy ".\Tools\stringtable00.csf" ".\PreBuild\MOV\expandmo98_Russian\stringtable00.csf"
-Tools\CSFTool -t ".\PreCustomCompileFiles\MOV\expandmo98_Russian\stringtable00.txt" -o ".\PreBuild\MOV\expandmo98_Russian\stringtable00.csf" -a
-copy ".\Tools\stringtable00.csf" ".\PreBuild\MOV\expandmo98_Russian\stringtable01.csf"
-Tools\CSFTool -t ".\PreCustomCompileFiles\MOV\expandmo98_Russian\stringtable01.txt" -o ".\PreBuild\MOV\expandmo98_Russian\stringtable01.csf" -a
+Tools\CsfStudio -i ".\PreCustomCompileFiles\MOV\expandmo98_Russian\ra2md.txt" -o ".\PreBuild\MOV\expandmo98_Russian\ra2md.csf" --to-csf
+Tools\CsfStudio -i ".\PreCustomCompileFiles\MOV\expandmo98_Russian\stringtable00.txt" -o ".\PreBuild\MOV\expandmo98_Russian\stringtable00.csf" --to-csf
+Tools\CsfStudio -i ".\PreCustomCompileFiles\MOV\expandmo98_Russian\stringtable01.txt" -o ".\PreBuild\MOV\expandmo98_Russian\stringtable01.csf" --to-csf
 echo.
 
 echo Предсборка файлов для Mental Omega и MO Vision завершена.

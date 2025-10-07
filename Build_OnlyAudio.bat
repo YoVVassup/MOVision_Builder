@@ -12,7 +12,7 @@ echo.
 
 rem Сборка mix файла дополнительных аудиотреков Mental Omega Vision
 echo Сборка mix-файла дополнительных аудиотреков MO Vision...
-Tools\ccmix.exe --create --lmd --game=ra2 --dir ".\CustomCompileFiles\expandmo90" --mix ".\Build\expandmo90.mix"
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\expandmo90" --mix ".\Build\expandmo90.mix"
 echo.
 
 rem Заглушка для аудиотреков
