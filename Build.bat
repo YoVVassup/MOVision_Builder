@@ -132,6 +132,13 @@ echo.
 
 echo Cоздание заглушек mix-файлов катсцен (видевставок) для RA2 and RA2YR Remake... >> "%LOGFILE%"
 echo Cоздание заглушек mix-файлов катсцен (видевставок) для RA2 and RA2YR Remake...
+mkdir ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf" >> "%LOGFILE%" 2>&1
+mkdir ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]" >> "%LOGFILE%" 2>&1
+mkdir ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus" >> "%LOGFILE%" 2>&1
+mkdir ".\Build\MOV\RA2_and_RA2YR_Remake\Original" >> "%LOGFILE%" 2>&1
+mkdir ".\Build\MOV\RA2_and_RA2YR_Remake\Russian project" >> "%LOGFILE%" 2>&1
+mkdir ".\Build\MOV\RA2_and_RA2YR_Remake\Triada" >> "%LOGFILE%" 2>&1
+mkdir ".\Build\MOV\RA2_and_RA2YR_Remake\XXI Vek [8 Bit]" >> "%LOGFILE%" 2>&1
 fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
 fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
 fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
