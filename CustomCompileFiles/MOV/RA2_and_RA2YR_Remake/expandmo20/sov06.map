@@ -2,11 +2,32 @@
 ; Get it at http://www.westwood.com
 ; note that all comments were truncated
 
+[AEGIS]
+Armor=f_aegis
+
 [AMCV]
 TechLevel=12
 
 [ARMR]
 TechLevel=12
+
+[ArmorTypes]
+f_mcv=concrete
+f_dest=heavy
+f_dlph=light
+f_lcrf=medium
+f_aegis=medium
+f_robow=light
+f_siren=medium
+f_hcruis=heavy
+f_carrier=heavy
+f_shipyard=concrete
+
+[GACNST]
+Armor=f_mcv
+
+[CARRIER]
+Armor=f_carrier
 
 [CHITZ]
 TechLevel=12
@@ -18,12 +39,31 @@ TechLevel=12
 WoodCrate=Money
 SoloCrateMoney=10000
 
+[DEST]
+Armor=f_dest
+
+[DLPH]
+Armor=f_dlph
+
 [ENGINEER]
 TechLevel=-1
 
 [ETNK]
 Owner=BadGuy1
 RequiredHouses=BadGuy1
+
+[FACOAT]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=StructureBuff
+NoManualFire=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+HasStupidGuardMode=false
+AttackCursorOnFriendlies=yes
 
 [FENGINEER]
 TechLevel=-1
@@ -32,10 +72,16 @@ TechLevel=-1
 SuperWeapon=0
 SuperWeapon2=0
 
+[GAYARD]
+Armor=f_shipyard
+
 [General]
 TotalAITeamCap=20,20,20
 CampaignMoneyDeltaEasy=5000
 CampaignMoneyDeltaHard=-5000
+
+[HCRUIS]
+Armor=f_hcruis
 
 [INPURPLAMP]
 LightRedTint=1.0
@@ -56,6 +102,7 @@ TechLevel=-1
 
 [LCRF]
 Name=Landing Craft
+Armor=f_lcrf
 DeployTime=.022
 LeadershipRating=10
 
@@ -82,6 +129,9 @@ GuardRange=0
 CanRetaliate=no
 CanPassiveAquire=no
 
+[ROBOW]
+Armor=f_robow
+
 [RavenSpecial]
 SW.Inhibitors=NASCOM,YAPPET,YABIOB,YABIO1,YABIO2,YABIO3,CACARG1,CACARG2
 
@@ -91,17 +141,37 @@ TechLevel=12
 [SIEG]
 TechLevel=12
 
+[SIREN]
+Armor=f_siren
+
+[SIREN2]
+Armor=f_siren
+
 [SMCV]
 TechLevel=12
 
 [SPY]
 TechLevel=12
 
+[StructureBuffReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeTargetMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
+
 [TANY]
 TechLevel=12
 
 [VOLKOV]
 TechLevel=12
+
+[Warheads]
++=FakeTargetMarkWH
 
 [YAPVLT]
 SuperWeapon=0
@@ -2653,7 +2723,7 @@ PercentBuilt=0
 PlayerControl=no
 
 [Basic]
-Name=Sub-Divide 
+Name=Sub-Divide
 Brief=s06_f00e
 Theme=Fortification
 Player=Player House
@@ -2682,7 +2752,7 @@ MultiplayerOnly=0
 IceGrowthEnabled=no
 VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
-IgnoreGlobalAITriggers=yes
+IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
 
 [Countries]
@@ -2748,6 +2818,29 @@ TiberiumDeathToVisceroid=no
 0C12EC8C=1,47,0,0
 0C22FF3C=1,13,0,5
 
+[FakeTargetMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+Malicious=no
+CellSpread=512
+AffectsOwner=no
+PercentAtMax=1
+AffectsAllies=no
+Versus.f_mcv=3%
+Versus.f_dest=3%
+Versus.f_dlph=3%
+Versus.f_lcrf=3%
+Versus.f_aegis=3%
+Versus.f_robow=3%
+Versus.f_siren=3%
+Versus.f_hcruis=3%
+Versus.f_carrier=3%
+Versus.f_shipyard=3%
+AffectsEnemies=yes
+AttachEffect.Duration=125
+AttachEffect.Animation=TARGETMARK
+AttachEffect.DiscardOnEntry=yes
+
 [Houses]
 0=Player House
 1=BadGuy1 House
@@ -2763,24 +2856,24 @@ TiberiumDeathToVisceroid=no
 1=Neutral House,COW,256,171,49,2,Guard,64,090E1EA4,0,-1,0,1,1
 2=Neutral House,COW,256,172,47,3,Guard,190,090E1EA4,0,-1,0,1,1
 3=BadGuy1 House,E1,256,88,134,0,Area Guard,96,None,0,-1,0,1,1
-4=BadGuy1 House,E1,256,90,133,4,Area Guard,0,None,0,-1,0,1,1
+4=BadGuy1 House,E1,256,90,133,2,Area Guard,0,None,0,-1,0,1,1
 5=BadGuy1 House,E1,256,82,137,0,Area Guard,32,None,0,-1,0,1,1
 6=BadGuy1 House,E1,256,82,141,0,Area Guard,64,None,0,-1,0,1,1
 7=BadGuy1 House,E1,256,105,83,2,Area Guard,0,None,0,-1,0,0,0
 8=BadGuy1 House,E1,256,98,87,0,Area Guard,0,None,0,-1,0,0,0
-9=BadGuy1 House,E1,256,106,83,4,Area Guard,0,None,0,-1,0,0,0
+9=BadGuy1 House,E1,256,106,83,2,Area Guard,0,None,0,-1,0,0,0
 10=BadGuy1 House,E1,256,96,81,0,Area Guard,0,None,0,-1,0,0,0
-11=Neutral House,CIVBF,256,33,170,4,Guard,96,None,0,-1,0,1,1
+11=Neutral House,CIVBF,256,33,170,2,Guard,96,None,0,-1,0,1,1
 12=Neutral House,CIVBTM,256,35,168,3,Guard,0,None,0,-1,0,1,1
 13=Neutral House,CIVBF,256,111,113,3,Guard,0,None,0,-1,0,1,1
-14=Neutral House,CIVBF,256,123,108,4,Guard,0,None,0,-1,0,1,1
+14=Neutral House,CIVBF,256,123,108,2,Guard,0,None,0,-1,0,1,1
 15=Neutral House,CIVBF,256,132,102,2,Guard,0,None,0,-1,0,1,1
-16=Neutral House,CIVBFM,256,132,94,4,Guard,64,None,0,-1,0,1,1
+16=Neutral House,CIVBFM,256,132,94,2,Guard,64,None,0,-1,0,1,1
 17=Neutral House,CIVBFM,256,113,113,3,Guard,128,None,0,-1,0,1,1
 18=Neutral House,CIVBTM,256,111,112,3,Guard,128,None,0,-1,0,1,1
 19=Neutral House,CIVBTM,256,123,107,2,Guard,128,None,0,-1,0,1,1
 20=Neutral House,CIVBTM,256,133,94,2,Guard,0,None,0,-1,0,1,1
-21=Neutral House,CIVBTM,256,133,84,4,Guard,96,None,0,-1,0,1,1
+21=Neutral House,CIVBTM,256,133,84,2,Guard,96,None,0,-1,0,1,1
 22=Neutral House,CIVA,256,73,206,2,Guard,0,None,0,-1,0,1,1
 23=BadGuy1 House,GGI,256,108,124,0,Guard,64,None,0,-1,0,1,0
 24=BadGuy1 House,GGI,256,110,124,0,Guard,64,None,0,-1,0,1,0
@@ -5617,6 +5710,7 @@ DestroyableBridges=no
 94=BadGuy1 House,ATESLA,256,99,102,64,None,1,0,1,0,0,None,None,None,0,0
 95=BadGuy1 House,ATESLA,256,74,104,64,None,1,0,1,0,0,None,None,None,0,0
 96=BadGuy1 House,GADEPO,256,58,107,64,None,1,0,1,0,0,None,None,None,0,0
+97=Player House,FACOAT,256,222,77,64,None,1,0,1,0,0,None,None,None,0,0
 1035835=BadGuy1 House,GACNST,256,84,136,0,None,1,1,1,0,0,None,None,None,1,0
 1035838=BadGuy1 House,NASAM,256,76,105,0,None,1,0,1,0,0,None,None,None,0,0
 1035839=BadGuy1 House,NASAM,256,92,133,0,None,1,0,1,0,0,None,None,None,1,0
@@ -5691,6 +5785,7 @@ DestroyableBridges=no
 01000021=0,-D-E 1,01000020
 01000023=0,-D-M 1,01000022
 01000025=0,-D-H 1,01000024
+097137D5=0,Hint 1,097137D4
 06C50460=0,AlliedScouts1 1,06C50B60
 077C9B60=0,StartAsianFleetTimer 1,077C9DD0
 077C9EB0=0,AsianFleetTimer,077C80D0
@@ -6333,7 +6428,7 @@ DestroyableBridges=no
 077C9DD0=Player,<none>,StartAsianFleetTimer,0,1,1,1,0
 07A8FCA0=KoreanFleet,<none>,WIN1,0,1,1,1,0
 07E85310=BadGuy1,<none>,CarrierVsConYard,0,0,1,1,0
-07F8C4B0=BadGuy1,<none>,BG1 Produce,1,1,1,1,0
+07F8C4B0=BadGuy1,<none>,BG1 Produce,0,1,1,1,0
 08212A04=Player,<none>,CreateCrates,0,1,1,1,0
 083828C0=BadGuy1,<none>,AirportTaken2,1,1,1,1,0
 085FD83C=Player,<none>,ArizonaMemDestroyed,0,1,1,1,0
@@ -6342,7 +6437,7 @@ DestroyableBridges=no
 08C5D690=Player,<none>,AirportTaken,0,1,1,1,0
 08CEA10C=BadGuy1,<none>,Start2,0,1,1,1,0
 08CFEF60=Player,<none>,PlayerForcesLand2,0,1,1,1,0
-08E1CC80=Player,<none>,MoveCamera,1,1,1,1,0
+08E1CC80=Player,<none>,MoveCamera,0,1,1,1,0
 0907B050=Player,<none>,PlayerLoss,1,1,1,1,0
 0907FF60=BadGuy1,<none>,AlliedHarassment1,1,0,1,1,0
 090E6394=Player,<none>,FreeCrate,0,1,1,1,0

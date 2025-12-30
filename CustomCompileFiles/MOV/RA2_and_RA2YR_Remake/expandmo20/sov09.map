@@ -2,11 +2,26 @@
 ; Get it at http://www.westwood.com
 ; note that all comments were truncated
 
+[ADOG]
+Armor=f_dog
+
 [AMCV]
 TechLevel=12
 
 [ARMR]
 TechLevel=12
+
+[ATESLA]
+Armor=f_prisma
+
+[Animations]
++=ALERTMARK_ALT
+
+[ArmorTypes]
+f_dog=animal
+f_heli=f_medium
+f_prisma=defense
+f_sniper=flak
 
 [BEAG]
 TechLevel=-1
@@ -53,6 +68,69 @@ Ammo=0
 [CIVA]
 Insignificant=no
 
+[CIVAN]
+Pip=red
+Cost=1000
+Hero=yes
+Ivan=yes
+Name=Chrono Ivan
+Armor=ivan
+Owner=Headquaters,ScorpionCell,Chinese,PsiCorps,Latin,Pacific,USSR,UnitedStates,Europeans,Guild1,Guild2
+Sight=8
+Speed=6
+Bounty=yes
+Points=50
+UIName=Name:CIVAN
+IFVMode=3
+Primary=IvanBomber
+Soylent=500
+Category=VIP
+DieSound=CrazyIvanDie
+Explodes=yes
+Strength=100
+Cloneable=no
+Crushable=no
+Locomotor={4A582747-9839-11d1-B709-00A024DDAFD1}
+TechLevel=8
+Trainable=yes
+VoiceMove=CrazyIvanMove
+BuildLimit=1
+CrushSound=InfantrySquish
+Teleporter=yes
+TypeImmune=yes
+DeathWeapon=IvanDeath
+ImmuneToEMP=no
+ThreatPosed=25
+VoiceAttack=CrazyIvanAttackCommand
+VoiceSelect=CrazyIvanSelect
+Bounty.Value=100
+ElitePrimary=IvanBomberE
+MoveToShroud=no
+MovementZone=Infantry
+PhysicalSize=1
+Prerequisite=GAPILE
+CanBeReversed=no
+ChronoInSound=ChronoLegionTeleport
+ImmuneToVeins=yes
+Insignificant=no
+VoiceFeedback=CrazyIvanFear
+Bounty.Display=yes
+ChronoOutSound=ChronoLegionTeleport
+EliteAbilities=SELF_HEAL,STRONGER,FIREPOWER,ROF
+Insignia.Elite=herostar
+Insignia.Rookie=herostcr
+Insignia.Veteran=herostbr
+VeteranAbilities=STRONGER,FIREPOWER,ROF,SIGHT,FASTER
+Promote.EliteSound=UpgradeVeteranHero
+SpecialThreatValue=1
+VoiceSpecialAttack=CrazyIvanAttackCommand
+Promote.VeteranSound=UpgradeVeteranHero
+IsSelectableCombatant=yes
+AttackCursorOnFriendlies=yes
+Prerequisite.StolenTechs=1
+PixelSelectionBracketDelta=-3
+AllowedToStartInMultiplayer=no
+
 [CIVB]
 Insignificant=no
 
@@ -62,11 +140,15 @@ Insignificant=no
 [CNTR]
 TechLevel=12
 
+[COMA]
+Armor=f_heli
+
 [CONA]
 Insignificant=yes
 ImmuneToPsionics=yes
 
 [DOG]
+Armor=f_dog
 Owner=Headquaters,ScorpionCell,Chinese,PsiCorps,Latin,Pacific,USSR,UnitedStates,Europeans,Guild1,Guild2
 ImmuneToPsionics=yes
 
@@ -83,6 +165,36 @@ ForbiddenHouses=USSR,Latin,Chinese,Guild1,Guild2,Guild3
 Insignificant=yes
 ImmuneToPsionics=yes
 
+[FAAREN]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=Megaarena
+TechLevel=11
+AIBaseNormal=no
+NoManualFire=yes
+Insignificant=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+AttackCursorOnFriendlies=yes
+
+[FACOAT]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=StructureBuff
+TechLevel=11
+AIBaseNormal=no
+NoManualFire=yes
+Insignificant=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+AttackCursorOnFriendlies=yes
+
 [FOX]
 TechLevel=-1
 
@@ -95,11 +207,23 @@ Power=0
 
 [GATECH]
 Power=0
+Spyable=yes
 
 [General]
 ParachuteMaxFallRate=-6
 CampaignMoneyDeltaEasy=2000
 CampaignMoneyDeltaHard=-2000
+
+[HazequadGeneratorReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeAttentMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
 
 [INGALITE]
 Name=Invisible Light Post
@@ -126,11 +250,25 @@ InvisibleInGame=yes
 LightVisibility=4000
 DamageParticleSystems=SparkSys,LGSparkSys
 
+[InfantryTypes]
++=CIVAN
+
 [JUMPJET]
 TechLevel=-1
 
 [MORALES]
 TechLevel=12
+
+[MegaarenaReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeAttentMarkWH2
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
 
 [MindControl]
 ROF=200
@@ -159,6 +297,9 @@ Civilian=no
 Strength=10
 Crushable=no
 Fraidycat=no
+AttachEffect.Duration=-1
+AttachEffect.Animation=ENTERMARK
+AttachEffect.TemporalHidesAnim=no
 
 [PTRUCK]
 Insignificant=yes
@@ -174,6 +315,7 @@ TechLevel=12
 TechLevel=12
 
 [SNIPE]
+Armor=f_sniper
 Prerequisite=GAPILE,GATECH
 
 [STANG]
@@ -192,6 +334,17 @@ ImmuneToPsionics=yes
 Nod=USSR,Latin,Chinese,ScorpionCell
 ThirdSide=PsiCorps,Headquaters
 
+[StructureBuffReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeDangerMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
+
 [TANY]
 TechLevel=12
 
@@ -209,6 +362,26 @@ TechLevel=-1
 [VOLKOV]
 TechLevel=12
 
+[Warheads]
+9997=FakeAttentMarkWH2
+9998=FakeDangerMarkWH
+9999=FakeAttentMarkWH
+
+[YAQUAD]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=HazequadGenerator
+TechLevel=11
+AIBaseNormal=no
+NoManualFire=yes
+Insignificant=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+AttackCursorOnFriendlies=yes
+
 [YENGINEER]
 TechLevel=-1
 
@@ -218,6 +391,9 @@ TechLevel=12
 [YURI]
 UIName=Name:PTROOP
 Strength=100
+AttachEffect.Duration=-1
+AttachEffect.Animation=DEFMARK
+AttachEffect.TemporalHidesAnim=no
 
 
 [Preview]
@@ -289,8 +465,8 @@ Name=ENIGNEER
 Group=-1
 
 [01000025]
-0=21,0
-1=21,0
+0=3,38
+1=49,0
 Name=CAPTURE BARRACKS
 
 [01000026]
@@ -465,8 +641,10 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=yes
 
 [07B08DBC]
-0=0,4
+0=3,38
 1=49,0
+2=0,4
+3=49,0
 Name=spy behavior
 
 [07BD691C]
@@ -1267,10 +1445,10 @@ Max=1
 Full=no
 Name=spy team
 Group=-1
-House=USSR
+House=ScorpionCell
 Script=07B08DBC
 Whiner=no
-Droppod=no
+Droppod=yes
 Suicide=no
 Loadable=no
 Prebuild=no
@@ -1290,11 +1468,12 @@ AvoidThreats=no
 LooseRecruit=no
 VeteranLevel=1
 IsBaseDefense=no
-UseTransportOrigin=no
+TransportWaypoint=CN
+UseTransportOrigin=yes
 MindControlDecision=
 OnlyTargetHouseEnemy=no
 TransportsReturnOnUnload=no
-AreTeamMembersRecruitable=yes
+AreTeamMembersRecruitable=no
 
 [0AD0F48C]
 0=3,62
@@ -1565,7 +1744,6 @@ Name=Attack Infantry
 0C0D184C-G=yes
 0C0D251C-G=yes
 0C1245AC-G=yes
-0C1246FC-G=yes
 0C32599C-G=yes
 0C32D84C-G=yes
 0C87B45C-G=yes
@@ -1573,7 +1751,6 @@ Name=Attack Infantry
 0C87E5AC-G=yes
 0C8B81BC-G=yes
 0C8BC5AC-G=yes
-0C8C2AEC-G=yes
 0C8C2C3C-G=yes
 0C8C430C-G=yes
 0C8C4C3C-G=yes
@@ -1586,7 +1763,6 @@ Name=Attack Infantry
 0C8EE1BC-G=yes
 0C8EEAEC-G=yes
 0C8EEEDC-G=yes
-0C91D45C-G=yes
 0C92C1BC-G=yes
 0C92C45C-G=yes
 0C955AEC-G=yes
@@ -1596,17 +1772,11 @@ Name=Attack Infantry
 0C96F45C-G=yes
 0C96F5AC-G=yes
 0CA1F84C-G=yes
-0CA24D8C-G=yes
 0CA2A04C-G=yes
 0CA2B06C-G=yes
-0CA2D99C-G=yes
-0CA2FEDC-G=yes
 0CA5945C-G=yes
 0CA6621C-G=yes
-0CA6AEDC-G=yes
 0CAD0B2C-G=yes
-0CAD0C7C-G=yes
-0CAD0DCC-G=yes
 0CAD130C-G=yes
 0CAD145C-G=yes
 0CAD25AC-G=yes
@@ -1618,17 +1788,13 @@ Name=Attack Infantry
 0CB29EDC-G=yes
 0CB2CEDC-G=yes
 0CDF899C-G=yes
-0CDF8D8C-G=yes
-0CDF8EDC-G=yes
 0CE2395C-G=yes
-0CE23AAC-G=yes
 0CE26B5C-G=yes
 0CE26CAC-G=yes
 0CE2E8DC-G=yes
 0CE2EA2C-G=yes
 0CE44D0C-G=yes
 0D022B1C-G=yes
-0D022C6C-G=yes
 0D052AEC-G=yes
 0D0803CC-G=yes
 0D08461C-G=yes
@@ -1640,10 +1806,8 @@ Name=Attack Infantry
 0D0B3B9C-G=yes
 0D2769BC-G=yes
 0D2C41EC-G=yes
-0D2C448C-G=yes
 0D2C45DC-G=yes
 0D53099C-G=yes
-0D53130C-G=yes
 0D53430C-G=yes
 0D535EDC-G=yes
 0D62145C-G=yes
@@ -1658,7 +1822,6 @@ Name=Attack Infantry
 0ECCF14C-G=yes
 0ECCF29C-G=yes
 0ECCF68C-G=yes
-0ECCFA7C-G=yes
 0ECCFCAC-G=yes
 
 [Actions]
@@ -1669,9 +1832,9 @@ Name=Attack Infantry
 01000011=8,11,4,REMAKESOV:S09g,0,0,0,0,A,11,4,REMAKESOV:S09h,0,0,0,0,A,112,0,0,0,0,0,0,CE,19,7,CameraSwitch,0,0,0,0,A,53,2,01000013,0,0,0,0,A,131,9,GAWEAP,0,0,0,0,60,131,9,GATECH,0,0,0,0,60,131,9,GAAIRC,0,0,0,0,60
 01000013=4,19,7,CameraSwitch,0,0,0,0,A,112,0,0,0,0,0,0,CF,53,2,01000021,0,0,0,0,A,131,9,CAMACH,0,0,0,0,60
 01000015=1,20,8,Fantasy,0,0,0,0,A
-01000019=1,16,0,0,0,0,0,0,A
+01000019=11,17,0,0,0,0,0,0,A,17,0,1,0,0,0,0,B,17,0,2,0,0,0,0,C,17,0,3,0,0,0,0,D,17,0,4,0,0,0,0,E,17,0,86,0,0,0,0,CI,17,0,100,0,0,0,0,CW,17,0,97,0,0,0,0,CT,17,0,83,0,0,0,0,CF,17,0,21,0,0,0,0,V,17,0,33,0,0,0,0,AH
 01000021=6,53,2,0A41304C,0,0,0,0,A,53,2,0A41405C,0,0,0,0,A,53,2,07C7BADC,0,0,0,0,A,112,0,0,0,0,0,0,AL,19,7,CameraSwitch,0,0,0,0,A,53,2,01000027,0,0,0,0,A
-01000027=2,80,1,01000026,0,0,0,0,AM,53,2,07B79B4C,0,0,0,0,A
+01000027=5,17,0,37,0,0,0,0,AL,17,0,23,0,0,0,0,X,80,1,01000026,0,0,0,0,AM,80,1,0AC22EFC,0,0,0,0,AM,53,2,07B79B4C,0,0,0,0,A
 01000030=1,80,1,01000029,0,0,0,0,BN
 01000032=2,80,1,01000029,0,0,0,0,CF,54,2,01000034,0,0,0,0,A
 01000034=2,80,1,01000029,0,0,0,0,CF,54,2,01000032,0,0,0,0,A
@@ -1689,9 +1852,10 @@ Name=Attack Infantry
 01000062=1,11,4,MISSION:DEASY,0,0,0,0,A
 01000064=1,11,4,MISSION:DMEDIUM,0,0,0,0,A
 01000066=1,11,4,MISSION:DHARD,0,0,0,0,A
-03E3836C=10,17,0,0,0,0,0,0,A,17,0,1,0,0,0,0,B,17,0,2,0,0,0,0,C,17,0,3,0,0,0,0,D,17,0,4,0,0,0,0,E,17,0,23,0,0,0,0,X,17,0,33,0,0,0,0,AH,17,0,34,0,0,0,0,AI,17,0,35,0,0,0,0,AJ,17,0,37,0,0,0,0,AL
+01000068=1,2,0,7,0,0,0,0,A
+03E3836C=0
 03E6827C=1,11,4,REMAKESOV:S09b,0,0,0,0,A
-03E6DF3C=2,11,4,REMAKESOV:S09a,0,0,0,0,A,55,0,5,0,0,0,0,A
+03E6DF3C=3,11,4,REMAKESOV:S09a,0,0,0,0,A,55,0,5,0,0,0,0,A,53,2,0A73F88C,0,0,0,0,A
 03EAB030=1,53,2,07A7507C,0,0,0,0,A
 04162F3C=1,108,0,11,0,0,0,0,BH
 041636AC=1,108,0,14,0,0,0,0,BI
@@ -1701,11 +1865,10 @@ Name=Attack Infantry
 0417477C=1,108,0,0,0,0,0,0,BD
 0757067C=1,6,0,0,0,0,0,0,A
 07A59A6C=1,4,1,08BA2CCC,0,0,0,0,A
-07A7507C=1,2,0,7,0,0,0,0,A
-07B35C6C=1,114,0,2,0,0,0,0,A
-07B7942C=3,55,0,5,0,0,0,0,X,55,0,5,0,0,0,0,AH,11,4,REMAKESOV:S09c,0,0,0,0,A
+07A7507C=2,53,2,01000068,0,0,0,0,A,11,4,REMAKESOV:S09с,0,0,0,0,A
+07B7942C=2,55,0,5,0,0,0,0,X,55,0,5,0,0,0,0,AH
 07B79B4C=4,47,0,0,0,0,0,0,A,53,2,092CCD8C,0,0,0,0,A,21,6,EVA_BattleControlOnline,0,0,0,0,A,11,4,REMAKESOV:BCONLINE,0,0,0,0,
-07B7BBAC=3,55,0,5,0,0,0,0,X,55,0,5,0,0,0,0,AH,11,4,REMAKESOV:S09c,0,0,0,0,A
+07B7BBAC=2,55,0,5,0,0,0,0,X,55,0,5,0,0,0,0,AH
 07B7C7BC=1,11,4,REMAKESOV:S09a,0,0,0,0,A
 07B8036C=2,46,0,0,0,0,0,0,A,21,6,EVA_EstablishBattlefieldControl,0,0,0,0,A
 07B834EC=1,48,0,2,0,0,0,0,AL
@@ -1714,20 +1877,20 @@ Name=Attack Infantry
 07F3773C=1,14,0,7,0,0,0,0,A
 082C788C=11,99,7,_Amb_Traffic,0,0,0,0,AS,99,7,_Amb_UrbanMurmur1,0,0,0,0,AT,99,7,_Amb_UrbanMurmur2,0,0,0,0,AU,99,7,_Amb_Traffic,0,0,0,0,AV,99,7,_Amb_Traffic,0,0,0,0,AC,99,7,_Amb_UrbanMurmur2,0,0,0,0,BQ,99,7,_Amb_UrbanMurmur2,0,0,0,0,S,99,7,_Amb_UrbanMurmur2,0,0,0,0,M,99,7,_Amb_UrbanMurmur2,0,0,0,0,R,99,7,_Amb_UrbanMurmur2,0,0,0,0,Q,99,7,_Amb_UrbanMurmur1,0,0,0,0,BR
 083BA9CC=2,80,1,0ABE496C,0,0,0,0,BJ,80,1,0AD0F7DC,0,0,0,0,BJ
-086A4CCC=2,2,0,7,0,0,0,0,A,21,6,EVA_CriticalUnitLost,0,0,0,0,A
+086A4CCC=3,53,2,01000068,0,0,0,0,A,21,6,EVA_CriticalUnitLost,0,0,0,0,A,11,4,REMAKESOV:S09j,0,0,0,0,A
 0873BB5C=6,11,4,MISSION:OBJC,0,0,0,0,A,1,0,7,0,0,0,0,A,53,2,0878DF3C,0,0,0,0,A,53,2,0CC0044C,0,0,0,0,A,53,2,0CC00E5C,0,0,0,0,A,53,2,0CBFF28C,0,0,0,0,A
 0878DF3C=1,37,0,5,0,0,0,0,A
 08C7D24C=7,99,7,_Amb_BirdsPark,0,0,0,0,AA,99,7,_Amb_BirdsTemperate1,0,0,0,0,BL,99,7,_Amb_BirdsPark,0,0,0,0,BM,99,7,_Amb_BirdsTemperate1,0,0,0,0,BN,99,7,_Amb_BirdsPark,0,0,0,0,BO,99,7,_Amb_BirdsPark,0,0,0,0,BP,99,7,_Amb_BirdsTemperate1,0,0,0,0,BS
 08E6D1BC=1,80,1,090B3A4C,0,0,0,0,Y
 08EC703C=1,80,1,0871BC9C,0,0,0,0,H
-08EEE03C=3,80,1,08F74C8C,0,0,0,0,AI,80,1,0A41E93C,0,0,0,0,AK,80,1,08F7459C,0,0,0,0,AJ
+08EEE03C=6,8,0,34,0,0,0,0,AI,8,0,36,0,0,0,0,AK,8,0,35,0,0,0,0,AJ,80,1,08F74C8C,0,0,0,0,AI,80,1,0A41E93C,0,0,0,0,AK,80,1,08F7459C,0,0,0,0,AJ
 08F00EFC=1,80,1,08F03B4C,0,0,0,0,AE
 092CBF3C=1,54,2,092CCD8C,0,0,0,0,A
 092CCD8C=1,11,4,REMAKESOV:S09b,0,0,0,0,A
 0933136C=2,80,1,0CBEFA4C,0,0,0,0,AA,80,1,08D9846C,0,0,0,0,AC
 09E41DCC=1,4,1,0C0F3A9C,0,0,0,0,A
 0A27F75C=1,11,4,REMAKESOV:S09d,0,0,0,0,A
-0A3CCF3C=1,100,0,105,0,0,0,0,A
+0A3CCF3C=1,100,0,104,0,0,0,0,A
 0A41304C=1,80,1,0A4751FC,0,0,0,0,AL
 0A41405C=1,80,1,0A474DEC,0,0,0,0,AL
 0A53A1DC=1,4,1,0872F6DC,0,0,0,0,A
@@ -1741,7 +1904,7 @@ Name=Attack Infantry
 
 [Basic]
 Name=The_Fox_and_the_Hound
-Brief=s09_f00e
+Brief=S09_f00e
 Theme=Tension
 Player=ScorpionCell
 Percent=0
@@ -1768,21 +1931,9 @@ AltNextScenario=
 MultiplayerOnly=0
 IceGrowthEnabled=no
 VeinGrowthEnabled=no
-TiberiumGrowthEnabled=yes
-IgnoreGlobalAITriggers=yes
+TiberiumGrowthEnabled=no
+IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-
-[CIVAN]
-Cost=1000
-Name=Chrono Ivan
-Owner=Headquaters,ScorpionCell,Chinese,PsiCorps,Latin,Pacific,USSR,UnitedStates,Europeans,Guild1,Guild2
-UIName=Name:CIVAN
-Primary=IvanBomber
-Category=Soldier
-TechLevel=1
-Prerequisite=GAPILE
-RequiresStolenAlliedTech=yes
-AllowedToStartInMultiplayer=no
 
 [CellTags]
 53058=0757013C
@@ -1873,6 +2024,7 @@ PlayerControl=no
 01000062=1,8,0,0
 01000064=1,8,0,0
 01000066=1,8,0,0
+01000068=1,13,0,5
 03E3836C=1,8,0,0
 03E6827C=1,47,0,93
 03E6DF3C=1,47,0,105
@@ -1886,7 +2038,6 @@ PlayerControl=no
 0757067C=1,1,0,5
 07A59A6C=1,8,0,0
 07A7507C=1,9,0,5
-07B35C6C=1,13,0,1
 07B7942C=1,47,0,150
 07B79B4C=1,13,0,5
 07B7BBAC=1,47,0,180
@@ -1907,7 +2058,7 @@ PlayerControl=no
 08EEE03C=1,8,0,0
 08F00EFC=1,8,0,0
 092CBF3C=1,44,0,5
-092CCD8C=1,13,0,140
+092CCD8C=1,13,0,100
 0933136C=1,8,0,0
 09E41DCC=1,13,0,20
 0A27F75C=2,32,0,13,32,0,2
@@ -1915,13 +2066,56 @@ PlayerControl=no
 0A41304C=1,13,0,1
 0A41405C=1,13,0,1
 0A53A1DC=1,44,0,5
-0A73F88C=1,47,0,300
+0A73F88C=1,13,0,105
 0ABBE1DC=1,47,0,90
 0C1C9D8C=1,7,0,0
 0CBFF28C=1,8,0,0
 0CC0044C=1,8,0,0
 0CC00E5C=1,8,0,0
 0D36A0FC=1,41,0,0
+
+[FakeAttentMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=no
+PercentAtMax=1
+Versus.f_dog=3%
+AffectsAllies=no
+AffectsEnemies=yes
+Versus.f_sniper=3%
+AttachEffect.Duration=125
+AttachEffect.Animation=ALERTMARK
+AttachEffect.DiscardOnEntry=yes
+AttachEffect.PenetratesIronCurtain=yes
+
+[FakeAttentMarkWH2]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=no
+PercentAtMax=1
+AffectsAllies=no
+AffectsEnemies=yes
+Versus.f_prisma=3%
+AttachEffect.Duration=125
+AttachEffect.Animation=ALERTMARK_ALT
+AttachEffect.DiscardOnEntry=yes
+AttachEffect.PenetratesIronCurtain=yes
+
+[FakeDangerMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=no
+PercentAtMax=1
+AffectsAllies=no
+Versus.f_heli=3%
+AffectsEnemies=yes
+AttachEffect.Duration=125
+AttachEffect.Animation=DANGERMARK
+AttachEffect.DiscardOnEntry=yes
+AttachEffect.PenetratesIronCurtain=yes
 
 [Guild1]
 IQ=0
@@ -1978,12 +2172,12 @@ PlayerControl=no
 0=Guild1,GHOST,256,64,61,3,Guard,224,None,0,-1,0,1,1
 1=USSR,GHOST,256,61,61,2,Guard,64,None,0,-1,0,1,1
 2=Guild1,GHOST,256,64,58,2,Guard,192,None,0,-1,0,1,1
-3=Guild1,GHOST,256,62,59,4,Guard,192,None,0,-1,0,1,1
-4=UnitedStates,GHOST,256,74,59,4,Guard,192,None,0,-1,0,1,1
+3=Guild1,GHOST,256,62,59,2,Guard,192,None,0,-1,0,1,1
+4=UnitedStates,GHOST,256,74,59,2,Guard,192,None,0,-1,0,1,1
 5=UnitedStates,GHOST,256,74,58,2,Guard,96,None,0,-1,0,1,1
 6=UnitedStates,GHOST,256,56,59,3,Guard,192,None,0,-1,0,1,1
 7=UnitedStates,GHOST,256,75,59,0,Guard,64,None,0,-1,0,1,1
-8=UnitedStates,DOG,256,75,59,4,Guard,64,None,0,-1,0,1,1
+8=UnitedStates,DOG,256,75,59,2,Guard,64,None,0,-1,0,1,1
 9=Europeans,E1,256,80,52,0,Guard,64,None,0,-1,0,1,0
 10=Europeans,GGI,256,54,102,0,Guard,64,None,0,-1,0,1,0
 11=Europeans,GGI,256,57,99,1,Guard,64,None,0,-1,0,1,0
@@ -1993,44 +2187,44 @@ PlayerControl=no
 15=Europeans,E1,256,82,67,0,Guard,0,None,0,-1,0,0,0
 16=Europeans,E1,256,81,61,0,Guard,0,None,0,-1,0,0,0
 17=Latin,SNIPE,256,83,31,0,Guard,192,092CBBEC,100,-1,0,0,0
-18=Europeans,E1,256,87,38,4,Guard,0,None,0,-1,0,0,0
+18=Europeans,E1,256,87,38,2,Guard,0,None,0,-1,0,0,0
 19=Europeans,GGI,256,82,52,0,Guard,64,None,0,-1,0,1,0
 20=Europeans,E1,256,80,57,0,Guard,0,None,0,-1,0,0,0
 21=UnitedStates,GHOST,256,56,58,3,Guard,192,None,0,-1,0,1,1
-22=UnitedStates,GHOST,256,56,58,4,Guard,64,None,0,-1,0,1,1
+22=UnitedStates,GHOST,256,56,58,2,Guard,64,None,0,-1,0,1,1
 23=UnitedStates,GHOST,256,57,59,0,Guard,128,None,0,-1,0,1,1
 24=UnitedStates,GHOST,256,56,57,3,Guard,192,None,0,-1,0,1,1
 25=UnitedStates,GHOST,256,56,58,2,Guard,64,None,0,-1,0,1,1
-26=UnitedStates,GHOST,256,56,59,4,Guard,160,None,0,-1,0,1,1
+26=UnitedStates,GHOST,256,56,59,2,Guard,160,None,0,-1,0,1,1
 27=UnitedStates,GHOST,256,56,60,2,Guard,192,None,0,-1,0,1,1
 28=USSR,CIVA,256,48,66,2,Guard,192,None,0,-1,0,1,1
 29=USSR,CIVA,256,24,69,2,Guard,192,None,0,-1,0,1,1
 30=USSR,CIVA,256,53,80,3,Guard,0,None,0,-1,0,1,1
 31=USSR,CIVA,256,86,72,2,Guard,192,None,0,-1,0,1,1
 32=USSR,CIVA,256,96,54,0,Guard,0,None,0,-1,0,1,1
-33=USSR,CIVB,256,90,57,4,Guard,192,None,0,-1,0,1,1
+33=USSR,CIVB,256,90,57,2,Guard,192,None,0,-1,0,1,1
 34=USSR,CIVB,256,85,74,2,Guard,192,None,0,-1,0,1,1
 35=USSR,CIVB,256,70,79,2,Guard,192,None,0,-1,0,1,1
 36=USSR,CIVB,256,49,75,2,Guard,64,None,0,-1,0,1,1
 37=USSR,CIVB,256,20,66,3,Guard,32,None,0,-1,0,1,1
-38=USSR,CIVB,256,46,40,4,Guard,0,None,0,-1,0,1,1
+38=USSR,CIVB,256,46,40,2,Guard,0,None,0,-1,0,1,1
 39=USSR,CIVC,256,47,40,2,Guard,224,None,0,-1,0,1,1
 40=USSR,CIVC,256,59,42,3,Guard,64,None,0,-1,0,1,1
 41=USSR,CIVC,256,56,90,3,Guard,224,None,0,-1,0,1,1
-42=USSR,CIVC,256,40,83,4,Guard,160,None,0,-1,0,1,1
+42=USSR,CIVC,256,40,83,2,Guard,160,None,0,-1,0,1,1
 43=USSR,CIVC,256,49,67,3,Guard,192,None,0,-1,0,1,1
 44=USSR,CIVC,256,44,51,3,Guard,224,None,0,-1,0,1,1
 45=USSR,CIVB,256,64,42,3,Guard,192,None,0,-1,0,1,1
 46=USSR,CIVB,256,73,38,2,Guard,64,None,0,-1,0,1,1
 47=USSR,CIVB,256,89,73,3,Guard,64,None,0,-1,0,1,1
-48=USSR,CIVC,256,73,44,4,Guard,0,None,0,-1,0,1,1
+48=USSR,CIVC,256,73,44,2,Guard,0,None,0,-1,0,1,1
 49=USSR,GHOST,256,64,63,2,Guard,64,None,0,-1,0,1,1
 50=USSR,CIV1,256,45,49,3,Guard,128,None,0,-1,0,1,1
 51=USSR,CIV1,256,42,84,2,Guard,0,None,0,-1,0,1,1
 52=USSR,CIV1,256,68,80,2,Guard,0,None,0,-1,0,1,1
-53=USSR,CIV1,256,84,73,4,Guard,0,None,0,-1,0,1,1
+53=USSR,CIV1,256,84,73,2,Guard,0,None,0,-1,0,1,1
 54=USSR,CIV1,256,97,56,3,Guard,0,None,0,-1,0,1,1
-55=USSR,CIV1,256,49,73,4,Guard,0,None,0,-1,0,1,1
+55=USSR,CIV1,256,49,73,2,Guard,0,None,0,-1,0,1,1
 56=Europeans,E1,256,83,57,0,Guard,64,None,0,-1,0,1,0
 57=Europeans,E1,256,80,64,0,Guard,64,None,0,-1,0,1,0
 58=Europeans,GGI,256,57,102,1,Guard,64,None,0,-1,0,1,0
@@ -3012,7 +3206,7 @@ DestroyableBridges=no
 69=Europeans,ATESLA,256,48,21,64,None,1,0,1,0,0,None,None,None,0,0
 70=Europeans,ATESLA,256,67,21,64,None,1,0,1,0,0,None,None,None,0,0
 71=Europeans,ATESLA,256,57,21,64,None,1,0,1,0,0,None,None,None,0,0
-72=Europeans,GATECH,256,70,18,0,08FD794C,1,0,1,0,0,None,None,None,0,0
+72=Europeans,GATECH,256,70,18,0,None,1,0,1,0,0,None,None,None,0,0
 73=Neutral,INGALITE,256,57,17,64,None,1,0,1,0,0,None,None,None,0,0
 74=Neutral,INGALITE,256,71,52,64,None,1,0,1,0,0,None,None,None,0,0
 75=Neutral,CABUBB02,256,33,42,64,None,1,0,1,0,0,None,None,None,0,0
@@ -3062,6 +3256,9 @@ DestroyableBridges=no
 119=Neutral,CAPARK02,256,74,95,0,None,0,0,1,0,0,None,None,None,0,0
 120=Neutral,CAPARK01,256,69,86,0,None,0,0,1,0,0,None,None,None,0,0
 121=Europeans,GADEPO,256,61,10,64,None,1,0,1,0,0,None,None,None,0,0
+122=ScorpionCell,FACOAT,256,112,66,64,None,1,0,1,0,0,None,None,None,0,0
+123=ScorpionCell,FAAREN,256,111,69,64,None,1,0,1,0,0,None,None,None,0,0
+124=ScorpionCell,YAQUAD,256,110,70,64,None,1,0,1,0,0,None,None,None,0,0
 1019557=UnitedStates,GAPOWR,256,68,66,0,None,1,0,1,0,0,None,None,None,0,0
 1019562=Neutral,CATEXS03,256,41,61,0,None,0,0,1,0,0,None,None,None,0,0
 1019563=Neutral,CATEXS04,256,45,72,0,None,0,0,1,0,0,None,None,None,0,0
@@ -3104,7 +3301,7 @@ DestroyableBridges=no
 01000012=0,DIALOG3-1 1,01000011
 01000014=0,DIALOG3-2 1,01000013
 01000016=0,MUSIC 1,01000015
-01000020=0,SHOW FULL MAP 1,01000019
+01000020=0,SHOW waipoint 1,01000019
 01000022=0,DIALOG4 1,01000021
 01000028=0,DIALOG5 1,01000027
 01000031=0,PLAYER CAPTURE BANK 1,01000030
@@ -3124,6 +3321,7 @@ DestroyableBridges=no
 01000063=0,-D-E 1,01000062
 01000065=0,-D-M 1,01000064
 01000067=0,-D-H 1,01000066
+01000069=0,Bad End 1,01000068
 03E3991C=0,Clear Starting Shroud 1,03E3836C
 03E680EC=0,Text - Hint1 1,03E6827C
 03E6CE6C=0,Text - Obj1 1,03E6DF3C
@@ -3138,18 +3336,19 @@ DestroyableBridges=no
 07A4F52C=0,Pres is Dead 1,086A4CCC
 07A5986C=0,Southern Patrol,07A59A6C
 07A7692C=0,Yuri's are Dead 1,07A7507C
-07B3561C=0,Flip Tab 1,07B35C6C
 07B7951C=0,Reminder 1,07B7C7BC
 07B7A13C=0,Ping Bases 1,07B7942C
 07B7B69C=0,Ping Again 1,07B7BBAC
 07B7FCCC=0,Unlock Input 1,07B79B4C
 07B835DC=0,Lock Input 1,07B8036C
 07B84F0C=0,Scroll Camera 1,07B834EC
+07C7BA0C=0,Yuri Drop 1,07C7BADC
 07C7CD2C=0,Yuri Drop Hard 1,0A41405C
 07CD272C=0,Switch Power House 1,07CD2C6C
 07F32EEC=0,Spot Radar 1,07F3773C
 082C470C=0,Ambient Sounds 1,082C788C
 083BA30C=0,create Pres Guards 1,083BA9CC
+086A4C0C=0,Pres is Captured 1,0873BB5C
 0878DCAC=0,Ally UnitedStates 1,0878DF3C
 08E6D62C=0,ifv patrol 1,08E6D1BC
 08EDF03C=0,Initial Drop 1,08EEE03C
@@ -3161,9 +3360,10 @@ DestroyableBridges=no
 09E4173C=2,Create IFV Free Teams 1,09E41DCC
 0A27F2EC=0,text hint - 2 1,0A27F75C
 0A3CC3BC=0,President Movie 1,0A3CCF3C
+0A41305C=0,Yuri Drop - Easy 1,0A41304C
 0A53B94C=0,Reactive Defense 1,0A53A1DC
 0A5A99CC=0,Ambient Birds 1,08C7D24C
-0A73FC2C=0,Txt - Obj Reminder 2,0A73F88C
+0A73FC2C=2,Txt - Obj Reminder 2,0A73F88C
 0AD2A04C=0,Create Civies 1,0ABBE1DC
 0C1C933C=0,Alamo Destroyed 1,0C1C9D8C
 0CC0024C=0,Allly ScorpionCell 1,0CC0044C
@@ -3514,7 +3714,7 @@ DestroyableBridges=no
 01000011=Europeans,<none>,DIALOG3-1,1,1,1,1,0
 01000013=Europeans,<none>,DIALOG3-2,1,1,1,1,0
 01000015=UnitedStates,<none>,MUSIC,0,1,1,1,0
-01000019=ScorpionCell,<none>,SHOW FULL MAP,0,1,1,1,0
+01000019=ScorpionCell,<none>,SHOW waipoint,0,1,1,1,0
 01000021=UnitedStates,<none>,DIALOG4,1,1,1,1,0
 01000027=UnitedStates,<none>,DIALOG5,1,1,1,1,0
 01000030=ScorpionCell,<none>,PLAYER CAPTURE BANK,0,0,1,1,0
@@ -3534,7 +3734,8 @@ DestroyableBridges=no
 01000062=UnitedStates,<none>,-D-E,0,1,0,0,0
 01000064=UnitedStates,<none>,-D-M,0,0,1,0,0
 01000066=UnitedStates,<none>,-D-H,0,0,0,1,0
-03E3836C=Chinese,<none>,Clear Starting Shroud,1,1,1,1,0
+01000068=UnitedStates,<none>,Bad End,1,1,1,1,0
+03E3836C=Chinese,<none>,Clear Starting Shroud,0,1,1,1,0
 03E6827C=UnitedStates,<none>,Text - Hint1,0,1,1,1,0
 03E6DF3C=Chinese,<none>,Text - Obj1,0,1,1,1,0
 03EAB030=Chinese,<none>,Enable Yuri Dead,0,1,1,1,0
@@ -3547,14 +3748,13 @@ DestroyableBridges=no
 0757067C=UnitedStates,<none>,Player in Base,0,1,1,1,0
 07A59A6C=UnitedStates,<none>,Southern Patrol,0,1,1,1,0
 07A7507C=Chinese,<none>,Yuri's are Dead,1,1,1,1,0
-07B35C6C=ScorpionCell,<none>,Flip Tab,1,1,1,1,0
 07B7942C=UnitedStates,<none>,Ping Bases,0,1,1,0,0
 07B79B4C=Chinese,<none>,Unlock Input,1,1,1,1,0
 07B7BBAC=Chinese,<none>,Ping Again,0,1,1,0,0
 07B7C7BC=Chinese,<none>,Reminder,0,1,1,1,0
 07B8036C=ScorpionCell,<none>,Lock Input,0,1,1,1,0
 07B834EC=Headquaters,<none>,Scroll Camera,1,1,1,1,0
-07C7BADC=Headquaters,<none>,Yuri Drop,1,0,1,1,0
+07C7BADC=Headquaters,<none>,Yuri Drop,1,0,1,0,0
 07CD2C6C=UnitedStates,<none>,Switch Power House,0,1,1,1,0
 07F3773C=Headquaters,<none>,Spot Radar,0,1,1,1,0
 082C788C=UnitedStates,<none>,Ambient Sounds,0,1,1,1,0
@@ -3573,10 +3773,10 @@ DestroyableBridges=no
 09E41DCC=UnitedStates,<none>,Create IFV Free Teams,0,1,1,1,0
 0A27F75C=ScorpionCell,<none>,text hint - 2,0,1,1,1,0
 0A3CCF3C=UnitedStates,<none>,President Movie,0,1,1,1,0
-0A41304C=Headquaters,07C7BADC,Yuri Drop - Easy,1,1,0,0,0
-0A41405C=Headquaters,0A41304C,Yuri Drop Hard,1,0,0,1,0
+0A41304C=Headquaters,<none>,Yuri Drop - Easy,1,1,0,0,0
+0A41405C=Headquaters,<none>,Yuri Drop Hard,1,0,0,1,0
 0A53A1DC=UnitedStates,<none>,Reactive Defense,0,1,1,1,0
-0A73F88C=Chinese,<none>,Text Object 1 Remind,0,1,1,1,0
+0A73F88C=Chinese,<none>,Text Object 1 Remind,1,1,1,1,0
 0ABBE1DC=USSR,<none>,Create Civies,0,1,1,1,0
 0C1C9D8C=USSR,<none>,Alamo Destroyed,0,1,1,1,0
 0CBFF28C=USSR,<none>,Ally USSR,1,1,1,1,0
@@ -3627,9 +3827,10 @@ PlayerControl=no
 15=Special,CAR,256,45,84,0,Sleep,None,0,-1,0,-1,1,1
 16=Special,CAR,256,53,89,0,Sleep,None,0,-1,0,-1,1,1
 17=UnitedStates,ABRM,256,70,58,64,Guard,None,0,-1,0,-1,1,0
+18=Special,ABRM,256,82,39,64,Harmless,None,0,-1,0,-1,1,0
 19=Special,CAR,256,53,100,0,Sleep,None,0,-1,0,-1,1,1
 20=UnitedStates,FV,256,78,57,128,Move,None,0,-1,0,-1,1,1
-21=Europeans,SHAD,256,87,35,0,Sleep,092CBBEC,0,-1,0,-1,1,1
+21=Special,SHAD,256,87,35,0,Harmless,092CBBEC,0,-1,0,-1,1,1
 22=Europeans,ETNK,256,85,42,128,Guard,None,0,-1,0,-1,1,0
 23=Europeans,ETNK,256,61,18,128,Guard,None,0,-1,0,-1,1,0
 24=Neutral,PTRUCK,256,65,81,0,Sleep,None,0,-1,0,-1,1,1
@@ -3661,7 +3862,6 @@ PlayerControl=no
 50=Neutral,TRUCKB,256,96,73,64,Sleep,0416735C,0,-1,0,-1,1,1
 51=Neutral,TRUCKB,256,96,72,64,Sleep,041743CC,0,-1,0,-1,1,1
 52=Neutral,TRUCKB,256,96,71,64,Sleep,0417469C,0,-1,0,-1,1,1
-53=Neutral,ABRM,256,82,39,64,Sleep,None,0,-1,0,-1,1,0
 54=Europeans,ETNK,256,29,50,96,Guard,None,0,-1,0,-1,1,0
 55=Europeans,ETNK,256,60,107,224,Guard,None,0,-1,0,-1,1,0
 57=Europeans,ETNK,256,55,101,0,Guard,None,0,-1,0,-1,1,0
@@ -3681,13 +3881,13 @@ PlayerControl=no
 0=59064
 1=58057
 2=59077
-3=70066
-4=51064
-5=105052
+3=67066
+4=53064
+5=48033
 6=80052
 7=55052
 8=69052
-9=104050
+9=56050
 10=92079
 11=25079
 12=25077
@@ -3775,9 +3975,10 @@ PlayerControl=no
 94=51058
 95=51073
 96=49084
-97=42029
+97=50088
 98=53033
 99=58053
+100=19064
 
 
 

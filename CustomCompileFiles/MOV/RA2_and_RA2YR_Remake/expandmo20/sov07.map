@@ -16,149 +16,115 @@ TechLevel=12
 [CHITZ]
 TechLevel=12
 
-[CIVE1]
-Pip=yellow
-Ammo=100
-Cost=10
-Name=Civilian Snow Female
-Size=1
-Armor=none
-Image=CIVSF
-Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell
-Sight=2
-Speed=4
-Points=0
-UIName=Name:CIVILIAN
-Nominal=yes
-Primary=Pistola
-Soylent=50
-Category=Soldier
-DieSound=CivSovFemDie
-Explodes=yes
-Occupier=no
-Strength=50
-Crushable=no
-Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}1}
-TechLevel=11
-Trainable=no
-VoiceMove=CivSovFemMove
-CrushSound=InfantrySquish
-DeathWeapon=InfantryDeathWeapon
-ImmuneToEMP=no
-ThreatPosed=0
-VoiceAttack=CivSovFemAttackCommand
-VoiceSelect=CivSovFemSelect
-ElitePrimary=Pistola
-MovementZone=Infantry
-PhysicalSize=1
-CanBeReversed=no
-ImmuneToVeins=yes
-Insignificant=no
-VoiceFeedback=CivSovFemFear
-Insignia.Elite=dummy
-RadarInvisible=yes
-Insignia.Veteran=dummy
-VoiceSpecialAttack=CivSovFemMove
-PixelSelectionBracketDelta=-3
+[MAMM]
+AttachEffect.Duration=-1
+AttachEffect.Animation=VIPMARK
+AttachEffect.TemporalHidesAnim=no
+AttachEffect.PenetratesIronCurtain=yes
 
-[CIVE2]
-Pip=yellow
-Ammo=100
-Cost=10
-Name=Civilian Snow Fat Male
-Size=1
-Armor=none
-Image=CIVSFM
-Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell
-Sight=2
-Speed=4
-Points=0
-UIName=Name:CIVILIAN
-Nominal=yes
-Primary=Pistola
-Soylent=50
+[E2_CIVIL]
+Name=Conscript
 Category=Soldier
-DieSound=CivSovFemDie
-Explodes=yes
-Occupier=no
-Strength=50
-Crushable=no
-Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}1}
-TechLevel=11
-Trainable=no
-VoiceMove=CivSovFemMove
-CrushSound=InfantrySquish
-DeathWeapon=InfantryDeathWeapon
-ImmuneToEMP=no
-ThreatPosed=0
-VoiceAttack=CivSovFemAttackCommand
-VoiceSelect=CivSovFemSelect
+Primary=Pistola
 ElitePrimary=Pistola
-MovementZone=Infantry
+OccupyWeapon=Pistola
+EliteOccupyWeapon=Pistola
+Occupier=yes
+Prerequisite=NAHAND
+CrushSound=InfantrySquish
+Strength=125
+Fearless=yes
+Armor=flak_t1
+TechLevel=11
+Pip=white
+OccupyPip=PersonRed
+Sight=7
+Speed=7
+Owner=USSR,Latin,Chinese
+Cost=60
+Soylent=30
+Bounty.Value=12
+Bounty=yes
+Bounty.Display=yes
+Points=5
+IsSelectableCombatant=yes
+VoiceSelect=ConscriptSelect
+VoiceMove=ConscriptMove
+VoiceAttack=ConscriptAttackCommand
+VoiceFeedback=ConscriptFear
+VoiceSpecialAttack=ConscriptMove
+DieSound=ConscriptDie
+Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 PhysicalSize=1
-CanBeReversed=no
+MovementZone=Infantry
+ThreatPosed=5
+AllowedToStartInMultiplayer=yes
+VeteranAbilities=STRONGER
+EliteAbilities=SELF_HEAL,FIREPOWER,FASTER
 ImmuneToVeins=yes
-Insignificant=no
-VoiceFeedback=CivSovFemFear
-Insignia.Elite=dummy
-RadarInvisible=yes
-Insignia.Veteran=dummy
-VoiceSpecialAttack=CivSovFemMove
+Size=1
+IFVMode=2
 PixelSelectionBracketDelta=-3
+ImmuneToEMP=no
+Fraidycat=no
+CivilianEnemy=yes
 
-[CIVE3]
-Pip=yellow
-Ammo=100
-Cost=10
-Name=Civilian Snow Thin Male
-Size=1
-Armor=none
-Image=CIVSTM
-Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell
-Sight=2
-Speed=4
-Points=0
-UIName=Name:CIVILIAN
-Nominal=yes
-Primary=Pistola
-Soylent=50
+[E2_TECH]
+Name=Conscript
 Category=Soldier
-DieSound=CivSovFemDie
-Explodes=yes
-Occupier=no
-Strength=50
-Crushable=no
-Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}1}
-TechLevel=11
-Trainable=no
-VoiceMove=CivSovFemMove
+Primary=TechPistola
+ElitePrimary=TechPistola
+OccupyWeapon=TechPistola
+EliteOccupyWeapon=TechPistola
+Occupier=yes
+Prerequisite=NAHAND
 CrushSound=InfantrySquish
-DeathWeapon=InfantryDeathWeapon
-ImmuneToEMP=no
-ThreatPosed=0
-VoiceAttack=CivSovFemAttackCommand
-VoiceSelect=CivSovFemSelect
-ElitePrimary=Pistola
-MovementZone=Infantry
+Strength=125
+Fearless=yes
+Armor=flak_t1
+TechLevel=11
+Pip=white
+OccupyPip=PersonRed
+Sight=7
+Speed=7
+Owner=USSR,Latin,Chinese
+Cost=60
+Soylent=30
+Bounty.Value=12
+Bounty=yes
+Bounty.Display=yes
+Points=5
+IsSelectableCombatant=yes
+VoiceSelect=ConscriptSelect
+VoiceMove=ConscriptMove
+VoiceAttack=ConscriptAttackCommand
+VoiceFeedback=ConscriptFear
+VoiceSpecialAttack=ConscriptMove
+DieSound=ConscriptDie
+Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 PhysicalSize=1
-CanBeReversed=no
+MovementZone=Infantry
+ThreatPosed=5
+AllowedToStartInMultiplayer=yes
+VeteranAbilities=STRONGER
+EliteAbilities=SELF_HEAL,FIREPOWER,FASTER
 ImmuneToVeins=yes
-Insignificant=no
-VoiceFeedback=CivSovFemFear
-Insignia.Elite=dummy
-RadarInvisible=yes
-Insignia.Veteran=dummy
-VoiceSpecialAttack=CivSovFemMove
+Size=1
+IFVMode=2
 PixelSelectionBracketDelta=-3
+ImmuneToEMP=no
+Fraidycat=no
+
+[CIVSF]:[E2_CIVIL]
+
+[CIVSFM]:[E2_CIVIL]
+
+[CIVSTM]:[E2_CIVIL]
+
+[CTECH]:[E2_TECH]
 
 [CNTR]
 TechLevel=12
-
-[CTECH]
-Ammo=100
-Reload=80
-Primary=Pistola
-Insignificant=no
 
 [CrateRules]
 WoodCrate=Money
@@ -201,9 +167,8 @@ LightIntensity=0.01
 LightVisibility=2200
 
 [InfantryTypes]
-997=CIVE1
-998=CIVE2
-999=CIVE3
+998=E2_CIVIL
+999=E2_TECH
 
 [MORALES]
 TechLevel=12
@@ -226,6 +191,10 @@ Armor=concrete
 Spyable=yes
 TechLevel=-1
 Unsellable=true
+AttachEffect.Duration=-1
+AttachEffect.Animation=DEFMARK
+AttachEffect.TemporalHidesAnim=no
+AttachEffect.PenetratesIronCurtain=yes
 
 [NAYARD]
 TechLevel=-1
@@ -1723,7 +1692,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=yes
 
 [0C178DBC]
-0=20,0
+0=20,15
 Name=ChangeHouse
 
 [0C1C046C]
@@ -3124,14 +3093,14 @@ MultiplayerOnly=0
 IceGrowthEnabled=no
 VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
-IgnoreGlobalAITriggers=yes
+IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
 
 [Civie1 House]
 IQ=1
 Edge=South
 Color=Grey
-Allies=Player House,BadGuy1 House,Civie1 House,Other1 House,Other2 House,Other3 House
+Allies=Player House,BadGuy1 House,Civie1 House,Other1 House,Other2 House,Other3 House,BadGuy1 House,BadGuy2 House,BadGuy3 House
 Country=Civilian1
 Credits=0
 NodeCount=0
@@ -3150,15 +3119,15 @@ ParentCountry=Neutral
 MultiplayPassive=true
 
 [Countries]
-0=Player
-1=BadGuy1
-2=BadGuy2
-3=BadGuy3
-4=Civilian1
-5=Other1
-6=Other2
-7=Other3
-8=USA
+14=Player
+15=BadGuy1
+16=BadGuy2
+17=BadGuy3
+18=Civilian1
+19=Other1
+20=Other2
+21=Other3
+22=USA
 
 [Events]
 01000008=1,13,0,4
@@ -3171,7 +3140,7 @@ MultiplayPassive=true
 01000032=1,47,0,2600
 01000034=1,47,0,2700
 01000036=1,8,0,0
-01000038=1,8,0,1
+01000038=1,13,0,1
 01000040=1,13,0,10
 01000048=1,47,0,3600
 01000050=1,47,0,2408
@@ -3244,59 +3213,59 @@ MultiplayPassive=true
 0FD6B8DC=1,47,0,5
 
 [Houses]
-0=Player House
-1=BadGuy1 House
-2=BadGuy2 House
-3=BadGuy3 House
-4=Civie1 House
-5=Other1 House
-6=Other2 House
-7=Other3 House
-8=USA House
+14=Player House
+15=BadGuy1 House
+16=BadGuy2 House
+17=BadGuy3 House
+18=Civie1 House
+19=Other1 House
+20=Other2 House
+21=Other3 House
+22=USA House
 
 [Infantry]
 0=Player House,E2,256,69,74,3,Guard,192,None,0,-1,0,1,1
-1=Player House,E2,256,69,73,4,Guard,192,None,0,-1,0,1,1
+1=Player House,E2,256,69,73,2,Guard,192,None,0,-1,0,1,1
 2=Player House,E2,256,70,75,2,Guard,192,None,0,-1,0,1,1
 3=Player House,E2,256,65,66,3,Guard,160,None,0,-1,0,1,1
-4=Player House,E2,256,87,71,4,Guard,64,None,0,-1,0,1,1
+4=Player House,E2,256,87,71,2,Guard,64,None,0,-1,0,1,1
 5=Player House,E2,256,80,78,0,Guard,192,None,0,-1,0,1,1
 6=Player House,E2,256,86,73,0,Guard,128,None,0,-1,0,1,1
-7=Player House,E2,256,78,62,4,Guard,224,None,0,-1,0,1,1
+7=Player House,E2,256,78,62,2,Guard,224,None,0,-1,0,1,1
 8=Player House,DOG,256,78,61,2,Guard,192,None,0,-1,0,1,1
 9=Player House,DOG,256,79,62,3,Guard,64,None,0,-1,0,1,1
 10=Player House,DOG,256,65,65,2,Guard,192,None,0,-1,0,1,1
 11=Player House,DOG,256,65,66,2,Guard,0,None,0,-1,0,1,1
 12=Player House,DOG,256,71,74,2,Guard,160,None,0,-1,0,1,1
 13=Player House,DOG,256,82,68,0,Guard,128,None,0,-1,0,1,1
-14=Civie1 House,CIVE2,256,36,87,2,Guard,64,None,0,-1,0,1,1
-15=Civie1 House,CIVE2,256,41,87,3,Guard,0,None,0,-1,0,1,1
-16=Civie1 House,CIVE1,256,39,86,4,Guard,0,None,0,-1,0,1,1
-17=Civie1 House,CIVE3,256,39,88,2,Guard,0,None,0,-1,0,1,1
-18=Civie1 House,CIVE1,256,40,91,2,Guard,64,None,0,-1,0,1,1
-19=Civie1 House,CIVE2,256,41,92,4,Guard,0,None,0,-1,0,1,1
-20=Civie1 House,CIVE3,256,40,94,4,Guard,0,None,0,-1,0,1,1
-21=Civie1 House,CIVE1,256,41,95,4,Guard,0,None,0,-1,0,1,1
-22=Civie1 House,CIVE2,256,33,88,4,Guard,0,None,0,-1,0,1,1
-23=Civie1 House,CIVE3,256,32,88,4,Guard,0,None,0,-1,0,1,1
-24=Civie1 House,CIVE1,256,31,89,4,Guard,0,None,0,-1,0,1,1
-25=Civie1 House,CIVE1,256,33,92,2,Guard,0,None,0,-1,0,1,1
-26=Civie1 House,CIVE3,256,32,92,2,Guard,0,None,0,-1,0,1,1
-27=Civie1 House,CIVE3,256,26,88,3,Guard,0,None,0,-1,0,1,1
-28=Civie1 House,CIVE2,256,30,90,2,Guard,0,None,0,-1,0,1,1
-29=Civie1 House,CIVE1,256,27,89,2,Guard,0,None,0,-1,0,1,1
-30=Civie1 House,CIVE1,256,32,93,2,Guard,0,None,0,-1,0,1,1
-31=Civie1 House,CIVE1,256,32,95,2,Guard,0,None,0,-1,0,1,1
-32=Civie1 House,CIVE1,256,31,96,2,Guard,0,None,0,-1,0,1,1
-33=Civie1 House,CIVE1,256,28,96,4,Guard,0,None,0,-1,0,1,1
-34=Civie1 House,CIVE3,256,33,94,2,Guard,0,None,0,-1,0,1,1
-35=Civie1 House,CIVE3,256,29,93,3,Guard,0,None,0,-1,0,1,1
-36=Civie1 House,CIVE3,256,29,96,4,Guard,0,None,0,-1,0,1,1
-37=Civie1 House,CIVE2,256,31,95,2,Guard,0,None,0,-1,0,1,1
-38=Civie1 House,CIVE2,256,29,95,4,Guard,0,None,0,-1,0,1,1
-39=Civie1 House,CIVE1,256,24,95,2,Guard,0,None,0,-1,0,1,1
-40=Civie1 House,CIVE3,256,35,99,2,Guard,0,None,0,-1,0,1,1
-41=Civie1 House,CIVE2,256,34,99,2,Guard,0,None,0,-1,0,1,1
+14=Civie1 House,CIVSFM,256,36,87,2,Guard,64,None,0,-1,0,1,1
+15=Civie1 House,CIVSFM,256,41,87,3,Guard,0,None,0,-1,0,1,1
+16=Civie1 House,CIVSF,256,39,86,2,Guard,0,None,0,-1,0,1,1
+17=Civie1 House,CIVSTM,256,39,88,2,Guard,0,None,0,-1,0,1,1
+18=Civie1 House,CIVSF,256,40,91,2,Guard,64,None,0,-1,0,1,1
+19=Civie1 House,CIVSFM,256,41,92,2,Guard,0,None,0,-1,0,1,1
+20=Civie1 House,CIVSTM,256,40,94,2,Guard,0,None,0,-1,0,1,1
+21=Civie1 House,CIVSF,256,41,95,2,Guard,0,None,0,-1,0,1,1
+22=Civie1 House,CIVSFM,256,33,88,2,Guard,0,None,0,-1,0,1,1
+23=Civie1 House,CIVSTM,256,32,88,2,Guard,0,None,0,-1,0,1,1
+24=Civie1 House,CIVSF,256,31,89,2,Guard,0,None,0,-1,0,1,1
+25=Civie1 House,CIVSF,256,33,92,2,Guard,0,None,0,-1,0,1,1
+26=Civie1 House,CIVSTM,256,32,92,2,Guard,0,None,0,-1,0,1,1
+27=Civie1 House,CIVSTM,256,26,88,3,Guard,0,None,0,-1,0,1,1
+28=Civie1 House,CIVSFM,256,30,90,2,Guard,0,None,0,-1,0,1,1
+29=Civie1 House,CIVSF,256,27,89,2,Guard,0,None,0,-1,0,1,1
+30=Civie1 House,CIVSF,256,32,93,2,Guard,0,None,0,-1,0,1,1
+31=Civie1 House,CIVSF,256,32,95,2,Guard,0,None,0,-1,0,1,1
+32=Civie1 House,CIVSF,256,31,96,2,Guard,0,None,0,-1,0,1,1
+33=Civie1 House,CIVSF,256,28,96,2,Guard,0,None,0,-1,0,1,1
+34=Civie1 House,CIVSTM,256,33,94,2,Guard,0,None,0,-1,0,1,1
+35=Civie1 House,CIVSTM,256,29,93,3,Guard,0,None,0,-1,0,1,1
+36=Civie1 House,CIVSTM,256,29,96,2,Guard,0,None,0,-1,0,1,1
+37=Civie1 House,CIVSFM,256,31,95,2,Guard,0,None,0,-1,0,1,1
+38=Civie1 House,CIVSFM,256,29,95,2,Guard,0,None,0,-1,0,1,1
+39=Civie1 House,CIVSF,256,24,95,2,Guard,0,None,0,-1,0,1,1
+40=Civie1 House,CIVSTM,256,35,99,2,Guard,0,None,0,-1,0,1,1
+41=Civie1 House,CIVSFM,256,34,99,2,Guard,0,None,0,-1,0,1,1
 42=Player House,FLAKT,256,67,68,1,Guard,64,None,0,-1,0,1,0
 43=Player House,FLAKT,256,67,66,1,Guard,64,None,0,-1,0,1,0
 44=Player House,FLAKT,256,82,65,0,Guard,64,None,0,-1,0,1,0
@@ -4962,6 +4931,8 @@ DestroyableBridges=no
 01000071=2,²¿¶Ó-USA TANK ATK 38 1,01000070
 01000073=0,-D-M 1,01000072
 01000075=0,-D-H 1,01000074
+0A7F6221=0,LabDestroyed 1,0A7F6220
+096C55C1=0,LabCaptured 1,096C55C0
 0400518C=0,AmbientSounds2 1,040052DC
 04005B9C=0,AmbientSounds1 1,04005E8C
 07F48ACC=0,Hint-Spies(Audio) 1,07F48DBC

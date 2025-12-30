@@ -9855,7 +9855,7 @@ SuperWeapon=none
 [Basic]
 Name=Hollywood_in_Vain
 Brief=<none>
-Intro=a02yr-0
+Intro=a02_f00e_yr
 Theme=BrainFre
 Player=UnitedStates
 Percent=0

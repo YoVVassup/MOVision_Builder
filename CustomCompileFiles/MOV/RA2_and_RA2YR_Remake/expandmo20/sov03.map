@@ -13,6 +13,26 @@ TechLevel=12
 StormSound=ChronoLegionAttack
 LightningSounds=ChronoLegionAttack
 
+[BuildingTypes]
++=CASIN01W
+
+[CASIN01W]
+Name=
+Armor=misc
+Owner=
+Points=5
+Nominal=yes
+DieSound=BuildingMetalDamaged
+Strength=10
+Explosion=GBLDEXP1,GBLDEXP2,GBLDEXP3,GBLDEXP4
+MaxDebris=0
+TechLevel=-1
+BaseNormal=no
+Selectable=no
+DamageSound=BuildingMetalDamaged
+Insignificant=yes
+Chronoshift.Allow=no
+
 [DRON]
 TechLevel=6
 
@@ -46,13 +66,18 @@ Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 MaxDebris=5
 TechLevel=8
 Capturable=true
+Spyable=no
 AIBuildThis=yes
 ThreatPosed=0
 TogglePower=no
 Prerequisite=GAWEAP,RADAR
+ForbiddenHouses=Player
 ProtectWithWall=yes
 DamageSmokeOffset=1500, 1055, 815
+AttachEffect.Duration=-1
 DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
+AttachEffect.Animation=ENTERMARK
+AttachEffect.PenetratesIronCurtain=yes
 
 [GAYARD]
 Name=Soviet Shipyard
@@ -89,6 +114,10 @@ TechLevel=12
 [NAFLAK]
 TechLevel=6
 
+[NAPRIS]
+Grinding=yes
+InfantryAbsorb=yes
+
 [NAPSYB]
 Cost=50
 Name=RA2 Psychic Beacon
@@ -108,11 +137,15 @@ TechLevel=10
 Capturable=true
 AIBuildThis=no
 ThreatPosed=0
-Prerequisite=NATECH
+Prerequisite=NATECHR
 DetectDisguise=yes
+ForbiddenHouses=Player
 DamageSmokeOffset=220, 390, 150
 HasRadialIndicator=true
+AttachEffect.Duration=-1
 DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
+AttachEffect.Animation=DEFMARK
+AttachEffect.PenetratesIronCurtain=yes
 
 [NARADR]
 Grinding=no
@@ -147,6 +180,7 @@ TechLevel=12
 
 [YURI]
 UIName=Name:PTROOP
+BuildLimit=12
 
 
 [Preview]
@@ -199,28 +233,26 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000011]
-0=2,ETNK
-1=3,FV
+0=3,ETNK
+1=2,FV
 Name=BG1 ASSULT
 Group=-1
 
 [01000012]
-0=2,ETNK
+0=1,ETNK
 1=2,FV
-2=1,ABRM
+2=2,ABRM
 Name=BG1 ASSULT2
 Group=-1
 
 [01000015]
-0=16,41
-1=0,2
-2=0,1
+0=16,34
+1=0,1
 Name=BG1 ASSULT1
 
 [01000016]
-0=16,27
-1=0,2
-2=0,1
+0=16,34
+1=0,1
 Name=BG1 ASSULT2
 
 [01000017]
@@ -338,13 +370,13 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000036]
-0=7,E1
-1=3,GGI
+0=6,E1
+1=4,GGI
 Name=ALL PARA
 Group=-1
 
 [01000037]
-0=6,ENFO
+0=8,ENFO
 Name=ALL ENFO
 Group=-1
 
@@ -460,6 +492,118 @@ OnlyTargetHouseEnemy=no
 TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
+[01000055]
+0=16,98
+1=0,1
+Name=ATK BEACON BASE
+
+[01000056]
+Max=5
+Full=no
+Name=ATK BEACON BASE1
+Group=-1
+House=BadGuy1
+Script=01000055
+Whiner=no
+Droppod=no
+Suicide=no
+Loadable=no
+Prebuild=no
+Priority=5
+Waypoint=A
+Annoyance=no
+IonImmune=no
+Recruiter=no
+Reinforce=no
+TaskForce=01000011
+TechLevel=0
+Aggressive=no
+Autocreate=no
+GuardSlower=no
+OnTransOnly=no
+AvoidThreats=no
+LooseRecruit=no
+VeteranLevel=1
+IsBaseDefense=no
+UseTransportOrigin=no
+MindControlDecision=0
+OnlyTargetHouseEnemy=no
+TransportsReturnOnUnload=no
+AreTeamMembersRecruitable=no
+
+[01000057]
+Max=5
+Full=no
+Name=ATK BEACON BASE2
+Group=-1
+House=BadGuy1
+Script=01000055
+Whiner=no
+Droppod=no
+Suicide=no
+Loadable=no
+Prebuild=no
+Priority=5
+Waypoint=A
+Annoyance=no
+IonImmune=no
+Recruiter=no
+Reinforce=no
+TaskForce=01000012
+TechLevel=0
+Aggressive=no
+Autocreate=no
+GuardSlower=no
+OnTransOnly=no
+AvoidThreats=no
+LooseRecruit=no
+VeteranLevel=1
+IsBaseDefense=no
+UseTransportOrigin=no
+MindControlDecision=0
+OnlyTargetHouseEnemy=no
+TransportsReturnOnUnload=no
+AreTeamMembersRecruitable=no
+
+[01000064]
+0=1,COMA
+1=6,JUMPJET
+Name=ATK BEACON BASE AIR
+Group=-1
+
+[01000065]
+Max=5
+Full=no
+Name=ATK BEACON BASE AIR
+Group=-1
+House=BadGuy1
+Script=01000055
+Whiner=no
+Droppod=no
+Suicide=no
+Loadable=no
+Prebuild=no
+Priority=5
+Waypoint=A
+Annoyance=no
+IonImmune=no
+Recruiter=no
+Reinforce=no
+TaskForce=01000064
+TechLevel=0
+Aggressive=no
+Autocreate=no
+GuardSlower=no
+OnTransOnly=no
+AvoidThreats=no
+LooseRecruit=no
+VeteranLevel=1
+IsBaseDefense=no
+UseTransportOrigin=no
+MindControlDecision=0
+OnlyTargetHouseEnemy=no
+TransportsReturnOnUnload=no
+AreTeamMembersRecruitable=no
 [043A711C]
 0=2,FV
 Name=2 IFV
@@ -642,6 +786,7 @@ Suicide=no
 Loadable=no
 Prebuild=no
 Priority=7
+Waypoint=
 Annoyance=no
 IonImmune=no
 Recruiter=no
@@ -657,6 +802,7 @@ LooseRecruit=no
 VeteranLevel=1
 IsBaseDefense=yes
 UseTransportOrigin=no
+MindControlDecision=
 OnlyTargetHouseEnemy=no
 TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=yes
@@ -1886,6 +2032,10 @@ AreTeamMembersRecruitable=yes
 01000049=1,11,4,MISSION:DEASY,0,0,0,0,A
 01000051=1,11,4,MISSION:DMEDIUM,0,0,0,0,A
 01000053=1,11,4,MISSION:DHARD,0,0,0,0,A
+01000058=7,80,1,01000056,0,0,0,0,BA,80,1,01000056,0,0,0,0,BB,80,1,01000056,0,0,0,0,BC,80,1,01000056,0,0,0,0,BD,53,2,01000060,0,0,0,0,A,53,2,01000062,0,0,0,0,A,53,2,01000066,0,0,0,0,A
+01000060=4,80,1,01000057,0,0,0,0,BA,80,1,01000057,0,0,0,0,BB,80,1,01000057,0,0,0,0,BC,80,1,01000057,0,0,0,0,BD
+01000062=4,80,1,01000056,0,0,0,0,BA,80,1,01000057,0,0,0,0,BB,80,1,01000057,0,0,0,0,BC,80,1,01000056,0,0,0,0,BD
+01000066=4,80,1,01000065,0,0,0,0,BA,80,1,01000065,0,0,0,0,BB,80,1,01000065,0,0,0,0,BC,80,1,01000065,0,0,0,0,BD																											  
 03D95C60=1,2,0,14,0,0,0,0,A
 03D95F40=1,1,0,14,0,0,0,0,A
 03D97540=8,54,2,09E00840,0,0,0,0,A,53,2,099DFE70,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,123,0,15,0,0,0,0,D,53,2,07500224,0,0,0,0,A,53,2,09152DB0,0,0,0,0,A,75,0,15,0,0,0,0,A,102,0,0,0,0,0,0,D
@@ -1919,7 +2069,7 @@ AreTeamMembersRecruitable=yes
 08E29C44=2,21,6,EVA_EnemyAirArmadaDetected,0,0,0,0,A,53,2,08E29164,0,0,0,0,A
 09152DB0=5,56,0,0,0,0,0,0,A,53,2,0AC77DD0,0,0,0,0,A,11,4,REMAKESOV:S03e,0,0,0,0,A,36,0,14,0,0,0,0,A,16,0,0,0,0,0,0,A
 091FCC64=1,17,0,12,0,0,0,0,M
-09462D4C=2,36,0,14,0,0,0,0,A,53,2,07C6E684,0,0,0,0,A
+09462D4C=3,36,0,14,0,0,0,0,A,53,2,07C6E684,0,0,0,0,A,11,4,REMAKESOV:S03n,0,0,0,0,A
 09642890=1,80,1,08D1DCA0,0,0,0,0,B
 0965F670=1,80,1,099FDB5C,0,0,0,0,C
 097851D0=1,80,1,099FD6AC,0,0,0,0,E
@@ -1935,7 +2085,7 @@ AreTeamMembersRecruitable=yes
 09A2B03C=1,56,0,1,0,0,0,0,A
 09AC9C20=5,53,2,08E025BC,0,0,0,0,A,54,2,0A1E37BC,0,0,0,0,A,53,2,0ADB3CB4,0,0,0,0,A,53,2,08AAA2DC,0,0,0,0,A,54,2,09AC9C20,0,0,0,0,A
 09E00840=5,80,1,096948D4,0,0,0,0,L,80,1,099FE8EC,0,0,0,0,L,80,1,08D1E180,0,0,0,0,H,80,1,08D1C6E0,0,0,0,0,AZ,80,1,01000039,0,0,0,0,AS
-0A1E37BC=2,53,2,03D95C60,0,0,0,0,A,54,2,0A1E37BC,0,0,0,0,A
+0A1E37BC=3,53,2,03D95C60,0,0,0,0,A,11,4,REMAKESOV:S03m,0,0,0,0,A,54,2,0A1E37BC,0,0,0,0,A
 0A3A685C=1,53,2,0BD70F40,0,0,0,0,A
 0A4CF7A0=1,53,2,099DFBC0,0,0,0,0,A
 0A50AC5C=2,4,1,0C1D959C,0,0,0,0,A,4,1,0C1D91FC,0,0,0,0,A
@@ -1950,9 +2100,9 @@ AreTeamMembersRecruitable=yes
 0BE3EEC0=1,80,1,0D33D8EC,0,0,0,0,J
 0BE3F060=1,80,1,099FD30C,0,0,0,0,G
 0C11663C=1,11,4,REMAKESOV:S03k,0,0,0,0,A
-0CD9599C=1,113,0,13,0,0,0,0,A
+0CD9599C=1,113,0,14,0,0,0,0,A
 0D0211D0=2,53,2,03D95F40,0,0,0,0,A,53,2,0CD9599C,0,0,0,0,A
-0DC7AB70=16,53,2,09E00840,0,0,0,0,A,27,0,300,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,REMAKESOV:S03d,0,0,0,0,A,11,4,REMAKESOV:S03c,0,0,0,0,A,53,2,099DE8C0,0,0,0,0,A,6,0,15,0,0,0,0,A,53,2,0BA1C78C,0,0,0,0,A,12,2,01000013,0,0,0,0,A,12,2,01000021,0,0,0,0,A,12,2,01000019,0,0,0,0,A,12,2,01000023,0,0,0,0,A,20,8,Kill,0,0,0,0,A,53,2,01000041,0,0,0,0,A,53,2,01000043,0,0,0,0,A,53,2,01000045,0,0,0,0,A
+0DC7AB70=17,53,2,09E00840,0,0,0,0,A,27,0,300,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,REMAKESOV:S03d,0,0,0,0,A,11,4,REMAKESOV:S03c,0,0,0,0,A,53,2,099DE8C0,0,0,0,0,A,6,0,15,0,0,0,0,A,53,2,0BA1C78C,0,0,0,0,A,12,2,01000013,0,0,0,0,A,12,2,01000021,0,0,0,0,A,12,2,01000019,0,0,0,0,A,12,2,01000023,0,0,0,0,A,20,8,Kill,0,0,0,0,A,53,2,01000041,0,0,0,0,A,53,2,01000043,0,0,0,0,A,53,2,01000045,0,0,0,0,A,53,2,01000058,0,0,0,0,A
 
 [BadGuy1]
 Name=BadGuy1
@@ -1962,17 +2112,61 @@ Prefix=B
 Suffix=Soviet
 SmartAI=yes
 CostUnitsMult=1
-ParentCountry=Americans
+ParentCountry=UnitedStates
 
 [BadGuy1 House]
-IQ=2
+IQ=5
 000=GADEPO,122,34
-Edge=East
+001=GAPOWR,106,30
+002=GAPOWR,106,27
+003=GAPOWR,109,30
+004=GAPOWR,109,27
+005=GAPILE,118,43
+006=GAREFN,60,91
+007=GAPOWR,112,30
+008=GAPOWR,112,27
+009=GAPOWR,115,30
+010=GAPOWR,115,27
+011=GAWEAP,103,43
+012=GAAIRC,92,43
+013=GAPOWR,95,39
+014=GAPOWR,98,39
+015=GAPOWR,101,39
+016=GAPOWR,104,39
+017=ATESLA,99,47
+018=ATESLA,104,47
+019=ATESLA,114,47
+020=ATESLA,119,47
+021=GAPOWR,107,39
+022=GAPOWR,110,39
+023=GAPOWR,113,39
+024=GAPOWR,116,39
+025=GAPILL,118,48
+026=GAGUN,115,48
+027=GAPILL,103,48
+028=GAGUN,100,48
+029=GAWEAP,111,43
+030=GAPILE,122,43
+031=ATESLA,126,37
+032=GAGUN,127,38
+033=GAPILL,127,41
+034=ATESLA,92,37
+035=GAGUN,91,38
+036=GAPILL,91,41
+037=ATESLA,100,32
+038=GAPILL,99,31
+039=ATESLA,103,32
+040=GAPILL,105,25
+041=GAGUN,107,24
+042=GAGUN,110,24
+043=GAGUN,84,47
+044=GAPILL,84,52
+Edge=South
 Color=AlliedLoad
 Allies=BadGuy1 House,BadGuy2 House,Civie1 House,Other1 House,Other2 House
 Country=BadGuy1
 Credits=1000
-NodeCount=1
+NodeCount=45
 TechLevel=10
 PercentBuilt=100
 PlayerControl=no
@@ -1985,7 +2179,7 @@ Prefix=B
 Suffix=Soviet
 SmartAI=yes
 CostUnitsMult=1
-ParentCountry=Americans
+ParentCountry=UnitedStates
 
 [BadGuy2 House]
 IQ=1
@@ -2007,7 +2201,7 @@ Prefix=B
 Suffix=Soviet
 SmartAI=yes
 CostUnitsMult=1
-ParentCountry=Americans
+ParentCountry=UnitedStates
 
 [BadGuy3 House]
 IQ=0
@@ -2022,7 +2216,7 @@ PercentBuilt=0
 PlayerControl=yes
 
 [Basic]
-Name=Big_Apple 
+Name=Big_Apple
 Brief=s03_f00e
 Theme=InDeep
 Player=Player House
@@ -2051,10 +2245,8 @@ MultiplayerOnly=0
 IceGrowthEnabled=no
 VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
-IgnoreGlobalAITriggers=yes
+IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-AllowableUnits=E1,ENGINEER,JUMPJET,GHOST,CLEG,SPY,CCOMAND,PTROOP,SNIPE,TANY,AMCV,MTNK,CARRIER,DEST,AEGIS,LCRF,SHAD,DLPH,TNKD,HOWI,CMIN,SREF,MGTK,FV
-AllowableUnitMaximums=-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 
 [CANEWY05]
 Name=RA2 World Trade Center
@@ -2121,12 +2313,16 @@ MultiplayPassive=true
 01000049=1,8,0,0
 01000051=1,8,0,0
 01000053=1,8,0,0
+01000058=1,13,0,10
+01000060=1,13,0,60
+01000062=1,13,0,150
+01000066=1,13,0,170
 03D95C60=1,13,0,3
 03D95F40=1,13,0,5
 03D97540=1,14,0,0
 03DA6100=1,11,0,14
 04386A7C=1,13,0,420
-0489224C=1,6,0,13
+0489224C=1,6,0,0
 06522F3C=1,1,0,14
 06526E3C=1,1,0,14
 07500224=1,13,0,1
@@ -2142,7 +2338,7 @@ MultiplayPassive=true
 08345BFC=1,13,0,0
 08349ACC=1,13,0,80
 083EE33C=1,47,0,1
-0858B41C=1,32,0,34
+0858B41C=1,32,0,31
 089E10FC=1,47,0,600
 089E261C=1,47,0,500
 089E76CC=1,47,0,360
@@ -3681,7 +3877,7 @@ Color=Grey
 Prefix=G
 Suffix=Allied
 SmartAI=yes
-ParentCountry=Germans
+ParentCountry=Europeans
 
 [Other1 House]
 IQ=0
@@ -3702,7 +3898,7 @@ Color=Grey
 Prefix=G
 Suffix=Allied
 SmartAI=yes
-ParentCountry=Germans
+ParentCountry=Europeans
 
 [Other2 House]
 IQ=0
@@ -3723,7 +3919,7 @@ Color=DarkRed
 Prefix=G
 Suffix=Allied
 SmartAI=yes
-ParentCountry=Russians
+ParentCountry=USSR
 
 [Other3 House]
 IQ=0
@@ -3786,7 +3982,7 @@ Prefix=G
 Suffix=Allied
 SmartAI=yes
 CostUnitsMult=1
-ParentCountry=Russians
+ParentCountry=USSR
 
 [Player House]
 IQ=0
@@ -3796,7 +3992,7 @@ Allies=Player House,BadGuy3 House,Other1 House,Other3 House
 Country=Player
 Credits=150
 NodeCount=0
-TechLevel=5
+TechLevel=6
 PercentBuilt=100
 PlayerControl=yes
 
@@ -3838,6 +4034,7 @@ UnderParMessage=GUI:FSov03
 25=01000016
 26=01000028
 27=01000038
+28=01000055
 
 [Smudge]
 0=BURNT09,114,80,0
@@ -4110,7 +4307,7 @@ DestroyableBridges=no
 1026098=Civie1 House,CANEWY21,64,60,123,0,None,0,0,1,0,0,None,None,None,0,0
 1026099=Civie1 House,CANEWY20,64,66,119,0,None,0,0,1,0,0,None,None,None,0,0
 1026100=Other3 House,NACNST,256,95,5,0,None,1,0,1,0,0,None,None,None,0,0
-1026105=Other3 House,NATECH,256,92,9,0,None,1,0,1,0,0,None,None,None,0,0
+1026105=Other3 House,NATECHR,256,92,9,0,None,1,0,1,0,0,None,None,None,0,0
 1026106=Other3 House,NAPOWR,256,96,9,0,None,1,0,1,0,0,None,None,None,0,0
 1026109=Other3 House,NAPOWR,256,99,6,0,None,1,0,1,0,0,None,None,None,0,0
 1026112=Other3 House,NAPOWR,256,99,8,0,None,1,0,1,0,0,None,None,None,0,0
@@ -4154,20 +4351,28 @@ DestroyableBridges=no
 01000050=0,-D-E 1,01000049
 01000052=0,-D-M 1,01000051
 01000054=0,-D-H 1,01000053
+01000059=0,²¿¶ӭ¹¥»÷1 1,01000058		
+01000061=0,²¿¶ӭ¹¥»÷1 1,01000060
+01000063=0,²¿¶ӭ¹¥»÷1 1,01000062	
+01000067=0,²¿¶ӭ¹¥»÷1 1,01000066
 03D95D40=2,Player Wins 1,03D95F40
 03D97300=0,Beacon Deployed 1,03D97540
 03DA6240=2,Player Loses 1,03D95C60
 03DA7210=0,Player Lose Conditions 1,03DA6100
 0438699C=0,Disable Beacon Attack 1,04386A7C
 06522E5C=2,Right Tower Destroyed 1,09919ABC
+06522F3D=0,Right Tower Garrisoned 1,06522F3C
 06526D5C=2,Left Tower Destroyed 1,0991CE5C
+06526E3D=0,Left Tower Garrisoned 1,06526E3C
 07506BC4=0,Give Buildings 1,07500224
 0765772C=0,Ambient City 1,0765787C
 07657E3C=0,Ambient Ocean 1,0765551C
 07B01AEC=0,Hint_Oil Derricks 1,07B00F3C
 07C68244=0,Beacon Destroyed 1,07C6E684
 082EDF4C=0,Truck_Smoke 1,082E894C
+083241FD=0,WF_Destroyed 1,083241FC
 083242EC=2,WF_Give Buildings 1,0832410C
+083243CD=0,WF_Captured 1,083243CC
 083459FC=0,6 Psi-Corp Create 1,08345BFC
 08345E1C=0,4 Psi-Corp Create 1,0834438C
 0834958C=2,Objective 1 Reminder 1,08349ACC
@@ -4178,6 +4383,7 @@ DestroyableBridges=no
 089E65BC=0,Opening Harass 4 1,089E10FC
 089E77BC=0,Opening Harass 1 1,089E7B5C
 08AAA1FC=2,Lab Damaged 1,0489224C
+08AAA2DD=0,Sell Lab 1,08AAA2DC
 08E03AEC=0,Objective 2 1,08E03DAC
 08E03F4C=0,Objective 1 1,08E025BC
 08E29594=0,Final Announce Air 1,08E29C44
@@ -4192,9 +4398,12 @@ DestroyableBridges=no
 099DFCA0=0,Sofia 3 1,099DFE70
 099DFF50=0,Sofia 2 1,099DE8C0
 09A2016C=2,Play Audio 1,09A2903C
+09A2603D=0,Play Movie 1,09A2603C
 09A280AC=0,Yuri Movie 1,09A2B03C
 09A3503C=0,Yuri Audio 1,09A2403C
+09AC9C21=0,Entered Battle Lab 1,09AC9C20
 09E0F480=2,Beacon Attack Teams 1,09E00840
+0A1E37BD=0,Lab Destroyed 1,0A1E37BC
 0A3AB1CC=0,_Radar Movie 1,0A3A685C
 0A4CF630=0,Allies Yuried 1,0A4CF7A0
 0A50A50C=0,Garrison Teams 1,0A50AC5C
@@ -4236,6 +4445,7 @@ DestroyableBridges=no
 18=01000036
 19=01000037
 20=01000047
+21=01000064
 
 [TeamTypes]
 0=08D1F920
@@ -4277,6 +4487,9 @@ DestroyableBridges=no
 36=01000039
 37=01000040
 38=01000048
+39=01000056
+40=01000057
+41=01000065
 
 [Terrain]
 16096=TREE03
@@ -4703,6 +4916,10 @@ DestroyableBridges=no
 01000049=Player,<none>,-D-E,0,1,0,0,0
 01000051=Player,<none>,-D-M,0,0,1,0,0
 01000053=Player,<none>,-D-H,0,0,0,1,0
+01000058=Player,<none>,²¿¶ӭ¹¥»÷1,1,0,1,1,0
+01000060=Player,<none>,²¿¶ӭ¹¥»÷2,1,0,1,1,0
+01000062=Player,<none>,²¿¶ӭ¹¥»÷3,1,0,1,1,0
+01000066=Player,<none>,²¿¶ӭ¹¥»÷4,1,0,0,1,0
 03D95C60=Player,<none>,Player Loses,1,1,1,1,0
 03D95F40=Player,<none>,Player Wins,1,1,1,1,0
 03D97540=Player,<none>,Beacon Deployed,0,1,1,1,0
@@ -4906,6 +5123,10 @@ DestroyableBridges=no
 49=36098
 50=35110
 51=42069
+52=123108
+53=109121
+54=100130
+55=83148
 98=30102
 99=113102
 

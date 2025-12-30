@@ -109,7 +109,7 @@ echo.
 
 echo Сборка csf и mix-файлов для B.M.A. Series... >> "%LOGFILE%"
 echo Сборка csf и mix-файлов для B.M.A. Series...
-Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\B.M.A._Series\expandmo12" --mix ".\Build\MOV\B.M.A._Series\expandmo12.mix" >> "%LOGFILE%" 2>&1
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\B.M.A._Series\expandmo62" --mix ".\Build\MOV\B.M.A._Series\expandmo62.mix" >> "%LOGFILE%" 2>&1
 Tools\CsfStudio -i ".\CustomCompileFiles\MOV\B.M.A._Series\stringtable50.txt" -o ".\Build\MOV\B.M.A._Series\stringtable50.csf" --to-csf >> "%LOGFILE%" 2>&1
 echo.
 
@@ -126,25 +126,85 @@ Tools\CsfStudio -i ".\CustomCompileFiles\MOV\Foehn_Pack\stringtable73.txt" -o ".
 
 echo Сборка csf и mix-файлов для P.M.O.S. Series... >> "%LOGFILE%"
 echo Сборка csf и mix-файлов для P.M.O.S. Series...
-Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\P.M.O.S._Series\expandmo13" --mix ".\Build\MOV\P.M.O.S._Series\expandmo13.mix" >> "%LOGFILE%" 2>&1
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\P.M.O.S._Series\expandmo63" --mix ".\Build\MOV\P.M.O.S._Series\expandmo63.mix" >> "%LOGFILE%" 2>&1
 Tools\CsfStudio -i ".\CustomCompileFiles\MOV\P.M.O.S._Series\stringtable51.txt" -o ".\Build\MOV\P.M.O.S._Series\stringtable51.csf" --to-csf >> "%LOGFILE%" 2>&1
 echo.
 
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 720p... >> "%LOGFILE%"
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 720p...
-Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_720p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_720p.mix" >> "%LOGFILE%" 2>&1
-echo.
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 768p... >> "%LOGFILE%"
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 768p...
-Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_768p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix" >> "%LOGFILE%" 2>&1
-echo.
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1080p... >> "%LOGFILE%"
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1080p...
-Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix" >> "%LOGFILE%" 2>&1
-echo.
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1440p... >> "%LOGFILE%"
-echo Сборка mix-файла катсцен (видевставок) для RA2 and RA2YR Remake для разрешений 1440p...
-Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p" --mix ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p.mix" >> "%LOGFILE%" 2>&1
+echo Cоздание заглушек mix-файлов катсцен (видевставок) для RA2 and RA2YR Remake... >> "%LOGFILE%"
+echo Cоздание заглушек mix-файлов катсцен (видевставок) для RA2 and RA2YR Remake...
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo12.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo13_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo13_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo13_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo13_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo13_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\7wolf\expandmo14.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo11_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo12.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo13_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo13_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo13_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo13_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo13_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\City [Dyadyushka Risyotch]\expandmo14.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo11_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo12.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo13_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo13_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo13_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo13_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo13_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Fargus\expandmo14.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo11_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo12.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo13_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo13_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo13_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo13_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo13_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Original\expandmo14.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Russian project\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Russian project\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Russian project\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Russian project\expandmo11_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Russian project\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Russian project\expandmo12.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo11_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo12.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo13_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo13_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo13_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo13_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo13_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\Triada\expandmo14.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\XXI Vek [8 Bit]\expandmo11_600p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\XXI Vek [8 Bit]\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\XXI Vek [8 Bit]\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\XXI Vek [8 Bit]\expandmo11_900p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\XXI Vek [8 Bit]\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
+fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\XXI Vek [8 Bit]\expandmo12.mix" 1024 >> "%LOGFILE%" 2>&1
+
 echo.
 echo Сборка остальных csf и mix-файлов для RA2 and RA2YR Remake... >> "%LOGFILE%"
 echo Сборка остальных csf и mix-файлов для RA2 and RA2YR Remake...
@@ -160,8 +220,14 @@ echo.
 
 echo Сборка csf и mix-файлов для WanNiang Series... >> "%LOGFILE%"
 echo Сборка csf и mix-файлов для WanNiang Series...
-Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\WanNiang_Series\expandmo14" --mix ".\Build\MOV\WanNiang_Series\expandmo14.mix" >> "%LOGFILE%" 2>&1
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\WanNiang_Series\expandmo64" --mix ".\Build\MOV\WanNiang_Series\expandmo64.mix" >> "%LOGFILE%" 2>&1
 Tools\CsfStudio -i ".\CustomCompileFiles\MOV\WanNiang_Series\stringtable52.txt" -o ".\Build\MOV\WanNiang_Series\stringtable52.csf" --to-csf >> "%LOGFILE%" 2>&1
+echo.
+
+echo Сборка csf и mix-файлов для Allied Mission Pack... >> "%LOGFILE%"
+echo Сборка csf и mix-файлов для Allied Mission Pack...
+Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Allied_Pack\expandmo04" --mix ".\Build\MOV\Allied_Pack\expandmo04.mix" >> "%LOGFILE%" 2>&1
+Tools\CsfStudio -i ".\CustomCompileFiles\MOV\Allied_Pack\stringtable70.txt" -o ".\Build\MOV\Allied_Pack\stringtable70.csf" --to-csf >> "%LOGFILE%" 2>&1
 echo.
 
 rem Копирование набора инструментов для post-пользовательской отладки
@@ -169,15 +235,6 @@ echo Добавление набор инструментов для быстр�
 echo Добавление набор инструментов для быстрой пользовательской отладки...
 mkdir ".\Build\Resources\Tools" >> "%LOGFILE%" 2>&1
 xcopy /s ".\Tools" ".\Build\Resources\Tools" >> "%LOGFILE%" 2>&1
-echo.
-
-rem Заглушки для катсцен
-echo Проверка на отсутствие файлов катсцен и создание заглушек... >> "%LOGFILE%"
-echo Проверка на отсутствие файлов катсцен и создание заглушек...
-where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_720p.mix && echo Заглушка катсцен для разрешений 720p не требуется. >> "%LOGFILE%" || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_720p.mix" 1024 >> "%LOGFILE%" 2>&1
-where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_768p.mix && echo Заглушка катсцен для разрешений 768p не требуется. >> "%LOGFILE%" || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_768p.mix" 1024 >> "%LOGFILE%" 2>&1
-where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1080p.mix && echo Заглушка катсцен для разрешений 1080p не требуется. >> "%LOGFILE%" || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1080p.mix" 1024 >> "%LOGFILE%" 2>&1
-where /Q /R ".\Build\MOV\RA2_and_RA2YR_Remake" expandmo11_1440p.mix && echo Заглушка катсцен для разрешений 1440p не требуется. >> "%LOGFILE%" || fsutil file createnew ".\Build\MOV\RA2_and_RA2YR_Remake\expandmo11_1440p.mix" 1024 >> "%LOGFILE%" 2>&1
 echo.
 
 rem Заглушка для аудиотреков

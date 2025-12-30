@@ -5784,8 +5784,8 @@ Name=RA_Tanks_Script
 
 [Basic]
 Name=Time_Lapse 
-Brief=a01yr-0
-Intro=ra2mdre00
+Brief=a01_f00e_yr
+Intro=a00_f00e_yr
 Theme=Deceiver
 Player=UnitedStates
 Percent=0

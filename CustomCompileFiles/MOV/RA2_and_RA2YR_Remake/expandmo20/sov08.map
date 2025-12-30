@@ -12,8 +12,15 @@ TechLevel=12
 [ARMR]
 TechLevel=12
 
+[ArmorTypes]
+f_mamm=apoc
+f_prizma=light
+f_memorial=passif_b
+f_whitehouse=passif_b
+
 [CAWASH01]
 Name=RA2 White House
+Armor=f_whitehouse
 Primary=none
 Strength=1000
 Secondary=none
@@ -24,22 +31,26 @@ CrateBeneathIsMoney=true
 
 [CAWASH14]
 Name=Jefferson Memorial
+Armor=f_memorial
 CrateBeneath=false
 CanBeOccupied=no
 CrateBeneathIsMoney=true
 
 [CAWASH15]
 Name=RA2 Lincoln Memorial
+Armor=f_memorial
 CrateBeneath=false
 CrateBeneathIsMoney=true
 
 [CAWASH16]
 Name=RA2 Smithsonian Castle
+Armor=f_memorial
 CrateBeneath=false
 CrateBeneathIsMoney=true
 
 [CAWASH17]
 Name=RA2 Smithsonian Natural History Museum
+Armor=f_memorial
 Primary=none
 Secondary=none
 CrateBeneath=false
@@ -48,6 +59,7 @@ CrateBeneathIsMoney=true
 
 [CAWSH12]
 Name=RA2 Washington Monument
+Armor=f_memorial
 CrateBeneath=false
 CrateBeneathIsMoney=true
 
@@ -63,6 +75,51 @@ SoloCrateMoney=8000
 [ENGINEER]
 TechLevel=-1
 
+[FAAREN]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=Megaarena
+TechLevel=11
+AIBaseNormal=no
+NoManualFire=yes
+Insignificant=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+AttackCursorOnFriendlies=yes
+
+[FACOAT]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=StructureBuff
+TechLevel=11
+AIBaseNormal=no
+NoManualFire=yes
+Insignificant=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+AttackCursorOnFriendlies=yes
+
+[FAMSA]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=SodarBoost
+TechLevel=11
+AIBaseNormal=no
+NoManualFire=yes
+Insignificant=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+AttackCursorOnFriendlies=yes
+
 [FENGINEER]
 TechLevel=-1
 
@@ -73,6 +130,17 @@ SuperWeapon2=0
 [General]
 CampaignMoneyDeltaEasy=5000
 CampaignMoneyDeltaHard=-5000
+
+[HazequadGeneratorReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeDestrMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
 
 [INPURPLAMP]
 LightRedTint=0.3
@@ -88,8 +156,22 @@ LightGreenTint=0.40
 LightIntensity=0.01
 LightVisibility=3300
 
+[MAMM]
+Armor=f_mamm
+
 [MORALES]
 TechLevel=12
+
+[MegaarenaReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeVipMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
 
 [NAHAMM]
 TechLevel=-1
@@ -148,8 +230,31 @@ TechLevel=12
 TechLevel=-1
 
 [SREF]
+Armor=f_prizma
 Prerequisite=GAWEAP
 ForbiddenHouses=Player
+
+[SodarBoostReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeDangerMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
+
+[StructureBuffReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeEnterMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
 
 [TANY]
 TechLevel=12
@@ -165,6 +270,27 @@ TechLevel=12
 
 [WOLF]
 TechLevel=12
+
+[Warheads]
+9996=FakeDestrMarkWH
+9997=FakeDangerMarkWH
+9998=FakeEnterMarkWH
+9999=FakeVipMarkWH
+
+[YAQUAD]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=HazequadGenerator
+TechLevel=11
+AIBaseNormal=no
+NoManualFire=yes
+Insignificant=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+AttackCursorOnFriendlies=yes
 
 [YENGINEER]
 TechLevel=-1
@@ -573,16 +699,19 @@ Name=USA PARA
 Group=-1
 
 [01000035]
-0=5,20
+0=5,60
 1=16,70
-2=11,5
+2=5,60
+3=16,39
+4=5,60
+5=16,40
+6=6,1
 Name=USA TANKS CHRONO72-70
 
 [01000036]
 0=5,20
 1=16,71
-2=21,11
-3=21,0
+2=0,1
 Name=USA TANKS CHRONO73-71
 
 [01000037]
@@ -1420,19 +1549,19 @@ Group=-1
 Name=BaseDef,Refine,Fact,etc
 
 [07EE49AC]
-0=46,131182
+0=46,131519
 Name=GarrWash3
 
 [07EE574C]
-0=46,131183
+0=46,131523
 Name=GarrWash7
 
 [07F41C8C]
-0=46,131181
+0=46,131520
 Name=GarrWash4
 
 [07F7A5FC]
-0=46,131180
+0=46,131521
 Name=GarrWash5
 
 [07FA79B0]
@@ -1564,7 +1693,7 @@ Name=EngineerBuildings
 [085639BC]
 0=54,0
 1=14,0
-2=47,11
+2=47,38
 3=49,0
 4=8,2
 5=0,6
@@ -2157,7 +2286,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=yes
 
 [0A02E43C]
-0=46,131235
+0=46,131431
 Name=GarrNY12
 
 [0A0C943C]
@@ -2560,7 +2689,7 @@ Group=-1
 0=3,28
 1=49,0
 2=5,600
-3=46,25
+3=46,474
 4=0,2
 5=0,1
 Name=GuardAC2
@@ -2678,9 +2807,9 @@ AreTeamMembersRecruitable=yes
 [0B1037FC]
 0=54,0
 1=53,0
-2=46,15
+2=46,33
 3=49,0
-4=46,131087
+4=46,131104
 5=0,7
 6=0,2
 7=0,1
@@ -2948,7 +3077,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [0C3F35BC]
-0=1,VLADIMIR
+0=1,VLADIMIRX
 Name=1Vladimir
 Group=-1
 
@@ -3714,16 +3843,16 @@ Drones=1,4,1,0A11AA4C,0,0,0,0,A
 01000031=13,107,1,01000037,0,0,0,0,BU,107,1,01000038,0,0,0,0,BV,41,0,256,0,0,0,0,BU,41,0,256,0,0,0,0,BV,80,1,01000040,0,0,0,0,BT,80,1,01000040,0,0,0,0,BS,19,7,WarningAlarm,0,0,0,0,A,17,0,70,0,0,0,0,A,17,0,71,0,0,0,0,A,17,0,72,0,0,0,0,A,17,0,73,0,0,0,0,A,11,4,REMAKESOV:S08f,0,0,0,0,A,19,7,ChronosphereMove,0,0,0,0,A
 01000047=2,107,1,01000045,0,0,0,0,BW,41,0,256,0,0,0,0,BW
 01000049=1,107,1,01000046,0,0,0,0,BR
-01000051=5,112,0,0,0,0,0,0,CU,19,7,CameraSwitch,0,0,0,0,A,53,2,0C2152A0,0,0,0,0,A,11,4,REMAKESOV:S08h,0,0,0,0,A,53,2,01000061,0,0,0,0,A
+01000051=5,112,0,0,0,0,0,0,CU,19,7,CameraSwitch,0,0,0,0,A,53,2,01000162,0,0,0,0,A,11,4,REMAKESOV:S08h,0,0,0,0,A,53,2,01000061,0,0,0,0,A
 01000053=7,46,0,0,0,0,0,0,A,21,6,EVA_EstablishBattlefieldControl,0,0,0,0,A,17,0,62,0,0,0,0,A,17,0,63,0,0,0,0,A,17,0,98,0,0,0,0,A,17,0,64,0,0,0,0,A,17,0,65,0,0,0,0,A
 01000057=5,112,0,0,0,0,0,0,G,19,7,CameraSwitch,0,0,0,0,A,17,0,6,0,0,0,0,A,11,4,REMAKESOV:S08c,0,0,0,0,A,11,4,REMAKESOV:S08d,0,0,0,0,A
 01000059=3,107,1,01000056,0,0,0,0,AJ,41,0,256,0,0,0,0,AJ,30,0,0,0,0,0,0,A
-01000061=3,47,0,0,0,0,0,0,A,21,6,EVA_BattleControlOnline,0,0,0,0,A,11,4,REMAKESOV:BCONLINE,0,0,0,0,A
+01000061=4,47,0,0,0,0,0,0,A,21,6,EVA_BattleControlOnline,0,0,0,0,A,11,4,REMAKESOV:BCONLINE,0,0,0,0,A,53,2,01000160,0,0,0,0,A
 01000068=1,11,4,REMAKESOV:S08e,0,0,0,0,A
 01000069=1,20,8,Grinder,0,0,0,0,A
 01000071=1,11,4,REMAKESOV:S08g,0,0,0,0,A
 01000073=1,2,0,14,0,0,0,0,A
-01000075=8,6,0,23,0,0,0,0,A,9,0,23,0,0,0,0,A,53,2,01000077,0,0,0,0,A,54,2,01000091,0,0,0,0,A,54,2,01000059,0,0,0,0,A,54,2,01000105,0,0,0,0,A,54,2,01000115,0,0,0,0,A,54,2,01000117,0,0,0,0,A
+01000075=7,6,0,23,0,0,0,0,A,9,0,23,0,0,0,0,A,53,2,01000077,0,0,0,0,A,54,2,01000059,0,0,0,0,A,54,2,01000105,0,0,0,0,A,54,2,01000115,0,0,0,0,A,54,2,01000117,0,0,0,0,A
 01000077=2,56,0,5,0,0,0,0,A,53,2,01000146,0,0,0,0,A
 01000079=3,113,0,14,0,0,0,0,A,53,2,0B538DFC,0,0,0,0,A,53,2,08012920,0,0,0,0,A
 01000092=2,19,7,WarningAlarm,0,0,0,0,A,11,4,REMAKESOV:S08k,0,0,0,0,A
@@ -3751,6 +3880,8 @@ Drones=1,4,1,0A11AA4C,0,0,0,0,A
 01000154=1,11,4,MISSION:DEASY,0,0,0,0,A
 01000156=1,11,4,MISSION:DMEDIUM,0,0,0,0,A
 01000158=1,11,4,MISSION:DHARD,0,0,0,0,A
+01000160=3,11,4,REMAKESOV:S08n,0,0,0,0,A,11,4,REMAKESOV:S08o,0,0,0,0,A,62,0,0,0,0,0,0,A
+01000162=3,11,4,REMAKESOV:S08p,0,0,0,0,A,21,6,EVA_PlayerDefeated,0,0,0,0,A,53,2,0C2152A0,0,0,0,0,A
 07DB14FC=6,11,4,REMAKESOV:S08a,0,0,0,0,A,53,2,0856B86C,0,0,0,0,A,17,0,21,0,0,0,0,V,55,0,5,0,0,0,0,V,112,0,0,0,0,0,0,V,19,7,CameraSwitch,0,0,0,0,A
 07E0F3CC=3,108,0,0,0,0,0,0,D,80,1,01000098,0,0,0,0,D,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A
 07F40F3C=3,80,1,0B60354C,0,0,0,0,H,80,1,0FBCEDEC,0,0,0,0,N,80,1,0FBCD32C,0,0,0,0,AD
@@ -3762,8 +3893,8 @@ Drones=1,4,1,0A11AA4C,0,0,0,0,A
 087D3C5C=2,80,1,087D21EC,0,0,0,0,P,80,1,087D21EC,0,0,0,0,W
 08B35B40=2,11,4,REMAKESOV:S08l,0,0,0,0,A,100,0,103,0,0,0,0,A
 08B36F40=2,21,6,Mis_S8_SofiaMonHint,0,0,0,0,A,11,4,REMAKESOV:S08b,0,0,0,0,A
-09233C6C=2,4,1,0,0,0,0,0,A,4,1,0A11ADEC,0,0,0,0,A
-0965C050=3,112,0,0,0,0,0,0,V,21,6,EVA_CriticalStructureLost,0,0,0,0,A,53,2,01000073,0,0,0,0,A
+09233C6C=1,4,1,0A11ADEC,0,0,0,0,A
+0965C050=4,112,0,0,0,0,0,0,V,11,4,REMAKESOV:S08r,0,0,0,0,A,21,6,EVA_CriticalStructureLost,0,0,0,0,A,53,2,01000073,0,0,0,0,A
 09BAB550=5,17,0,5,0,0,0,0,F,17,0,9,0,0,0,0,J,17,0,18,0,0,0,0,S,17,0,10,0,0,0,0,K,17,0,54,0,0,0,0,A
 09EE5AB0=1,80,1,0BF1CB5C,0,0,0,0,W
 0A229D4C=1,80,1,09FDBB5C,0,0,0,0,R
@@ -3795,7 +3926,7 @@ ParentCountry=UnitedStates
 IQ=0
 Edge=West
 Color=Purple2
-Allies=BEACON House,Vlad1 House,Vlad2 House,NeutralArmy House,Neutral1 House
+Allies=BEACON House,Vlad1 House,Vlad2 House,CivilianArmy House,Civilian1 House
 Country=BEACON
 Credits=0
 NodeCount=0
@@ -3833,18 +3964,8 @@ MultiplayerOnly=0
 IceGrowthEnabled=no
 VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
-IgnoreGlobalAITriggers=yes
+IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-
-[CONTROLLED]
-Name=CONTROLLED
-Side=GDI
-Color=AlliedLoad
-Prefix=G
-Suffix=Allied
-SmartAI=yes
-CostUnitsMult=1
-ParentCountry=UnitedStates
 
 [CellTags]
 47096=08B357F0
@@ -3895,17 +4016,16 @@ PercentBuilt=0
 PlayerControl=no
 
 [Countries]
-0=Player
-1=Vlad1
-2=Vlad2
-3=CivilianArmy
-4=Civilian1
-5=Other1
-6=Other2
-7=Other3
-8=CONTROLLED
-9=USA
-10=BEACON
+14=Player
+15=Vlad1
+16=Vlad2
+17=CivilianArmy
+18=Civilian1
+19=Other1
+20=Other2
+21=Other3
+22=BEACON
+23=USA
 
 [Events]
 Drones=1,13,0,800
@@ -3953,6 +4073,8 @@ Drones=1,13,0,800
 01000154=1,8,0,0
 01000156=1,8,0,0
 01000158=1,8,0,0
+01000160=1,13,0,15
+01000162=1,11,0,14
 07DB14FC=1,13,0,26
 07E0F3CC=1,48,0,0
 07F40F3C=1,47,0,2
@@ -3980,26 +4102,83 @@ Drones=1,13,0,800
 0B657F3C=1,47,0,0
 0B83E7A0=1,13,0,600
 0C214B00=1,1,0,14
-0C2152A0=1,11,0,14
+0C2152A0=1,13,0,5
 0E177CD0=1,47,0,1
 
+[FakeDangerMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=no
+PercentAtMax=1
+AffectsAllies=no
+Versus.f_mamm=3%
+AffectsEnemies=yes
+Versus.f_prizma=3%
+AttachEffect.Duration=125
+AttachEffect.Animation=DANGERMARK
+AttachEffect.DiscardOnEntry=yes
+AttachEffect.PenetratesIronCurtain=yes
+
+[FakeDestrMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=yes
+PercentAtMax=1
+AffectsAllies=no
+AffectsEnemies=yes
+Versus.f_memorial=3%
+AttachEffect.Duration=125
+AttachEffect.Animation=TARGETMARK
+AttachEffect.DiscardOnEntry=yes
+AttachEffect.PenetratesIronCurtain=yes
+
+[FakeEnterMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=no
+PercentAtMax=1
+AffectsAllies=no
+AffectsEnemies=yes
+Versus.f_whitehouse=3%
+AttachEffect.Duration=125
+AttachEffect.Animation=ENTERMARK
+AttachEffect.DiscardOnEntry=yes
+AttachEffect.PenetratesIronCurtain=yes
+
+[FakeVipMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=yes
+PercentAtMax=1
+AffectsAllies=no
+Versus.f_mamm=3%
+AffectsEnemies=no
+AttachEffect.Duration=125
+AttachEffect.Animation=VIPMARK
+AttachEffect.DiscardOnEntry=yes
+AttachEffect.PenetratesIronCurtain=yes
+
 [Houses]
-0=Player House
-1=Vlad1 House
-2=Vlad2 House
-3=CivilianArmy House
-4=Civilian1 House
-5=Other1 House
-6=Other2 House
-7=Other3 House
-8=BEACON House
-9=USA House
+14=Player House
+15=Vlad1 House
+16=Vlad2 House
+17=CivilianArmy House
+18=Civilian1 House
+19=Other1 House
+20=Other2 House
+21=Other3 House
+22=BEACON House
+23=USA House
 
 [Infantry]
 0=Vlad1 House,E2,256,122,100,0,Guard,64,None,0,-1,0,1,0
-1=Vlad2 House,SHK,256,97,27,4,Attack,141,None,0,-1,0,1,1
+1=Vlad2 House,SHK,256,97,27,2,Guard,141,None,0,-1,0,1,1
 2=Vlad1 House,E2,256,107,99,2,Guard,64,None,0,-1,0,1,0
-3=Vlad2 House,SHK,256,94,22,4,Attack,141,None,0,-1,0,1,1
+3=Vlad2 House,SHK,256,94,22,2,Guard,141,None,0,-1,0,1,1
 4=BEACON House,E1,256,108,76,1,Guard,64,01000104,0,-1,0,1,0
 5=BEACON House,E1,256,104,75,0,Guard,64,01000104,0,-1,0,1,0
 6=BEACON House,E1,256,105,72,1,Guard,64,01000104,0,-1,0,1,0
@@ -4008,25 +4187,25 @@ Drones=1,13,0,800
 9=BEACON House,E1,256,111,70,1,Guard,64,01000104,0,-1,0,1,0
 10=BEACON House,E1,256,132,87,1,Guard,64,01000104,0,-1,0,1,0
 11=Vlad1 House,E2,256,57,111,0,Guard,64,None,0,-1,0,1,0
-12=Vlad2 House,E1,256,123,57,4,Guard,160,0E0F2D10,0,-1,0,1,1
-13=Vlad2 House,E1,256,118,53,0,Guard,192,0E0F2D10,0,-1,0,1,1
+12=Vlad2 House,E1,256,123,57,2,Guard,160,None,0,-1,0,1,1
+13=Vlad2 House,E1,256,118,53,0,Guard,192,None,0,-1,0,1,1
 14=BEACON House,E1,256,134,90,1,Guard,64,01000104,0,-1,0,1,0
-15=Vlad2 House,E1,256,124,91,4,Guard,128,0E0F2D10,0,-1,0,1,1
-16=Vlad2 House,E1,256,123,90,4,Guard,0,0E0F2D10,0,-1,0,1,1
+15=Vlad2 House,E1,256,124,91,2,Guard,128,None,0,-1,0,1,1
+16=Vlad2 House,E1,256,123,90,2,Guard,0,None,0,-1,0,1,1
 17=BEACON House,E1,256,135,92,0,Guard,64,01000104,0,-1,0,1,0
-18=Vlad2 House,E1,256,142,87,4,Guard,0,0E0F2D10,0,-1,0,1,1
-19=Vlad2 House,E2,256,124,72,4,Area Guard,64,None,0,-1,0,1,1
-20=Vlad2 House,SHK,256,131,71,4,Area Guard,64,None,0,-1,0,1,1
-21=Civilian1 House,CIV3,256,89,83,4,Guard,64,0E02A300,0,-1,0,1,1
-22=Civilian1 House,CIV2,256,72,71,2,Guard,32,0E02A300,0,-1,0,1,1
-23=Civilian1 House,CIV1,256,139,103,4,Guard,192,0E02A300,0,-1,0,1,1
-24=Civilian1 House,CIV2,256,138,101,3,Guard,0,0E02A300,0,-1,0,1,1
-25=Civilian1 House,CTECH,256,136,97,3,Guard,128,0E02A300,0,-1,0,1,1
-26=Civilian1 House,CTECH,256,135,98,3,Guard,32,0E02A300,0,-1,0,1,1
-27=Civilian1 House,CTECH,256,75,76,2,Guard,0,0E02A300,0,-1,0,1,1
-28=Civilian1 House,CTECH,256,87,83,2,Guard,64,0E02A300,0,-1,0,1,1
-29=Civilian1 House,CIV1,256,72,70,2,Guard,64,0E02A300,0,-1,0,1,1
-30=Civilian1 House,CIV2,256,87,84,4,Guard,64,0E02A300,0,-1,0,1,1
+18=Vlad2 House,E1,256,142,87,2,Guard,0,None,0,-1,0,1,1
+19=Vlad2 House,E2,256,124,72,2,Area Guard,64,None,0,-1,0,1,1
+20=Vlad2 House,SHK,256,131,71,2,Area Guard,64,None,0,-1,0,1,1
+21=Civilian1 House,CIV3,256,89,83,2,Guard,64,None,0,-1,0,1,1
+22=Civilian1 House,CIV2,256,72,71,2,Guard,32,None,0,-1,0,1,1
+23=Civilian1 House,CIV1,256,139,103,2,Guard,192,None,0,-1,0,1,1
+24=Civilian1 House,CIV2,256,138,101,3,Guard,0,None,0,-1,0,1,1
+25=Civilian1 House,CTECH,256,136,97,3,Guard,128,None,0,-1,0,1,1
+26=Civilian1 House,CTECH,256,135,98,3,Guard,32,None,0,-1,0,1,1
+27=Civilian1 House,CTECH,256,75,76,2,Guard,0,None,0,-1,0,1,1
+28=Civilian1 House,CTECH,256,87,83,2,Guard,64,None,0,-1,0,1,1
+29=Civilian1 House,CIV1,256,72,70,2,Guard,64,None,0,-1,0,1,1
+30=Civilian1 House,CIV2,256,87,84,2,Guard,64,None,0,-1,0,1,1
 31=Vlad1 House,E2,256,57,101,0,Guard,64,None,0,-1,0,1,0
 32=Vlad1 House,E2,256,65,103,0,Guard,64,None,0,-1,0,1,0
 33=Vlad1 House,E2,256,62,111,0,Guard,64,None,0,-1,0,1,0
@@ -5714,30 +5893,6 @@ Size=0,0,95,88
 Theater=URBAN
 LocalSize=18,4,74,73
 
-[Neutral1 House]
-IQ=
-Edge=
-Color=
-Allies=
-Country=
-Credits=
-NodeCount=
-TechLevel=
-PercentBuilt=
-PlayerControl=
-
-[NeutralArmy House]
-IQ=
-Edge=
-Color=
-Allies=
-Country=
-Credits=
-NodeCount=
-TechLevel=
-PercentBuilt=
-PlayerControl=
-
 [Other1]
 Name=Other1
 Side=GDI
@@ -6170,6 +6325,7 @@ DestroyableBridges=yes
 172=Vlad2 House,NAPRIS,256,109,33,64,None,1,0,1,0,0,None,None,None,0,0
 173=Civilian1 House,CAWATR,256,116,37,64,None,1,0,1,0,0,None,None,None,0,0
 174=Civilian1 House,CAMISC05,256,95,33,64,None,1,0,1,0,0,None,None,None,0,0
+175=Player House,FACOAT,256,20,89,64,None,1,0,1,0,0,None,None,None,0,0
 176=Civilian1 House,CAMSC11,256,95,37,64,None,1,0,1,0,0,None,None,None,0,0
 177=Civilian1 House,CAMSC11,256,94,37,64,None,1,0,1,0,0,None,None,None,0,0
 178=Civilian1 House,CAMSC11,256,110,38,64,None,1,0,1,0,0,None,None,None,0,0
@@ -6188,6 +6344,9 @@ DestroyableBridges=yes
 191=Civilian1 House,CABRLS,256,97,34,64,None,1,0,1,0,0,None,None,None,0,0
 192=Civilian1 House,CABRLS,256,104,37,64,None,1,0,1,0,0,None,None,None,0,0
 193=Civilian1 House,CACASK,256,112,20,64,None,1,0,1,0,0,None,None,None,0,0
+194=Player House,FAMSA,256,22,91,64,None,1,0,1,0,0,None,None,None,0,0
+195=Player House,FAAREN,256,24,93,64,None,1,0,1,0,0,None,None,None,0,0
+196=Player House,YAQUAD,256,26,95,64,01000161,1,0,0,0,0,None,None,None,0,0
 200=Civilian1 House,CAMISC01,256,100,38,64,None,1,0,1,0,0,None,None,None,0,0
 201=Vlad2 House,NAPOWR,256,95,22,64,None,1,0,1,0,0,None,None,None,0,0
 202=Vlad2 House,NAPOWR,256,102,22,64,None,1,0,1,0,0,None,None,None,0,0
@@ -6308,6 +6467,8 @@ DestroyableBridges=yes
 01000155=0,-D-E 1,01000154
 01000157=0,-D-M 1,01000156
 01000159=0,-D-H 1,01000158
+01000161=0,Spec Mission 1,01000160
+01000163=0,Player Defeat 1,01000162
 07DB11BC=0,!!DeliverObjective 1,07DB14FC
 07E09C4C=0,WashDestroyed 1,07E0F3CC
 07F409FC=0,GarrisonTroops 1,07F40F3C
@@ -6320,6 +6481,7 @@ DestroyableBridges=yes
 08B355A0=0,Monument Speech 1,08B36F40
 08B357F0=0,VladTaunt 1,08B35B40
 0923367C=0,SendTanks-Deso 1,Drones
+09233C60=0,!SendTanks 1,09233C6C
 09BACEB0=0,Reveal Monuments 1,09BAB550
 09EE55E0=0,Send Scouts 1,09EE5AB0
 0A2298CC=0,Drop Paratroopers 1,0A229D4C
@@ -6334,6 +6496,7 @@ DestroyableBridges=yes
 0B65034C=0,Water 1,0B657F3C
 0B83E300=0,DesolatorSquad 1,0B83E7A0
 0C214930=0,WHDestroyed 1,0965C050
+0C214B0C=0,WHCaptured 1,0C214B00
 0C214BE0=0,PlayerLoss 1,0C2152A0
 0E177800=0,StartPatrols 1,0E177CD0
 
@@ -6948,6 +7111,8 @@ Drones=Vlad1,<none>,SendTanks-Deso,0,1,1,1,0
 01000154=Player,<none>,-D-E,0,1,0,0,0
 01000156=Player,<none>,-D-M,0,0,1,0,0
 01000158=Player,<none>,-D-H,0,0,0,1,0
+01000160=Player,<none>,Spec Mission,1,1,1,1,0
+01000162=Player,<none>,Player Defeat,1,1,1,1,0
 07DB14FC=Player,<none>,!!DeliverObjective,0,1,1,1,0
 07E0F3CC=Player,<none>,WashDestroyed,0,1,1,1,0
 07F40F3C=Vlad1,<none>,GarrisonTroops,0,1,1,1,0
@@ -7068,7 +7233,7 @@ PlayerControl=no
 38=Civilian1 House,REDR12,256,69,41,64,Guard,None,0,-1,0,-1,1,0
 39=Civilian1 House,REDR12,256,77,41,64,Guard,None,0,-1,0,-1,1,0
 40=Civilian1 House,SPGRE,256,77,43,64,Guard,None,0,-1,0,-1,1,0
-41=Neutral1 House,PRSA,256,70,40,0,Guard,None,0,-1,0,-1,1,0
+41=Civilian1 House,PRSA,256,70,40,0,Guard,None,0,-1,0,-1,1,0
 42=Civilian1 House,PRSA,256,77,42,64,Guard,None,0,-1,0,-1,1,0
 43=Civilian1 House,LIMO,256,73,43,64,Guard,None,0,-1,0,-1,1,0
 44=Vlad2 House,HTNK,256,71,43,128,Guard,None,0,-1,0,-1,1,0
@@ -7206,7 +7371,7 @@ IQ=5
 020=NALASR,113,131
 Edge=South
 Color=Orange
-Allies=Vlad1 House,Vlad2 House,NeutralArmy House,Neutral1 House,BEACON House
+Allies=Vlad1 House,Vlad2 House,CivilianArmy House,Civilian1 House,BEACON House
 Country=Vlad1
 Credits=300
 NodeCount=21
@@ -7241,7 +7406,7 @@ IQ=5
 012=NAPRIS,109,33
 Edge=North
 Color=Purple
-Allies=Vlad1 House,Vlad2 House,NeutralArmy House,Neutral1 House,BEACON House
+Allies=Vlad1 House,Vlad2 House,CivilianArmy House,Civilian1 House,BEACON House
 Country=Vlad2
 Credits=200
 NodeCount=13

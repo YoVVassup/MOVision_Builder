@@ -9100,7 +9100,7 @@ PlayerControl=no
 
 [Basic]
 Name=Head_Games
-Brief=s07yr-0
+Brief=s07_f00e_yr
 Theme=No theme
 Player=Player House
 Percent=0
@@ -9112,7 +9112,7 @@ EndOfGame=yes
 FreeRadar=yes
 MaxPlayer=8
 MinPlayer=2
-PostScore=s08yr-0
+PostScore=s08_f00e_yr
 SkipScore=no
 TrainCrate=no
 TruckCrate=no

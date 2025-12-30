@@ -12,6 +12,12 @@ TechLevel=12
 [ARMR]
 TechLevel=12
 
+[Animations]
++=GASONICT
+
+[BuildingTypes]
++=GASONIC
+
 [CHITZ]
 TechLevel=12
 
@@ -24,6 +30,15 @@ TechLevel=-1
 [FENGINEER]
 TechLevel=-1
 
+[FakeAvenger]
+ROF=5
+Range=15
+Speed=100
+Damage=0
+Warhead=DummyWH
+FireOnce=yes
+Projectile=InvisibleLow
+
 [GACSPH]
 TechLevel=-1
 
@@ -34,6 +49,67 @@ TechLevel=-1
 SuperWeapon=0
 SuperWeapon2=0
 FactoryOwners=Pacific,USSR
+
+[GASONIC]
+ROT=10
+Cost=1200
+Name=Skyray Cannon
+Armor=defense
+Owner=Pacific
+Power=-150
+Sight=10
+Bounty=no
+Crewed=no
+Points=50
+Turret=yes
+UIName=Name:GASONIC
+Powered=yes
+Primary=FakeAvenger
+Soylent=600
+VHPScan=Strong
+Adjacent=7
+BuildCat=Combat
+Strength=1000
+Drainable=yes
+Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
+MaxDebris=9
+MinDebris=1
+Secondary=RedAvenger
+TechLevel=9
+Trainable=yes
+BaseNormal=no
+Capturable=false
+TurretAnim=GASONICT
+DebrisAnims=DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM
+ImmuneToEMP=no
+ThreatPosed=50
+VoiceSelect=SkywatcherSelect
+AntiAirValue=75
+Bounty.Value=300
+ElitePrimary=FakeAvenger
+Prerequisite=GASCPF,GATECH,GACNST
+WorkingSound=PowerOn
+IsBaseDefense=no
+LandTargeting=1
+AntiArmorValue=0
+EliteAbilities=SELF_HEAL,FIREPOWER
+EliteSecondary=RedAvengerE
+Insignia.Elite=defeli
+NavalTargeting=6
+NotWorkingSound=PowerOff
+Insignia.Veteran=defvet
+VeteranAbilities=STRONGER
+AntiInfantryValue=0
+EVA.ElitePromoted=EVA_DefenseUpgraded
+TurretAnimIsVoxel=false
+TurretAnimZAdjust=-20
+AIBasePlanningSide=0
+HasRadialIndicator=true
+HasStupidGuardMode=false
+Promote.EliteSound=UpgradeDefenseElite
+EVA.VeteranPromoted=EVA_DefenseUpgraded
+Promote.VeteranSound=UpgradeDefenseVeteran
+DamageParticleSystems=SparkSys,LGSparkSys
 
 [GATECH]
 Name=Allied Battle Lab
@@ -63,6 +139,35 @@ ForbiddenHouses=Player
 [NAIRON]
 TechLevel=-1
 
+[Projectiles]
++=SkyRayProj
+
+[RedAvenger]
+ROF=100
+Range=15
+Speed=100
+Bright=no
+Damage=200
+Report=SkywatcherAttack
+Warhead=SAMWH2
+Projectile=SkyRayProj
+Wave.Color=0,0,200
+MinimumRange=3
+Wave.IsBigLaser=yes
+
+[RedAvengerE]
+ROF=100
+Range=15
+Speed=100
+Bright=no
+Damage=200
+Report=SkywatcherAttack
+Warhead=SAMWH2
+Projectile=SkyRayProj
+Wave.Color=0,0,255
+MinimumRange=3
+Wave.IsLaser=yes
+
 [SBTR]
 TechLevel=12
 
@@ -79,11 +184,26 @@ TechLevel=12
 Owner=USSR,Latin,Chinese
 Prerequisite=NAYARD,SOVTECH
 
+[SkyRayProj]
+AA=yes
+AG=yes
+High=yes
+Image=none
+Inviso=yes
+
 [TANY]
 TechLevel=12
 
 [VOLKOV]
 TechLevel=12
+
+[Warheads]
++=SAMWH2
+
+[WeaponTypes]
+9997=FakeAvenger
+9998=RedAvenger
+9999=RedAvengerE
 
 [YENGINEER]
 TechLevel=-1
@@ -96,8 +216,11 @@ TechLevel=-1
 
 
 [Preview]
+Size=0,0,106,61
 
 [PreviewPack]
+1=yAsAIAXQ5PDQ5PDQ6JQATAEE6PDQ4PDI4JgBTAFEAkgAJyAATAG0AydEAEABpAJIA0wBVA
+2=BIACcgAEwBtAMnRABAAaQCSANMAVQASAAnIABMAbQDJ0QAQAGkAkgDTAFUAEgAJyAATAG0
 
 [01000004]
 0=1,SAPC
@@ -863,8 +986,8 @@ Max=2
 Full=no
 Name=Timer Team
 Group=-1
-House=<none>
-Script=
+House=BadGuy1
+Script=0898C140
 Whiner=no
 Droppod=no
 Suicide=yes
@@ -931,7 +1054,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [0898C140]
-0=1,0
+0=3,0
 1=49,0
 2=0,1
 Name=Attack Player
@@ -2130,33 +2253,34 @@ AreTeamMembersRecruitable=no
 01000039=1,11,4,MISSION:DEASY,0,0,0,0,A
 01000041=1,11,4,MISSION:DMEDIUM,0,0,0,0,A
 01000043=1,11,4,MISSION:DHARD,0,0,0,0,A
+01000045=1,41,0,1861,0,0,0,0,DQ
+01000047=1,41,0,1864,0,0,0,0,P
+01000049=1,36,0,17,0,0,0,0,A
+01000051=3,129,11,2,0,0,0,0,50,53,2,09AB47E0,0,0,0,0,A,53,2,09AB4D30,0,0,0,0,A
 04371B8C=2,3,0,16,0,0,0,0,A,74,0,16,0,0,0,0,A
-07237120=2,46,0,0,0,0,0,0,A,54,2,07237120,0,0,0,0,A
-07237530=4,47,0,0,0,0,0,0,A,54,2,07237530,0,0,0,0,A,21,6,EVA_BattleControlOnline,0,0,0,0,A,11,4,REMAKESOV:BCONLINE,0,0,0,0,A
-07490670=2,47,0,0,0,0,0,0,A,54,2,07490670,0,0,0,0,A
+07237120=1,46,0,0,0,0,0,0,A
+07490670=3,47,0,0,0,0,0,0,A,21,6,EVA_BattleControlOnline,0,0,0,0,A,11,4,REMAKESOV:BCONLINE,0,0,0,0,A
 07537BBC=2,14,0,17,0,0,0,0,A,54,2,07537BBC,0,0,0,0,A
 07B72CC0=6,7,1,09ED3A4C,0,0,0,0,H,3,0,15,0,0,0,0,A,17,0,36,0,0,0,0,AK,17,0,37,0,0,0,0,AL,17,0,18,0,0,0,0,S,17,0,17,0,0,0,0,R
-07C0419C=11,55,0,5,0,0,0,0,P,53,2,0B7BD050,0,0,0,0,A,40,0,0,1,7,84,131,A,17,0,15,0,0,0,0,P,54,2,07C0419C,0,0,0,0,A,54,2,07C053EC,0,0,0,0,A,54,2,07C0471C,0,0,0,0,A,54,2,0B58F3DC,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,53,2,0C6043EC,0,0,0,0,A,53,2,0A9F7180,0,0,0,0,A
+07C0419C=13,54,2,01000045,0,0,0,0,A,53,2,01000049,0,0,0,0,A,53,2,08991690,0,0,0,0,A,55,0,5,0,0,0,0,P,53,2,0B7BD050,0,0,0,0,A,40,0,0,1,7,84,131,A,17,0,15,0,0,0,0,P,54,2,07C0419C,0,0,0,0,A,54,2,07C053EC,0,0,0,0,A,54,2,07C0471C,0,0,0,0,A,54,2,0B58F3DC,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,53,2,0A9F7180,0,0,0,0,A
 07C0471C=3,11,4,REMAKESOV:S10d,0,0,0,0,A,54,2,07C0471C,0,0,0,0,A,19,7,NukeSiren,0,0,0,0,A
-07C053EC=4,54,2,07C053EC,0,0,0,0,A,53,2,09AB6F60,0,0,0,0,A,54,2,07C0419C,0,0,0,0,A,54,2,07C0471C,0,0,0,0,A
+07C053EC=5,54,2,01000045,0,0,0,0,A,54,2,07C053EC,0,0,0,0,A,53,2,09AB6F60,0,0,0,0,A,54,2,07C0419C,0,0,0,0,A,54,2,07C0471C,0,0,0,0,A
 07D50BCC=2,3,0,15,0,0,0,0,A,74,0,15,0,0,0,0,A
 07EF4200=1,17,0,0,0,0,0,0,A
 07FACF60=2,7,1,0AF67A4C,0,0,0,0,G,21,6,EVA_EstablishBattlefieldControl,0,0,0,0,A
-081FCDBC=1,21,6,EVA_BattlefControlOnline,0,0,0,0,A
 0830720C=1,11,4,REMAKESOV:S10a,0,0,0,0,A
 0847C3EC=1,108,0,0,0,0,0,0,CS
 087F2C4C=2,115,9,324,0,0,0,0,120,114,0,3,0,0,0,0,A
-087F44BC=0
 08964A60=3,21,6,Mis_S10_Sofia1,0,0,0,0,A,53,2,089668E0,0,0,0,0,A,53,2,0AFE7F3C,0,0,0,0,A
 089668E0=5,21,6,Mis_S10_Sofia2,0,0,0,0,A,55,0,5,0,0,0,0,C,17,0,2,0,0,0,0,C,53,2,0B7BD7A0,0,0,0,0,A,53,2,0AFE751C,0,0,0,0,A
 08970880=3,74,0,16,0,0,0,0,A,3,0,16,0,0,0,0,A,77,0,50,0,0,0,0,A
-08991690=9,3,0,17,0,0,0,0,A,74,0,17,0,0,0,0,A,4,1,09E8068C,0,0,0,0,A,4,1,09E80B5C,0,0,0,0,A,4,1,09914EFC,0,0,0,0,A,4,1,0AF0DC8C,0,0,0,0,A,4,1,08E366DC,0,0,0,0,A,4,1,08E367FC,0,0,0,0,A,4,1,0A93F57C,0,0,0,0,A
+08991690=10,3,0,17,0,0,0,0,A,74,0,17,0,0,0,0,A,4,1,09E8068C,0,0,0,0,A,4,1,09E80B5C,0,0,0,0,A,4,1,09914EFC,0,0,0,0,A,4,1,0AF0DC8C,0,0,0,0,A,4,1,08E366DC,0,0,0,0,A,4,1,08E367FC,0,0,0,0,A,4,1,0A93F57C,0,0,0,0,A,53,2,01000051,0,0,0,0,A
 08C8503C=1,80,1,08CC8B0C,0,0,0,0,CR
 0961D700=7,14,0,14,0,0,0,0,A,17,0,11,0,0,0,0,L,19,7,Bonus,0,0,0,0,A,55,0,0,0,0,0,0,L,19,7,AkulaSelect,0,0,0,0,A,4,1,0B7CA57C,0,0,0,0,A,19,7,CivAllFear,0,0,0,0,A
 098B815C=1,48,0,2,0,0,0,0,AP
-09AB41E0=1,53,2,09AB6F60,0,0,0,0,A
-09AB47E0=5,53,2,09B23E90,0,0,0,0,A,54,2,0A9F7180,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,54,2,09AB47E0,0,0,0,0,A,53,2,0A5DD21C,0,0,0,0,A
-09AB4D30=5,53,2,09AB6CC0,0,0,0,0,A,54,2,0A9F7180,0,0,0,0,A,11,4,REMAKESOV:S10i,0,0,0,0,A,54,2,09AB4D30,0,0,0,0,A,53,2,0A5DD21C,0,0,0,0,A
+09AB41E0=2,53,2,09AB6F60,0,0,0,0,A,11,4,REMAKESOV:S10l,0,0,0,0,A
+09AB47E0=6,54,2,01000047,0,0,0,0,A,53,2,09B23E90,0,0,0,0,A,54,2,0A9F7180,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,54,2,09AB47E0,0,0,0,0,A,53,2,0A5DD21C,0,0,0,0,A
+09AB4D30=6,54,2,01000047,0,0,0,0,A,53,2,09AB6CC0,0,0,0,0,A,54,2,0A9F7180,0,0,0,0,A,11,4,REMAKESOV:S10i,0,0,0,0,A,54,2,09AB4D30,0,0,0,0,A,53,2,0A5DD21C,0,0,0,0,A
 09AB6CC0=1,1,0,14,0,0,0,0,A
 09AB6F60=1,2,0,14,0,0,0,0,A
 09B23E90=2,28,0,7,0,0,0,0,A,53,2,09AB6CC0,0,0,0,0,A
@@ -2174,25 +2298,23 @@ AreTeamMembersRecruitable=no
 0AFE734C=2,112,0,0,0,0,0,0,AQ,19,7,CameraSwitch,0,0,0,0,A
 0AFE751C=4,53,2,0AFE717C,0,0,0,0,A,112,0,0,0,0,0,0,C,19,7,CameraSwitch,0,0,0,0,A,11,4,REMAKESOV:S10f,0,0,0,0,A
 0AFE7F3C=6,53,2,0AFE734C,0,0,0,0,A,112,0,0,0,0,0,0,AO,17,0,40,0,0,0,0,AO,55,0,5,0,0,0,0,AO,19,7,CameraSwitch,0,0,0,0,A,11,4,REMAKESOV:S10e,0,0,0,0,A
-0B16933C=3,27,0,300,0,0,0,0,A,103,4,Name:Storm,0,0,0,0,A,53,2,087F44BC,0,0,0,0,A
 0B16B91C=7,102,0,93,0,0,0,0,CP,53,2,0B17417C,0,0,0,0,A,53,2,0B7BEA70,0,0,0,0,A,90,0,32,0,0,0,0,AG,90,0,16,0,0,0,0,Q,90,0,60,0,0,0,0,BI,90,0,81,0,0,0,0,CD
 0B17417C=1,56,0,4,0,0,0,0,A
-0B3FB3FC=1,53,2,09AB6F60,0,0,0,0,A
 0B58F3DC=2,11,4,REMAKESOV:S10a,0,0,0,0,A,55,0,5,0,0,0,0,AO
 0B79972C=14,99,7,_Amb_OceanLight,0,0,0,0,AY,99,7,_Amb_OceanLight,0,0,0,0,O,99,7,_Amb_OceanLight,0,0,0,0,AX,99,7,_Amb_OceanLight,0,0,0,0,AW,99,7,_Amb_OceanLight,0,0,0,0,AV,99,7,_Amb_OceanLight,0,0,0,0,BE,99,7,_Amb_OceanLight,0,0,0,0,BF,99,7,_Amb_OceanLight,0,0,0,0,BG,99,7,_Amb_OceanLight,0,0,0,0,BD,99,7,_Amb_OceanLight,0,0,0,0,BC,99,7,_Amb_OceanLight,0,0,0,0,BB,99,7,_Amb_OceanLight,0,0,0,0,BA,99,7,_Amb_OceanLight,0,0,0,0,BL,99,7,_Amb_OceanLight,0,0,0,0,BN
 0B7B8C9C=10,99,7,_Amb_BirdsBeach,0,0,0,0,BV,99,7,_Amb_BirdsBeach,0,0,0,0,BZ,99,7,_Amb_BirdsBeach,0,0,0,0,CB,99,7,_Amb_BirdsBeach,0,0,0,0,CD,99,7,_Amb_BirdsBeach,0,0,0,0,BT,99,7,_Amb_BirdsBeach,0,0,0,0,BR,99,7,_Amb_BirdsBeach,0,0,0,0,CI,99,7,_Amb_BirdsBeach,0,0,0,0,CG,99,7,_Amb_BirdsBeach,0,0,0,0,CF,99,7,_Amb_BirdsBeach,0,0,0,0,CE
 0B7BD050=3,21,6,Mis_S10_Sofia4,0,0,0,0,A,53,2,0C6043EC,0,0,0,0,A,11,4,REMAKESOV:S10g,0,0,0,0,A
-0B7BD7A0=2,21,6,Mis_S10_Sofia3,0,0,0,0,A,53,2,081FCDBC,0,0,0,0,A
+0B7BD7A0=1,21,6,Mis_S10_Sofia3,0,0,0,0,A
 0B7BEA70=9,74,0,17,0,0,0,0,A,3,0,17,0,0,0,0,A,56,0,4,0,0,0,0,A,4,1,09E8068C,0,0,0,0,A,4,1,09E80B5C,0,0,0,0,A,4,1,09914EFC,0,0,0,0,A,4,1,0AF0DC8C,0,0,0,0,A,4,1,0A93F57C,0,0,0,0,A,38,0,14,0,0,0,0,A
 0B7D827C=11,99,7,_Amb_OceanLight,0,0,0,0,BP,99,7,_Amb_OceanLight,0,0,0,0,BQ,99,7,_Amb_OceanLight,0,0,0,0,BS,99,7,_Amb_OceanLight,0,0,0,0,BU,99,7,_Amb_OceanLight,0,0,0,0,BX,99,7,_Amb_OceanLight,0,0,0,0,BW,99,7,_Amb_OceanLight,0,0,0,0,CA,99,7,_Amb_OceanLight,0,0,0,0,CC,99,7,_Amb_OceanLight,0,0,0,0,CL,99,7,_Amb_OceanLight,0,0,0,0,CJ,99,7,_Amb_OceanLight,0,0,0,0,CH
 0BCE57AC=10,99,7,_Amb_BirdsBeach,0,0,0,0,L,99,7,_Amb_BirdsBeach,0,0,0,0,AR,99,7,_Amb_BirdsBeach,0,0,0,0,AQ,99,7,_Amb_BirdsBeach,0,0,0,0,AD,99,7,_Amb_BirdsBeach,0,0,0,0,AK,99,7,_Amb_BirdsBeach,0,0,0,0,BK,99,7,_Amb_BirdsBeach,0,0,0,0,BJ,99,7,_Amb_BirdsBeach,0,0,0,0,BI,99,7,_Amb_BirdsBeach,0,0,0,0,BH,99,7,_Amb_BirdsBeach,0,0,0,0,BY
 0BCE5AAC=14,99,7,_Amb_OceanHeavy,0,0,0,0,AZ,99,7,_Amb_OceanHeavy,0,0,0,0,L,99,7,_Amb_OceanHeavy,0,0,0,0,AS,99,7,_Amb_OceanHeavy,0,0,0,0,AR,99,7,_Amb_OceanHeavy,0,0,0,0,AQ,99,7,_Amb_OceanHeavy,0,0,0,0,AD,99,7,_Amb_OceanHeavy,0,0,0,0,AK,99,7,_Amb_OceanHeavy,0,0,0,0,AT,99,7,_Amb_OceanHeavy,0,0,0,0,AU,99,7,_Amb_OceanHeavy,0,0,0,0,AJ,99,7,_Amb_OceanHeavy,0,0,0,0,BK,99,7,_Amb_OceanHeavy,0,0,0,0,BJ,99,7,_Amb_OceanHeavy,0,0,0,0,BI,99,7,_Amb_OceanHeavy,0,0,0,0,K
-0C6043EC=5,112,0,0,0,0,0,0,P,19,7,CameraSwitch,0,0,0,0,A,53,2,0B16933C,0,0,0,0,A,53,2,01000027,0,0,0,0,A,53,2,01000029,0,0,0,0,A
+0C6043EC=4,112,0,0,0,0,0,0,P,19,7,CameraSwitch,0,0,0,0,A,53,2,01000027,0,0,0,0,A,53,2,01000029,0,0,0,0,A
 0CC538AC=6,14,0,14,0,0,0,0,A,17,0,97,0,0,0,0,CT,55,0,1,0,0,0,0,CT,19,7,Bonus,0,0,0,0,A,21,6,Mis_S10_Yuri,0,0,0,0,A,11,4,REMAKESOV:S10k,0,0,0,0,A
 
 [Aircraft]
-0=Player House,FOX,256,155,157,64,Guard,None,0,0,1,0
-1=Player House,FOX,256,155,159,64,Guard,None,0,0,1,0
+0=Player House,FOX,256,155,157,0,Guard,None,0,0,1,0
+1=Player House,FOX,256,155,159,0,Guard,None,0,0,1,0
 
 [BadGuy1]
 Name=BadGuy1
@@ -2207,30 +2329,31 @@ ParentCountry=UnitedStates
 [BadGuy1 House]
 IQ=3
 000=GAPOWR,155,106
-001=GAPOWR,0,0
+001=GADEPO,173,126
 002=GAPOWR,155,110
-003=GAPOWR,158,110
-004=GAPOWR,165,104
-005=GAPOWR,165,108
-006=GAPOWR,162,96
-007=GAPOWR,162,99
-008=GAPILE,154,102
-009=ATESLA,154,100
-010=ATESLA,158,96
-011=ATESLA,173,114
-012=ATESLA,162,109
-013=NASAM,170,110
-014=NALASR,159,102
-015=GAOREP,166,118
-016=GASCEA,167,114
-017=GTGCAN,147,105
-018=GADEPO,173,126
+003=GAPOWR,165,104
+004=GAPOWR,165,108
+005=GAPOWR,162,96
+006=GAYARD,183,127
+007=ATESLA,158,96
+008=ATESLA,173,114
+009=ATESLA,162,109
+010=NASAM,170,110
+011=NALASR,159,102
+012=GAOREP,166,118
+013=GASCEA,167,114
+014=GTGCAN,147,105
+015=GAREFN,160,117
+016=GAPILE,159,107
+017=GAWEAP,146,104
+018=GADEPO,85,130
+019=GAAIRC,160,102
 Edge=North
 Color=AlliedLoad
 Allies=BadGuy1 House,BadGuy2 House,BadGuy3 House,Civie1 House
 Country=BadGuy1
 Credits=1000
-NodeCount=19
+NodeCount=20
 TechLevel=10
 PercentBuilt=100
 PlayerControl=no
@@ -2247,13 +2370,24 @@ ParentCountry=UnitedStates
 
 [BadGuy2 House]
 IQ=3
-000=GADEPO,94,111
+000=GAREFN,92,147
+001=GAPOWR,89,146
+002=GAPOWR,89,150
+003=GAPILE,96,136
+004=GAPOWR,103,146
+005=GAPOWR,104,149
+006=GAWEAP,87,129
+007=GAAIRC,80,135
+008=GAPOWR,83,141
+009=GASCEA,99,111
+010=GAPOWR,83,132
+011=GAPOWR,91,124
 Edge=North
 Color=AlliedLoad
 Allies=BadGuy1 House,BadGuy2 House,BadGuy3 House,Civie1 House
 Country=BadGuy2
 Credits=1000
-NodeCount=1
+NodeCount=12
 TechLevel=10
 PercentBuilt=0
 PlayerControl=no
@@ -2271,19 +2405,40 @@ ParentCountry=UnitedStates
 [BadGuy3 House]
 IQ=5
 000=GADEPO,27,85
+001=GAPILE,41,77
+002=GAREFN,39,69
+003=GAWEAP,35,73
+004=GAPOWR,34,70
+005=GAPOWR,32,72
+006=GAPOWR,30,74
+007=GAPOWR,28,76
+008=GAPOWR,36,68
+009=GAPOWR,38,66
+010=GAPOWR,26,78
+011=GAPOWR,42,62
+012=GAPILE,41,65
+013=GAPOWR,29,83
+014=GAPOWR,24,80
+015=GATECH,15,89
+016=GAPOWR,15,86
+017=GAPOWR,20,86
+018=GAAIRC,28,106
+019=GAPOWR,29,101
+020=GAPOWR,33,115
+021=GAYARD,33,93
 Edge=North
 Color=AlliedLoad
 Allies=BadGuy1 House,BadGuy2 House,BadGuy3 House,Civie1 House,Other3 House
 Country=BadGuy3
 Credits=1000
-NodeCount=1
+NodeCount=22
 TechLevel=10
 PercentBuilt=0
 PlayerControl=no
 
 [Basic]
 Name=Weathered_Alliance
-Brief=s10_f00e
+Brief=S10_f00e
 Theme=Destroy
 Player=Player House
 Percent=0
@@ -2292,6 +2447,7 @@ HomeCell=98
 InitTime=10000
 Official=yes
 EndOfGame=no
+FillSilos=no
 FreeRadar=no
 MaxPlayer=8
 MinPlayer=2
@@ -2304,14 +2460,16 @@ CarryOverCap=0
 LoadingTheme=jank
 NewINIFormat=4
 NextScenario=
+TimerInherit=no
 SkipMapSelect=no
 CarryOverMoney=0.000000
 AltNextScenario=
 MultiplayerOnly=0
 IceGrowthEnabled=no
+StartingDropships=0
 VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
-IgnoreGlobalAITriggers=yes
+IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
 
 [CellTags]
@@ -2352,14 +2510,14 @@ ParentCountry=Neutral
 MultiplayPassive=true
 
 [Countries]
-0=Player
-1=BadGuy1
-2=BadGuy2
-3=BadGuy3
-4=Civilian1
-5=Other1
-6=Other2
-7=Other3
+14=Player
+15=BadGuy1
+16=BadGuy2
+17=BadGuy3
+18=Civilian1
+19=Other1
+20=Other2
+21=Other3
 
 [Events]
 01000000=1,13,0,20
@@ -2371,9 +2529,12 @@ MultiplayPassive=true
 01000039=1,8,0,0
 01000041=1,8,0,0
 01000043=1,8,0,0
+01000045=1,13,0,0
+01000047=1,13,0,0
+01000049=1,13,0,0
+01000051=1,13,0,5
 04371B8C=1,13,0,300
 07237120=1,13,0,0
-07237530=1,13,0,10
 07490670=1,13,0,3
 07537BBC=1,36,0,4
 07B72CC0=1,47,0,0
@@ -2383,15 +2544,13 @@ MultiplayPassive=true
 07D50BCC=1,47,0,300
 07EF4200=1,47,0,0
 07FACF60=1,47,0,0
-081FCDBC=1,13,0,18
 0830720C=1,13,0,2
 0847C3EC=1,7,0,0
 087F2C4C=1,20,0,88
-087F44BC=1,13,0,275
 08964A60=1,47,0,8
 089668E0=1,13,0,22
 08970880=1,6,0,0
-08991690=1,5,0,17
+08991690=1,13,0,5
 08C8503C=1,32,0,52
 0961D700=1,4,0,0
 098B815C=1,47,0,7
@@ -2409,17 +2568,15 @@ MultiplayPassive=true
 0A79193C=1,13,0,100
 0A791B0C=1,13,0,100
 0A7961EC=1,13,0,100
-0A9F7180=1,13,0,100
+0A9F7180=1,13,0,120
 0AB36980=1,13,0,200
 0AFE717C=1,13,0,17
 0AFE734C=1,13,0,10
 0AFE751C=1,13,0,7
 0AFE7F3C=1,13,0,10
-0B16933C=1,13,0,10
 0B16B91C=1,14,0,0
 0B17417C=1,13,0,5
-0B3FB3FC=1,11,0,14
-0B58F3DC=1,13,0,100
+0B58F3DC=1,13,0,120
 0B79972C=1,47,0,0
 0B7B8C9C=1,47,0,0
 0B7BD050=1,13,0,3
@@ -2432,14 +2589,14 @@ MultiplayPassive=true
 0CC538AC=1,4,0,0
 
 [Houses]
-0=Player House
-1=BadGuy1 House
-2=BadGuy2 House
-3=BadGuy3 House
-4=Civie1 House
-5=Other1 House
-6=Other2 House
-7=Other3 House
+14=Player House
+15=BadGuy1 House
+16=BadGuy2 House
+17=BadGuy3 House
+18=Civie1 House
+19=Other1 House
+20=Other2 House
+21=Other3 House
 
 [Infantry]
 0=BadGuy1 House,E1,256,145,121,2,Guard,128,09F42D90,0,-1,0,1,1
@@ -2447,13 +2604,13 @@ MultiplayPassive=true
 2=BadGuy1 House,E1,256,147,124,3,Guard,128,09F42D90,0,-1,0,1,1
 3=BadGuy1 House,E1,256,146,122,2,Guard,128,09F42D90,0,-1,0,1,1
 4=BadGuy1 House,E1,256,153,122,3,Guard,160,09F42D90,0,-1,0,1,1
-5=Civie1 House,COW,256,119,94,4,Guard,225,None,0,-1,0,1,1
+5=Civie1 House,COW,256,119,94,2,Guard,225,None,0,-1,0,1,1
 6=Civie1 House,COW,256,124,89,2,Guard,64,None,0,-1,0,1,1
-7=Civie1 House,COW,256,121,96,4,Guard,64,None,0,-1,0,1,1
+7=Civie1 House,COW,256,121,96,2,Guard,64,None,0,-1,0,1,1
 8=Civie1 House,COW,256,122,85,2,Guard,32,None,0,-1,0,1,1
 9=Civie1 House,COW,256,119,83,2,Guard,0,None,0,-1,0,1,1
 10=Civie1 House,COW,256,121,95,2,Guard,64,None,0,-1,0,1,1
-11=Civie1 House,COW,256,150,82,4,Guard,192,None,0,-1,0,1,1
+11=Civie1 House,COW,256,150,82,2,Guard,192,None,0,-1,0,1,1
 12=Civie1 House,COW,256,153,81,2,Guard,153,None,0,-1,0,1,1
 13=Civie1 House,COW,256,137,78,2,Guard,153,None,0,-1,0,1,1
 14=Civie1 House,COW,256,132,70,2,Guard,192,None,0,-1,0,1,1
@@ -2461,21 +2618,21 @@ MultiplayPassive=true
 16=Civie1 House,COW,256,115,78,2,Guard,32,None,0,-1,0,1,1
 17=Civie1 House,COW,256,119,77,2,Guard,32,None,0,-1,0,1,1
 18=Civie1 House,COW,256,128,61,2,Guard,64,None,0,-1,0,1,1
-19=Civie1 House,COW,256,142,70,4,Guard,0,None,0,-1,0,1,1
+19=Civie1 House,COW,256,142,70,2,Guard,0,None,0,-1,0,1,1
 20=Civie1 House,COW,256,138,83,2,Guard,64,None,0,-1,0,1,1
-21=Civie1 House,COW,256,130,77,4,Guard,192,None,0,-1,0,1,1
-22=Civie1 House,COW,256,139,74,4,Guard,192,None,0,-1,0,1,1
+21=Civie1 House,COW,256,130,77,2,Guard,192,None,0,-1,0,1,1
+22=Civie1 House,COW,256,139,74,2,Guard,192,None,0,-1,0,1,1
 23=Civie1 House,COW,256,133,77,3,Guard,186,None,0,-1,0,1,1
 24=BadGuy2 House,E1,256,101,137,3,Area Guard,0,08970390,0,-1,0,1,1
 25=BadGuy2 House,E1,256,101,136,2,Area Guard,0,08970390,0,-1,0,1,1
-26=BadGuy2 House,E1,256,102,137,4,Area Guard,0,08970390,0,-1,0,1,1
+26=BadGuy2 House,E1,256,102,137,2,Area Guard,0,08970390,0,-1,0,1,1
 27=BadGuy2 House,E1,256,92,137,2,Area Guard,64,08970390,0,-1,0,1,1
 28=Civie1 House,CIVBF,256,146,212,2,Guard,0,None,0,-1,0,1,1
 29=Civie1 House,CIVBFM,256,144,208,2,Guard,0,None,0,-1,0,1,1
-30=Civie1 House,CIVBTM,256,146,211,4,Guard,0,None,0,-1,0,1,1
+30=Civie1 House,CIVBTM,256,146,211,2,Guard,0,None,0,-1,0,1,1
 31=Civie1 House,CIVBF,256,154,210,2,Guard,0,None,0,-1,0,1,1
 32=Civie1 House,CIVBFM,256,155,209,3,Guard,0,None,0,-1,0,1,1
-33=Civie1 House,CIV3,256,150,214,4,Guard,0,None,0,-1,0,1,1
+33=Civie1 House,CIV3,256,150,214,2,Guard,0,None,0,-1,0,1,1
 34=Civie1 House,YURI,256,126,70,1,Sleep,64,0CC54A8C,0,-1,0,1,1
 35=Civie1 House,YURI,256,125,69,0,Sleep,64,0CC54A8C,0,-1,0,1,0
 36=Civie1 House,YURI,256,124,70,0,Sleep,64,0CC54A8C,0,-1,0,1,0
@@ -5265,6 +5422,15 @@ UnderParTitle=GUI:ParTitleSov11
 OverParMessage=GUI:FSov10
 UnderParMessage=GUI:FSov10
 
+[SAMWH2]
+Verses=150%,150%,150%,120%,120%,120%,0%,0%,0%,100%,100%
+AnimList=ARMOREXP
+ProneDamage=100%
+CLDisableRed=yes
+InfDeathAnim=FREEZE
+Versus.cryoc=60%
+CLDisableGreen=yes
+
 [ScriptTypes]
 0=0C1CAA1C
 1=09ED37DC
@@ -5456,7 +5622,7 @@ DestroyableBridges=no
 135=Civie1 House,CARODS02,256,99,114,64,None,1,0,1,0,0,None,None,None,0,0
 136=Civie1 House,CACARG1,256,93,110,64,None,1,0,1,0,0,None,None,None,0,0
 137=Civie1 House,CACARG1,256,95,110,64,None,1,0,1,0,0,None,None,None,0,0
-138=BadGuy2 House,GADEPO,256,94,111,64,None,1,0,1,0,0,None,None,None,0,0
+138=BadGuy1 House,GAREFN,256,160,117,0,09F42D90,1,0,1,0,0,None,None,None,1,0
 139=BadGuy1 House,GATECH,256,163,97,0,07C0463C,1,0,1,0,0,None,None,None,1,0
 140=BadGuy2 House,GTGCAN,256,92,144,64,None,1,0,1,0,0,None,None,None,0,0
 141=BadGuy2 House,GAPOWR,256,94,161,0,08970390,1,0,1,1,0,GAPOWRUP,None,None,0,0
@@ -5525,8 +5691,9 @@ DestroyableBridges=no
 204=BadGuy3 House,GAPOWR,256,30,74,0,None,1,0,1,1,0,GAPOWRUP,None,None,0,0
 205=BadGuy3 House,GAPOWR,256,24,80,0,None,1,0,1,1,0,GAPOWRUP,None,None,0,0
 206=BadGuy3 House,GAPOWR,256,29,101,0,None,1,0,1,1,0,GAPOWRUP,None,None,0,0
-207=BadGuy1 House,GADEPO,256,173,126,64,None,1,0,1,0,0,None,None,None,0,0
-208=BadGuy3 House,GADEPO,256,27,85,64,None,1,0,1,0,0,None,None,None,0,0
+207=BadGuy1 House,GADEPO,256,85,130,0,None,1,0,1,0,0,None,None,None,0,0
+208=BadGuy3 House,GADEPO,256,173,126,0,None,1,0,1,0,0,None,None,None,0,0
+209=Other3 House,GAWEAT,256,17,95,0,09030F4C,0,0,1,0,0,None,None,None,1,0
 1038178=BadGuy2 House,GACNST,256,87,135,0,08970390,1,0,1,0,0,None,None,None,0,0
 1038181=BadGuy2 House,GAPILE,256,96,136,0,08970390,1,0,1,0,0,None,None,None,0,0
 1038190=BadGuy2 House,GAWEAP,256,87,129,0,08970390,1,0,1,0,0,None,None,None,0,0
@@ -5539,7 +5706,6 @@ DestroyableBridges=no
 1038201=BadGuy2 House,NASAM,256,88,151,0,08970390,1,0,1,0,0,None,None,None,0,0
 1038202=BadGuy2 House,NASAM,256,92,151,0,08970390,1,0,1,0,0,None,None,None,0,0
 1038203=BadGuy2 House,NASAM,256,81,140,0,08970390,1,0,1,0,0,None,None,None,0,0
-1038204=BadGuy2 House,NASAM,256,85,132,0,08970390,1,0,1,0,0,None,None,None,0,0
 1038205=BadGuy2 House,NASAM,256,94,123,0,08970390,1,0,1,0,0,None,None,None,0,0
 1038206=BadGuy2 House,NASAM,256,110,119,0,08970390,1,0,1,0,0,None,None,None,0,0
 1038207=BadGuy2 House,ATESLA,256,92,140,0,08970390,1,0,1,0,0,None,None,None,0,0
@@ -5557,7 +5723,6 @@ DestroyableBridges=no
 1038281=BadGuy3 House,ATESLA,256,27,92,0,None,1,0,1,0,0,None,None,None,0,0
 1038284=BadGuy3 House,ATESLA,256,22,87,0,None,1,0,1,0,0,None,None,None,0,0
 1038287=BadGuy3 House,ATESLA,256,27,102,0,None,1,0,1,0,0,None,None,None,0,0
-1038290=Other3 House,GAWEAT,256,17,95,0,09030F4C,0,0,1,0,0,None,None,None,1,0
 1038301=BadGuy3 House,GAPILL,256,22,96,96,None,1,0,1,0,0,None,None,None,0,0
 1038302=BadGuy3 House,GAPILL,256,18,92,96,None,1,0,1,0,0,None,None,None,0,0
 1038303=BadGuy3 House,GAPILL,256,18,100,64,None,1,0,1,0,0,None,None,None,0,0
@@ -5590,8 +5755,6 @@ DestroyableBridges=no
 1038370=BadGuy3 House,GAPILL,256,54,77,0,None,1,0,1,0,0,None,None,None,0,0
 1038371=BadGuy3 House,GAPILL,256,49,76,0,None,1,0,1,0,0,None,None,None,0,0
 1038384=BadGuy3 House,GAPOWR,256,57,96,0,None,1,0,1,0,0,None,None,None,0,0
-1038444=BadGuy2 House,GAPOWR,256,85,130,0,08970390,1,0,1,0,0,None,None,None,0,0
-1038453=BadGuy1 House,GAREFN,256,160,118,0,09F42D90,1,0,1,0,0,None,None,None,1,0
 1038480=BadGuy1 House,ATESLA,256,177,110,0,09F42D90,1,0,1,0,0,None,None,None,0,0
 1038483=BadGuy1 House,ATESLA,256,188,112,0,09F42D90,1,0,1,0,0,None,None,None,0,0
 1038486=BadGuy1 House,NASAM,256,175,139,0,09F42D90,1,0,1,0,0,None,None,None,0,0
@@ -5648,31 +5811,36 @@ DestroyableBridges=no
 01000040=0,-D-E 1,01000039
 01000042=0,-D-M 1,01000041
 01000044=0,-D-H 1,01000043
+01000046=2,Add Enter Animated 1,01000045
+01000048=2,Add Destroy Animated 1,01000047
+01000050=0,Change House WCD 1,01000049
+01000052=0,Faster Power WCD 1,01000051
 043713BC=0,BG2 Delayed Startup 1,04371B8C
-07231C50=2,Lock Input 1,07237120
-07237270=2,Unlock Input 1,07237530
-074951F0=2,Faster Unlock Input 1,07490670
+07231C50=0,Lock Input 1,07237120
+074951F0=0,Faster Unlock Input 1,07490670
+07537B0C=0,Turn On 1,07537BBC
 07B72C10=0,East Trans Arrives 1,07B72CC0
-07C0463C=2,BL Captured 1,07C0419C
+07C0463C=0,BL Captured 1,07C0419C
+07C0470C=0,BL Damaged 1,07C0471C
+07C0530C=0,BL Destroyed 1,07C053EC
 07D5060C=0,BG1 Delayed Startup 1,07D50BCC
 07EF57D0=0,Reveal LZ 1,07EF4200
 07FAFB50=0,West Trans Arrives 1,07FACF60
-081F9F4C=0,Zofia 3 Online 1,081FCDBC
 0830F05C=0,Objective 1,0830720C
 0847DD2C=0,Beach Hotel Bonus 1,0847C3EC
 087F2B6C=0,Squid Intro 1,087F2C4C
-087F799C=0,Weather Control Device 1,087F44BC
 089667A0=0,Zofia 2 1,089668E0
 089669A0=0,Zofia 1 1,08964A60
 08970390=0,Allied 2 Counter Attack 1,08970880
 089900C0=0,Bad Guy 3 Startup 1,08991690
-09030F4C=2,WCD Destroyed 1,09AB4D30
+09030F4C=0,WCD Destroyed 1,09AB4D30
 0961D290=0,Bonus Ship 1,0961D700
 098BCCFC=0,Camera Move 1 1,098B815C
 09AB4050=0,Player Dead,09AB41E0
-09AB6D80=2,Loser 1,09AB6F60
-09B211A0=2,Winner Bonus 1,09B23E90
-09B21420=2,Winner 1,09AB6CC0
+09AB4700=0,WCD Captured 1,09AB47E0
+09AB6D80=0,Loser 1,09AB6F60
+09B211A0=0,Winner Bonus 1,09B23E90
+09B21420=0,Winner 1,09AB6CC0
 09CC83EC=0,Landed 1,09CC8F3C
 09DE2D70=0,BG3 Attacked,09DE1140
 09F42D90=0,Allied 1 Counter Attack 1,09F40250
@@ -5689,14 +5857,16 @@ DestroyableBridges=no
 0AFE726C=0,Zofia 1 Map Return 1,0AFE734C
 0AFE743C=0,Zofia 2 Map 1,0AFE751C
 0AFE7E5C=0,Zofia 1 Map 1,0AFE7F3C
-0B16BA0C=0,WCD_Timer_fake 1,0B16933C
 0B1712DC=0,WCD_Attack_fake 1,0B16B91C
 0B1771AC=0,WCD_Enabled_real 1,0B17417C
-0B3F87FC=0,_Lose Condition 1,0B3FB3FC
+0B79970C=0,Ocean Lite 1,0B79972C
+0B7B8C0C=0,Ambient Birds 2 1,0B7B8C9C
 0B7BD110=0,Zofia 3 1,0B7BD7A0
 0B7BE890=0,Zofia 5 1,0B7BEA70
 0B7BEB30=0,Zofia 4 1,0B7BD050
+0BCE570C=0,Ambient Birds 1,0BCE57AC
 0BCE589C=0,Ambient Sounds,0B7D827C
+0BCE5A0C=0,Ocean Heavy 1,0BCE5AAC
 0C604F4C=0,Camera to WCD 1,0C6043EC
 0CC54A8C=0,Bonus Psy Corps 1,0CC538AC
 
@@ -6070,7 +6240,6 @@ DestroyableBridges=no
 116196=TREE22
 116201=TREE20
 117094=TREE23
-117162=TREE23
 117191=TREE23
 117198=TREE21
 117200=TREE23
@@ -6097,6 +6266,7 @@ DestroyableBridges=no
 120106=TREE23
 120152=TREE21
 120159=TREE21
+120160=TREE23
 120177=TREE21
 120201=TREE23
 120202=TREE21
@@ -6312,9 +6482,12 @@ DestroyableBridges=no
 01000039=Player,<none>,-D-E,0,1,0,0,0
 01000041=Player,<none>,-D-M,0,0,1,0,0
 01000043=Player,<none>,-D-H,0,0,0,1,0
+01000045=Player,<none>,Add Enter Animated,0,1,1,1,0
+01000047=Player,<none>,Add Destroy Animated,0,1,1,1,0
+01000049=Other3,<none>,Change House WCD,1,1,1,1,0
+01000051=BadGuy3,<none>,Faster Power WCD,1,1,1,1,0
 04371B8C=UnitedStates,<none>,BG2 Delayed Startup,0,1,1,1,0
 07237120=UnitedStates,<none>,Lock Input,0,1,1,1,0
-07237530=UnitedStates,<none>,Unlock Input,1,1,1,1,0
 07490670=UnitedStates,<none>,Faster Unlock Input,1,1,1,1,0
 07537BBC=UnitedStates,<none>,Turn On,0,1,1,1,0
 07B72CC0=Player,<none>,East Trans Arrives,0,1,1,1,0
@@ -6324,21 +6497,19 @@ DestroyableBridges=no
 07D50BCC=UnitedStates,<none>,BG1 Delayed Startup,0,1,1,1,0
 07EF4200=UnitedStates,<none>,Reveal LZ,0,1,1,1,0
 07FACF60=Player,<none>,West Trans Arrives,0,1,1,1,0
-081FCDBC=UnitedStates,<none>,Zofia 3 Online,1,1,1,1,0
 0830720C=UnitedStates,<none>,Objective 1,1,1,1,1,0
 0847C3EC=UnitedStates,<none>,Beach Hotel Bonus,0,1,1,1,0
 087F2C4C=Player,<none>,Squid Intro,0,1,1,1,0
-087F44BC=UnitedStates,<none>,Weather Control Device,1,1,1,1,0
 08964A60=UnitedStates,<none>,Zofia 1,0,1,1,1,0
 089668E0=UnitedStates,<none>,Zofia 2,1,1,1,1,0
 08970880=BadGuy2,<none>,Allied 2 Counter Attack,0,1,1,1,0
-08991690=BadGuy3,<none>,Bad Guy 3 Startup,0,1,1,1,0
+08991690=BadGuy3,<none>,Bad Guy 3 Startup,1,1,1,1,0
 08C8503C=Player,<none>,Kill the Nuke!,0,0,1,1,0
 0961D700=UnitedStates,<none>,Bonus Ship,0,1,1,1,0
 098B815C=UnitedStates,<none>,Camera Move 1,0,1,1,1,0
 09AB41E0=Player,<none>,Player Dead,0,1,1,1,0
-09AB47E0=UnitedStates,07537BBC,WCD Captured,0,1,1,1,0
-09AB4D30=UnitedStates,09AB47E0,WCD Destroyed,0,1,1,1,0
+09AB47E0=UnitedStates,07537BBC,WCD Captured,1,1,1,1,0
+09AB4D30=UnitedStates,09AB47E0,WCD Destroyed,1,1,1,1,0
 09AB6CC0=UnitedStates,<none>,Winner,1,1,1,1,0
 09AB6F60=Player,<none>,Loser,1,1,1,1,0
 09B23E90=UnitedStates,<none>,Winner Bonus,1,1,1,1,0
@@ -6356,10 +6527,8 @@ DestroyableBridges=no
 0AFE734C=UnitedStates,<none>,Zofia 1 Map Return,1,1,1,1,0
 0AFE751C=UnitedStates,<none>,Zofia 2 Map,1,1,1,1,0
 0AFE7F3C=UnitedStates,<none>,Zofia 1 Map,1,1,1,1,0
-0B16933C=UnitedStates,<none>,WCD_Timer_fake,1,1,1,1,0
 0B16B91C=UnitedStates,<none>,WCD_Attack_fake,0,1,1,1,0
 0B17417C=UnitedStates,<none>,WCD_Enabled_real,1,1,1,1,0
-0B3FB3FC=UnitedStates,<none>,_Lose Condition,0,1,1,1,0
 0B58F3DC=UnitedStates,<none>,Reminder1_Capture BL,1,1,1,1,0
 0B79972C=UnitedStates,0B7B8C9C,Ocean Lite,0,1,1,1,0
 0B7B8C9C=UnitedStates,0BCE57AC,Ambient Birds 2,0,1,1,1,0
@@ -6622,6 +6791,7 @@ DestroyableBridges=no
 117=183131
 118=191122
 119=185116
+120=96162
 
 
 

@@ -8,6 +8,9 @@ TechLevel=12
 [Aboreus]
 Value=50
 
+[ArmorTypes]
+shkdef=plate
+
 [BarrelExplosion]
 Anim=RING1
 Damage=50
@@ -25,14 +28,14 @@ Strength=1
 [CAPARS01]
 Name=RA2 Paris Tower
 Armor=concrete
-Power=-50
+Power=-1000
 Points=5
 UIName=Name:CAPARS01
 Nominal=yes
 Powered=Yes
 Primary=EiffelBolt
 Bombable=no
-Strength=30000
+Strength=2500
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 MaxDebris=0
 TechLevel=-1
@@ -50,6 +53,30 @@ Value=100
 [ENGINEER]
 TechLevel=-1
 
+[EiffelBolt]
+ROF=30
+Range=20
+Speed=100
+Damage=2000
+Report=ParisTowerAttack
+Warhead=ElectricTower
+OmniFire=yes
+Projectile=InvisibleHigh
+IsElectricBolt=true
+
+[FACOAT]
+Owner=Europeans,UnitedStates,Pacific,USSR,Latin,Chinese,PsiCorps,Headquaters,ScorpionCell,Guild1,Guild2,Guild3
+Power=0
+Powered=yes
+Primary=
+BuildCat=Combat
+Secondary=StructureBuff
+NoManualFire=yes
+InvisibleInGame=yes
+AttackFriendlies=yes
+HasStupidGuardMode=false
+AttackCursorOnFriendlies=yes
+
 [FENGINEER]
 TechLevel=-1
 
@@ -63,7 +90,7 @@ Storage=20
 Name=Invisible Blue Light Post
 LightRedTint=0.01
 LightBlueTint=0.7
-LightGreenTint=0,01
+LightGreenTint=0.01
 LightIntensity=0.01
 LightVisibility=3000
 
@@ -125,11 +152,23 @@ Passengers=0
 Value=50
 
 [SHK]
+Armor=shkdef
 TechLevel=12
 Prerequisite=NAHAND
 
 [SMCV]
 TechLevel=12
+
+[StructureBuffReal]
+ROF=100
+Range=6
+Speed=1
+Damage=0
+Warhead=FakeDefendMarkWH
+AreaFire=yes
+Projectile=InvisibleAll
+RevealOnFire=no
+DecloakToFire=no
 
 [TESLA]
 Name=Tesla Coil
@@ -143,9 +182,15 @@ Power=0
 
 [VOLKOV]
 Strength=99999
+AttachEffect.Duration=-1
+AttachEffect.Animation=VIPMARK
+AttachEffect.TemporalHidesAnim=no
 
 [Vinifera]
 Value=50
+
+[Warheads]
++=FakeDefendMarkWH
 
 [YENGINEER]
 TechLevel=-1
@@ -437,6 +482,89 @@ AreTeamMembersRecruitable=no
 2=20,21
 3=39,1
 Name=TRANSPORT
+
+[01000063]
+0=9,MTNK
+Name=BG1 TNK
+Group=-1
+
+[01000064]
+0=16,98
+1=0,1
+Name=ATK TOWER
+
+[01000065]
+0=6,SREF
+Name=BG1 TNK2
+Group=-1
+
+[01000066]
+Max=5
+Full=no
+Name=BG1 TNK1
+Group=-1
+House=BadGuy1
+Script=01000064
+Whiner=no
+Droppod=no
+Suicide=no
+Loadable=no
+Prebuild=no
+Priority=5
+Waypoint=BT
+Annoyance=no
+IonImmune=no
+Recruiter=no
+Reinforce=no
+TaskForce=01000063
+TechLevel=0
+Aggressive=no
+Autocreate=no
+GuardSlower=no
+OnTransOnly=no
+AvoidThreats=no
+LooseRecruit=no
+VeteranLevel=1
+IsBaseDefense=no
+UseTransportOrigin=no
+MindControlDecision=0
+OnlyTargetHouseEnemy=no
+TransportsReturnOnUnload=no
+AreTeamMembersRecruitable=no
+
+[01000067]
+Max=5
+Full=no
+Name=BG1 TNK2
+Group=-1
+House=BadGuy1
+Script=01000064
+Whiner=no
+Droppod=no
+Suicide=no
+Loadable=no
+Prebuild=no
+Priority=5
+Waypoint=BT
+Annoyance=no
+IonImmune=no
+Recruiter=no
+Reinforce=no
+TaskForce=01000065
+TechLevel=0
+Aggressive=no
+Autocreate=no
+GuardSlower=no
+OnTransOnly=no
+AvoidThreats=no
+LooseRecruit=no
+VeteranLevel=1
+IsBaseDefense=no
+UseTransportOrigin=no
+MindControlDecision=0
+OnlyTargetHouseEnemy=no
+TransportsReturnOnUnload=no
+AreTeamMembersRecruitable=no
 
 [076E35A0]
 0=3,78
@@ -1297,7 +1425,7 @@ AreTeamMembersRecruitable=no
 01000026=2,11,4,REMAKESOV:S05h,0,0,0,0,A,53,2,01000028,0,0,0,0,A
 01000028=4,7,1,01000039,0,0,0,0,A,112,0,0,0,0,0,0,BI,19,7,CameraSwitch,0,0,0,0,A,53,2,01000030,0,0,0,0,A
 01000030=3,11,4,REMAKESOV:S05i,0,0,0,0,A,4,1,01000034,0,0,0,0,BI,53,2,01000035,0,0,0,0,A
-01000035=5,11,4,REMAKESOV:BCONLINE,0,0,0,0,A,47,0,0,0,0,0,0,BI,21,6,EVA_BattleControlOnline,0,0,0,0,A,53,2,08B8375C,0,0,0,0,A,53,2,0B00823C,0,0,0,0,A
+01000035=6,11,4,REMAKESOV:BCONLINE,0,0,0,0,A,47,0,0,0,0,0,0,BI,21,6,EVA_BattleControlOnline,0,0,0,0,A,53,2,08B8375C,0,0,0,0,A,53,2,0B00823C,0,0,0,0,A,53,2,0A70764C,0,0,0,0,A
 01000040=1,108,0,6,0,0,0,0,W
 01000042=1,108,0,6,0,0,0,0,W
 01000046=2,11,4,REMAKESOV:S05k,0,0,0,0,A,53,2,01000050,0,0,0,0,A
@@ -1307,6 +1435,11 @@ AreTeamMembersRecruitable=no
 01000055=1,11,4,MISSION:DMEDIUM,0,0,0,0,A
 01000057=1,11,4,MISSION:DHARD,0,0,0,0,A
 01000059=3,11,4,REMAKESOV:S05l,0,0,0,0,A,19,7,BeaconPlaced,0,0,0,0,A,54,2,01000059,0,0,0,0,A
+01000061=5,14,0,14,0,0,0,0,A,53,2,01000068,0,0,0,0,A,41,0,875,0,0,0,0,CU,146,11,14,0,0,0,0,1050,62,0,0,0,0,0,0,A
+01000068=1,7,1,01000066,0,0,0,0,A
+01000070=1,7,1,01000067,0,0,0,0,A
+01000072=1,41,0,1865,0,0,0,0,BT
+01000074=1,32,0,0,0,0,0,0,A
 078D8320=1,17,0,14,0,0,0,0,O
 078D86A0=1,17,0,13,0,0,0,0,N
 078D9C90=1,17,0,16,0,0,0,0,Q
@@ -1323,7 +1456,7 @@ AreTeamMembersRecruitable=no
 088D0A90=1,17,0,4,0,0,0,0,E
 08930180=1,4,1,08AB64E0,0,0,0,0,A
 08978F40=4,6,0,15,0,0,0,0,A,11,4,REMAKESOV:S05c,0,0,0,0,A,53,2,0857BEFC,0,0,0,0,A,9,0,15,0,0,0,0,A
-0897D490=9,53,2,08978F40,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,53,2,08B82CBC,0,0,0,0,A,53,2,08AB8750,0,0,0,0,A,54,2,08445DBC,0,0,0,0,A,54,2,08445BEC,0,0,0,0,A,53,2,0AD6A15C,0,0,0,0,A,54,2,087D3A80,0,0,0,0,A,53,2,01000059,0,0,0,0,A
+0897D490=10,53,2,08978F40,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,53,2,08B82CBC,0,0,0,0,A,53,2,08AB8750,0,0,0,0,A,54,2,08445DBC,0,0,0,0,A,54,2,08445BEC,0,0,0,0,A,53,2,01000061,0,0,0,0,A,54,2,087D3A80,0,0,0,0,A,53,2,01000059,0,0,0,0,A,53,2,01000074,0,0,0,0,A
 089BA6A0=1,17,0,1,0,0,0,0,B
 089C1F40=1,4,1,076E41E0,0,0,0,0,A
 089D6140=1,17,0,2,0,0,0,0,C
@@ -1332,7 +1465,7 @@ AreTeamMembersRecruitable=no
 08A11920=1,17,0,18,0,0,0,0,S
 08A82380=1,17,0,20,0,0,0,0,U
 08A829A0=1,17,0,19,0,0,0,0,T
-08AB8750=4,53,2,0CB2164C,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A,54,2,0857BEFC,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A
+08AB8750=3,53,2,0CB2164C,0,0,0,0,A,54,2,0857BEFC,0,0,0,0,A,11,4,MISSION:OBJC,0,0,0,0,A
 08AB8D40=1,2,0,14,0,0,0,0,A
 08B37710=1,17,0,24,0,0,0,0,Y
 08B4B0F0=3,17,0,22,0,0,0,0,W,17,0,23,0,0,0,0,X,19,7,WarningAlarm,0,0,0,0,A
@@ -1346,9 +1479,7 @@ AreTeamMembersRecruitable=no
 0A12A7AC=6,99,7,_Amb_UrbanMurmur1,0,0,0,0,CC,99,7,_Amb_UrbanMurmur2,0,0,0,0,CF,99,7,_Amb_UrbanMurmur1,0,0,0,0,AC,99,7,_Amb_UrbanMurmur2,0,0,0,0,C,99,7,_Amb_UrbanMurmur1,0,0,0,0,AA,99,7,_Amb_UrbanMurmur2,0,0,0,0,R
 0A67A58C=1,113,0,14,0,0,0,0,A
 0A67AC6C=1,1,0,14,0,0,0,0,A
-0A70764C=1,2,0,14,0,0,0,0,A
-0AD6A15C=3,14,0,14,0,0,0,0,A,53,2,0A70764C,0,0,0,0,A,54,2,0AD6A15C,0,0,0,0,A
-0AD6F19C=2,2,0,14,0,0,0,0,A,54,2,0AD6F19C,0,0,0,0,A
+0A70764C=3,11,4,REMAKESOV:S05m,0,0,0,0,A,54,2,01000072,0,0,0,0,A,53,2,01000050,0,0,0,0,A
 0B00823C=1,100,0,97,0,0,0,0,A
 0B009B0C=3,100,0,98,0,0,0,0,A,80,1,01000009,0,0,0,0,BL,53,2,01000059,0,0,0,0,A
 0B49294C=6,7,1,0B458E1C,0,0,0,0,A,7,1,0B45856C,0,0,0,0,A,7,1,0B4586BC,0,0,0,0,A,7,1,0B45991C,0,0,0,0,A,7,1,09FF31AC,0,0,0,0,A,7,1,0A0912DC,0,0,0,0,A
@@ -1421,7 +1552,7 @@ PercentBuilt=0
 PlayerControl=yes
 
 [Basic]
-Name=City_of_Lights 
+Name=City_of_Lights
 Brief=s05_f00e
 Theme=Motorized
 Player=Player House
@@ -1450,7 +1581,7 @@ MultiplayerOnly=0
 IceGrowthEnabled=no
 VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
-IgnoreGlobalAITriggers=yes
+IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
 
 [CellTags]
@@ -1543,7 +1674,7 @@ Color=LightGold
 Prefix=C
 Suffix=CIV
 SmartAI=yes
-ParentCountry=Civie1 House
+ParentCountry=Neutral
 MultiplayPassive=true
 
 [Countries]
@@ -1570,13 +1701,18 @@ MultiplayPassive=true
 01000035=1,13,0,10
 01000040=1,1,0,14
 01000042=1,7,0,14
-01000046=2,36,0,1,61,2,0,SHK
+01000046=2,37,0,1,61,2,0,SHK
 01000048=1,8,0,0
 01000050=1,13,0,3
 01000053=1,8,0,0
 01000055=1,8,0,0
 01000057=1,8,0,0
 01000059=1,13,0,1
+01000061=1,13,0,5
+01000068=1,13,0,0
+01000070=1,13,0,20
+01000072=1,13,0,0
+01000074=1,8,0,0
 078D8320=1,4,0,0
 078D86A0=1,4,0,0
 078D9C90=1,4,0,0
@@ -1602,7 +1738,7 @@ MultiplayPassive=true
 08A11920=1,4,0,0
 08A82380=1,4,0,0
 08A829A0=1,4,0,0
-08AB8750=1,9,0,15
+08AB8750=1,11,0,15
 08AB8D40=2,11,0,21,57,0,31
 08B37710=1,4,0,0
 08B4B0F0=1,4,0,0
@@ -1616,13 +1752,24 @@ MultiplayPassive=true
 0A12A7AC=1,47,0,0
 0A67A58C=1,13,0,3
 0A67AC6C=1,13,0,10
-0A70764C=1,57,0,569
-0AD6A15C=1,13,0,1
-0AD6F19C=1,48,0,0
+0A70764C=1,61,2,0,CAPARS01
 0B00823C=1,13,0,5
 0B009B0C=1,1,0,21
 0B49294C=1,47,0,0
 0CB2164C=1,13,0,15
+
+[FakeDefendMarkWH]
+Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+InfDeath=0
+CellSpread=512
+AffectsOwner=yes
+PercentAtMax=1
+AffectsAllies=yes
+Versus.shkdef=3%
+AffectsEnemies=no
+AttachEffect.Duration=125
+AttachEffect.Animation=DEFMARK
+AttachEffect.DiscardOnEntry=yes
 
 [Houses]
 0=Special House
@@ -1636,56 +1783,56 @@ MultiplayPassive=true
 8=Other3 House
 
 [Infantry]
-0=Player House,IVAN,256,98,90,0,Guard,96,08E000A0,0,-1,0,1,1
-1=Player House,IVAN,256,98,89,0,Guard,160,08E000A0,0,-1,0,1,1
+0=Player House,IVAN,256,98,90,0,Guard,96,None,0,-1,0,1,1
+1=Player House,IVAN,256,98,89,0,Guard,160,None,0,-1,0,1,1
 2=Other3 House,SHK,256,96,94,3,Guard,0,087D3730,0,-1,0,1,1
-3=Other3 House,SHK,256,96,93,4,Guard,224,087D3730,0,-1,0,1,1
-4=Other3 House,SHK,256,94,93,4,Guard,64,087D3730,0,-1,0,1,1
-5=BadGuy1 House,E1,256,84,94,4,Guard,32,None,0,-1,0,1,1
+3=Other3 House,SHK,256,96,93,2,Guard,224,087D3730,0,-1,0,1,1
+4=Other3 House,SHK,256,94,93,2,Guard,64,087D3730,0,-1,0,1,1
+5=BadGuy1 House,E1,256,84,94,2,Guard,32,None,0,-1,0,1,1
 6=BadGuy1 House,E1,256,84,92,3,Guard,64,None,0,-1,0,1,1
 7=BadGuy1 House,E1,256,84,93,3,Guard,32,None,0,-1,0,1,1
-8=BadGuy1 House,E1,256,82,90,4,Guard,64,None,0,0,0,1,1
-9=BadGuy1 House,E1,256,81,78,4,Guard,128,None,0,-1,0,1,1
-10=BadGuy1 House,E1,256,82,80,4,Guard,96,None,0,-1,0,1,1
+8=BadGuy1 House,E1,256,82,90,2,Guard,64,None,0,0,0,1,1
+9=BadGuy1 House,E1,256,81,78,2,Guard,128,None,0,-1,0,1,1
+10=BadGuy1 House,E1,256,82,80,2,Guard,96,None,0,-1,0,1,1
 11=BadGuy1 House,E1,256,82,76,3,Guard,128,None,0,-1,0,1,1
-12=BadGuy1 House,E1,256,83,78,4,Guard,128,None,0,-1,0,1,1
-13=BadGuy1 House,E1,256,100,72,4,Guard,160,None,0,-1,0,1,1
+12=BadGuy1 House,E1,256,83,78,2,Guard,128,None,0,-1,0,1,1
+13=BadGuy1 House,E1,256,100,72,2,Guard,160,None,0,-1,0,1,1
 14=BadGuy1 House,E1,256,96,75,2,Guard,128,None,0,-1,0,1,1
 15=BadGuy1 House,E1,256,74,56,1,Guard,64,092CF9A0,0,-1,0,1,1
 16=BadGuy1 House,E1,256,75,56,1,Guard,64,092CF9A0,0,-1,0,1,1
 17=BadGuy1 House,E1,256,84,101,3,Guard,0,None,0,-1,0,1,1
 18=BadGuy1 House,E1,256,83,101,3,Guard,0,None,0,-1,0,1,1
-19=BadGuy1 House,E1,256,83,103,4,Guard,0,None,0,-1,0,1,1
-20=BadGuy1 House,E1,256,84,102,4,Guard,64,None,0,-1,0,1,1
+19=BadGuy1 House,E1,256,83,103,2,Guard,0,None,0,-1,0,1,1
+20=BadGuy1 House,E1,256,84,102,2,Guard,64,None,0,-1,0,1,1
 21=BadGuy1 House,E1,256,74,94,3,Guard,0,None,0,-1,0,1,1
 22=BadGuy1 House,E1,256,78,96,3,Guard,0,None,0,-1,0,1,1
-23=BadGuy1 House,E1,256,58,79,4,Guard,64,None,0,-1,0,1,1
+23=BadGuy1 House,E1,256,58,79,2,Guard,64,None,0,-1,0,1,1
 24=Player House,DESO,256,88,85,0,Guard,64,None,0,-1,0,1,0
 25=Player House,DESO,256,89,84,0,Guard,64,None,0,-1,0,1,0
 26=Player House,SENGINEER,256,91,88,0,Guard,64,None,0,-1,0,1,1
 27=BadGuy1 House,E1,256,59,57,3,Guard,0,None,0,-1,0,1,1
 28=BadGuy1 House,ENFO,256,58,54,1,Guard,64,None,0,-1,0,1,0
-29=BadGuy1 House,E1,256,42,47,4,Guard,64,None,0,-1,0,1,1
+29=BadGuy1 House,E1,256,42,47,2,Guard,64,None,0,-1,0,1,1
 30=BadGuy2 House,E1,256,57,49,2,Area Guard,192,None,0,-1,0,1,1
 31=BadGuy2 House,E1,256,57,50,0,Area Guard,160,None,0,-1,0,1,1
 32=BadGuy2 House,E1,256,58,48,3,Area Guard,192,None,0,-1,0,1,1
 33=BadGuy2 House,E1,256,57,47,3,Area Guard,224,None,0,-1,0,1,1
 34=BadGuy2 House,E1,256,58,47,3,Area Guard,192,None,0,-1,0,1,1
 35=Player House,FLAKT,256,91,86,0,Guard,64,None,0,-1,0,1,0
-36=Player House,E2,256,94,89,4,Guard,32,None,0,-1,0,1,1
+36=Player House,E2,256,94,89,2,Guard,32,None,0,-1,0,1,1
 37=Player House,FLAKT,256,92,86,0,Guard,64,None,0,-1,0,1,0
 38=Player House,FLAKT,256,90,85,0,Guard,64,None,0,-1,0,1,0
-39=Player House,E2,256,94,88,4,Guard,128,None,0,-1,0,1,1
-40=Player House,E2,256,95,88,4,Guard,128,None,0,-1,0,1,1
+39=Player House,E2,256,94,88,2,Guard,128,None,0,-1,0,1,1
+40=Player House,E2,256,95,88,2,Guard,128,None,0,-1,0,1,1
 41=Player House,FLAKT,256,92,87,0,Guard,64,None,0,-1,0,1,0
-42=Player House,E2,256,96,88,4,Guard,128,None,0,-1,0,1,1
-43=Player House,E2,256,96,89,4,Guard,128,None,0,-1,0,1,1
+42=Player House,E2,256,96,88,2,Guard,128,None,0,-1,0,1,1
+43=Player House,E2,256,96,89,2,Guard,128,None,0,-1,0,1,1
 44=Player House,FLAKT,256,93,87,0,Guard,64,None,0,-1,0,1,0
 45=Player House,FLAKT,256,91,85,0,Guard,64,None,0,-1,0,1,0
 46=Player House,E2,256,96,88,0,Guard,32,None,0,-1,0,1,1
 47=Other3 House,SHK,256,95,92,0,Guard,128,087D3730,0,-1,0,1,1
 48=BadGuy1 House,ENFO,256,84,103,0,Guard,64,None,0,-1,0,1,0
-49=Player House,SENGINEER,256,91,89,4,Guard,96,None,0,-1,0,1,1
+49=Player House,SENGINEER,256,91,89,2,Guard,96,None,0,-1,0,1,1
 50=BadGuy1 House,ENFO,256,61,57,0,Guard,64,None,0,-1,0,1,0
 51=BadGuy1 House,ENFO,256,58,42,1,Guard,64,None,0,-1,0,1,0
 52=BadGuy1 House,ENFO,256,61,40,0,Guard,64,None,0,-1,0,1,0
@@ -1749,6 +1896,7 @@ MultiplayPassive=true
 110=Other3 House,SHK,256,99,89,0,Guard,64,087D3730,0,-1,0,1,0
 111=Other3 House,SHK,256,99,88,0,Guard,64,087D3730,0,-1,0,1,0
 112=Other3 House,SHK,256,100,88,1,Guard,64,087D3730,0,-1,0,1,0
+113=Player House,ARMR,256,96,90,1,Guard,64,None,0,-1,0,1,0
 
 [IsoMapPack5]
 1=nRAAIAQiAAEAPgEAVAAFACEAAgA+AQBWAAAiUABoAQEAAAAjSQE6VAJLASAAA4AESQEhSQ
@@ -2512,6 +2660,7 @@ UnderParMessage=GUI:FSov05
 20=01000038
 21=01000044
 22=01000052
+23=01000064
 
 [Smudge]
 0=BURNT01,76,75,0
@@ -2564,7 +2713,7 @@ DestroyableBridges=no
 3=Civie1 House,CAPARS05,63,93,95,0,None,0,0,1,0,0,None,None,None,0,0
 4=Civie1 House,CAPARS05,256,89,79,0,None,0,0,1,0,0,None,None,None,0,0
 5=Civie1 House,CAPARS05,57,89,94,0,01000001,0,0,1,0,0,None,None,None,0,0
-6=Civie1 House,CAPARS01,256,61,47,0,0AD6CDCC,0,0,0,0,0,None,None,None,1,0
+6=Civie1 House,CAPARS01,256,61,47,0,01000062,0,0,0,0,0,None,None,None,1,0
 7=Civie1 House,CAPARS05,256,92,79,0,None,0,0,1,0,0,None,None,None,0,0
 8=Civie1 House,CAPARS04,256,86,87,0,None,0,0,1,0,0,None,None,None,0,0
 9=Civie1 House,CAPARS06,256,82,84,0,None,0,0,1,0,0,None,None,None,0,0
@@ -2616,7 +2765,7 @@ DestroyableBridges=no
 55=BadGuy1 House,GAPOWR,256,60,84,64,None,1,0,1,0,0,None,None,None,0,0
 56=BadGuy1 House,GAPOWR,256,60,77,64,None,1,0,1,0,0,None,None,None,0,0
 57=Civie1 House,CASIN03S,256,54,46,64,None,1,0,1,0,0,None,None,None,0,0
-58=Civie1 House,CAWASH07,256,58,26,0,0843C690,0,0,1,0,0,None,None,None,0,0
+58=Civie1 House,CAWASH07,256,58,26,0,None,0,0,1,0,0,None,None,None,0,0
 59=Civie1 House,CAPARS13,256,61,34,0,None,0,0,1,0,0,None,None,None,0,0
 60=Civie1 House,CAWASH07,256,68,41,0,092CF9A0,0,0,1,0,0,None,None,None,0,0
 61=BadGuy1 House,GAPILL,196,82,78,0,None,1,0,1,0,0,None,None,None,0,0
@@ -2627,6 +2776,7 @@ DestroyableBridges=no
 66=Civie1 House,CAMISC02,256,82,77,0,None,0,0,1,0,0,None,None,None,0,0
 67=BadGuy1 House,GAPILL,192,99,72,0,089D5B70,1,0,1,0,0,None,None,None,0,0
 68=BadGuy1 House,GAPILL,195,89,61,0,None,1,0,1,0,0,None,None,None,0,0
+69=Player House,NAPOWR,256,111,88,64,None,1,0,1,0,0,None,None,None,0,0
 70=BadGuy1 House,GAPILL,192,64,59,0,None,1,0,1,0,0,None,None,None,0,0
 71=BadGuy1 House,GAPILL,195,64,38,0,092CF260,1,0,1,0,0,None,None,None,0,0
 72=BadGuy1 House,GAPILL,195,67,38,0,None,1,0,1,0,0,None,None,None,0,0
@@ -2714,9 +2864,10 @@ DestroyableBridges=no
 154=Player House,NAPOWR,256,112,86,64,None,1,0,1,0,0,None,None,None,0,0
 155=Civie1 House,CAMISC01,256,60,86,64,None,1,0,1,0,0,None,None,None,0,0
 156=Civie1 House,CAMISC02B,256,59,86,64,None,1,0,1,0,0,None,None,None,0,0
+157=Player House,FACOAT,256,116,85,64,01000075,1,0,1,0,0,None,None,None,0,0
 
 [Tags]
-01000001=0,PRISM VS BUILDING 1,01000000
+01000001=0,ENFO VS BUILDING 1,01000000
 01000006=0,prism vs building bg1 1,01000005
 01000011=0,music 1,01000010
 01000013=0,DIALOG1 1,01000012
@@ -2736,6 +2887,11 @@ DestroyableBridges=no
 01000056=0,-D-M 1,01000055
 01000058=0,-D-H 1,01000057
 01000060=2,充电提示 1,01000059
+01000062=0,充电 1,01000061
+01000069=0,部队-BG1 TNK1 1,01000068
+01000071=0,部队-BG1 TNK2 1,01000070
+01000073=2,Target Paris Tower 1,01000072
+01000075=0,Disable TeslaMarker 1,01000074
 078D8150=0,Reveal Way O 1,078D8320
 078D84D0=0,Reveal Way N,078D86A0
 078D8C10=0,Reveal Way M 1,078DF210
@@ -2776,7 +2932,6 @@ DestroyableBridges=no
 0A67A4AC=2,Cheer,0A67A58C
 0A67AB8C=0,Win 1,0A67AC6C
 0A70756C=0,Tower Destroyed Backup 1,0A70764C
-0AD6CDCC=2,Tower Destroyed 1,0AD6F19C
 0B009A2C=0,_Radar Movie 2 1,0B009B0C
 0B009BFC=0,_Radar Movie 1 1,0B00823C
 0B493DEC=0,Start Patrols 1,0B49294C
@@ -2807,6 +2962,8 @@ DestroyableBridges=no
 21=01000032
 22=01000037
 23=01000023
+24=01000063
+25=01000065
 
 [TeamTypes]
 0=07701760
@@ -2831,6 +2988,8 @@ DestroyableBridges=no
 19=01000045
 20=01000034
 21=01000039
+22=01000066
+23=01000067
 
 [Terrain]
 24056=LT_EUR02
@@ -2987,7 +3146,7 @@ DestroyableBridges=no
 111082=TREE03
 
 [Triggers]
-01000000=Player,<none>,PRISM VS BUILDING,0,0,0,1,0
+01000000=Player,<none>,ENFO VS BUILDING,0,0,0,1,0
 01000005=Player,<none>,prism vs building bg1,0,0,0,1,0
 01000010=Player,<none>,music,0,1,1,1,0
 01000012=Player,<none>,DIALOG1,0,1,1,1,0
@@ -3007,6 +3166,11 @@ DestroyableBridges=no
 01000055=Player,<none>,-D-M,0,0,1,0,0
 01000057=Player,<none>,-D-H,0,0,0,1,0
 01000059=Player,<none>,充电提示,1,1,1,1,0
+01000061=Player,<none>,充电,1,1,1,1,0
+01000068=Player,<none>,部队-BG1 TNK1,1,1,1,1,0
+01000070=Player,<none>,部队-BG1 TNK2,1,0,1,1,0
+01000072=Player,<none>,Target Paris Tower,0,1,1,1,0
+01000074=Player,<none>,Disable TeslaMarker,1,1,1,1,0
 078D8320=UnitedStates,<none>,Reveal Way O,0,1,1,1,0
 078D86A0=UnitedStates,<none>,Reveal Way N,0,1,1,1,0
 078D9C90=UnitedStates,<none>,Reveal Way Q,0,1,1,1,0
@@ -3047,8 +3211,6 @@ DestroyableBridges=no
 0A67A58C=Player,<none>,Cheer,1,1,1,1,0
 0A67AC6C=Player,<none>,Win,1,1,1,1,0
 0A70764C=Player,<none>,Tower Destroyed Backup,1,1,1,1,0
-0AD6A15C=Other2,<none>,Tower Energized,1,1,1,1,0
-0AD6F19C=UnitedStates,0AD6A15C,Tower Destroyed,0,1,1,1,0
 0B00823C=UnitedStates,<none>,_Radar Movie 1,1,1,1,1,0
 0B009B0C=UnitedStates,<none>,_Radar Movie 2,0,1,1,1,0
 0B49294C=UnitedStates,<none>,Start Patrols,0,1,1,1,0
@@ -3197,6 +3359,7 @@ DestroyableBridges=no
 68=46031
 69=46032
 70=46033
+71=42056
 78=82066
 79=90066
 80=90086
