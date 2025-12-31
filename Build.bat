@@ -123,6 +123,7 @@ echo Сборка csf и mix-файлов для Foehn Mission Pack... >> "%LOGF
 echo Сборка csf и mix-файлов для Foehn Mission Pack...
 Tools\ccmix --create --lmd --game=ra2 --dir ".\CustomCompileFiles\MOV\Foehn_Pack\expandmo03" --mix ".\Build\MOV\Foehn_Pack\expandmo03.mix" >> "%LOGFILE%" 2>&1
 Tools\CsfStudio -i ".\CustomCompileFiles\MOV\Foehn_Pack\stringtable73.txt" -o ".\Build\MOV\Foehn_Pack\stringtable73.csf" --to-csf >> "%LOGFILE%" 2>&1
+echo.
 
 echo Сборка csf и mix-файлов для P.M.O.S. Series... >> "%LOGFILE%"
 echo Сборка csf и mix-файлов для P.M.O.S. Series...

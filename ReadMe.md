@@ -12,7 +12,7 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 
 Аддон Mental Omega Vision (Clean Edition) на текущий момент включает следующие наборы миссий:
 - RA2 and RA2YR Remake - 24 (RA2) + 14 (RA2YR) + 5 (RA2FoehnRevolt) миссий. (Оригинальный автор карт и скриптов 帝王审判者, название MORA2重制战役V2.02By帝王审判者 и была создана для версии мода Mental Omega 3.3.4);
-- APRA Series - 18 (APRA V0.6) + 2 (Scorpion Cell Chronicles V0.2) + 1 (Flipped APRA) миссий (APRA - Перевод Moroznik, Scorpion Cell Chronicles, FAPRA - перевод mah-boi, авторство серии карт - [APRA2](https://discord.gg/SfxbURT5gT));
+- APRA Series - 30 (APRA V1.0) + 2 (Scorpion Cell Chronicles V0.2) + 1 (Flipped APRA) миссий (APRA - Перевод Александр Градобоев, Scorpion Cell Chronicles, FAPRA - перевод mah-boi, авторство серии карт - [APRA2](https://discord.gg/SfxbURT5gT));
 - Soviet Mission Pack - 67 миссий различных авторов;
 - Epsilon Mission Pack - 27 миссий различных авторов;
 - B.M.A. Series - 5 оригинальных + 3 побочных миссии (Оригинальное авторство принадлежит 「B.M.A」, название 「B.M.A」往昔回忆录, была создана для версии мода Mental Omega 3.3.2-3.3.4);
