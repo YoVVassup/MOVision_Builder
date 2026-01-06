@@ -82,6 +82,7 @@ ChargedAnimTime=1
 AttachEffect.Duration=-1
 AttachEffect.Animation=DEFMARK
 AttachEffect.PenetratesIronCurtain=yes
+Unsellable=yes
 
 [GAGAP]
 Name=Gap Generator

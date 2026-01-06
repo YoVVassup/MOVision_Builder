@@ -144,6 +144,7 @@ ClickRepairable=yes
 AttachEffect.Duration=-1
 AttachEffect.Animation=VIPMARK
 AttachEffect.PenetratesIronCurtain=yes
+Unsellable=yes
 
 [MORALES]
 TechLevel=12

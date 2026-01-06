@@ -72,3 +72,10 @@ MOVision_Builder - это пакетный сборщик CLI дополните
 
 [Дополнительные требования при создании\изменении игровых файлов](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/Requirements.md)  
 [Общая информация по CLI-утилитам сборки](https://github.com/YoVVassup/MOVision_Builder/blob/main/Doc/ReadmeUtil.md)  
+
+## 🧡 Поддержать проект
+
+Этот проект разрабатывается в свободное время.  
+Если он вам полезен, отблагодарите разработчика "на ☕ или 🍺":  
+[![ЮMoney](https://img.shields.io/badge/Поддержать-ЮMoney-orange.svg?style=for-the-badge&logo=yoomoney&logoColor=white)](https://yoomoney.ru/to/4100118696151510)  
+![QR-код для ЮMoney](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yoomoney.ru/to/4100118696151510)

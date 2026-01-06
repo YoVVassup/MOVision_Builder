@@ -146,6 +146,7 @@ AttachEffect.Duration=-1
 DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 AttachEffect.Animation=DEFMARK
 AttachEffect.PenetratesIronCurtain=yes
+Unsellable=yes
 
 [NARADR]
 Grinding=no

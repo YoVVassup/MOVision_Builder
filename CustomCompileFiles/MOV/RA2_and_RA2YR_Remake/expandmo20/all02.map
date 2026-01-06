@@ -37,6 +37,7 @@ ClickRepairable=yes
 DistributedFire=no
 MaxNumberOccupants=0
 CrateBeneathIsMoney=false
+Unsellable=yes
 
 [CMIN]
 Storage=10
@@ -108,6 +109,7 @@ TechLevel=-1
 TechLevel=-1
 
 [GACNST]
+Unsellable=yes
 Armor=f_mcv
 
 [GADEPO]

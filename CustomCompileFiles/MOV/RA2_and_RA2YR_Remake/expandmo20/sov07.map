@@ -195,6 +195,7 @@ AttachEffect.Duration=-1
 AttachEffect.Animation=DEFMARK
 AttachEffect.TemporalHidesAnim=no
 AttachEffect.PenetratesIronCurtain=yes
+Unsellable=yes
 
 [NAYARD]
 TechLevel=-1

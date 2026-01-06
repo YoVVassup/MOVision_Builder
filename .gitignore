@@ -15,6 +15,7 @@ CustomCompileFiles/expandmo90/
 TempAudio/**/*
 !TempAudio/**/
 !TempAudio/**/.gitkeep
+.vs/
 
 ## Log File
 *_log.txt
